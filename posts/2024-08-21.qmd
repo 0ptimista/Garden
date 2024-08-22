@@ -1,0 +1,77 @@
+---
+title: "两个文件的差集"
+description: "*grep* comes handy"
+date: "2024-08-21"
+date-modified: "2024-08-22"
+categories: [worklog]
+format:
+  html:
+    code-copy: true
+---
+
+我在工作中,经常遇到这样的问题: 从一个地方抓取数据, 和另外一个地方的数据进行对比, 找出其中的差异.
+这很像在求两个集合的差集. 由于大多数时候都面对*nix系统环境, 此时应该首先考虑使用`shell`工具而不是编程语言(比如`python`)
+
+因为`shell`工具更快(谁不喜欢快呢)
+
+
+# The Senario
+以生产Kuberntes集群中的Deployment为标准, 列出验证环境Kuberntes多余的Deployment.
+
+要解决这个问题, 大致分为下面几步:
+
+- 列出生产环境的Deployment, 保存到文件`prod.txt`
+- 列出验证环境的Deployment, 保存到文件`staging.txt`
+- 结果集 = `staging.txt` -  `prod.txt`
+
+每个文件里的内容大概是这样的, 每一行是一个Deployment的名称:
+```{.txt filename="prod.txt"}
+frontend-web
+backend-api
+database-mysql
+redis-cache
+elasticsearch-cluster
+auth-service
+logging-fluentd
+```
+ 唯一不同的是`staging.txt`里的内容比`prod.txt`多一些:
+
+要得到`staging.txt`比`prod.txt`多出的部分, 计算`staging.txt`和`prod.txt`的*差集*[^1]是一个符合直觉的做法.
+
+[^1]: 两个集合的差集: `A - B` = `A`里有而`B`里没有的元素
+
+
+# Before shell solution
+在Python中可以用`set`来表示集合, 用`-`来求差集:
+
+```{python}
+
+set_a = set([1,2,3,4])
+set_b = set([3,4,5,6])
+difference = set_a - set_b
+
+difference
+```
+
+使用Python完全可以胜任,但是使用*nix环境给你提供的默认工具, 会让这个问题得以优雅的解决.
+
+# The Shell Solution
+
+`grep` 是Linux环境下最常见和常用的过滤工具, 我之前没有意识到他在处理这个问题上可以这么优雅.
+```bash
+grep -vFf prod.txt staging.txt
+````
+
+三个参数:
+
+- `-v` : 反向匹配, 即只匹配不包含的行
+- `-F` : 以固定字符串而不是正则表达式进行匹配
+- `-f` : 从文件中读取匹配模式
+
+也就是: 从`staging.txt`中匹配不包含在`prod.txt`中的行. 即`staging.txt`比`prod.txt`多出的部分.
+
+三个参数中, `-v` 也许是我使用最多的,因为在筛选某些进程的进程(号)时,并不希望看到*grep*本身进程的进程(号).
+```bash
+ps -ef |grep nginx |grep -v grep
+````
+

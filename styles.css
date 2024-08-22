@@ -1,1 +1,9 @@
-/* css styles */
+/*-- scss:defaults --*/
+$body-bg: #FDF6E3;
+$body-color: #073642;
+
+/*-- scss:rules --*/
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}

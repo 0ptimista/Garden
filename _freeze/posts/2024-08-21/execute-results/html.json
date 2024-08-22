@@ -1,0 +1,12 @@
+{
+  "hash": "ad8469165d261610a486551cac20702a",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"两个文件的差集\"\ndescription: \"*grep* comes handy\"\ndate: \"2024-08-21\"\ndate-modified: \"2024-08-22\"\ncategories: [worklog]\nformat:\n  html:\n    code-copy: true\n---\n\n\n我在工作中,经常遇到这样的问题: 从一个地方抓取数据, 和另外一个地方的数据进行对比, 找出其中的差异.\n这很像在求两个集合的差集. 由于大多数时候都面对*nix系统环境, 此时应该首先考虑使用`shell`工具而不是编程语言(比如`python`)\n\n因为`shell`工具更快(谁不喜欢快呢)\n\n\n# The Senario\n以生产Kuberntes集群中的Deployment为标准, 列出验证环境Kuberntes多余的Deployment.\n\n要解决这个问题, 大致分为下面几步:\n\n- 列出生产环境的Deployment, 保存到文件`prod.txt`\n- 列出验证环境的Deployment, 保存到文件`staging.txt`\n- 结果集 = `staging.txt` -  `prod.txt`\n\n每个文件里的内容大概是这样的, 每一行是一个Deployment的名称:\n```{.txt filename=\"prod.txt\"}\nfrontend-web\nbackend-api\ndatabase-mysql\nredis-cache\nelasticsearch-cluster\nauth-service\nlogging-fluentd\n```\n 唯一不同的是`staging.txt`里的内容比`prod.txt`多一些:\n\n要得到`staging.txt`比`prod.txt`多出的部分, 计算`staging.txt`和`prod.txt`的*差集*[^1]是一个符合直觉的做法.\n\n[^1]: 两个集合的差集: `A - B` = `A`里有而`B`里没有的元素\n\n\n# Before shell solution\n在Python中可以用`set`来表示集合, 用`-`来求差集:\n\n::: {#71aeb6b9 .cell execution_count=1}\n``` {.python .cell-code}\nset_a = set([1,2,3,4])\nset_b = set([3,4,5,6])\ndifference = set_a - set_b\n\ndifference\n```\n\n::: {.cell-output .cell-output-display execution_count=14}\n```\n{1, 2}\n```\n:::\n:::\n\n\n使用Python完全可以胜任,但是使用*nix环境给你提供的默认工具, 会让这个问题得以优雅的解决.\n\n# The Shell Solution\n\n`grep` 是Linux环境下最常见和常用的过滤工具, 我之前没有意识到他在处理这个问题上可以这么优雅.\n```bash\ngrep -vFf prod.txt staging.txt\n````\n\n三个参数:\n\n- `-v` : 反向匹配, 即只匹配不包含的行\n- `-F` : 以固定字符串而不是正则表达式进行匹配\n- `-f` : 从文件中读取匹配模式\n\n也就是: 从`staging.txt`中匹配不包含在`prod.txt`中的行. 即`staging.txt`比`prod.txt`多出的部分.\n\n三个参数中, `-v` 也许是我使用最多的,因为在筛选某些进程的进程(号)时,并不希望看到*grep*本身进程的进程(号).\n```bash\nps -ef |grep nginx |grep -v grep\n````\n\n",
+    "supporting": [
+      "2024-08-21_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,7 +1,14 @@
 ---
-title: "Welcome"
+title: "Timeline"
+page-layout: full
+author: ""
+# title-block-banner: true
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  # feed: true
 ---
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

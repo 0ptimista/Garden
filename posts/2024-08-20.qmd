@@ -1,0 +1,9 @@
+---
+title: "My First Blog Post"
+description: "This is a post on my new Quarto blog."
+date: "2023-04-01"
+categories: [news, analysis]
+---
+
+This is the content of my first blog post.
+

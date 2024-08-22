@@ -1,21 +1,28 @@
-execute:
-  freeze: auto
-
 project:
   type: website
+execute:
+  freeze: auto
 website:
-  title: "Welcome to my garden"
+  title: "Garden"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    right:
+      - text: Time Machine
+        href: time-machine.qmd
+      - icon: github
+        href: https://github.com/yourusername
+      - icon: twitter
+        href: https://twitter.com/yourusername
+  # sidebar:
+  #   style: "docked"
+  #   contents:
+  #     - section: "Introduction"
+  #       contents: posts/*
+
+author: "Luozx"
+lang: zh
+date-format: long
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+    theme: default
+    # css: styles.css

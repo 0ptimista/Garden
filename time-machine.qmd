@@ -1,0 +1,13 @@
+---
+title: "Time Machine"
+page-layout: full
+author: ""
+listing:
+  contents: posts
+  sort: "date desc"
+  fields: [date, title, categories]
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+---
