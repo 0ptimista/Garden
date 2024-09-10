@@ -3,9 +3,9 @@ project:
 execute:
   freeze: auto
 website:
-  title: "Garden"
+  title: "Luozx's Digtal Garden"
   site-url: https://garden.luozx.org
-  description: "Hihi! Welcome to my digtial garden"
+  description: "feedId:56240215051686912+userId:55416336394137600"
   navbar:
     right:
       - text: Time Machine
