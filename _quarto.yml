@@ -4,14 +4,18 @@ execute:
   freeze: auto
 website:
   title: "Garden"
+  site-url: https://garden.luozx.org
+  description: "Hihi! Welcome to my digtial garden"
   navbar:
     right:
       - text: Time Machine
         href: time-machine.qmd
       - icon: github
-        href: https://github.com/yourusername
+        href: https://github.com/0ptimista
       - icon: twitter
-        href: https://twitter.com/yourusername
+        href: https://twitter.com/luozxdotorg
+      - icon: rss
+        href: index.xml
   # sidebar:
   #   style: "docked"
   #   contents:
@@ -20,6 +24,8 @@ website:
   comments:
     giscus:
       repo: 0ptimista/Garden
+      loading: lazy
+      category: Announcements
 
 author: "Luozx"
 lang: zh
