@@ -17,6 +17,9 @@ website:
   #   contents:
   #     - section: "Introduction"
   #       contents: posts/*
+  comments:
+    giscus:
+      repo: 0ptimista/Garden
 
 author: "Luozx"
 lang: zh
