@@ -1,2 +1,6 @@
-/.quarto/
-/_site/
+.quarto/
+_site/
+.venv/
+_freeze/
+
+.DS_Store

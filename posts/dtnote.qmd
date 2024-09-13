@@ -1,0 +1,25 @@
+---
+title: "DEVONThink Note"
+date: "2024-09-13"
+categories: ["Tools"]
+---
+
+记录使用[DEVONThink](https://www.devontechnologies.com/apps/devonthink)时遇到的问题和解决办法.
+
+DEVONThink(简称DT)是一款macOS上的文档管理软件.
+
+
+### 在Markdown中插入图片, 自动复制文件到数据库中.
+
+**问题描述**:
+
+在DT的Markdown文件中插入图片时, 直接引用图片的原始链接.
+不会保存在本地数据库中.这样很容易导致图片丢失.
+
+在Preferences > Files > Markdown > Images: Import assets to group
+![](https://devontech-discourse.s3.dualstack.us-east-1.amazonaws.com/uploads/original/3X/8/6/86cd9b4e7694e67a8ae590e6787af3abb45600d6.jpeg)
+会将图片存储在指定的Group中.
+
+**链接**
+
+1. <https://discourse.devontechnologies.com/t/markdown-and-store-image/67291/4>
