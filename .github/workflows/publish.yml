@@ -27,6 +27,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install jupyter
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         
@@ -38,4 +44,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
