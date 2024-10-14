@@ -1,0 +1,91 @@
+---
+title: "Follw: The App"
+date: "2024-10-14"
+categories: ["application"]
+description: "Follow, 不是一个纯粹的RSS阅读器"
+---
+
+# 背景
+[Follow](https://follow.is)，是RSS忠实用户[DIŸgöd](https://x.com/DIYgod)和他的团队打造的一款应用，一款想通过RSS方式，浏览所有平台上的内容。成为你终极内容消费入口的应用，即他们宣称的：下一代内容浏览器。
+![](./images/follow-slogon.png)
+这是一个非常有趣的想法，面对信息过载，我们都想要轻松的消费最有价值的内容。对于自己认可的内容源头，通过RSS收取其更新（RSS feed），这也是Web1.0时期（2000年左右）极其流行[^1]的内容消费策略。
+
+DIYgod同时也是[RSSHub](https://docs.rsshub.app/zh/)，一个旨在让一切内容都可以通过RSS订阅（万物皆可RSS）的项目作者。
+# RSS Feed：What to feed
+当阅读到喜欢的内容后，通常用两种方式进行收藏：
+
+1. 浏览器书签
+2. 稍后阅读工具，比如[Pocket](https://getpocket.com/home)
+
+如果遇到对自己有帮助，有启发的内容，会自然而然顺藤摸瓜，想去了解其作者，想在作者发布新内容时也能读到。
+这个过程是在筛选内容的提供者，在「构建」自己的信息源，在制作信息输入的「白名单」。
+
+大批被Follow成功吸引的新用户，却总会提出这样的需求：
+
+- [最近 Follow 挺火，有什么值得订阅的 RSS 源？](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://v2ex.com/t/1078500&ved=2ahUKEwi11I_zq4qJAxUAsVYBHfYoDTgQFnoECBcQAQ&usg=AOvVaw2Nyxyz6ENxQDggvL10Kj5R)
+- [求推荐一些 Follow 订阅](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.v2ex.com/t/1079170&ved=2ahUKEwi11I_zq4qJAxUAsVYBHfYoDTgQFnoECBYQAQ&usg=AOvVaw1Fs7VRAlMAK36y5nw0Tg75)
+
+这和「缓解信息焦虑」「降低内容过载」的阅读追求完全相反，更像是一种「信息FOMO[^3]」-- 害怕错过别人知道，自己却被“落下”的焦虑。这是一种信息输入「黑名单」模式：默认接受所有信息。
+
+# Follow在增强阅读体验上的努力
+
+## 分类的阅读视图
+从一开始，Follow就想要包含所有内容形式：从最常见的文章，视频，图片，到让RSS日渐落寞的社交媒体，以及渐渐在中文圈内流行音频播客，最后他们甚至还加入了“通知”类别的视图，可以专门用来接收Release Note（版本发行说明），在这一点上可以看得到DIYgod和他的团队确实在认真地对待RSS。
+![](./images/follow-app-contentview.png)
+![](./images/follow-app-main-interface.png)
+
+> 认真在做产品的团队，都会写详细的发行说明。
+你会关心自己所用产品的版本发行说明吗？
+
+## Mozilla Readability
+对于通过RSS获取，但阅读体验不佳的内容，Follow还提供另一种获取内容的方式：网页捕获[^4]。
+在FireFox上和其他其他浏览器都提供一种[阅读模式](https://support.mozilla.org/zh-CN/kb/firefox%E9%98%85%E8%AF%BB%E6%A8%A1%E5%BC%8F%E8%AE%A9%E7%BD%91%E9%A1%B5%E6%9B%B4%E6%B8%85%E7%88%BD)，Mozilla将实现这个功能的库单独分离出来，叫作[Readability](https://github.com/mozilla/readability)，供大家使用[^5]。
+![](./images/readability.png)
+
+# Some AI
+### Articles Summary
+对开发者来说，AI内容总结，似乎就像是新晋的「独立开发三件套」之一，几乎所有开发者对AI的第一用例就是去总结。 总结文章，总结视频，总结邮件，总结一切。Follow也不例外，不过做了一些微小的改良：总结然后排序。
+![](./images/follow-app-ai-summary.png)
+
+就个人而言，这个功能并没有吸引力。因为「白名单」的原故，在信息输入的起始，就已经确定了，出现在阅读列表中的内容是「必读」的。
+与此同时，在使用过几次之后，也并没有发现这个功能带来什么好处。
+
+### TTS
+Text To Speech（TTS）文字转语音，使用一次后，听起来很自然（英文），但是我还没有习惯「听文章」这个新潮流。
+
+# 创作者激励
+优质的内容应该被奖励，内容的作者也应该受到内容版权的保护。DIYgod和他的团队很显然认同这个道理，这也解释了Follow中提供打赏（Tip），著作权申请（Claim）功能的原因。
+
+![](./images/follow-app-creator-incentives.png)
+
+DIYgod是[RSS3](https://rss3.io)项目的核心人员，结合区块链技术和区块链代币为内容创作者提供版权保护，创造收入，真的很赞。
+
+
+# 社交属性
+如果你够仔细，也许会发现在创作者激励一节的图片中，右上角出现了很多头像。Follow会展示同时公开订阅该作者内容的其他读者，点开每一位读者，可以看到关于他的其他订阅：
+![](./images/follow-app-sociality.png)
+
+
+不仅如此，你可以利用这个功能创建「合订本」分享或者销售你的作品给你的观众。
+![](./images/follow-app-lists.png)
+
+Bonus: 同样有一个创作者友好的内容创作平台[Quail](https://quail.ink)，如果你是内容创作者，推荐你看看。
+
+
+# Summary（by human）
+Follow在保护原创，激励内容工作者，Follow无疑在努力前进，这是值得肯定的。尤其在充斥着大量AI-gen内容的互联网上，这种保护尤其重要。它还在快速更新，希望看到更多Folllow对高质量内容创作者的关注。
+
+Follow如果作为一款RSS阅读器而言，那它确实多了需要不必要的功能，在阅读内容（文章）时，不像[NetNewWire](https://netnewswire.com)那样纯粹，简单。（我非常喜欢NetNewsWire btw）不过正如开头所提到的，Follow不想成为一款单纯的RSS阅读器，而是想要成为你专属的互联网阅读器。
+
+----
+# The Invitations
+Follow目前仍处于邀请阶段，感谢你读到最后，两份邀请，请取用。
+
+1. RsV9sJvKWs
+2. 1uGcj0SqMU
+
+[^1]: [The Rise and Demise of RSS](https://twobithistory.org/2018/12/18/rss.html)
+[^2]: 影视更新通过MoviePilot，但这属于娱乐性质的内容，不需要每天都看，也没有必要通过专门“监控”新影视作品的上架信息。
+[^3]: FOMO, [Fear Of Missing Out](https://zh.wikipedia.org/zh-hans/%E9%94%99%E5%A4%B1%E6%81%90%E6%83%A7%E7%97%87)，害怕错失而产生不安和恐慌。
+[^4]: 网页捕获是我给这个功能起的名字，因为启用这个功能后的体验就像是使用印象笔记的[网页剪切](https://evernote.com/features/webclipper)
+[^5]: Follow采用Mozilla Readabilty的[讨论](https://github.com/RSSNext/Follow/issues/169#issuecomment-2260378450)
