@@ -4,6 +4,7 @@ execute:
   freeze: auto
 website:
   title: "Luozx's Digtal Garden"
+  twitter-card: true
   site-url: https://garden.luozx.org
   description: "feedId:56240215051686912+userId:55416336394137600"
   navbar:
@@ -34,4 +35,5 @@ date-format: long
 format:
   html:
     theme: default
+    toc: true
     # css: styles.css

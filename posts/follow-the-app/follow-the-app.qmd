@@ -2,6 +2,7 @@
 title: "Follw: The App"
 date: "2024-10-14"
 categories: ["application"]
+toc: false
 description: "Follow, 不是一个纯粹的RSS阅读器"
 ---
 
