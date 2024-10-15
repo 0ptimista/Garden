@@ -36,4 +36,5 @@ format:
   html:
     theme: default
     toc: true
+    reference-location: margin
     # css: styles.css

@@ -80,10 +80,21 @@ Follow如果作为一款RSS阅读器而言，那它确实多了需要不必要�
 
 ----
 # The Invitations
-Follow目前仍处于邀请阶段，感谢你读到最后，两份邀请，请取用。
+Follow目前仍处于邀请阶段，感谢你读到最后，几份邀请，请随意取用。
 
-1. RsV9sJvKWs
-2. 1uGcj0SqMU
+> 因为邀请码需要时间生成, 在Follow公开测试前会不定期更新。
+> 已经使用的邀请码会被标记~~删除~~。
+>
+> 当然,也欢迎你在评论区分享你的邀请码。
+
+2024-10-15
+
+1. u0Kv7auWbo
+
+2024-10-14
+
+1. ~~RsV9sJvKWs~~
+2. ~~1uGcj0SqMU~~
 
 [^1]: [The Rise and Demise of RSS](https://twobithistory.org/2018/12/18/rss.html)
 [^2]: 影视更新通过MoviePilot，但这属于娱乐性质的内容，不需要每天都看，也没有必要通过专门“监控”新影视作品的上架信息。
