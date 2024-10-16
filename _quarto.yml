@@ -31,10 +31,16 @@ website:
 author: "Luozx"
 lang: zh
 date-format: long
+license: "CC BY-NC"
+copyright: 
+  holder: Luozx
+funding: 
+  statement: "The author(s) received no specific funding for this work."
 
 format:
   html:
     theme: default
     toc: true
     reference-location: margin
+    date-modified: last-modified
     # css: styles.css
