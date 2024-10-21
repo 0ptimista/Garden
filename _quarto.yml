@@ -43,4 +43,5 @@ format:
     toc: true
     reference-location: margin
     date-modified: last-modified
+    default-image-extension: ""
     # css: styles.css
