@@ -2,7 +2,7 @@
 title: "多张信用卡的简单管理"
 date: "2024-10-17"
 date-modified: last-modified
-categories: []
+categories: ['experience']
 ---
 
 自己有六七张左右不同银行，不同卡组织的信用卡，每到还款的时候非常不方便。对此，做了一些简单的调整，在逻辑上让还款相对轻松了一些。
