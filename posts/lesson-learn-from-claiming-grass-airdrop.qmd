@@ -1,0 +1,40 @@
+---
+title: "$GRASS空投中的教训"
+date: ""
+categories: ["crypto"]
+---
+
+在$GRASS开放领取前一天, 专门设置了提醒, 想在第一时间领, 提, 卖.
+
+![设置领取提醒](https://image.luozx.org/garden/46eeef46db3207d57b6b111e7142f93c)
+
+在开始领取之前有网络肯定会拥堵的心里预期, 但是没想到除了拥堵之外, 还有其他意外.
+
+虽然最终也领取到了, 但是这中间做了一些调整和学到的教训, 完全可以复用在其他项目上.
+
+# Solscan无法直接合约调用
+
+在领取失败后, 第一反应是去solscan上找对应合约, 从合约接口调用而不是通过Web页面.
+
+花了很长时间才发现Solana和Ethereum的不同, 在区块链浏览器上没办法看到合约代码, 也不能直接调用合约.
+
+# 优先使用私有网络
+
+没办法通过直接调用合约接口, 就转向更换私有网络. 
+一开始在Phantom上一直在寻找添加私有网络的地方. 
+后来才发现Phantom并不支持添加私有网络.由于[安全原因](https://www.reddit.com/r/solana/comments/1afbb2p/comment/kqtr28w/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)取消了此功能
+
+
+# 准备备份钱包
+
+开放空投没多久后, Phantom竟然宕机了:
+
+{{< tweet SolanaFloor 1850898928151175571 >}}
+
+
+在更换备份钱包, 使用私有网络后, 领取和转帐都很轻松就完成了.
+
+# Bottom Line
+
+人少的网络, 可能的接近合约接口的交互(脚本/直接调用接口)
+能够给最大限度增加领取成功的速度.

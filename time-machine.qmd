@@ -3,7 +3,7 @@ title: "Time Machine"
 page-layout: full
 author: ""
 listing:
-  contents: posts
+  contents: "posts"
   sort: "date desc"
   fields: [date, title, categories]
   type: table
