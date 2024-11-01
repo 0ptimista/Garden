@@ -1,6 +1,7 @@
 ---
 title: "$GRASS空投中的教训"
-date: ""
+date: "2024-10-30"
+date-modified: "last-modified"
 categories: ["crypto"]
 ---
 
@@ -38,3 +39,5 @@ categories: ["crypto"]
 
 人少的网络, 可能的接近合约接口的交互(脚本/直接调用接口)
 能够给最大限度增加领取成功的速度.
+
+PS: 补充了一些具体操作的步骤和细节, 如果你有兴趣的话, 可以参考[$GRASS空投领取优化总结](https://players.luozx.org/p/grass-airdrop-optimization-summary)(Paid)
