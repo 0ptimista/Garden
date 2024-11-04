@@ -32,6 +32,8 @@ website:
       category: Announcements
 
 author: "Luozx"
+filters:
+  - social-share
 lang: zh
 date-format: long
 license: "CC BY-NC-SA"
@@ -47,4 +49,11 @@ format:
     reference-location: margin
     date-modified: last-modified
     default-image-extension: ""
-    # css: styles.css
+    include-in-header:
+      - text: |
+          <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
+share:
+  # location: "before-body"
+  permalink: "https://luozx.org"
+  description: "Hihi Welcome!"
+  twitter: true
