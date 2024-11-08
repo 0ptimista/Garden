@@ -1,0 +1,36 @@
+---
+title: "公开的乐趣"
+date: "2024-11-08"
+last-modified: "last-modified"
+categories: []
+---
+
+我有一个自建的[WeWeRss](https://github.com/cooderl/wewe-rss)服务, 用来将微信公众号转换为RSS订阅. 并且这个服务从来没公开过。
+
+一天早上, 像往常一样打开Follow浏览新内容。
+
+Follow中有一个功能: 如果其他人也(公开)订阅个这个源, 你就能看到他的主页和他订阅的其他内容。
+那天, 我发现这个公众号订阅还有其他人在阅读, 并且订阅链接是我的WeWeRss服务。
+
+![](https://image.luozx.org/garden/326c72806b0b2fad039350c79dc28872)
+
+很开心, 如果不是[Follow中的社交功能](./follow-the-app/follow-the-app.qmd), 可能永远只有我一个人在使用这个服务。
+
+近些日子很流行「X in Public」
+
+X代表建造(Build)，写作(Write)， 学习(Learn)等等一系列你所能想到的活动。
+正如现在这篇文章， 是「Write in Public」。
+
+我对Digtial Garden这个概念很着迷, 每个人都应该拥有一座花园， 只属于你自己的花园。
+正因为他是属于你的，所以不必担心公开发表的内容是否完美， 是否得到别人允许。
+
+引用Jeff Triplett的文章：[Please publish and share more](https://micro.webology.dev/2024/11/02/please-publish-and.html)
+
+> 在编写自己的静态网站生成器或完美的博客平台之前，请先撰写和发布。
+> 我们已经因为这个支线任务而失去了数十亿优秀作家，因为他们把所有时间都花在平台上而不是写作上。
+
+我想强调的是，公开发布是一种帮助其他人的好方法。
+就像开头提到到WeWeRSS，因为有了公开发布（开源）才能帮助我对公众号文章进行RSS转换
+
+PS：如果你感兴趣，可以尝试搭建自己的WeWeRss服务，
+如果你发现[我的列表](https://app.follow.is/share/users/luozx)中有你喜欢的作者，也可以直接使用我的订阅链接。
