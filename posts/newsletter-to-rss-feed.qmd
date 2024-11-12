@@ -1,0 +1,31 @@
+---
+title: "Kill the Newsletter!"
+date: "2024-11-12"
+categories: ['tools']
+---
+
+习惯了用RSS订阅自己想接收的信息，但凡浏览到好内容，下意识的会去检查RSSHub上有没有可订阅的红色提示。
+
+如果没有，还会在Follow中搜索关键字，尝试检索订阅源。（也许[公开的乐趣](./wewerss.qmd)中，那位朋友就是这样找到我的RSS源的）
+
+最糟糕的是这种情况：通过上面两个步骤都找不到RSS订阅源，网站只提供了邮件列表订阅。
+
+好在RSS存在的够久，已经让RSS爱好者解决了这个需求。
+[Kill the Newsletter](https://kill-the-newsletter.com/)就是这样一个工具。
+
+# Kill the Newsletter
+
+只需要三步，你就可以通过它将邮件列表转换为一个RSS Feed
+
+1. 给你的RSS Feed起一个标题，用来标识这是一个什么网站/作者
+![](https://image.luozx.org/garden/7487da05fc1c38292aa22c9ed9c59e17)
+2. 使用它提供的邮箱地址，订阅你想要的邮件列表。
+
+![](https://image.luozx.org/garden/02537b72b022560ac34bb3e0c32f8c96)
+
+通常情况下，你会收到一封确认邮件。就需要进行下一步
+
+3. 使用它提供的RSS Feed地址，添加到你的阅读器中，会收到邮件列表发来的确认邮件。
+![确认邮件](https://image.luozx.org/garden/6c52554acad73afcf37635514a747919)
+
+并且在内容的最底部，kill-the-newsletter会自动添加一个链接，用来设置订阅信息。

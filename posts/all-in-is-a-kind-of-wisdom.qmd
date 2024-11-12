@@ -124,7 +124,7 @@ import numpy as np
 from matplotlib.font_manager import FontProperties
 
 # 设置中文字体
-prop = FontProperties(fname='../assets/fonts/Songti.ttc')
+prop = FontProperties(fname='../assets/fonts/SourceHanSerif-Regular.ttc')
 
 # 参数设置
 total_attempts = 100
@@ -161,7 +161,7 @@ plt.plot(range(1, len(out_probabilities) + 1), out_probabilities, 'b-', label="�
 plt.axvline(x=11, color='r', linestyle="--", label="X=11")
 plt.title("不同梭哈次数的出局概率", fontproperties=prop)
 plt.xlabel("梭哈次数", fontproperties=prop)
-plt.ylabel("出局概率", fontproperties=prop)
+plt.ylabel("出\n局\n概\n率", fontproperties=prop, rotation=0)
 plt.legend(prop=prop)
 plt.tight_layout()
 plt.grid(True)
