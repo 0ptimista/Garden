@@ -1,6 +1,7 @@
 ---
 title: "Kill the Newsletter!"
 date: "2024-11-12"
+date-modifiled: "last-modified"
 categories: ['tools']
 ---
 
@@ -18,14 +19,26 @@ categories: ['tools']
 只需要三步，你就可以通过它将邮件列表转换为一个RSS Feed
 
 1. 给你的RSS Feed起一个标题，用来标识这是一个什么网站/作者
-![](https://image.luozx.org/garden/7487da05fc1c38292aa22c9ed9c59e17)
+![](https://image.luozx.org/garden/2024/11/f3204028d0b4a9f9ce830667a996b9eb.png)
 2. 使用它提供的邮箱地址，订阅你想要的邮件列表。
 
-![](https://image.luozx.org/garden/02537b72b022560ac34bb3e0c32f8c96)
+![](https://image.luozx.org/garden/2024/11/d123dffc566a8a88010d95821244849a.png)
 
 通常情况下，你会收到一封确认邮件。就需要进行下一步
 
 3. 使用它提供的RSS Feed地址，添加到你的阅读器中，会收到邮件列表发来的确认邮件。
-![确认邮件](https://image.luozx.org/garden/6c52554acad73afcf37635514a747919)
+![](https://image.luozx.org/garden/2024/11/2fc81e5145efca9d84d2e1d725055e39.png)
 
 并且在内容的最底部，kill-the-newsletter会自动添加一个链接，用来设置订阅信息。
+
+# Follow Inbox
+
+Follow提供个人邮箱，用这个邮箱地址可以用来接收不提供RSS Feed的Newsletter。
+![](https://image.luozx.org/garden/2024/11/e248b4d8031938f4646a986c2f56aafd.png)
+
+
+下面是订阅[Real Python](https://realpython.com)的样子，不喜欢用Feed的朋友，用这个功能也蛮不错。
+![](https://image.luozx.org/garden/2024/11/2647357614b785d26c3aab874f815832.png)
+
+关于Follow的其他功能，可以再[这里](../posts/follow-the-app/follow-the-app.qmd)找到
+

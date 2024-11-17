@@ -12,7 +12,7 @@ categories: []
 Follow中有一个功能: 如果其他人也(公开)订阅个这个源, 你就能看到他的主页和他订阅的其他内容。
 那天, 我发现这个公众号订阅还有其他人在阅读, 并且订阅链接是我的WeWeRss服务。
 
-![](https://image.luozx.org/garden/326c72806b0b2fad039350c79dc28872)
+![](https://image.luozx.org/garden/2024/11/88702fe72a71b70cac7ca84f034139d2.png)
 
 很开心, 如果不是[Follow中的社交功能](./follow-the-app/follow-the-app.qmd), 可能永远只有我一个人在使用这个服务。
 
