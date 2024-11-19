@@ -7,7 +7,7 @@ categories: ['money']
 2023年下半年，在美国不断加息的环境下，开始研究如何购买美国国债。
 
 到目前，已经收到过一次派息，也就是所谓的「从美国政府手里拿钱」
-![](https://image.luozx.org/garden/2024/11/05ef15ce93cf7f39fa1068b1f24e8955.png)
+![](https://image.luozx.org/garden/2024/11/05ef15ce93cf7f39fa1068b1f24e8955.png){.lightbox}
 
 总共购买了$4000的两年期国债T-Note，票面利率是4.875%，所以一年的总利息为$195。
 

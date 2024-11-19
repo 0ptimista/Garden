@@ -49,7 +49,8 @@ format:
     theme: default
     toc: true
     reference-location: margin
-    date-modified: last-modified
+    lightbox: true
+    # date-modified: last-modified
     default-image-extension: ""
     include-in-header:
       - text: |
