@@ -1,0 +1,49 @@
+---
+title: "Cloudflare R2和和博客图床"
+date: "2024-11-23"
+categories: ['tools']
+---
+
+在博客中插入图片对我来说一直是一个很烦人的事情。
+如果你看过前几篇文章的[源代码](https://github.com/0ptimista/Garden/tree/main/posts/follow-the-app)，
+都有一个`images`文件夹，里面存放着所有的和文章相关的图片。
+
+如果在一些在线平台写文章，比如[Quail](https://quail.ink)，[Ghost](https://ghost.org)，
+都会提供方便的「拷贝」「粘贴」方式。也不用考虑图片文件的名称问题，路径问题。
+
+想要找到一个存图片的地方，并不是难事。
+但是想要简化写文章时截图，存储，插入图片链接的流程，一直没有找到好的方式。
+
+[PicList](https://piclist.cn)很大程度上加快了上述流程，也是现在一直使用的方式。
+
+PicList是PicGo的改进版本，这两款工具都可以实现核心功能，下面以PicList为例，介绍一下基本流程。
+
+# 配置图片存储位置
+
+PicList支持多种图片存储位置，我的域名托管在Cloudflare，就选择了Cloudflare R2作为图片存储。
+R2是一种对象存储服务，大多数对象存储服务都提供和AWS对象存储（S3）兼容的API。
+
+所以PicList对于对象存储类的配置，基本上都可以通过AWS S3来配置。
+
+![](https://image.luozx.org/garden/2024/11/d4659be5043d90eb35e89bc8806a828b.png)
+
+Cloudflare R2对免费用户提供了[每月10GB的存储空间](https://developers.cloudflare.com/r2/pricing/#free-tier)，大多数情况下足够使用。
+
+创建存储桶（Bucket），生成上传图片的密钥。
+
+![](https://image.luozx.org/garden/2024/11/eb55f6cd46ec9e9fc9269381cb6bbfea.png)
+
+密钥权限选择`读写`，可以给让密钥访问指定的存储桶，或者所有存储桶。
+
+![](https://image.luozx.org/garden/2024/11/ac258b59f53a512bdd4ae2ebe69a647f.png)
+
+在PicList中配置Cloudflare R2的密钥，存储桶，和自定义端点。(Cloudflare页面上都有提供)
+![](https://image.luozx.org/garden/2024/11/43be17fb74afeaacee601fcf9c92996f.png)
+
+# 上传图片
+![](https://image.luozx.org/garden/2024/11/fb5619236b5c0842045bf80582ede029.png)
+
+# Cloudflare R2注意事项
+
+R2上的图片一经删除就无法恢复，所以在删除图片时要谨慎。
+
