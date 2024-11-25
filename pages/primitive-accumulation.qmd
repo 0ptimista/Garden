@@ -4,3 +4,5 @@ date: "2024-11-21"
 categories: ['money']
 draft: true
 ---
+
+微散的原始积累过程
