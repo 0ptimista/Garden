@@ -1,0 +1,58 @@
+---
+title: "Python,Selenium和Docker"
+date: "2024-11-29"
+categories: ['tools']
+---
+
+分别单独运行Selenium的容器和包含Python代码的容器。
+在Pyton中使用如下方式连接到Selenium容器：
+
+```python
+from selenium import webdriver
+def _init_driver(self): 
+        chrome_options = Options()
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        return webdriver.Remote(
+            command_executor='http://selenium:4444/wd/hub',
+            options=chrome_options
+        )
+```
+
+`http://selenium:4444 `是关键，其中是Selenium容器的名称。
+
+在启动Python容器之前，先启动Selenium容器：
+
+```bash
+docker network create my-network
+
+docker run -d \
+  --name selenium \
+  --network my-network \
+  -p 4444:4444 \
+  -e SE_NODE_MAX_SESSIONS=2 \
+  -e SE_NODE_OVERRIDE_MAX_SESSIONS=true \
+  -e SE_SESSION_REQUEST_TIMEOUT=300 \
+  -e SE_SESSION_RETRY_INTERVAL=2 \
+  -e SE_START_XVFB=false \
+  -e DISABLE_TELEMETRY=true \
+  -e SE_OTEL_TRACES_ENABLED=false \
+  -e SE_ENABLE_TRACING=false \
+  selenium/standalone-chrome
+```
+
+为了让Python容器中连接到Selenium容器，需要在同一个网络中启动Python容器：
+```bash
+docker run -d  --name my-python-service\
+ --network my-network \
+ ghcr.io/my-python-service:latest
+```
+
+
+
+
+
+
+
+
