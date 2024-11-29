@@ -16,14 +16,16 @@ website:
       - text: 原始积累
         href: pages/primitive-accumulation.qmd
     right:
-      - text: Time Machine
+      - text: 'Time Machine'
         href: time-machine.qmd
-      - icon: github
+      - text: '{{< iconify mingcute:github-fill size=xl >}}'
         href: https://github.com/0ptimista
-      - icon: twitter
+      - text: '{{< iconify mingcute:twitter-fill size=xl >}}'
         href: https://twitter.com/luozxdotorg
-      - icon: rss
+      - text: '{{< iconify mingcute:rss-fill size=xl >}}'
         href: index.xml
+      - text: '{{< iconify mingcute:telegram-fill size=xl >}}'
+        href: https://t.me/unit7134
   # sidebar:
   #   style: "docked"
   #   contents:
