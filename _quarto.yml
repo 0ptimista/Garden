@@ -54,7 +54,7 @@ format:
     toc: true
     reference-location: margin
     lightbox: true
-    # date-modified: last-modified
+    date-modified: last-modified
     default-image-extension: ""
     include-in-header:
       - text: |
