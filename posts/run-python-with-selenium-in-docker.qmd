@@ -1,7 +1,9 @@
 ---
 title: "Python,Selenium和Docker"
 date: "2024-11-29"
-categories: ['tools', 'tome-of-xp']
+categories: ['tools','tome-of-xp']
+execute:
+  echo: fenced
 ---
 
 分别单独运行Selenium的容器和包含Python代码的容器。
@@ -48,6 +50,46 @@ docker run -d  --name my-python-service\
  --network my-network \
  ghcr.io/my-python-service:latest
 ```
+
+Docker Compose:
+```bash
+# docker-compose.yml
+version: '3.9'
+services:
+  selenium:
+    image: 'selenium/standalone-chrome:latest'
+    container_name: selenium
+    environment:
+      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_SESSION_REQUEST_TIMEOUT=300
+      - SE_SESSION_RETRY_INTERVAL=2
+      - SE_START_XVFB=false
+      - DISABLE_TELEMETRY=true
+      - SE_OTEL_TRACES_ENABLED=false
+      - SE_ENABLE_TRACING=false
+    ports:
+      - '4444:4444'
+    networks:
+      - my-custome-network
+  my-python-service:
+    image: 'my-python-service:latest'
+    container_name: my-python-service
+    depends_on:
+      - selenium
+    networks:
+      - my-custome-network
+    volumes:
+      - ./data:/app/data
+    environment:
+      - 'SELENIUM_URL=http://selenium:4444/wd/hub'
+    command: 'python3 src/main.py'
+networks:
+  my-custome-network:
+    driver: bridge
+
+```
+
 
 
 

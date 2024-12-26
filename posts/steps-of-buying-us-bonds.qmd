@@ -1,6 +1,49 @@
 ---
 title: "购买美债的思路"
 date: ""
-categories: ['money', 'tome-of-xp']
+categories: ['money',"tome-of-xp"]
 draft: true
 ---
+
+通常来说，新发行的债券价格会低于它的票面价值(低于$100)，因此购买新发行的债券，除了拿到固定利息之外，还有一部分收益是价差利润。(虽然很低)
+目前来说，我比较推荐购买新发行的债券。
+
+[TreasuryDirect](https://www.treasurydirect.gov)是美国财政部的官方网站，网站上提供了已经发行和即将发行的债券信息。
+有些债券国际用户是无法购买的，能够购买的种类是[从美国政府手里拿钱](./buying-us-bond.qmd)提到的几类。
+
+目前30年期的T-Bond利率为4.5%，10年期的T-Bond利率为4.25%
+
+![](https://image.luozx.org/garden/2024/12/c59da4c613c1bd1651868fc51820ca73.png)
+
+
+国债拍卖（Auction）是用来确定即将发行债券的「发行价格」对于有利率的债券，还确定它的「票面利率」
+
+在[Upcoming Acutions](https://www.treasurydirect.gov/auctions/upcoming/)页面可以看到即将发行的债券。
+
+以一个3年期的T-Notes为例(T-Note债券有利息)，需要关注的信息有:
+
+- Auction Date: 拍卖日期
+- Issue Date: 发行日期
+- CUSIP: 证券代码
+
+![](https://image.luozx.org/garden/2024/12/ffb981b75da4ed0dd0484cb509c4fbd4.png)
+
+有了发行日期和证券代码，就可以在那天美股市场开盘之后，通过券商购买这个债券。
+
+我们可以在「拍卖历史」(Auction Results)看到历史的拍卖结果，包括发行价格和票面利率。
+![](https://image.luozx.org/garden/2024/12/9e4f5357b6384ba9e5c97253b5bafcd4.png)
+
+2年期的T-Notes（CUSIP91282CLY5）将在2024年12月2日公开发行，票面利率4.25%，发行价$99.954094/张
+
+但是在二级市场上，现在看到每张价格都超过$100
+![](https://image.luozx.org/garden/2024/12/3b1a1a332d15c2592bdec8fdef875b5e.png)
+
+另外在购买时，需要注意最小购买单位，在上图中，最小购买单位为10，所以最低的购买门槛是10*每张价格。
+
+想要尝试购买美债的朋友，可以做以下准备：
+
+- 可以购买美债的券商账户(能够搜索CUSIP)
+- 关注即将发行的债券信息和历史拍卖结果
+- 选择适合自己的债券种类和期限
+  - 有利息的债券，推荐选择中期债券T-Notes，一般在2-3年，锁定期不会很长。
+  - 如果想通过选择无息债券联系购买流程，尽量选择期限短的, 并且最好不要用超过$100/张的价格购买。(我还没有购买过此类债券)
