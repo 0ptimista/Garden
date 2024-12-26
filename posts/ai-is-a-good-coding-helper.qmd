@@ -1,0 +1,36 @@
+---
+title: "AI辅助编程"
+date: "2024-12-17"
+categories: []
+description: "Copilot这个名字取得真妙！"
+draft: true
+---
+
+在Cursor和其他LLM的辅助下，实现了对Binance，Bybit交易所Launchpool活动的监控，
+通过Telegram频道推送通知。如果你也感兴趣的话：[频道传送门](https://t.me/moneymoneycomehere)
+
+> Rule No.1: Never lose money. Rule No.2: Never forget rule No.1. - Warren Buffett
+
+随着自己在参与和观望市场的时间越长，也时常受到推友的影响，渐渐发现自己对风险的态度是「厌恶」
+而不是「接受」。
+
+「永远不要亏钱」是巴菲特老爷子最经典名言之一，选择参与交易所的Launchpool是目前我能理解的最低风险的投资方式。
+
+很奇怪的是，虽然都在对应的应用中设置了提醒，但是提醒经常不及时(尤其是Binance)，导致错过一段入场时间。
+所以干脆就自己动手写程序来监控。
+
+# 是的，这个程序基本由AI完成
+
+当AI刚出现的时候，就有很多「预言家」预言程序员职业会消失，因为AI会取代他们的工作。
+未来不知道会是什么样子，但是在当下，AI的角色是副手，程序员才是主角。
+
+> 了解必要的编程的基础知识，才能让AI帮你完成工作。
+
+
+Bybit提供了[公开的API](https://bybit-exchange.github.io/docs/)，通过API获取关于Launchpool的信息，直截了当。
+获取公告标题很容易，需要获取
+
+
+
+
+

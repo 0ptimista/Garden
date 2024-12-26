@@ -1,7 +1,7 @@
 ---
 title: "Python,Selenium和Docker"
 date: "2024-11-29"
-categories: ['tools']
+categories: ['tools', 'tome-of-xp']
 ---
 
 分别单独运行Selenium的容器和包含Python代码的容器。

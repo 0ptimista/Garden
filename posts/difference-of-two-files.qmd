@@ -3,7 +3,7 @@ title: "两个文件的差集"
 description: "*grep* comes handy"
 date: "2024-08-21"
 date-modified: "2024-08-22"
-categories: [worklog]
+categories: ['worklog','tome-of-xp']
 format:
   html:
     code-copy: true

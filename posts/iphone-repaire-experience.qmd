@@ -2,7 +2,7 @@
 title: "日版iPhone大陆Apple Store维修记"
 date: "2024-11-03"
 date-modified: "last-modified"
-categories: []
+categories: ['tome-of-xp']
 ---
 
 在有AC+的情况下, 屏幕费用188, 背板费用188.

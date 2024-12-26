@@ -1,7 +1,7 @@
 ---
 title: "Cloudflare R2和博客图床"
 date: "2024-11-23"
-categories: ['tools']
+categories: ['tools','tome-of-xp']
 ---
 
 在博客中插入图片对我来说一直是一个很烦人的事情。

@@ -1,0 +1,38 @@
+---
+title: "无需插件：Neovim格式化Markdown表格（macOS）"
+date: "2024-12-26"
+categories: ['tools']
+---
+
+我通常用Neovim(Lazyvim)和Quarto写文章，[quarto-nvim](https://github.com/quarto-dev/quarto-nvim)
+提供了良好的集成，但今天我想格式化一个Markdown表格的时候，
+并没有发现内置的集成。
+
+好在Heitorpb的这篇[博客](https://heitorpb.github.io/bla/format-tables-in-vim/)有无需插件，利用Linux内置命令就实现
+格式化表格的方法。
+
+在macOS上运行Heitorpb提供的命令:
+
+```bash
+column -t -s '|' -o '|'
+```
+
+并不能正常工作。
+是因为macOS的`column` 是BSD版本，不支持`-o`选项。
+
+需要额外安装[util-linux](https://formulae.brew.sh/formula/util-linux#default)
+
+```bash
+brew install util-linux
+```
+
+由于macOS内置的`column` 在`$PATH`中优先级更高，如果你不想修改rc文件，
+可以通过`brew info util-linux `找到`column`的绝对路径，使用绝对路径调用。
+
+```bash
+/opt/homebrew/opt/util-linux/bin/column -t -s '|' -o '|'
+
+```
+
+
+

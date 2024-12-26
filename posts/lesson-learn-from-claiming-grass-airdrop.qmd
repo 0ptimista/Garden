@@ -2,7 +2,7 @@
 title: "$GRASS空投中的教训"
 date: "2024-10-30"
 date-modified: "last-modified"
-categories: ["crypto"]
+categories: ["crypto", 'tome-of-xp']
 ---
 
 在$GRASS开放领取前一天, 专门设置了提醒, 想在第一时间领, 提, 卖.
