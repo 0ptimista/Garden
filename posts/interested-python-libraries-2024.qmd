@@ -1,0 +1,67 @@
+---
+title: "想要尝试的几个Python库"
+date: "2025/01/01"
+categories: ['tools']
+---
+
+偶然的机会，在PyCoder's Weekly中看到
+[Top Python libraries of 2024](https://tryolabs.com/blog/top-python-libraries-2024)这篇文章。
+
+Tryolabs做这份列表已经有[10年](https://tryolabs.com/blog/collections/top-python-libraries)之久，
+能一直坚持下来，也很让人敬佩。
+
+清单中大部分的库都没怎么听说过，挑选了自己可能用得到库，记录下来，以备后续尝试。
+
+
+
+# [Posting](https://github.com/darrenburns/posting?tab=readme-ov-file)
+一个可以在终端使用的HTTP 客户端。看起来很「酷」
+![](https://raw.githubusercontent.com/darrenburns/posting/refs/heads/main/docs/assets/home-image-ad-15aug24.svg)
+注：另一个有着类似TUI的酷酷界面的CLI工具，是[btop](https://github.com/aristocratos/btop)
+`top`的升级版。
+
+# [marimo](https://github.com/marimo-team/marimo)
+
+Jupyter Notebook的漂亮版本，漂亮的Web UI就是很吸引人，当然还有很多其他功能。
+
+{{<video https://marimo.io/videos/landing/2.mp4 >}}
+
+
+# [whenever](https://github.com/ariebovenberg/whenever)
+
+专门用来对付夏令时（DST）的问题。虽然对不使用DST的国家和地区没什么影响。
+对我来说，处理时间最讨厌的是时区和格式问题，之前用[pendulum](https://pendulum.eustace.io/)较多，
+不过既然whenever能处理pendulum不能处理的问题，试用一下也是不错的。
+
+|                   | Whenever | datetime | Arrow | Pendulum |
+|-------------------|:--------:|:--------:|:-----:|:--------:|
+|      DST-safe     |     ✅     |     ❌     |   ❌    |     ⚠️    |
+| Typed aware/naive |     ✅     |     ❌     |   ❌    |     ❌   |
+|        Fast       |     ✅     |     ✅     |   ❌    |     ❌   |
+
+# [crawlee-python](https://github.com/apify/crawlee-python)
+
+最近写了一个简单的Launchpool监控程序，
+监听各交易所（目前支持Bybit和Binance）新的Launchpool活动，
+然后通过Temegram频道通知出来。
+
+用到Beautifulsoup和Selenium，对爬虫不是很了解，选择了以前听说过的Senlenium做为组件的一部分。
+虽然能用，但是需要启动[两个容器](./run-python-with-selenium-in-docker.qmd)
+crawlee结合了[Playwright](https://github.com/microsoft/playwright) 后面有时间就试试看。
+
+:::::: {.callout-tip}
+如果你对那个频道有兴趣，老板二楼包间请：[💰钱来](https://t.co/VzAj6we0Nu)
+:::
+
+还有两个库，可能用不到，但是留个备忘
+
+- [tach](https://github.com/gauge-sh/tach)
+- [wat](https://github.com/igrek51/wat)
+
+
+清单按照「通用」和「机器学习/人工智能」两个类别来分类，可惜的是没有看到「可视化」类别。
+
+和可视化沾边一点的是[Rio](https://github.com/rio-labs/rio)，一个构建WebApp框架，但是太新了，还没有到生产就绪的阶段。
+
+工作的时候用Streamlit做了一些数据报表/看板，目前打算换用[Reflex](https://reflex.dev/)
+试一试。
