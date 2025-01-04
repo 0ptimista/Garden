@@ -111,7 +111,6 @@ Follow今天开放了公开测试, 所以这是最后一次更新邀请码了。
 2. ~~1uGcj0SqMU~~
 
 [^1]: [The Rise and Demise of RSS](https://twobithistory.org/2018/12/18/rss.html)
-[^2]: 影视更新通过MoviePilot，但这属于娱乐性质的内容，不需要每天都看，也没有必要通过专门“监控”新影视作品的上架信息。
 [^3]: FOMO, [Fear Of Missing Out](https://zh.wikipedia.org/zh-hans/%E9%94%99%E5%A4%B1%E6%81%90%E6%83%A7%E7%97%87)，害怕错失而产生不安和恐慌。
 [^4]: 网页捕获是我给这个功能起的名字，因为启用这个功能后的体验就像是使用印象笔记的[网页剪切](https://evernote.com/features/webclipper)
 [^5]: Follow采用Mozilla Readabilty的[讨论](https://github.com/RSSNext/Follow/issues/169#issuecomment-2260378450)
