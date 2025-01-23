@@ -1,0 +1,120 @@
+---
+title: "可以信赖的输入法：RIME"
+date: "2025-01-21"
+categories: ['tools']
+---
+
+输入法经常被诟病问题有：
+
+- 隐私：是否在用户不知情的情况下记录并上传用户的敏感内容？
+- 广告：莫名奇妙的广告弹窗。
+
+[RIME](https://rime.im/code/)是开源的输入法，上述问题的风险被降到了最低。
+
+不过RIME的配置比较复杂，需要一定学习成本，对于想要开箱即用的用户来说，实在是有点劝退。
+但是请相信，跨越这个门槛之后，会相当轻松。
+
+RIME分为核心引擎和客户端，不同的操作系统客户端名称也不同：
+
+- Windows客户端：小狼毫（weasel）
+- macOS客户端：鼠须管（squirrel）
+- Linux客户端：ibus-rime
+
+RIME的文档写的很详细，不过由于是繁体，并且语言习惯也不同于大陆，所以有时候理解起来会有一点困难。
+对于大部分用户来说，你不需要制作自己的输入方案，因此了解一些基本概念和逻辑，就可以使用了。
+
+下面根据自己的经验，以macOS客户端鼠须管（squirrel）为例，尝试将一些关键概念解释清楚，帮助想要使用RIME的用户更好上手。
+
+# 安装路径和文件用途
+
+鼠须管安装的所有文件都在`~/Library/Rime`目录下。你可以在终端中输入`cd ~/Library/Rime`进入该目录。
+
+![](https://image.luozx.org/garden/2025/01/45156b4e1e92f0199b2f97dd9fd89bcb.png)
+
+有几种类型的文件需要关注:
+
+## 以`schema.yaml`结尾的文件: 是(基础)输入方案
+
+比如`明月拼音`输入方案，对应的文件是`luna_pinyin.schema.yaml`。
+
+`小鹤双拼`输入方案，对应的文件是`double_pinyin_flypy.schema.yaml`
+
+### `输入方案.custom.yaml`: 在基础方案上自定义的配置
+
+比如文件`double_pinyin_flypy.custom.yaml`，就是在原有的小鹤双拼方案上添加自定义的配置。
+这些自定义配置如输入`/fs`(分数)就会输出如下候选词：
+
+:::{layout="[[],[1,8]]"}
+![](https://image.luozx.org/garden/2025/01/24c8aaaabfbd620f5c1f0d63a5ba4999.png)
+
+![](https://image.luozx.org/garden/2025/01/ffbc278bc346cfaf4eb52db4d3dd7cda.png){height=300}
+:::
+
+
+::: {.grid}
+
+:::{.g-col-4}
+输入`date`就会输出当前日期：
+:::
+
+:::{.g-col-2}
+![](https://image.luozx.org/garden/2025/01/461d684b07ae45fc2379e01fb1d8ed50.png){height=300 fig-align=right}
+:::
+
+:::
+
+## 以`dict.yaml`结尾的文件: 词库
+
+词库文件通常被自定义输入方案(custom.yaml)引用，来扩充对应方案的词库。
+
+## `default.custom.yaml`: 设置输入法
+
+尽管在`~/Library/Rime/`文件夹下有许多输入方案文件（schema.yaml）并不意味着它们都会被加载。
+具体加载哪些输入方案，输入方案的显示顺序，是由`default.custom.yaml`文件决定的。
+
+![default.custom.yaml](https://image.luozx.org/garden/2025/01/75adc40a9f4c467bf6cbae986b9c8265.png)
+
+当我同时按下{{<kbd Ctrl>}}{{<kbd `>}}(或者按下{{<kbd F4>}})键切换输入方案时，就会显示如下列表:
+
+![](https://image.luozx.org/garden/2025/01/ba77414263d0b42454337241d27bb494.png){width=200 fig-align=right}
+
+## `squirrel.custom.yaml`: 客户端配置
+
+用来设置皮肤，某些应用默认输入状态（中文或者英文）等。
+
+# 开始使用
+
+我推荐使用其他人已经做好的配置，然后根据自己的需要进行调整。
+
+自己最开始使用的方案是[ssnhd](https://github.com/ssnhd/rime)的配置，文档写的相当详细，按照步骤进行安装，基本上开始直接使用。
+
+另外一个推荐方案是[雾凇拼音](https://github.com/iDvel/rime-ice)，它的词库经常更新。
+
+由于自己已经习惯使用ssnhd的配置，但是自己想要使用雾凇拼音的词库，
+所以目前的情况是使用ssnhd的配置+雾凇拼音的词库。
+
+# 扩充词库
+
+第一次添加词库，我是通过手动的方式，拷贝了雾凇拼音的词库文件（`cn_dicts` `en_dicts` `hopencc`）
+
+如果你也想添加雾凇拼音的词库，并且不想完全使用雾凇的方案，拷贝了词库文件夹后，可以参考下面的步骤:
+
+1. 找到你的主输入方案的自定义配置，比如小鹤双拼的自定义配置：`double_pinyin_flypy.custom.yaml`
+找到主翻译器，例如我[这里](https://github.com/0ptimista/dotfiles/blob/2152fb08cce10ff4be5c9e929f42010a44b33915/Library/Rime/double_pinyin_flypy.custom.yaml#L47)
+使用的是`luna_pinyin.extended`，然后向其中[添加词库列表](https://github.com/0ptimista/dotfiles/blob/2152fb08cce10ff4be5c9e929f42010a44b33915/Library/Rime/luna_pinyin.extended.dict.yaml#L11)
+
+2. 重新部署输入法，然后就可以使用雾凇拼音的词库了。
+
+
+# 更新词库
+
+雾凇拼音提供通过[东风破](https://github.com/iDvel/rime-ice/tree/main?tab=readme-ov-file#%E4%B8%9C%E9%A3%8E%E7%A0%B4-plum)（英文：plum）
+更新词库方式。
+
+在Mac上按照[指南](https://github.com/rime/plum?tab=readme-ov-file#advanced-usage)安装东风破，会安装在`~/plum/`
+文件夹下。使用前需要进入这个文件夹，然后执行
+```{.bash}
+bash rime-install iDvel/rime-ice:others/recipes/all_dicts
+
+```
+更新所有词库
