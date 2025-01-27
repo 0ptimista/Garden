@@ -1,6 +1,6 @@
 ---
 title: "购买美债的思路"
-date: ""
+date: "2025-01-04"
 categories: ['money',"tome-of-xp"]
 ---
 

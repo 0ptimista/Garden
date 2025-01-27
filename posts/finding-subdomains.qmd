@@ -1,0 +1,22 @@
+---
+title: "查找子域名的工具"
+date: "2025-01-27"
+categories: ['tools']
+---
+
+
+# 在线工具
+
+- [crt.sh](https://crt.sh)
+- [projectdiscovery](https://cloud.projectdiscovery.io/)
+
+# 本地工具
+
+- [Sublist3r](https://github.com/aboul3la/Sublist3r)(Python)
+
+```{.bash}
+uv tool run sublist3r -d example.com
+```
+::: {.callout}
+uv tool [docs](https://docs.astral.sh/uv/concepts/tools/)
+:::
