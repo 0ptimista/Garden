@@ -1,0 +1,26 @@
+---
+title: "给使用wewerss.luozx.org订阅的朋友们一点提示"
+date: "2025-02-23"
+categories: ['tools']
+---
+
+我使用[wewerss](./wewerss.qmd)订阅一些自己喜欢的微信公众号。
+不久前，升级到了2.6.1版本，但是遇到了「无法获取全文」的问题。
+
+之前没有什么困扰的原因是，平时都喜欢跳转原站去看，RSS大多时候当作内容更新的提醒工具在用，而不是主要的阅读工具。
+其次，自己关注的公众号也不多，对于想直接阅读的内容，之前通过[「查看全文」](https://github.com/cooderl/wewe-rss/issues/290#issuecomment-2567240893)的方式，临时预览。
+
+
+不过最近有些内容，跳转原站去看也没有什么必要，比如[汇总类信息](https://mp.weixin.qq.com/s/7o-Oir19Wruq66KVbRR0Uw)。
+每一篇内容手动去点「查看全文」，也是有点麻烦。
+
+正好，Follow提供了一些自动化手段。目前使用的版本是0.3.6
+
+![](https://image.luozx.org/garden/2025/02/192dd3e4aeac05e41d28a485fd4fa5dd.png)
+
+在「Actions」里可以设置自动化规则：当RSS的链接（Feed URL）来自wewerss.luozx.org时，自动点击「查看全文」（View source content）。
+
+![](https://image.luozx.org/garden/2025/02/b45657a20a52b063f368791496ab1035.png)
+
+这样设置以后，阅读起来就更轻松了。
+
