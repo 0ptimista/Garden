@@ -1,0 +1,26 @@
+---
+title: "tmux使用catppuccin主题时状态栏问题"
+date: "2025-02-25"
+categories: ['tools']
+---
+
+[catppuccin](https://github.com/catppuccin)主题覆盖了很多我自己在用的工具。(iTerm2，neovim，tmux)
+
+tmux在设置了catppuccin主题后，最下面的状态栏（status bar）总是显示hostname，而不是当前window的名称。
+即使更改window名称后也不会显示，很不符合自己的习惯。
+
+在catppuccin的安装目录(例如我的)，找到` ~/.tmux/plugins/catppuccin/tmux/catppuccin_options_tmux.conf
+`文件，里面有以`#T` 为值的两行内容，将`#T`改为`#W`，重新加载配置，就会显示当前window的名称。
+
+不过直接更改catppuccin的文件带来的弊端就是在下次更新主题时，有可能恢复原样。
+
+在[这里](https://github.com/catppuccin/tmux/discussions/317)有人分享自己的配置和实际效果。
+
+挑一份自己喜爱的，找到类似内容`window-status-format " #I#{?#{!=:#{window_name},Window},: #W,} "`
+加入在`tmux.conf`就好了。
+
+要理解其他人分享的配置对我来说有点吃力，我还是选择一种自己好理解的方式实现。
+
+最后的效果就是这样：
+
+![](https://image.luozx.org/garden/2025/02/d2a5a0217c8c25c90354b9f2ee000b00.png)
