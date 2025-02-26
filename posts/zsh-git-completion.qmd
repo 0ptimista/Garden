@@ -1,0 +1,32 @@
+---
+title: "zsh增加git路径自动补全"
+date: "2025-02-26"
+categories: ['tools']
+---
+
+
+受到[这篇文章](https://www.bitecode.dev/p/slashing-my-bashrc-in-half)的启发，正在将自己[旧的zsh配置](https://github.com/0ptimista/dotfiles/blob/2152fb08cce10ff4be5c9e929f42010a44b33915/.zshrc)重新整理。
+按照[The Valubale Dev](https://thevaluable.dev/zsh-install-configure-mouseless/)的系列指南，只保留自己需要和看得懂的内容。
+
+主要的变化有两个：
+
+1. 离开oh-my-zsh
+2. 将环境变量集中放在`~/.zshenv`中
+
+oh-my-zsh功能很丰富，但是一直以来都只是挪用别人的配置，自己并不完全了解。并且许多功能自己也不一定需要。
+
+对我来说，最常用的可能就是「路径自动补全」功能。[基础的路径补全](https://thevaluable.dev/zsh-install-configure-mouseless/#zsh-completion-system)不需要依赖任何插件。
+只需要在`.zshrc`中添加以下内容：
+
+```zsh
+autoload -U compinit; compinit # 启动TAB补全
+_comp_options+=(globdots) # 可以补全以.开头的文件
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # 自动补路径全忽略大小写
+```
+
+但是使用`git add`命令时，按下{{<kbd Tab>}}} 路径不全并不生效。
+Git提供了额外的[补全文件](https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh)。
+
+<https://gist.github.com/juno/5546179> 提供了详细的安装步骤。
+
+注意在配置`fpath`时，务必将你安装的Git补全文件路径写对。同时删除旧的补全文件(`.zcomdump`)
