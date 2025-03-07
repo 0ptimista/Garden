@@ -8,7 +8,8 @@ website:
   title: "Luozx's Digtal Garden"
   twitter-card: true
   site-url: https://garden.luozx.org
-  description: "feedId:56240215051686912+userId:55416336394137600"
+  # description: "feedId:56240215051686912+userId:55416336394137600"
+  description: "Hihi"
   navbar:
     left:
       - text: ToolBox
@@ -50,7 +51,7 @@ funding:
 
 format:
   html:
-    theme: default
+    theme: zephyr
     toc: true
     reference-location: margin
     lightbox: true

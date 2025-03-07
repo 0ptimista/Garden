@@ -1,15 +1,38 @@
 ---
-title: "Timeline"
+title: ""
 page-layout: full
 author: ""
 date-modified: ""
 # title-block-banner: true
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  feed: true
+  - id: featured
+    contents: 
+      - ./posts/buying-us-bond.qmd
+      - ./posts/steps-of-buying-us-bonds.qmd
+    sort: "date asc"
+    type: grid
+    fields: [date, title, author]
+    # categories: true
+    sort-ui: false
+    filter-ui: false
+    feed: false
+  - id: recent-posts
+    contents: posts
+    page-size: 5
+    sort: "date desc"
+    type: default
+    categories: true
+    feed: true
 ---
+
+# Featured
+
+:::{#featured}
+:::
+
+# Timeline
+
+:::{#recent-posts}
+:::
+
+[All posts](./time-machine.qmd)
