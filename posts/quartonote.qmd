@@ -1,0 +1,26 @@
+---
+title: "Quarto Note"
+date: "2025-03-18"
+categories: ['tools','tome-of-xp']
+description: "使用Quarto时遇到的小问题"
+code-annotations: below
+---
+
+### 使用[multi-listing](https://quarto.org/docs/websites/website-listings.html#multiple-listings)时，`feed`参数只在第一次出现时生效。
+
+例如我的首页[index.qmd](https://github.com/0ptimista/Garden/blob/main/index.qmd)中有：
+```yaml
+listing:
+  - id: recent-posts
+    contents: posts
+    feed: true # <1>
+  - id: featured
+    contents: 
+      - ./posts/buying-us-bond.qmd
+      - ./posts/steps-of-buying-us-bonds.qmd
+    feed: false
+```
+1. `feed: true` 必须在前，`quarto render`才会正常生成RSS feed（`index.xml`）
+
+
+
