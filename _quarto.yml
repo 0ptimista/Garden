@@ -8,8 +8,7 @@ website:
   title: "Luozx's Digtal Garden"
   twitter-card: true
   site-url: https://garden.luozx.org
-  # description: "feedId:56240215051686912+userId:55416336394137600"
-  description: "Hihi"
+  description: "Hihi, welcome.!"
   navbar:
     left:
       - text: ToolBox

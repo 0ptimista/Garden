@@ -3,28 +3,27 @@ title: ""
 page-layout: full
 author: ""
 date-modified: ""
-# title-block-banner: true
 listing:
-  - id: featured
-    contents: 
-      - ./posts/buying-us-bond.qmd
-      - ./posts/steps-of-buying-us-bonds.qmd
-    sort: "date asc"
-    type: grid
-    fields: [date, title, author]
-    categories: true
-    sort-ui: false
-    filter-ui: false
-    feed: false
   - id: recent-posts
     contents: posts
+    feed: true
     page-size: 5
     sort: "date desc"
     type: default
     categories: true
     sort-ui: false
     filter-ui: false
-    feed: true
+  - id: featured
+    contents: 
+      - ./posts/buying-us-bond.qmd
+      - ./posts/steps-of-buying-us-bonds.qmd
+    sort: "date asc"
+    feed: false
+    type: grid
+    fields: [date, title, author]
+    categories: true
+    sort-ui: false
+    filter-ui: false
 ---
 
 # Featured
@@ -35,8 +34,7 @@ listing:
 # Timeline
 
 :::{#recent-posts}
-=======
-:::{#all-posts}
 :::
+
 
 [All posts](./time-machine.qmd)
