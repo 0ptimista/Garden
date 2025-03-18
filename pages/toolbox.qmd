@@ -1,13 +1,13 @@
 ---
 title: "工具箱"
-description: "这些工具解决了我的一些问题"
+description: "正在使用的软件和工具"
 ---
 
 # 资源管理
 
 - RoyalTSX
-- Dokpoly
-- PicList/PicGo
+- Coolify
+- [PicList/PicGo](../posts/blog-image-hosting-with-cf-r2.qmd)
 
 # 内容创作
 
@@ -16,5 +16,5 @@ description: "这些工具解决了我的一些问题"
 
 # 阅读
 
-- wewe-rss
+- [wewe-rss](../posts/wewerss.qmd)
 
