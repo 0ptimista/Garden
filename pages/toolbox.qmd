@@ -17,4 +17,5 @@ description: "正在使用的软件和工具"
 # 阅读
 
 - [wewe-rss](../posts/wewerss.qmd)
+- [follow](../posts/follow-the-app/follow-the-app.qmd)
 
