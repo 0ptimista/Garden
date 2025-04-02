@@ -50,7 +50,7 @@ funding:
 
 format:
   html:
-    theme: zephyr
+    theme: [zephyr,style.scss]
     toc: true
     reference-location: margin
     lightbox: true
