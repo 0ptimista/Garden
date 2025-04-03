@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - "assets/*"
+    - ads.txt
 execute:
   freeze: auto
 website:
@@ -38,8 +39,11 @@ website:
       category: Announcements
 
 author: "Luozx"
+adsense:
+  publisher-id: pub-9560220640659728
 filters:
   - social-share
+  - adsense
 lang: zh
 date-format: long
 license: "CC BY-NC-SA"
