@@ -1,0 +1,74 @@
+---
+title: "Andrej Karpathy如何使用大语言模型"
+date: "2025-04-06"
+categories: []
+---
+
+Andrej Karpathy在[「How I use LLMs」](https://youtu.be/EWvNQjAaOHw?si=gV93Va9F02gNhrY4)影片中介绍了关于LLM的基本知识。
+对于如何更好的理解和使用LLM，非常有帮助。以下是我选取的一些要点，不是影片内容的完全概要，想要了解全部内容的朋友，强烈建议自己也去观看一遍。
+
+# LLM是Token的预测器
+正如[「这就是ChatGPT」](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)中所说的：
+
+> what it’s essentially doing is just asking over and over again “given the text so far, what should the next word be?”—and each time adding a word. (More precisely, as I’ll explain, it’s adding a “token”, which could be just a part of a word, which is why it can sometimes “make up new words”.)
+
+大预言模型，本质上只是在根据用户的输入，来回答下一个最可能的单词（token）是什么。同样，Andrej Karpathy也给LLM一个类似的比喻：一个大型，互联网内容的压缩包（zipfile）
+它把用户的输入内容拆分成自己理解的token，然后预测下一个token。可以通过[Tiktokenizer](https://tiktokenizer.vercel.app/)来观察自己的输入和token之间的关系。
+
+![](https://image.luozx.org/garden/2025/04/d73edafb39b6710794937742f4a1ebac.png)
+
+# 制作优良Token预测器的阶段
+
+LLM根据互联网上的已有内容，进行训练，最终将内容压缩成一个封闭的实体，就像一个压缩包一样，称为预训练（pre-training）阶段。
+预训练的成本高昂，因此压缩包内的内容并不会频繁更新，这也是大预言模型「知识」陈旧的原因。
+
+仅仅将内容浓缩起来只是第一步，真正让人类和模型对话时，有「真实感」是第二步，post-training阶段，是优良的Token预测器不可或缺的步骤，否则，LLM的回答就像被传统的编程过的机器人，只会生硬的生成回答。
+
+post-training阶段包含以前经常被提及的「微调」（fine-tuning）过程。以及DeepSeek公开的强化学习（Reinforcement Learning）过程。
+
+![](https://image.luozx.org/garden/2025/04/c3c692d40abd08045116ec7d31a407d0.png)
+
+在大语言模型（LLM）出现了「推理」（Think）功能后，直觉上会觉得它比不推理给的回答更准确些，但是从来不明白什么是「推理」。
+
+而强化学习（RL）也是让LLM实现「推理」（Think）的重要步骤。
+推理（或者叫做思考）适用于解决需要逻辑推演的问题，比如数学题，编程问题等。代价就是等待更长时间，生成更多token，以便获得更好地答案。
+
+# 大预言模型也有“内存”（Working Memory）
+
+LLM是根据已收录的互联网内容，来预测token的好手。就像计算机是解决计算问题的好手一样，计算机进行计算需要将数据加载到专用区域，与LLM进行对话时每一段对话也被放入专用区域中，称之为对话上下文（Context Window）。
+
+对话上下文，是聊天时的语境，Karpathy称之为“内存”（Working Memory）当你想要提问一个和现在毫不相关的问题时，最佳的做法是清空这个语境，即新开启一个对话窗口。
+
+![](https://image.luozx.org/garden/2025/04/22933c1d3dc2644c04ff8402dc58144f.png)
+
+# 给大预言模型更多信息
+
+增加聊天上下文的信息，能让LLM更准确的回答问题，尤其当LLM知识陈旧时。
+
+ChatGPT和DeepSeek的「(联网)搜索」功能，除了让LLM触发外部程序去访问互联网内容，代替你做检索，更重要的是将检索后的内容放入对话上下文中，来丰富LLM未拥有的知识。
+让LLM触发外部程序去访问互联网内容是丰富上下文的方法之一，另外还能通过用户自己上传文件来做到这一点。
+
+LLM现在具备了自己丰富上下文的功能，也具备了「推理」能力，那么同时使用这两者，即，让LLM自己增加对话上下文的丰富程度，然后进行推理回答，就是现在「Deep**Research**」完成的事情。
+
+
+# 尾部
+
+在Karpathy的影片中，学习到了两个最重要的概念：
+
+1. 模型本身不具备使用工具的能力
+2. 大多数外部工具都在丰富模型的对话上下文
+
+LLM本身是一个大型互联网内容压缩包，根据用户的输入和本身已保存（训练）的内容，来预测下一个token。仅此而已。
+为了提升预测概率，给予模型丰富的信息是最普遍的做法，不论是WebSearch还是上传文件，都是为了丰富对话上下文。因此，当询问一个不同主题的问题时，最好的做法是新建一个对话窗口。
+
+
+在最开始，我经常对DeepResearch，DeepSearch，推理，深度思考这些不同模型赋予的名词感到困惑。现在，再看到这些名词后，心里已经有了清楚的理解，他能做什么，什么做得好，哪些不能做，这对更好的使用这些工具非常有帮助。
+
+::: {.callout-note}
+
+Karpathy的影片中还提到了模型多模态的特征以及ChatGPT，Claude特有的功能，以及很多我文章中没提到但是非常值得了解的基础内容
+非常推荐观看原影片！
+
+:::
+
+虽然这篇文章题目叫做Karpathy如何使用大预言模型，但是我认为更重要的是理解模型的能力，所以文章的主要内容放在了Karpathy介绍的基础内容上，希望你也能有收获！
