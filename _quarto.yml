@@ -7,8 +7,9 @@ execute:
   freeze: auto
 website:
   title: "Luozx's Digtal Garden"
+  favicon: "favicon.ico"
   twitter-card: true
-  site-url: https://garden.luozx.org
+  site-url: "https://garden.luozx.org"
   description: "Hihi, welcome.!"
   navbar:
     left:
