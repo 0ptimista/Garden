@@ -1,0 +1,64 @@
+---
+title: "如果你也在寻找macOS上的远程工具，可以试试它。"
+date: "2025-04-17"
+categories: ['tools',"mypick"]
+---
+
+很长一段时间，我都在寻找macOS上合适的远程工具。
+由于工作原因，我需要通过Mac远程到Windows Server上（通常Windows Server作为堡垒机和跳板机）
+同时也有直接远程到Linux机器的需要。
+
+以前，总要使用两种工具：
+
+1. Microsoft Remote Desktop(现在改名为[Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12))：登陆堡垒机和跳板机
+2. iTerm2等Shell：直接登陆Linux服务器
+
+想要找到两类同时连接的工具很不容易（RDP和SSH）直到我了解到[Royal TSX](https://www.royalapps.com/ts/mac/features)，使用了一段时间后，基本能覆盖我目前的的需求。
+
+::: {.callout-note}
+Royal TSX是付费软件，同时提供Lite免费版
+:::
+
+# 优点
+
+## 多种连接类型
+
+从Mac远程Widnows（Remote Destop），远程Linux（Terminal/VNC）以及远程另一台Mac（VNC）都可以。
+
+![](https://image.luozx.org/garden/2025/04/dcc701426c46e59ab6fa1892b06827d0.png)
+
+对于安全要求严格的场景，比如需要通过DMZ的机器作为中转，访问安全级别高的内网网络，Royal TSX也支持将DMZ中的机器作为[安全网关](https://docs.royalapps.com/r2023/royalts/reference/gateways/securegateway.html)（Secure Gateway）
+作为安全网关的机器可以是Linux(Secure Gateway)，也可以是Windows(Remote Destop Gateway)。
+
+![](https://image.luozx.org/garden/2025/04/e4c9aefbbb69f15a4816badebfd598eb.png)
+
+
+不过除了Royal Server的安全网关支持MFA（双重验证）外，Royal TSX的安全网关还不支持，我工作的地方都需要使用到MFA，所以这个功能看起来有用但好像又没有那么有用😅
+
+
+## 1Password管理登陆凭证
+Royal TSX 支持[从1Password中读取远程登陆的凭证](https://www.royalapps.com/blog/dynamic-folder-integration-for-1password)。当你的Mac使用带TouchID的键盘时，用指纹验证登陆非常方便！
+
+![](https://image.luozx.org/garden/2025/04/9d3445bd9f3a8a0ca957fe66005ae8e0.png)
+
+::: {.callout-note}
+1Password也是付费应用
+:::
+
+
+## 跨设备同步连接信息
+
+其中一个非常实用的功能是多设备同步连接信息。Royal TSX使用基于文档（Document）的结构来保存所有数据（连接信息，登陆凭证等）。
+可以将这个文档放在任何网盘中进行同步，文档本身可以加密后保存，不过使用1Password保存登陆凭证的话，该凭证是不会通过云盘同步的。
+
+我的文档本身没有加密保存，但是额外使用[Cryptomator](https://cryptomator.org/)来加密同步所有云盘上的内容。
+
+
+# 缺点
+## 学习成本
+功能越多的软件，学习成本会越高。Royal TS系列经过多年的迭代，已经相当成熟，在我看来，一次性学习一款能长久存在的软件比多次学习生命周期短暂的软件更值得。
+
+## 价格
+Royal TSX 是一次性付费软件（也许大版本升级需要付费）相比Terminux每月$10的定价，Royal TSX的一次型付费价格大约是€49（价格会随地区不同而变动，所以可以选择价格合适的地区购买），不限制设备数量。
+尽管界面不如Terminus，但价格还算合理。macOS和Windows的License不共享，不过Windows上远程工具众多，Royal TS系列也不是那么必要。
+
