@@ -7,9 +7,13 @@ execute:
   freeze: auto
 website:
   title: "Luozx's Digtal Garden"
+  reader-mode: true
   favicon: "favicon.ico"
+  cookie-consent:
+    type: express
+    style: headline
   twitter-card: true
-  site-url: "https://garden.luozx.org"
+  site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
   navbar:
     left:
