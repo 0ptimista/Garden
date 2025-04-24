@@ -1,5 +1,8 @@
 project:
   type: website
+  preview:
+    port: 9999
+    browser: false
   resources:
     - "assets/*"
     - ads.txt

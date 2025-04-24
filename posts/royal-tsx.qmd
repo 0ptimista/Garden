@@ -35,6 +35,15 @@ Royal TSX是付费软件，同时提供Lite免费版
 
 不过除了Royal Server的安全网关支持MFA（双重验证）外，Royal TSX的安全网关还不支持，我工作的地方都需要使用到MFA，所以这个功能看起来有用但好像又没有那么有用😅
 
+**连接RDP的问题**
+
+RDP在默认情况下，当Royal TSX窗口大小发生改变，会强制重新连接，如果你所在的企业启用了MFA，每次窗口大小发生改变(比如从A显示器移动到B显示器)
+都要重新输入MFA代码。
+
+通过将Resize Mode改为Smart Sizing来避免此类问题！
+
+![](https://image.luozx.org/garden/2025/04/4462aff77fe4b21b9edefe4d4f519c94.png)
+
 
 ## 1Password管理登陆凭证
 Royal TSX 支持[从1Password中读取远程登陆的凭证](https://www.royalapps.com/blog/dynamic-folder-integration-for-1password)。当你的Mac使用带TouchID的键盘时，用指纹验证登陆非常方便！
