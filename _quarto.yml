@@ -15,6 +15,7 @@ website:
   cookie-consent:
     type: express
     style: headline
+  google-analytics: "G-C8KE2VXVE7"
   twitter-card: true
   site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
