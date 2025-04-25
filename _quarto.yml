@@ -12,6 +12,7 @@ website:
   title: "Luozx's Digtal Garden"
   reader-mode: true
   favicon: "favicon.ico"
+  bread-crumbs: true
   cookie-consent:
     type: express
     style: headline
@@ -21,6 +22,8 @@ website:
   description: "Hihi, welcome.!"
   navbar:
     left:
+      - text: About...
+        href: pages/about.qmd
       - text: ToolBox
         href: pages/toolbox.qmd
       - text: 原始积累

@@ -4,9 +4,32 @@ categories: []
 drafts: true
 ---
 
-# 名字
+# About this site
 
-# 内容
+网站名称用Garden这个词，源于对「[数字花园](https://maggieappleton.com/garden-history/)」概念的理解。
 
-# 我
+- 一个完全自我控制的网络空间，像一个花园一样，随意地生长;
+    - 完全由自己控制，意味着花园的样式，种植的种类，都不设限制，完全有自己的主观意识决定；
+- 空间中的内容是用心栽培的，随时养护;
+- 花园开放且自由，允许在互联网上的任何人游览;
+
+> [Show Your Work]()这本书也给了我不少鼓励
+
+网站托管在Github，受到yihong一篇文章的启发：[People Die, but Long Live GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456)
+
+使用[Quarto](https://quarto.org/)制作。当时由于工作需要，需要撰写一些总结报告，报告需要插入用数据生成的图表，Quarto非常适合这项工作，顺便也就给自己用了。
+
+色彩取自我非常喜欢阅读的博客[Entropic Thoughts](https://entropicthoughts.com/index)，第一次发现时，就觉得阅读体验很舒适。
+
+# About the content 
+
+正因是在花园中创作，在属于自己的网络空间中，内容素材不会专注于某一主题或话题，同时也不一定会完整/完美。（但是我还是要尽力而为）
+
+所有内容都源于我的生活，工作，兴趣，经历和经验，包含过程中涉及到的一切。
+
+有时候内容会被🏷标签标记，标签对内容分类是一个很好的工具，但是我会谨慎使用：也就是想不到关联之前，就不打。
+
+也许我需要花些时间来把已有的标签含义列出来，供游览花园的你使用。
+
+# About the author
 
