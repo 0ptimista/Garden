@@ -1,6 +1,6 @@
 ---
 title: "开始尝试Simon Willison的quote from写作风格"
-date: ""
+date: "2025-05-03"
 categories: []
 ---
 

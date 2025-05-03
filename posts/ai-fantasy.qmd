@@ -1,0 +1,21 @@
+---
+title: "Everyone wants to automate things they have never done."
+date: "2025-05-03"
+description: ""
+categories: []
+---
+
+{{< video https://www.youtube.com/watch?v=suOfjK35-8E start=1877 >}}
+
+一个意味深长的事情是：当[Nicolas Cole](https://www.nicolascole.com/?variant=43775103565997)被Ali问道，Cole如何看待，人们用ChatGPT一类的AI去“加速”（automate）他们的工作时，Cole先是谈了一口气，然后说道：
+
+> Everyone wants to automate things they have never done.
+
+这几乎是当前大多数个人和企业应用AI的写照。
+
+- 理解AI的本质，是什么，能做什么，不能做什么
+- 提高效率的前提是这条路已经用“笨办法”走过，先有才能无。
+
+尊重现实，接受现实。
+
+{{< tweet user=yihong0618 id=1916649998168777032 >}}
