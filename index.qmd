@@ -13,6 +13,7 @@ listing:
     categories: true
     sort-ui: false
     filter-ui: false
+    max-description-length: 300
   - id: featured
     contents: 
       - ./posts/buying-us-bond.qmd

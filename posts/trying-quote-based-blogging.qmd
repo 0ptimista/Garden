@@ -1,0 +1,47 @@
+---
+title: "开始尝试Simon Willison的quote from写作风格"
+date: ""
+categories: []
+---
+
+平时有想要写的话题和观点，都会用Notion记录，躺在Notion的看板中，除了保存在Notion外，偶尔也会通过创建本地[草稿](https://quarto.org/docs/websites/website-drafts.html#specifying-drafts)来快速记录。
+
+![](https://image.luozx.org/garden/2025/04/1f65bc909ca911dc589d9ed4f15de946.png)
+
+新话题和观点刚刚涌现的时候思绪都在飞扬，天真的以为看板里每一项都构成一篇完整的文章。静下心写的时候，才发觉写一篇自认为完整的文章并没有想象的那么容易，那么流畅。相反，在订阅的信息流里，经常能看到Simon发表这样的内容：
+
+![](https://image.luozx.org/garden/2025/05/fe5650abd58b026b48b4b01400a3a601.png)
+
+Simon经常使用`Quoting`写作风格，我一直都不太理解为什么要将文章当作社交媒体的推文，微博一样来写。现在很难不去思考Simon这样做的原因。
+
+> I started running a basic link blog on this domain back in November 2003—publishing links (which I called “blogmarks”) with a title, URL, short snippet of commentary and a “via” link where appropriate.
+
+Simon Willison [My approach to running a link blog](https://simonwillison.net/2024/Dec/22/link-blog/)
+
+**属于自己的网络空间**
+
+在上面的链接里，Simon鼓励其他人创建自己的博客，在网络上拥有属于自己的一个空间。这和我所喜爱的[数字花园](../pages/about.qmd)概念高度契合。
+
+写长文很难，坚持写长文更难。一旦掉入你的写作必须写观点新颖，内容翔实，证据充分的大篇长文的[心里陷阱](https://simonwillison.net/2022/Nov/6/what-to-blog-about/)，想写点东西就变的异常艰难。
+
+关于写博客和构建数字花园的区别，[Tom Critchlow](https://tomcritchlow.com/)有一个观点被多处引用[^note]：
+
+> With blogging, you’re talking to a large audience,” he says. “With digital gardening, you’re talking to yourself. You focus on what you want to cultivate over time.
+
+[^note]: 找不到Tom Critchlow原始出处，只能间接的找到这个观点的引述：
+
+      [1 MIT Technology Review](https://www.technologyreview.com/2020/09/03/1007716/digital-gardens-let-you-cultivate-your-own-little-bit-of-the-internet/)
+
+
+      [2 How I built myself a Digital Garden by Tim Rodenbröker](https://timrodenbroeker.de/digital-garden/)
+
+
+没有人不希望自己的内容被更多人看到。不过，被更多人发现，是自己精心经营的结果，不是原因。
+
+构建花园，是同自己对话，聚焦自己所学习的，所积累的。这也是Simon一直所坚持写[这几类内容](https://simonwillison.net/2022/Nov/6/what-to-blog-about/)的出发点吧：
+
+- 写自己今天所学到的（Today I Learned）
+- 写自己所做过的（项目）
+- 写自己的发现（Quoting from风格）
+
+
