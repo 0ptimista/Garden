@@ -18,6 +18,7 @@ listing:
     contents: 
       - ./posts/buying-us-bond.qmd
       - ./posts/steps-of-buying-us-bonds.qmd
+      - ./posts/steps-of-buying-us-bonds-2.qmd
     sort: "date asc"
     feed: false
     type: grid
