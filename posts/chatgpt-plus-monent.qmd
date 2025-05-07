@@ -1,0 +1,64 @@
+---
+title: "ChatGPT Plus时刻"
+date: "2025-05-07"
+description: "决定购买ChatGPT Plus的那一刻"
+categories: ['mypick']
+---
+
+BayFamily的[西太平洋房地产过剩分布图](https://mp.weixin.qq.com/s/EDrBIIh5T3n1IkpUKwg49Q)一文中引用了这篇[论文](https://www.nature.com/articles/s41467-025-57217-7#Sec2)结论中的统计图。我想在图片中找找看有没有自己老家的城市，使用了多个免费版本的大预言模型后，只有ChatGPT给出了正确的答案。
+
+
+以下是各个模型的回答结果
+
+1.  ChatGPT的[回答](https://chatgpt.com/share/681b709f-9460-8010-8a98-9671d6b5585f)
+
+为了避免ChatGPT编造错误答案，误导我。所以在第一次提问时，首先问了一个我明确知道存在的城市，长沙。不出意外，ChatGPT给出了正确的答案。
+不过平时由于主要使用ChatGPT，达到了免费限额，需要等待一段时间才能问第二个问题。就在这个空档，想着这应该不算是一个很难的任务，既然ChatGPT免费版本可以回答，那么其他模型也应该没大问题，没想到，一个能打的都没有...
+
+2. Gemini
+
+等待ChatGPT免费额度恢复期间，第一个尝试Gemini，没想到[第一次回答](https://g.co/gemini/share/453ff22e72dc)就翻车。正好昨天[Google One放水](https://www.v2ex.com/t/1129860)，有Gemini Advanced使用权，就用Gemini 2.5Pro又问了一遍，[第二次回答](https://g.co/gemini/share/1db75a65c909)还是让人失望。
+
+3. DeepSeek
+
+可能国外的模型不如国内的模型了解中国城市的名称（训练数据差异？），就换用DeepSeek问了相同的问题，由于DeepSeek还[不具备共享聊天](https://github.com/deepseek-ai/DeepSeek-V3/issues/308#issuecomment-2836132961)的功能，用截图的方式共享一下回答：
+
+![第一次回答](https://image.luozx.org/garden/2025/05/6f2dd9f343c1db2fc5baab982720a614.png)
+
+好像不太对，于是又用深度思考的方式试了一次：
+
+![第二次回答](https://image.luozx.org/garden/2025/05/9618f10485e61a4453040edbd4422481.png)
+
+和DeepSeek发生对话的图片，是从和Gemini对话中复制进去的，开始怀疑是图片质量问题，于是从论文中复制了[原始图片](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-57217-7/MediaObjects/41467_2025_57217_Fig2_HTML.png?as=webp)进去，又问了一次：
+
+![第三次提问](https://image.luozx.org/garden/2025/05/7b4fc7a7ddc181ea80add33e43725a78.png)
+
+让我彻底死心了，那试试Grok吧
+
+4. Grok
+
+鉴于之前使用Grok的良好体验，建立了一点信任度，于是在Grok[回答](https://x.com/i/grok/share/wXz2krT01Y9iMCHhSM225QzOX)三个城市都存在时，我选择了相信，并真的试图找到「银川」在图片中的位置...
+
+被Grok骗到了。不过ChatGPT的免费使用又恢复了，稳健的完成了要回答的问题，也就没有去测试其他模型了。
+
+
+在ChatGPT回答后，我也进行了一次仔细逐行对比（人工），确认回答正确后，ChatGPT Plus Moment产生了，我想要试试Plus版本。
+
+在[Andrej Karpathy如何使用大语言模型](../posts/learn-llms-basics-with-andrej-karpathy.qmd)这篇文章里，Andrej选择的是$200/月的Pro版本，当时对他介绍Custome GPT功能（Plus版本也提供）就觉得很有用。因为可以复用Prompt，不必每次输入大量文字提供Context。
+
+同样在那个视频中，提到的LLM [排行榜](https://scale.com/leaderboard)，排在第一的大多还是ChatGPT的模型：
+
+虽然DeepSeek出现给了很多人惊喜，不过事实是，还是[有人认为Plus提供的能力值得](https://fast.v2ex.com/t/1130195?p=1#reply23)。
+![](https://image.luozx.org/garden/2025/05/3e2ce7a571dcffd52293ccde8a7c8ad4.png)
+
+
+那就让我们开始吧！
+
+![](https://image.luozx.org/garden/2025/05/5200242857b8fc6bebe41186f4f85158.png)
+
+**其他资源**
+
+YouTube上这个视频的介绍了ChatGPT Free，Plus之间的不同功能（以及其他更高级版本），可以参考。
+
+{{< video https://www.youtube.com/watch?v=gl0jwZfd5MY >}}
+
