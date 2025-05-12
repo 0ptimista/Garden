@@ -5,14 +5,13 @@ description: "正在使用的软件和工具"
 
 # 资源管理
 
-- RoyalTSX
-- Coolify
+- [RoyalTSX](../posts/royal-tsx.qmd)
 - [PicList/PicGo](../posts/blog-image-hosting-with-cf-r2.qmd)
 
 # 内容创作
 
-- Bear
-- DEVONthink
+- Quarto
+
 
 # 阅读
 

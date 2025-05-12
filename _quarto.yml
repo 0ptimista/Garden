@@ -9,9 +9,12 @@ project:
 execute:
   freeze: auto
 website:
-  title: "Luozx's Digtal Garden"
-  reader-mode: true
-  favicon: "favicon.ico"
+  title: "Luozx's Digtal Garden 🌳"
+  description: "Hihi, welcome.!"
+  reader-mode: false
+  repo-url: "https://github.com/0ptimista/Garden"
+  repo-actions: [source]
+  favicon: "tree.png"
   bread-crumbs: true
   cookie-consent:
     type: express
@@ -20,7 +23,6 @@ website:
   open-graph: true
   twitter-card: true
   site-url: "https://luozx.org"
-  description: "Hihi, welcome.!"
   navbar:
     left:
       - text: About...
@@ -40,11 +42,14 @@ website:
         href: index.xml
       - text: '{{< iconify mingcute:telegram-fill size=xl >}}'
         href: https://t.me/unit7134
+  page-footer:
+    left: "NOT BY AI"
   # sidebar:
   #   style: "docked"
   #   contents:
   #     - section: "Introduction"
   #       contents: posts/*
+  back-to-top-navigation: true
   comments:
     giscus:
       repo: 0ptimista/Garden
