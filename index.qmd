@@ -6,7 +6,8 @@ date-modified: ""
 listing:
   - id: recent-posts
     contents: posts
-    feed: true
+    feed:
+      type: partial
     page-size: 5
     sort: "date desc"
     type: default

@@ -17,6 +17,7 @@ website:
     type: express
     style: headline
   google-analytics: "G-C8KE2VXVE7"
+  open-graph: true
   twitter-card: true
   site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
