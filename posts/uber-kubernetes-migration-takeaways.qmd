@@ -1,0 +1,21 @@
+---
+title: "从Uber迁移到Kubernetes过程中所得到"
+date: "2025-04-29"
+categories: []
+draft: true
+---
+
+Uber花了一年时间，从Apache Mesos迁移到了Kubernetes，虽然是整个迁移系列的[第一篇](https://www.uber.com/en-CA/blog/migrating-ubers-compute-platform-to-kubernetes-a-technical-journey/?uclick_id=eb109f5b-efea-44d4-91cd-37fcd552585c)，但仍然有很多理念和经验可以借鉴。
+
+
+# 项目的推进和落地
+## 任务（项目）的成功依赖大量事前工作
+
+> Our migration to Kubernetes was a significant undertaking that **required careful planning**, extensive customizations, and continuous learning
+
+在自己所参加的生产故障复盘中，大多数问题的根源，在我看来都源自变更方案事前评估不充分。奇怪的是，复盘讨论的话题几乎都是「加监控」「加告警」
+
+# 使用Kubernetes过程中同样的诉求
+
+## 启动速度慢
+
