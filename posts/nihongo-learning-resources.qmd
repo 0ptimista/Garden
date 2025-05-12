@@ -5,3 +5,21 @@ description: "适合想要自学的朋友们"
 categories: []
 draft: true
 ---
+
+# 五十音
+
+学会读
+
+- 五十音起源（付费$1.99）
+- 多邻国（免费）
+
+学会写和巩固
+
+- 出口仁老师视频
+  - [B站搬运](https://www.bilibili.com/video/BV18J411774w/?spm_id_from=333.1391.0.0&p=2&vd_source=b30b44a710e6ddf3fc340697ce43a650)
+  - YouTube
+
+# 教材
+
+- 大家的日语
+
