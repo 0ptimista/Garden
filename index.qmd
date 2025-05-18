@@ -20,6 +20,7 @@ listing:
       - ./posts/buying-us-bond.qmd
       - ./posts/steps-of-buying-us-bonds.qmd
       - ./posts/steps-of-buying-us-bonds-2.qmd
+      - ./posts/risk-free-asset.qmd
     sort: "date asc"
     feed: false
     type: grid

@@ -51,5 +51,7 @@ categories: []
 - 讨厌低质量，缺乏品味(不用心打磨)的内容
 
 
+{{< include ../include/telegram_channel.qmd >}}
+
 
 

@@ -34,14 +34,14 @@ website:
     right:
       - text: 'Time Machine'
         href: time-machine.qmd
-      - text: '{{< iconify mingcute:github-fill size=xl >}}'
-        href: https://github.com/0ptimista
+      # - text: '{{< iconify mingcute:github-fill size=xl >}}'
+      #   href: https://github.com/0ptimista
       - text: '{{< iconify mingcute:twitter-fill size=xl >}}'
         href: https://twitter.com/luozxdotorg
-      - text: '{{< iconify mingcute:rss-fill size=xl >}}'
-        href: index.xml
+      # - text: '{{< iconify mingcute:rss-fill size=xl >}}'
+      #   href: index.xml
       - text: '{{< iconify mingcute:telegram-fill size=xl >}}'
-        href: https://t.me/unit7134
+        href: https://t.me/backyardofthatman
   page-footer:
     left: "NOT BY AI"
   # sidebar:

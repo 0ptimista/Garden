@@ -1,8 +1,9 @@
 ---
 title: "Follw: The App"
 date: "2024-10-14"
+date-modified: "last-modified"
 categories: ["application"]
-toc: false
+toc: true
 description: "Follow, 不是一个纯粹的RSS阅读器"
 ---
 
@@ -53,6 +54,24 @@ DIYgod同时也是[RSSHub](https://docs.rsshub.app/zh/)，一个旨在让一切�
 
 ### TTS
 Text To Speech（TTS）文字转语音，使用一次后，听起来很自然（英文），但是我还没有习惯「听文章」这个新潮流。
+
+### 翻译
+
+::: {.callout-note}
+更新于：2025年05月18日
+:::
+
+AI在让翻译的准确性和质量大大提升，[沉浸式翻译](https://immersivetranslate.com/zh-Hans/)开了一个非常好的头 -- 中英双语显示。
+
+Follow的翻译功能，目前不需要任何费用和API，对于经常中英对照的朋友很友好。
+
+![](https://image.luozx.org/garden/2025/05/2d669243e9dd751d17a54c69c0e100ab.png)
+
+如果你的Follow没有自动翻译，请检查这里的配置是否配置正确(自己之前就使用默认设置，翻译语为英语，所以每次点击翻译功能都不生效)：
+
+
+![](https://image.luozx.org/garden/2025/05/a37a0da235a0848df6e53b7683cab3c0.png)
+
 
 # 创作者激励
 优质的内容应该被奖励，内容的作者也应该受到内容版权的保护。DIYgod和他的团队很显然认同这个道理，这也解释了Follow中提供打赏（Tip），著作权申请（Claim）功能的原因。
