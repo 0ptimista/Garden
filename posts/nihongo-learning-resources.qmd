@@ -23,3 +23,6 @@ draft: true
 
 - 大家的日语
 
+# 网站
+
+- [日语迷](https://riyumi.com/beginner-faq/)

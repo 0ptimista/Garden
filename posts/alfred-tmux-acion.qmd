@@ -1,0 +1,136 @@
+---
+title: "Alfred快速在iTerm2和tmux session中执行命令"
+date: "2025-05-20"
+description: "Aflred集成iTerm2和tmux"
+categories: ['tools']
+draft: false
+format:
+  html:
+    code-overflow: wrap
+---
+
+[这个AppleScript](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)可以让Alfred直接在iTerm2中执行shell命令（默认是系统自带的Tminal.app）
+
+通过Alfred执行的shell命令，会在新的iTerm2 Tab中执行。
+
+我更习惯在tmux的session中进行新的命令验证，于是就让chatGPT帮了一个小忙：
+
+在iTerm2实例和tmux-server都在运行的情况下，通过Alfred传送的命令会在新的tmux-session中执行，而不是iTerm2的Tab中：
+
+![](https://image.luozx.org/garden/2025/05/c2b4e43bbfc7eaa72d4432022ed5ec76.gif)
+
+![](https://image.luozx.org/garden/2025/05/137ce0efc04ef55666c4c19e72853e33.png)
+
+将下面的代码复制到Alfred中，就可以了。
+
+::: {.callout-important}
+如果neovim运行在tmux的pane中，此时执行alfred会冲突。
+:::
+
+<details>
+<summary>显示代码</summary>
+
+```bash
+-- For the latest version:
+-- https://github.com/vitorgalvao/custom-alfred-iterm-scripts
+
+property open_in_new_window : false   -- Always open a new iTerm window
+property open_in_new_tab    : true    -- Re-use iTerm but open a new tab
+property iterm_opens_quietly : false  -- iTerm launches without a new window
+
+-- ⬇️  Added: detect if the current session is inside tmux
+on in_tmux()
+  try
+    tell application "iTerm" to tell current session of current tab of current window
+      set tmuxEnv to variable named "TMUX"
+    end tell
+    return tmuxEnv is not ""
+  on error
+    return false
+  end try
+end in_tmux
+
+-- Handlers -------------------------------------------------------------
+on new_window()
+  tell application "iTerm" to create window with default profile
+end new_window
+
+on new_tab()
+  tell application "iTerm" to tell the first window to create tab with default profile
+end new_tab
+
+on call_forward()
+  tell application "iTerm" to activate
+end call_forward
+
+on is_running()
+  application "iTerm" is running
+end is_running
+
+on is_processing()
+  tell application "iTerm" to tell the first window to tell current session to return is processing
+end is_processing
+
+on has_windows()
+  if not is_running() then return false
+
+  tell application "iTerm"
+    if windows is {} then return false
+    if tabs of current window is {} then return false
+    if sessions of current tab of current window is {} then return false
+
+    set session_text to contents of current session of current tab of current window
+    if words of session_text is {} then return false
+  end tell
+
+  true
+end has_windows
+
+on send_text(custom_text)
+  tell application "iTerm" to tell the first window to tell current session to write text custom_text
+end send_text
+
+-- Main -----------------------------------------------------------------
+on alfred_script(query)
+  if has_windows() then
+    if open_in_new_window then
+      new_window()
+    else if in_tmux() then
+      -- 👉 Already inside tmux: create a new tmux window instead of a new iTerm tab
+      send_text("tmux new-window")
+      delay 0.1 -- brief pause so the new window becomes active
+    else if open_in_new_tab then
+      new_tab()
+    else
+      -- Re-use current tab
+    end if
+  else
+    -- iTerm is closed or has no usable windows
+    if is_running() or iterm_opens_quietly then
+      new_window()
+    else
+      call_forward()
+    end if
+  end if
+
+  -- If query is >1024 bytes wait until session finishes processing previous input
+  if length of query > 1024 then
+    repeat 500 times -- 5 s timeout
+      if not is_processing() then exit repeat
+      delay 0.01
+    end repeat
+  end if
+
+  -- Wait for a window to exist before writing, or the write may fail
+  repeat 500 times -- 5 s timeout
+    if has_windows() then
+      send_text(query)
+      call_forward()
+      exit repeat
+    end if
+    delay 0.01
+  end repeat
+end alfred_script
+
+```
+</details>
