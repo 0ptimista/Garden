@@ -26,3 +26,22 @@ draft: true
 # 网站
 
 - [日语迷](https://riyumi.com/beginner-faq/)
+- [NHK简明日语](https://www3.nhk.or.jp/nhkworld/lesson/zh/about/howtouse/)
+
+# 使用路线
+
+根据不同的学习阶段，使用不同的资源。
+
+最重要的是，有时间约束和没有时间约束。
+
+## JLPT
+
+### N5
+
+## 自由学习
+
+
+问题：
+
+假名学会了，如何学习汉字？他们怎么对应
+
