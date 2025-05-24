@@ -1,0 +1,4711 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+
+    <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .styled-table {
+        border-collapse: collapse;
+        margin: 0;
+        font-size: 14px;
+        width: 100%;
+    }
+    .styled-table thead tr {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+    .styled-table th, .styled-table td {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        white-space: nowrap;
+    }
+    .styled-table tbody tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+    .styled-table tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+    </style>
+
+<title>BTCUSD Perps Ledger</title>
+</head>
+<body>
+<h2>BTCUSD Perpetual Contract Ledger</h2>
+<table border="1" class="dataframe styled-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Date(UTC)</th>
+      <th>type</th>
+      <th>Amount</th>
+      <th>Asset</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-03-03 07:20:18</td>
+      <td>DEPOSIT</td>
+      <td>3.672327e-02</td>
+      <td>BTC</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>2024-03-03 08:36:59</td>
+      <td>COMMISSION</td>
+      <td>-8.100000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-03 08:36:59</td>
+      <td>COMMISSION</td>
+      <td>-8.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-03 08:36:59</td>
+      <td>COMMISSION</td>
+      <td>-4.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-03 08:36:59</td>
+      <td>COMMISSION</td>
+      <td>-4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.758000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.460000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.376000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.270000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.657000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.215000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.153000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.639000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.334000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.510000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.560000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.816000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.620000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.332000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.966000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.220000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.325000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.007000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.435000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.762000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.257000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.480000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.668000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.508000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.019000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.108000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.093000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.910000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.712000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.410000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.288000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.530000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.282000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.550000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.120000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.488000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.201000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.948000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.265000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.658000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.013000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.085000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.767000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.760000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.055000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.900000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.376000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.470000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-31 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.580000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-31 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.126000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-03-31 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.647000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.213000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.650000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.150000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.360000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.230000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.190000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.116000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.120000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.180000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.200000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.140000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.100000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.015000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.410000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.420000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-9.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.000000e-08</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.570000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.100000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.780000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.750000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-7.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.016000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.690000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.460000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.400000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.970000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.750000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.260000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.310000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.420000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.800000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.850000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.150000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.780000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.620000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-30 19:57:03</td>
+      <td>COMMISSION</td>
+      <td>-1.855000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-04-30 19:57:03</td>
+      <td>REALIZED_PNL</td>
+      <td>1.463720e-03</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-04 16:21:37</td>
+      <td>COMMISSION</td>
+      <td>-7.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.690000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.760000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.790000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.790000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.810000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.790000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.353000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.870000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.850000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.990000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.870000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.980000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.060000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.060000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-9.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.150000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.200000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.740000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.190000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.270000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.300000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.420000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.470000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.527000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.460000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-06-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.637000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.270000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.310000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.360000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.640000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.640000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.770000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.750000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.840000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.670000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.000000e-08</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.530000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.520000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.900000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.300000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.600000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.410000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.580000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.700000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.670000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.870000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.500000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.910000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-8.400000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.600000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.610000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.300000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.580000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.920000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.970000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.990000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.800000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-31 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-31 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.680000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-07-31 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.580000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.200000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.260000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.000000e-08</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.840000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.900000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.380000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.660000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.500000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.530000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.750000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.710000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.510000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.460000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.620000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.980000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.310000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.540000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.620000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.970000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.800000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.400000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.620000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.610000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-6.470000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.460000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.120000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.840000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.780000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.400000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.530000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.180000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.120000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.630000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.580000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.910000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.410000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.470000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.140000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.190000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.200000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.630000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.870000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.900000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.600000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-9.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.160000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>8.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.310000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.000000e-08</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.510000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-31 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.790000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-31 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-08-31 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.900000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.800000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>7.400000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.630000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.710000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.830000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.650000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.660000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.520000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.130000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.060000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-6.750000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.150000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.190000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.000000e-08</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.300000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-8.900000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-9.200000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.920000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-4.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>6.700000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.600000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-5.500000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.690000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-2.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.670000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>9.000000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.500000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.480000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.560000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.780000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.500000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.600000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.490000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>5.200000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.340000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.280000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.590000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.270000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.850000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.600000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.340000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.150000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.560000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.200000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.540000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.230000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.140000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.480000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.430000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.390000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.570000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-09-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.260000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.570000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.910000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.260000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.170000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-05 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.300000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.270000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-05 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.780000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-06 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-06 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.770000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-06 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-07 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.520000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-07 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.250000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-07 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.240000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-08 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-08 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.830000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-08 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-09 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.340000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-09 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-09 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-10 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.450000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-10 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-10 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.440000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-11 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-3.400000e-07</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-11 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>-1.180000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-11 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.520000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-12 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.320000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-12 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.300000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-12 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.220000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-13 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.270000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-13 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-13 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.340000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-14 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.290000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-14 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.180000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-14 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.100000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-15 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-15 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.110000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-15 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-16 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.850000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.980000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.680000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>1.530000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.990000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.370000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.920000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.560000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-20 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-20 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-21 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.910000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-21 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-21 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-22 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-22 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-22 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.010000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-23 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-23 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-23 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.080000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-24 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-24 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-24 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.990000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-25 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-25 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-25 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.990000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-26 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.050000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-26 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-26 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.040000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-27 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-27 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.020000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-27 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.980000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-28 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.970000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-28 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-28 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.940000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-29 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-29 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.800000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-29 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.720000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-30 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.710000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-30 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-30 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.740000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-31 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-31 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.730000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-10-31 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.820000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-01 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.840000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-01 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.900000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-01 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-02 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.880000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-02 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-02 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-03 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.890000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-03 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.950000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-03 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.960000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-04 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.920000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-04 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-04 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-05 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>2.350000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-05 12:54:06</td>
+      <td>COMMISSION</td>
+      <td>-1.308000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-05 12:54:06</td>
+      <td>REALIZED_PNL</td>
+      <td>8.146300e-04</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-05 12:54:06</td>
+      <td>REALIZED_PNL</td>
+      <td>4.073100e-04</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-11-05 12:54:06</td>
+      <td>COMMISSION</td>
+      <td>-6.540000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-05 02:41:08</td>
+      <td>COMMISSION</td>
+      <td>-8.310000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-05 03:05:01</td>
+      <td>COMMISSION</td>
+      <td>-1.412000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-05 03:05:01</td>
+      <td>COMMISSION</td>
+      <td>-6.330000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-05 03:05:01</td>
+      <td>REALIZED_PNL</td>
+      <td>-2.100800e-04</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-05 03:05:01</td>
+      <td>REALIZED_PNL</td>
+      <td>-4.686500e-04</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-16 00:39:54</td>
+      <td>COMMISSION</td>
+      <td>-1.680000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-16 00:39:54</td>
+      <td>COMMISSION</td>
+      <td>-6.000000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-16 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.900000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-16 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.850000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-17 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-17 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.830000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-17 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.840000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-18 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.860000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-18 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.930000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-18 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>3.920000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-19 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.090000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-19 08:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.030000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-19 16:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.070000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-20 00:00:00</td>
+      <td>FUNDING_FEE</td>
+      <td>4.210000e-06</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-20 12:32:03</td>
+      <td>COMMISSION</td>
+      <td>-2.192000e-05</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+    <tr>
+      <td>2024-12-20 12:32:03</td>
+      <td>REALIZED_PNL</td>
+      <td>5.420030e-03</td>
+      <td>BTC</td>
+      <td>BTCUSD_PERP</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

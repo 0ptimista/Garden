@@ -6,6 +6,7 @@ project:
   resources:
     - "assets/*"
     - ads.txt
+    - "*.html"
 execute:
   freeze: auto
 website:
