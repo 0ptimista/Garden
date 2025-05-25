@@ -45,3 +45,8 @@ draft: true
 
 假名学会了，如何学习汉字？他们怎么对应
 
+# 大家的日语
+
+[课文](https://www.bilibili.com/video/BV1Py4y1C7ge?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=2)
+[单词](https://www.bilibili.com/video/BV1Z6ERzEEmA?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=4)
+[语法](https://www.bilibili.com/video/BV1CQ4y1V7dQ/?spm_id_from=333.1391.0.0)
