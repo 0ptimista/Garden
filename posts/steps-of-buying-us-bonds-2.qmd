@@ -88,6 +88,15 @@ $$
 |      | 1–30 年      | GOVT     | iShares 美国国债综合 ETF          |
 
 
+::: {.callout-important title="债券基金风险提示"}
+购买美债ETF与单独购买美债一个最大的区别是，美债ETF会持有到期日均不相同的美债，同时还会在到期后不断购买新债，因此对ETF购买者，没有“到期”一说，风险就来源于此。
+
+单独购买债券，是你与债务人（美国政府）之间的协议，到期后，会按照约定的利率和时间，返还本金和利息。
+而购买美债ETF，对持有人来说，没有到期日，因此风险是不同的。
+
+详细区别请见：[Why You Don’t Lose Money in Bonds (If You Wait Long Enough)](https://ofdollarsanddata.com/why-you-dont-lose-money-in-bonds-if-you-wait-long-enough/)
+:::
+
 ## 境内QDII和ETF
 
 境内的QDII和ETF，除了会收取管理费用外，可能还有额度限制。但是适合用人民币购买。
