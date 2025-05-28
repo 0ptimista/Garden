@@ -2,6 +2,7 @@
 title: "购买美债的思路（二）"
 date: "2025-05-04"
 description: "间接购买美债的方式"
+date-modified: last-modified
 categories: ['money']
 ---
 
