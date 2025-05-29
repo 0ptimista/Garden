@@ -2,6 +2,7 @@
 title: "About"
 description: "关于这个网站，内容和作者"
 categories: []
+date-modified: last-modified
 ---
 
 # About this site
@@ -54,5 +55,12 @@ categories: []
 
 {{< include ../include/telegram_channel.qmd >}}
 
+# Gardens to hang around
+有一些其他人精心构造的花园，我必须要分享给你，真的很好逛！
 
+## 亚洲园
+- [欧文Owen](https://www.owenyoung.com/)
+
+## 美洲园
+- [格温Gwern](https://gwern.net/)
 
