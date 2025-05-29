@@ -1,0 +1,90 @@
+---
+title: "SRE之道"
+date: "2025-05-29"
+categories: ['worklog']
+description: "一些对SRE的简单理解，可能还会随着时间而再变化。"
+draft: true
+---
+
+Google是SRE概念的创建者，并且真诚的将实践经验总结成[《Site Reliability Engineering》](https://sre.google/sre-book/table-of-contents/)一书。（中文版《SRE Google运维解密》) SRE这个概念也在这之后真正流行了起来，被其他公司纷纷效仿。
+
+许多关于SRE效仿的实践中，大家都在解释自己是如何将那本书中[实践章节](https://sre.google/sre-book/part-III-practices/)的各种名词^[SLO，SLI，故障管理，应急响应，容量管理，监控告警等等]，设计到自己的工作环境中的。而鲜有人解释，SRE究竟是为了解决什么问题而被创造的。
+
+> The closer you look, the less you see. -- [Now You See Me](https://zh.wikipedia.org/zh-cn/%E5%87%BA%E7%A5%9E%E5%85%A5%E5%8C%96)
+
+如果不理解Google组件SRE团队的目的和逻辑，那要怎么借鉴呢？
+
+# 历史和猜想
+
+## 竞争和扩张
+彼时(2000年左右)的Google属于初创公司，雅虎是当时的顶流网站。敏捷开发流行，作为技术起家的Google也同样采用Release early, release often文化，很长时间Google的产品都[带有BETA标签](https://en.wikipedia.org/wiki/History_of_Google)。新功能快速迭代和新产品的快速上线有助于Google更快的获得更多用户，占领市场^[这个策略至今在竞争市场上依然有效]。
+
+## 速度和质量
+
+快速的迭代和发布，意味着引入更频繁的变更，也意味着系统和服务出现错误的概率会更高。
+
+![[Distributed system availability](https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyond-improving-resilience/distributed-system-availability.html)](https://image.luozx.org/garden/2025/05/0b6a7a8bef26531da0ec8b5cf0c39118.png)
+
+软件系统或服务经常出错，甚至崩溃/不可用，轻则导致用户流失，市场竞争力下降，造成公司经济损失。重则可能会对公共安全和生命安全造成威胁^[想想如果控制城市的电网系统或者负责民航的指挥系统出问题会怎样]。Google当时所面临的是第一种情况，也是现在大多数互联网公司所面临的情况。
+
+另一方面，用户规模的快速增长，导致增加更多的硬件资源和支撑型的组件，这又会增加额外的复杂性和不确定性，同样会提升系统或服务出错的概率。
+
+Borg，Kubernetes的前身，就是那时开发的^[[The Evolution of Kubernetes: From Borg to K8s and How it Became the Standard for Container Orchestration  ](https://romanglushach.medium.com/the-evolution-of-kubernetes-from-borg-to-k8s-and-how-it-became-the-standard-for-container-7700dcdf883b)]。
+
+## SRE出现
+2003年，正是在这样的背景下，Google的SRE团队成立。我们现在得到的信息是什么？
+
+1. 快速迭代和服务质量（可靠）的冲突
+2. 市场竞争和用户规模的快速增长的压力
+
+在那个时候，似乎还没有现在不追求规模的创业理念。Google想要变大，就必须在这两者之间寻求一种平衡。SRE团队是在高速迭代和高质量服务之间的缓冲。
+
+软件制品的生命周期分两部分：生产和运行。产生阶段由产品开发团队实现，运行阶段则由SRE团队维护。
+
+
+就不得不解决规模化所带来的一切影响自己市场竞争力的因素：
+
+1. 更快的发布
+2. 更多的资源
+3. 更多的人员
+4. 更多的服务
+
+从外部环境要求的快逐渐转变为内部环境要求的快。
+
+Benjamin自己是软件工程师出身，构建系统的自动化能力成了首要目标。
+
+>  we want systems that are **automatic**, not just **automated**
+
+解决的是Google内部开发效率的问题，构建可信的（支撑）软件系统，让其他软件开发人员能将注意力放在开发产品功能上
+
+
+
+
+
+哔哩哔哩：[没有SLO就没有SRE？来看看B站SRE对SLO的实践总结](https://www.bilibili.com/opus/689662861736149026)
+阿里巴巴：[这是阿里技术专家对 SRE 和稳定性保障的理解](https://mp.weixin.qq.com/s/DUfoMeJa0spHO0d1p0RSdQ)
+美团：[云端的SRE发展与实践](https://tech.meituan.com/2017/08/03/meituanyun-sre.html)
+
+如今，大多数公司都在招聘专门负责保障系统或服务稳定的员工，在招聘时大多冠以“SRE工程师”的名字，偶尔也有叫做“SRE运维开发工程师”，“稳定性治理工程师”的情况。招聘专门负责保障系统或服务稳定性员工，源于一个最简单的常识：互联网时代，
+
+# Google面临的处境
+
+#
+SRE团队在Google的起源可以追溯到2003年，那时的Google还是一家小公司，也正是它高速增长的时期。
+
+
+
+# 效仿者的理解
+效仿公司的理解
+
+一些历史和猜想
+Google当时想解决什么问题
+
+Google书中的收获 -- 结果而非原因
+
+如何应用SRE
+  要素：
+  工程学(Engineering)
+  角度：
+1. 体系规划者和构建者
+2. 
