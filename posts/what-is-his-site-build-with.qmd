@@ -1,0 +1,21 @@
+---
+title: "他的网站是用什么生成的"
+date: "2025-05-31"
+description: ""
+categories: ['html']
+draft: false
+---
+
+有时候在逛别人个网站时，对阅读体验和写作内容丰富的站点天然产生好感！比如Owen的[站点](https://www.owenyoung.com/)
+然后就会开始好奇，他们的网站是用什么搭建/生成的。
+
+后来发现，大多数内容生成站点，都带有`<meta name='generator'>`标识的HTML标签。浏览时，打开开发者工具，搜索「generator」就能看到网站内容是由什么程序生成的。
+
+比如我的网站是：`<meta name="generator" content="quarto-1.7.31">`
+
+这个Tag虽然写在[HTML标准](https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names)里，但也少部分不遵循，比如前面提到Owen使用的工具[Zola](https://getzola.org/)
+
+有意思的是，使用Emacs ORG mode生成的[站点](https://entropicthoughts.com/index)会明确带上`<meta name="generator" content="Org Mode">`的Tag
+
+Hugo，Wordpress基本都带有这个Tag。
+

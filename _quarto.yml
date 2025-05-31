@@ -30,8 +30,6 @@ website:
         href: pages/about.qmd
       - text: ToolBox
         href: pages/toolbox.qmd
-      - text: 原始积累
-        href: pages/primitive-accumulation.qmd
     right:
       - text: 'Time Machine'
         href: time-machine.qmd
