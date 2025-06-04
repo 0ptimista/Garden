@@ -18,9 +18,8 @@ draft: false
 跟西班牙语类似，知道了基础读音，即使你不认识这个词汇，你也能读出来^[先不要考虑汉字的事情]。
 
 
-我最初使用多邻国（免费）和五十音起源（付费$1.99）同时学习五十音，前者是顺序，后者是乱序。
-两个App都会有正确写假名的教学。App适合空余时间短的时候快速练习，如果能专门抽出学习的时间，更推荐
-出口仁老师视频。原视频在YouTube上，下面是B站的搬运：
+我最初使用多邻国（免费）和五十音起源（付费$1.99）两个App同时学习五十音，前者是顺序学习，后者是乱序。
+两个App都有如何写假名的教学。App适合空余时间短的时候快速练习，如果能专门抽出学习的时间，更推荐出口仁老师视频。原视频在YouTube上，下面是B站的搬运：
 
   - [出口仁老师讲解五十音，日语入门必备！](https://www.bilibili.com/video/BV18J411774w/?spm_id_from=333.1391.0.0&p=2&vd_source=b30b44a710e6ddf3fc340697ce43a650)
 
@@ -44,12 +43,13 @@ draft: false
 
 2. 学读[课文](https://www.bilibili.com/video/BV1Py4y1C7ge?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=2)
 
-3. 学习[(文)语法](https://www.bilibili.com/video/BV1CQ4y1V7dQ/?spm_id_from=333.1391.0.0)（出口仁）
+3. 学习[文法^[语法]](https://www.bilibili.com/video/BV1CQ4y1V7dQ/?spm_id_from=333.1391.0.0)（出口仁）
 
 4. 跟读练习，教材的练习有A，B，C三个
     - [练习A-B-C](https://www.bilibili.com/video/BV1DLv4egEW7/?spm_id_from=333.337.search-card.all.click&vd_source=b30b44a710e6ddf3fc340697ce43a650)
 
      这个视频也有课文，但是同时会把中文翻译也播放出来，上面另外的课文视频，只显示翻译，只播放日语音频。个人比较喜欢第二种方式学习课文。
+
 
 
 # 其他疑问

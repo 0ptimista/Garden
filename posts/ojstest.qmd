@@ -1,0 +1,30 @@
+---
+title: "ojstest"
+date: ""
+categories: []
+execute:
+  echo: false
+draft: true
+---
+
+```python
+print(f"1+1={1+1}")
+```
+
+
+[This text is highlighted]{.mark}
+
+```{ojs} 
+jsonURL = "https://collectionapi.metmuseum.org/public/collection/v1/departments";
+data = fetch(jsonURL)
+  .then(response => {
+    if (!response.ok) throw new Error(response.status);
+    return response.json();
+  })
+
+data
+
+```
+
+
+
