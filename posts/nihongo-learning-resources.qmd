@@ -1,54 +1,70 @@
 ---
-title: "日语学习资源"
-date: ""
-description: "适合想要自学的朋友们"
+title: "日语自学资源"
+date: "2025-06-04"
+date-modified: last-modified
+description: "想自学的朋友们，不知道怎么开始的话，可以试试看我的学习过程"
 categories: []
-draft: true
+draft: false
 ---
 
-# 五十音
+自己正在学习日语，根据[帖子](https://www.v2ex.com/t/927221#)的推荐，选择了「大家的日语」这本教材。
+整理了一些这本教材初级学习资源，分享给同样想要自学的朋友。
+如果你不知道先从哪里下手，可以按照我现在的方式试一试。
 
-学会读
 
-- 五十音起源（付费$1.99）
-- 多邻国（免费）
+# 五十音是学习教材的前提
 
-学会写和巩固
+如果你跟我一样完全零基础，那么先不要考虑使用教材，必须要把五十音学会，因为五十音是日语发音的基础元素。
+跟西班牙语类似，知道了基础读音，即使你不认识这个词汇，你也能读出来^[先不要考虑汉字的事情]。
 
-- 出口仁老师视频
-  - [B站搬运](https://www.bilibili.com/video/BV18J411774w/?spm_id_from=333.1391.0.0&p=2&vd_source=b30b44a710e6ddf3fc340697ce43a650)
-  - YouTube
 
-# 教材
+我最初使用多邻国（免费）和五十音起源（付费$1.99）同时学习五十音，前者是顺序，后者是乱序。
+两个App都会有正确写假名的教学。App适合空余时间短的时候快速练习，如果能专门抽出学习的时间，更推荐
+出口仁老师视频。原视频在YouTube上，下面是B站的搬运：
 
-- 大家的日语
+  - [出口仁老师讲解五十音，日语入门必备！](https://www.bilibili.com/video/BV18J411774w/?spm_id_from=333.1391.0.0&p=2&vd_source=b30b44a710e6ddf3fc340697ce43a650)
 
-# 网站
+假名的读写都不成问题后，就可以开始学习教材了。
+
+# 教材学习
+
+大家的日语属于比较经典的日语教材，出版很多年，也有好多系列。
+
+我购买一本初级教材和学习辅导用书。（其实买一本教材就行了）
+
+- [大家的日语](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BATAJK1olXwIEVFxdAE8SBV8IGFgRXwABVG4ZVxNJXF9RXh5UHw0cSgYYXBcIWDoXSQVJQwYBV1pfDkgXHDZNRwYlHHkHIVwCATB0Zx19ZjJSWQVKH1hdaEcbM244GFoVXQAFUVxVAXsnA2g4STXN67Da8e9B3OGY1uefK1olXQAHXF9YDUgUAW4NGWsSXQ8yDwszDB9EBTsPTlpHCgFVAW5tOEgnBG8BD11nHFQWUixtOEsnAF9KdQkdWVJVUV8KWkMWUWoLTwkcClQFBFsNXEsQV25dGFJCbQQDVVpUOHvJjft9Gh5tJwBSAF9Vbg1VChV1xdWBTG17VFZVDlonfQtMfQIdHVpqIjkvbipFaydPEgRRKURhOlw-bS1IYzUAaDNRGXhmJzUZeHsSM28OG1kl)
+![](https://image.luozx.org/garden/2025/06/8e3a2dc610c554ca2314a15c1735f5d8.png)
+
+现在好像涨价了还😅
+
+教材的每一课，我是按照以下顺序学习，
+下面的链接均为B站的视频学习资源
+
+1. 跟[视频](https://www.bilibili.com/video/BV1Z6ERzEEmA?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650)熟悉单词
+
+2. 学读[课文](https://www.bilibili.com/video/BV1Py4y1C7ge?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=2)
+
+3. 学习[(文)语法](https://www.bilibili.com/video/BV1CQ4y1V7dQ/?spm_id_from=333.1391.0.0)（出口仁）
+
+4. 跟读练习，教材的练习有A，B，C三个
+    - [练习A-B-C](https://www.bilibili.com/video/BV1DLv4egEW7/?spm_id_from=333.337.search-card.all.click&vd_source=b30b44a710e6ddf3fc340697ce43a650)
+
+     这个视频也有课文，但是同时会把中文翻译也播放出来，上面另外的课文视频，只显示翻译，只播放日语音频。个人比较喜欢第二种方式学习课文。
+
+
+# 其他疑问
+
+- 认识假名后，有些单词是汉字，那假名和汉字的映射关系怎么学习？
+
+      我没有找到专门关于这个问题的学习资源，
+      大致意思都是说日本人在使用假名还是使用汉字也没有特别的说明，
+      所以记忆单词和学习课文的时候顺便记忆以下好了。
+
+
+# 额外资源
+
+没事的话可以看看
 
 - [日语迷](https://riyumi.com/beginner-faq/)
 - [NHK简明日语](https://www3.nhk.or.jp/nhkworld/lesson/zh/about/howtouse/)
 
-# 使用路线
-
-根据不同的学习阶段，使用不同的资源。
-
-最重要的是，有时间约束和没有时间约束。
-
-## JLPT
-
-### N5
-
-## 自由学习
-
-
-问题：
-
-假名学会了，如何学习汉字？他们怎么对应
-
-# 大家的日语
-
-[课文](https://www.bilibili.com/video/BV1Py4y1C7ge?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=2)
-[单词](https://www.bilibili.com/video/BV1Z6ERzEEmA?spm_id_from=333.788.videopod.episodes&vd_source=b30b44a710e6ddf3fc340697ce43a650&p=4)
-[语法](https://www.bilibili.com/video/BV1CQ4y1V7dQ/?spm_id_from=333.1391.0.0)
-[练习A](https://www.bilibili.com/video/BV1tw411h7dM?spm_id_from=333.788.recommend_more_video.3&vd_source=b30b44a710e6ddf3fc340697ce43a650)
-[练习A-B-C](https://www.bilibili.com/video/BV1DLv4egEW7/?spm_id_from=333.337.search-card.all.click&vd_source=b30b44a710e6ddf3fc340697ce43a650)
