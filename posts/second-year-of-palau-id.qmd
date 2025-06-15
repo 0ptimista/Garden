@@ -1,0 +1,77 @@
+---
+title: "帕劳数字ID第二年"
+date: "2025-06-15"
+categories: ['tome-of-xp']
+---
+
+有一段时间，我对数字居民这个概念很该兴趣。成为一个数字居民意味着你可以通过网络申请该地的身份证明，并且享受一定属于该地居民才能享有的便利。
+
+目前我知道有三个比较成熟的数字居民热门选项：
+
+1. 爱沙尼亚
+2. 立陶宛
+3. 帕劳
+
+我选择了帕劳ID进行测试，今年也是使用帕劳ID的第二年。
+
+目前，帕劳ID最实用的一点就是进行实名身份验证（KYC）。这对某些限制区域参与的活动有帮助。
+
+除了KYC之外，邮寄服务也在逐渐开放：
+
+![](https://image.luozx.org/garden/2025/06/e276513e46d66f31bf0b8b67fbd7f9e6.png)
+
+也许邮寄服务将会成为一些转运方案^[比如[购买日版iPhone](https://players.luozx.org/p/iphonejp-purchasing-experience)]的选项之一。
+
+除了上述两个功能，还正在测试一种在Solana上推行的证明服务，[RNS Proof](https://rns.id/zh-CN/rnsProof)，这个应该也算做KYC，验证效率会比现在上传照片，人脸识别的效率高一些。
+有意思的是，示例功能提到了为RWA提供验证，也许以后普通人也能够买世界范围的真实资产（股票，债券等）。毕竟，现在购买其他国家的资产有一定门槛。
+
+![](https://image.luozx.org/garden/2025/06/76a2462b4ca974802765e9050467d557.png)
+
+**价格**
+
+帕劳ID价格$248，有效期一年，到期后只能选择续费5年（$1039）或10年（$2039），我这次选择了付费5年。
+
+![](https://image.luozx.org/garden/2025/06/611c935bef1fc28c81813f6a83bab4b7.png)
+
+**可能推出的功能**
+
+根据[介绍](https://docs.rns.id/documentation/utility-of-rns#iii.-digital-residency-roadmap)， 我觉得以后可能有用的功能（完整功能请前面链接查看）
+
+- 带有**美国邮政编码**的帕劳地址^[也许能用来接收ITIN之类的信件]
+- 帕劳电话号码， eSIM的话最好
+- 注册帕劳公司（C-corp/LLC/DAO/Trust/etc.）
+- 数字银行，海外账户的新选项
+- 帕劳VPN
+
+**值不值**
+
+大多数情况下不值，除非
+
+1. 你对上述功能有需求
+2. 你能利用KYC的优势^[优势期有限]
+
+或者申请成本对你来说不贵，并且想及时体验一些最新的互联网活动，那么可以申请试试^[[我的邀请](https://rns.id/?rc_by=REFBYLUO)]。
+
+**收货和实物**
+
+邮寄服务是从国内杭州发出的（还是中通）
+
+:::{layout-ncol=2 }
+
+![正面](https://image.luozx.org/garden/2025/06/12832dcfd423449a908c3532448df505.jpg){width=80% height=60%}
+
+![背面](https://image.luozx.org/garden/2025/06/321dacd510821cf5801f3b6ebaf3f9c1.jpg){width=80% height=60%}
+
+:::
+
+里面是一封信，帕劳ID就在里面：
+
+:::{layout-ncol=3}
+![](https://image.luozx.org/garden/2025/06/b8848af01b8ae9dc0eb0917f008636c3.jpg){.lightbox}
+
+![](https://image.luozx.org/garden/2025/06/ab24ea07df54f4ae3114504928e8202f.jpg){.lightbox}
+
+![](https://image.luozx.org/garden/2025/06/b97ca56dd66abec8ddb85f99528887fa.jpg){.lightbox}
+:::
+
+![](https://image.luozx.org/garden/2025/06/a9749152dfe95de42a8d2482365fc275.png){width=60% fig-align="center" }
