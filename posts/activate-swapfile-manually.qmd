@@ -1,0 +1,32 @@
+---
+title: "在Linux中创建并激活交换文件(swapfile)"
+date: "2025-06-24"
+description: "在小内存的VPS中使用很合适"
+categories: ['tools']
+code-annotations: below
+draft: false
+---
+
+以前对swap文件的理解都是在书面上的：
+
+- swap文件是磁盘上的一个特殊文件类型。
+- 当物理内存不足时，系统会将部分数据从内存（RAM）移动到swap文件中，起到扩展虚拟内存的作用。
+
+但是从来没有真正实际感受过swap文件的作用。
+
+今天一个同样的CLI程序，在内存32GB的macOS和64GB的VPS上运行都没有问题，但是在4GB和1GB的VPS上运行时，没一会就出现Killed提示。
+
+其中官方提供了解决办法，就是手动创建一个10GB的swap文件。设置之后，CLI程序在两台小内存机器上可以正常运行。
+
+```bash
+sudo fallocate -l 10G /swapfile && \  # <1>
+sudo chmod 600 /swapfile && \
+sudo mkswap /swapfile && \ # <2>
+sudo swapon /swapfile && \ # <3>
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
+
+
+1. 在根目录下分配(`fallocate`)一个空间大小(`-l`,`--length`)为10GB，名叫`swapfile`的文件。
+2. 将文件格式化为swap分区类型
+3. 启用/激活swap文件
