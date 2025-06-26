@@ -5,9 +5,10 @@ author: ""
 date-modified: ""
 listing:
   - id: recent-posts
-    contents: posts
     feed:
       type: partial
+    contents: posts
+    fields: [title, author, description, file-modified]
     page-size: 5
     sort: "date desc"
     type: default

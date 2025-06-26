@@ -18,8 +18,8 @@ website:
   favicon: "tree.png"
   bread-crumbs: true
   cookie-consent:
-    type: express
-    style: headline
+    type: implied
+    style: simple
   google-analytics: "G-C8KE2VXVE7"
   open-graph: true
   twitter-card: true
@@ -62,7 +62,7 @@ filters:
   - social-share
   - adsense
 lang: zh
-date-format: long
+date-format: "YYYY-MM-DD HH:mm"
 license: "CC BY-NC-SA"
 copyright: 
   holder: Luozx
