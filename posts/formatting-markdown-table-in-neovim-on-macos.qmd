@@ -1,7 +1,9 @@
 ---
-title: "无需插件：Neovim格式化Markdown表格（macOS）"
-date: "2024-12-26"
-categories: ['tools']
+title: 无需插件：Neovim格式化Markdown表格（macOS）
+date: '2024-12-26'
+categories:
+- tools
+
 ---
 
 我通常用Neovim(Lazyvim)和Quarto写文章，[quarto-nvim](https://github.com/quarto-dev/quarto-nvim)
@@ -33,6 +35,3 @@ brew install util-linux
 /opt/homebrew/opt/util-linux/bin/column -t -s '|' -o '|'
 
 ```
-
-
-

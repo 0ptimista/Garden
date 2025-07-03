@@ -1,8 +1,10 @@
 ---
-title: "ChatGPT Plus时刻"
-date: "2025-05-07"
-description: "决定购买ChatGPT Plus的那一刻"
-categories: ['mypick']
+title: ChatGPT Plus时刻
+date: '2025-05-07'
+description: 决定购买ChatGPT Plus的那一刻
+categories:
+- mypick
+
 ---
 
 BayFamily的[西太平洋房地产过剩分布图](https://mp.weixin.qq.com/s/EDrBIIh5T3n1IkpUKwg49Q)一文中引用了这篇[论文](https://www.nature.com/articles/s41467-025-57217-7#Sec2)结论中的统计图。我想在图片中找找看有没有自己老家的城市，使用了多个免费版本的大预言模型后，只有ChatGPT给出了正确的答案。
@@ -61,4 +63,3 @@ BayFamily的[西太平洋房地产过剩分布图](https://mp.weixin.qq.com/s/ED
 YouTube上这个视频的介绍了ChatGPT Free，Plus之间的不同功能（以及其他更高级版本），可以参考。
 
 {{< video https://www.youtube.com/watch?v=gl0jwZfd5MY >}}
-

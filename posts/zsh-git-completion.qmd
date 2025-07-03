@@ -1,9 +1,10 @@
 ---
-title: "zsh增加git路径自动补全"
-date: "2025-02-26"
-categories: ['tools']
----
+title: zsh增加git路径自动补全
+date: '2025-02-26'
+categories:
+- tools
 
+---
 
 受到[这篇文章](https://www.bitecode.dev/p/slashing-my-bashrc-in-half)的启发，正在将自己[旧的zsh配置](https://github.com/0ptimista/dotfiles/blob/2152fb08cce10ff4be5c9e929f42010a44b33915/.zshrc)重新整理。
 按照[The Valubale Dev](https://thevaluable.dev/zsh-install-configure-mouseless/)的系列指南，只保留自己需要和看得懂的内容。

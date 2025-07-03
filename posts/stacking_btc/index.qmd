@@ -2,18 +2,16 @@
 format:
   html:
     other-links:
-      - text: "明细数据"
-        href: btcusd_perps.html
-
-title: "如何囤积比特币"
-date: "2025-05-23"
-description: "让手中的比特币越来越多"
+    - text: 明细数据
+      href: btcusd_perps.html
+title: 如何囤积比特币
+date: '2025-05-23'
+description: 让手中的比特币越来越多
 categories: []
-resources: 
-  - "btcusd_perps.csv"
+resources:
+- btcusd_perps.csv
+
 ---
-
-
 
 如果你想囤积比特币，恰巧手中又有一些比特币。那不妨试试这策略：
 
@@ -67,4 +65,3 @@ resources:
 ![](https://image.luozx.org/garden/2025/05/e4b28abce8b1c8f3395baed45ea3a376.png)
 
 上图为在价格106666成交^[2025年05月09日]空单后的资金费用情况。锁定了一定的价差，又能每8小时收比特币利息。
-

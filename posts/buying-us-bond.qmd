@@ -1,7 +1,10 @@
 ---
-title: "从美国政府手里拿钱"
-date: "2024-11-17"
-categories: ['money',"tome-of-xp"]
+title: 从美国政府手里拿钱
+date: '2024-11-17'
+categories:
+- money
+- tome-of-xp
+
 ---
 
 2023年下半年，在美国不断加息的环境下，开始研究如何购买美国国债。

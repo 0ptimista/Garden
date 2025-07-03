@@ -1,10 +1,12 @@
 ---
-title: "在Linux中创建并激活交换文件(swapfile)"
-date: "2025-06-24"
-description: "在小内存的VPS中使用很合适"
-categories: ['tools']
+title: 在Linux中创建并激活交换文件(swapfile)
+date: '2025-06-24'
+description: 在小内存的VPS中使用很合适
+categories:
+- tools
 code-annotations: below
 draft: false
+
 ---
 
 以前对swap文件的理解都是在书面上的：

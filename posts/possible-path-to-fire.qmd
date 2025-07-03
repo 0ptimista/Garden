@@ -1,9 +1,10 @@
 ---
-title: "通往FIRE的可选路径"
-date: "2025-05-21"
-description: ""
+title: 通往FIRE的可选路径
+date: '2025-05-21'
+description: ''
 categories: []
 draft: false
+
 ---
 
 贝版[总结了](https://blog.wenxuecity.com/myblog/23244/202005/24184.html)一种普通人要实现FIRE^[Financial Independent and Retire Early，经济自由提早退休]需要越过的四个阶段：
@@ -19,5 +20,3 @@ draft: false
 最终，要实现我们想要的（比如FIRE），就剩下两件简单的事：长远坚定目标和主动变化勇气。
 
 这是一个简单却不容易践行的思维模型。
-
-

@@ -1,7 +1,8 @@
 ---
-title: "Andrej Karpathy如何使用大语言模型"
-date: "2025-04-06"
+title: Andrej Karpathy如何使用大语言模型
+date: '2025-04-06'
 categories: []
+
 ---
 
 Andrej Karpathy在[「How I use LLMs」](https://youtu.be/EWvNQjAaOHw?si=gV93Va9F02gNhrY4)影片中介绍了关于LLM的基本知识。

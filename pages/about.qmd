@@ -1,8 +1,9 @@
 ---
-title: "About"
-description: "关于这个网站，内容和作者"
+title: About
+description: 关于这个网站，内容和作者
 categories: []
 date-modified: last-modified
+
 ---
 
 # About this site
@@ -63,4 +64,3 @@ date-modified: last-modified
 
 ## 美洲园
 - [格温Gwern](https://gwern.net/)
-

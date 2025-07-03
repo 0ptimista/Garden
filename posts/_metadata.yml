@@ -1,1 +1,6 @@
 page-navigation: true
+comments:
+  giscus:
+    repo: 0ptimista/Garden
+    loading: lazy
+    category: Announcements

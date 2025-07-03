@@ -1,7 +1,9 @@
 ---
-title: "可以信赖的输入法：RIME"
-date: "2025-01-21"
-categories: ['tools']
+title: 可以信赖的输入法：RIME
+date: '2025-01-21'
+categories:
+- tools
+
 ---
 
 输入法经常被诟病问题有：

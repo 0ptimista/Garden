@@ -1,9 +1,10 @@
 ---
-title: "为什么要在意国债收益率"
-date: "2025-05-18"
-description: "收益率高低对我们普通人意味着什么"
+title: 为什么要在意国债收益率
+date: '2025-05-18'
+description: 收益率高低对我们普通人意味着什么
 categories: []
 draft: false
+
 ---
 
 我在2023年底之所以尝试[第一次购买美债](./buying-us-bond.qmd)，是受到了当时高利率背景下，一些财经内容的启发和建议 -- 通过美债，锁定一定时期的高利率。作为尝试，选择了2年期进行试验。
@@ -57,4 +58,3 @@ draft: false
 
 
 {{< include ../include/telegram_channel.qmd >}}
-

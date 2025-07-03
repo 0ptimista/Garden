@@ -1,9 +1,10 @@
 ---
-title: "这是一件很私人的事"
-date: "2025-06-21"
-description: "烫烫烫烫烫"
+title: 这是一件很私人的事
+date: '2025-06-21'
+description: 烫烫烫烫烫
 categories: []
 draft: false
+
 ---
 
 偶然间看到DIYGod这条推文：

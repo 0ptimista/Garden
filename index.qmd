@@ -1,34 +1,44 @@
 ---
-title: ""
+title: ''
 page-layout: full
-author: ""
-date-modified: ""
+author: ''
+date-modified: ''
+date-format: long
 listing:
-  - id: recent-posts
-    feed:
-      type: partial
-    contents: posts
-    fields: [title, author, description, file-modified]
-    page-size: 5
-    sort: "date desc"
-    type: default
-    categories: true
-    sort-ui: false
-    filter-ui: false
-    max-description-length: 150
-  - id: featured
-    contents: 
-      - ./posts/buying-us-bond.qmd
-      - ./posts/steps-of-buying-us-bonds.qmd
-      - ./posts/steps-of-buying-us-bonds-2.qmd
-      - ./posts/risk-free-asset.qmd
-    sort: "date asc"
-    feed: false
-    type: grid
-    fields: [date, title, author]
-    categories: true
-    sort-ui: false
-    filter-ui: false
+- id: recent-posts
+  feed:
+    type: partial
+  contents: posts
+  fields:
+  - title
+  # - author
+  - date
+  - description
+  # - file-modified
+  page-size: 5
+  sort: date desc
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  max-description-length: 150
+- id: featured
+  contents:
+  - ./posts/buying-us-bond.qmd
+  - ./posts/steps-of-buying-us-bonds.qmd
+  - ./posts/steps-of-buying-us-bonds-2.qmd
+  - ./posts/risk-free-asset.qmd
+  sort: date asc
+  feed: false
+  type: grid
+  fields:
+  - date
+  - title
+  - author
+  categories: true
+  sort-ui: false
+  filter-ui: false
+
 ---
 
 # Featured
@@ -42,4 +52,4 @@ listing:
 :::
 
 
-[All posts](./time-machine.qmd)
+[All posts](time-machine.qmd)

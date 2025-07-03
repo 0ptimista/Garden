@@ -1,7 +1,9 @@
 ---
-title: "想要尝试的几个Python库"
-date: "2025/01/01"
-categories: ['tools']
+title: 想要尝试的几个Python库
+date: 2025/01/01
+categories:
+- tools
+
 ---
 
 偶然的机会，在PyCoder's Weekly中看到

@@ -1,9 +1,10 @@
 ---
-title: "查找子域名的工具"
-date: "2025-01-27"
-categories: ['tools']
----
+title: 查找子域名的工具
+date: '2025-01-27'
+categories:
+- tools
 
+---
 
 # 在线工具
 

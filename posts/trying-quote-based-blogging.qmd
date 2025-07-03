@@ -1,7 +1,8 @@
 ---
-title: "开始尝试Simon Willison的quote from写作风格"
-date: "2025-05-03"
+title: 开始尝试Simon Willison的quote from写作风格
+date: '2025-05-03'
 categories: []
+
 ---
 
 平时有想要写的话题和观点，都会用Notion记录，躺在Notion的看板中，除了保存在Notion外，偶尔也会通过创建本地[草稿](https://quarto.org/docs/websites/website-drafts.html#specifying-drafts)来快速记录。
@@ -43,5 +44,3 @@ Simon Willison [My approach to running a link blog](https://simonwillison.net/20
 - 写自己今天所学到的（Today I Learned）
 - 写自己所做过的（项目）
 - 写自己的发现（Quoting from风格）
-
-

@@ -1,8 +1,10 @@
 ---
-title: "个性匹配的投资策略"
-date: "2025-03-19"
-categories: ['money']
-description: "了解自己，选择舒适的投资风格"
+title: 个性匹配的投资策略
+date: '2025-03-19'
+categories:
+- money
+description: 了解自己，选择舒适的投资风格
+
 ---
 
 # 懒惰和捡烟头

@@ -1,7 +1,10 @@
 ---
-title: "DEVONThink Note"
-date: "2024-09-13"
-categories: ["tools", 'tome-of-xp']
+title: DEVONThink Note
+date: '2024-09-13'
+categories:
+- tools
+- tome-of-xp
+
 ---
 
 记录使用[DEVONThink](https://www.devontechnologies.com/apps/devonthink)时遇到的问题和解决办法.

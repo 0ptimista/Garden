@@ -1,9 +1,11 @@
 ---
-title: "SRE之道"
-date: "2025-05-29"
-categories: ['worklog']
-description: "关于SRE的观察和思考"
+title: SRE之道
+date: '2025-05-29'
+categories:
+- worklog
+description: 关于SRE的观察和思考
 draft: false
+
 ---
 
 运维工程师，更传统的名字叫做系统管理员（Sysadmin），是负责维护和管理IT基础设施的核心角色，长期承担着保障系统稳定运行的重要职责。

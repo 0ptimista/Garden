@@ -1,8 +1,11 @@
 ---
-title: "购买美债的思路"
-date: "2025-01-04"
-description: "直接购买美债"
-categories: ['money',"tome-of-xp"]
+title: 购买美债的思路
+date: '2025-01-04'
+description: 直接购买美债
+categories:
+- money
+- tome-of-xp
+
 ---
 
 通常来说，新发行的债券价格会低于它的票面价值(低于$100)，因此购买新发行的债券，除了拿到固定利息之外，还有一部分收益是价差利润。(虽然很低)

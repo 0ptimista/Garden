@@ -1,9 +1,11 @@
 ---
-title: "他的网站是用什么生成的"
-date: "2025-05-31"
-description: ""
-categories: ['html']
+title: 他的网站是用什么生成的
+date: '2025-05-31'
+description: ''
+categories:
+- html
 draft: false
+
 ---
 
 有时候在逛别人个网站时，对阅读体验和写作内容丰富的站点天然产生好感！比如Owen的[站点](https://www.owenyoung.com/)
@@ -18,4 +20,3 @@ draft: false
 有意思的是，使用Emacs ORG mode生成的[站点](https://entropicthoughts.com/index)会明确带上`<meta name="generator" content="Org Mode">`的Tag
 
 Hugo，Wordpress基本都带有这个Tag。
-

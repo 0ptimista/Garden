@@ -1,8 +1,11 @@
 ---
-title: "Kill the Newsletter!"
-date: "2024-11-12"
-date-modifiled: "last-modified"
-categories: ['tools', 'tome-of-xp']
+title: Kill the Newsletter!
+date: '2024-11-12'
+date-modifiled: last-modified
+categories:
+- tools
+- tome-of-xp
+
 ---
 
 习惯了用RSS订阅自己想接收的信息，但凡浏览到好内容，下意识的会去检查RSSHub上有没有可订阅的红色提示。
@@ -41,4 +44,3 @@ Follow提供个人邮箱，用这个邮箱地址可以用来接收不提供RSS F
 ![](https://image.luozx.org/garden/2024/11/2647357614b785d26c3aab874f815832.png)
 
 关于Follow的其他功能，可以再[这里](../posts/follow-the-app/follow-the-app.qmd)找到
-

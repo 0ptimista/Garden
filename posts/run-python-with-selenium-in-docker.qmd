@@ -1,9 +1,12 @@
 ---
-title: "Python,Selenium和Docker"
-date: "2024-11-29"
-categories: ['tools','tome-of-xp']
+title: Python,Selenium和Docker
+date: '2024-11-29'
+categories:
+- tools
+- tome-of-xp
 execute:
   echo: fenced
+
 ---
 
 分别单独运行Selenium的容器和包含Python代码的容器。
@@ -89,12 +92,3 @@ networks:
     driver: bridge
 
 ```
-
-
-
-
-
-
-
-
-

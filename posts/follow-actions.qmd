@@ -1,7 +1,9 @@
 ---
-title: "给使用wewerss.luozx.org订阅的朋友们一点提示"
-date: "2025-02-23"
-categories: ['tools']
+title: 给使用wewerss.luozx.org订阅的朋友们一点提示
+date: '2025-02-23'
+categories:
+- tools
+
 ---
 
 **2025-04-11更新：**
@@ -30,4 +32,3 @@ RSS应该可以正常获取全文了。
 ![](https://image.luozx.org/garden/2025/02/b45657a20a52b063f368791496ab1035.png)
 
 这样设置以后，阅读起来就更轻松了。
-

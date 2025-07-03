@@ -1,0 +1,12 @@
+```{=html}
+<% for (const item of items) { %>
+  <%- item.category %>
+    <ul>  <% for (const p of item.posts) { %>
+       <li><a href="<%- p.href %>"><%= p.title %></a></li>
+          <q> <%= p.comment %></q>
+      <% } %>
+    </ul> 
+
+<% } %>
+
+```

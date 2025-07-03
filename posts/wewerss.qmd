@@ -1,8 +1,9 @@
 ---
-title: "公开的乐趣"
-date: "2024-11-08"
-last-modified: "last-modified"
+title: 公开的乐趣
+date: '2024-11-08'
+last-modified: last-modified
 categories: []
+
 ---
 
 我有一个自建的[WeWeRss](https://github.com/cooderl/wewe-rss)服务, 用来将微信公众号转换为RSS订阅. 并且这个服务从来没公开过。

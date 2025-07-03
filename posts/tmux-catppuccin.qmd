@@ -1,7 +1,9 @@
 ---
-title: "tmux使用catppuccin主题时状态栏问题"
-date: "2025-02-25"
-categories: ['tools']
+title: tmux使用catppuccin主题时状态栏问题
+date: '2025-02-25'
+categories:
+- tools
+
 ---
 
 [catppuccin](https://github.com/catppuccin)主题覆盖了很多我自己在用的工具。(iTerm2，neovim，tmux)

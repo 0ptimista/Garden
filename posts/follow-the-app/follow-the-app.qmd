@@ -1,10 +1,12 @@
 ---
-title: "Follw: The App"
-date: "2024-10-14"
-date-modified: "last-modified"
-categories: ["application"]
+title: 'Follw: The App'
+date: '2024-10-14'
+date-modified: last-modified
+categories:
+- application
 toc: true
-description: "Follow, 不是一个纯粹的RSS阅读器"
+description: Follow, 不是一个纯粹的RSS阅读器
+
 ---
 
 # 背景

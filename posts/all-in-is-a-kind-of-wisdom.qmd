@@ -1,9 +1,11 @@
 ---
-title: "梭哈是一种智慧"
-description: "概率角度的梭哈"
-date: "2024-11-10"
-date-modified: "last-modified"
-categories: ["probability"]
+title: 梭哈是一种智慧
+description: 概率角度的梭哈
+date: '2024-11-10'
+date-modified: last-modified
+categories:
+- probability
+
 ---
 
 今天受到了两个事情的启发:
@@ -181,4 +183,3 @@ plt.show()
 ::: {.callout-warning title='声明'}
 如果你发现文章中有任何严重的错误，欢迎随时和我联系进行修正。
 :::
-

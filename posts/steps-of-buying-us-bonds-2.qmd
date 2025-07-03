@@ -1,9 +1,11 @@
 ---
-title: "购买美债的思路（二）"
-date: "2025-05-04"
-description: "间接购买美债的方式"
+title: 购买美债的思路（二）
+date: '2025-05-04'
+description: 间接购买美债的方式
 date-modified: last-modified
-categories: ['money']
+categories:
+- money
+
 ---
 
 几个月前，我在[购买美债的思路](../posts/steps-of-buying-us-bonds.qmd)里介绍了从Treasury Direct查询美债的发行日期和编号，然后在券商中搜索美债编号，以发行价直接认购美债的过程。
@@ -113,6 +115,3 @@ $$
 [^source]:[1.香港的银行开户有啥用](https://v2ex.com/t/985885)
 
     [2.想问一下开港卡和理财的事情](https://linux.do/t/topic/409418)
-
-
-

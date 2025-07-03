@@ -1,9 +1,12 @@
 ---
-title: "Quarto Note"
-date: "2025-03-18"
-categories: ['tools','tome-of-xp']
-description: "使用Quarto时遇到的小问题"
+title: Quarto Note
+date: '2025-03-18'
+categories:
+- tools
+- tome-of-xp
+description: 使用Quarto时遇到的小问题
 code-annotations: below
+
 ---
 
 ### 使用[multi-listing](https://quarto.org/docs/websites/website-listings.html#multiple-listings)时，`feed`参数只在第一次出现时生效。
@@ -21,6 +24,3 @@ listing:
     feed: false
 ```
 1. `feed: true` 必须在前，`quarto render`才会正常生成RSS feed（`index.xml`）
-
-
-

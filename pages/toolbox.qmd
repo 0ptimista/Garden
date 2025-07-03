@@ -1,20 +1,19 @@
 ---
-title: "工具箱"
-description: "正在使用的软件和工具"
+title: ""
+author: ""
+description: 正在使用的软件和工具
 ---
+
+正在使用的软件和工具
 
 # 资源管理
 
 - [RoyalTSX](../posts/royal-tsx.qmd)
 - [PicList/PicGo](../posts/blog-image-hosting-with-cf-r2.qmd)
 
-# 内容创作
-
-- Quarto
 
 
 # 阅读
 
 - [wewe-rss](../posts/wewerss.qmd)
 - [follow](../posts/follow-the-app/follow-the-app.qmd)
-

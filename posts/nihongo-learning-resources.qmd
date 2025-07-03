@@ -1,10 +1,12 @@
 ---
-title: "日语自学资源"
-date: "2025-06-04"
+title: 日语自学资源
+date: '2025-06-04'
 date-modified: last-modified
-description: "想自学的朋友们，不知道怎么开始的话，可以试试看我的学习过程"
-categories: ['learning']
+description: 想自学的朋友们，不知道怎么开始的话，可以试试看我的学习过程
+categories:
+- learning
 draft: false
+
 ---
 
 自己正在学习日语，根据[帖子](https://www.v2ex.com/t/927221#)的推荐，选择了「大家的日语」这本教材。
@@ -68,4 +70,3 @@ draft: false
 
 - [日语迷](https://riyumi.com/beginner-faq/)
 - [NHK简明日语](https://www3.nhk.or.jp/nhkworld/lesson/zh/about/howtouse/)
-

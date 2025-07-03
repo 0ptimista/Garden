@@ -1,12 +1,15 @@
 ---
-title: "两个文件的差集"
-description: "*grep* comes handy"
-date: "2024-08-21"
-date-modified: "2024-08-22"
-categories: ['worklog','tome-of-xp']
+title: 两个文件的差集
+description: '*grep* comes handy'
+date: '2024-08-21'
+date-modified: '2024-08-22'
+categories:
+- worklog
+- tome-of-xp
 format:
   html:
     code-copy: true
+
 ---
 
 我在工作中,经常遇到这样的问题: 从一个地方抓取数据, 和另外一个地方的数据进行对比, 找出其中的差异.
@@ -74,4 +77,3 @@ grep -vFf prod.txt staging.txt
 ```bash
 ps -ef |grep nginx |grep -v grep
 ````
-

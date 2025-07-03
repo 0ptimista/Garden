@@ -1,8 +1,9 @@
 ---
-title: "Everyone wants to automate things they have never done."
-date: "2025-05-03"
-description: ""
+title: Everyone wants to automate things they have never done.
+date: '2025-05-03'
+description: ''
 categories: []
+
 ---
 
 {{< video https://www.youtube.com/watch?v=suOfjK35-8E start=1877 >}}

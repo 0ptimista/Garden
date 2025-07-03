@@ -1,12 +1,14 @@
 ---
-title: "Alfred快速在iTerm2和tmux session中执行命令"
-date: "2025-05-20"
-description: "Aflred集成iTerm2和tmux"
-categories: ['tools']
+title: Alfred快速在iTerm2和tmux session中执行命令
+date: '2025-05-20'
+description: Aflred集成iTerm2和tmux
+categories:
+- tools
 draft: false
 format:
   html:
     code-overflow: wrap
+
 ---
 
 [这个AppleScript](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)可以让Alfred直接在iTerm2中执行shell命令（默认是系统自带的Tminal.app）

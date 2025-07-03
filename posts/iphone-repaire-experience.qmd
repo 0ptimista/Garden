@@ -1,8 +1,10 @@
 ---
-title: "日版iPhone大陆Apple Store维修记"
-date: "2024-11-03"
-date-modified: "last-modified"
-categories: ['tome-of-xp']
+title: 日版iPhone大陆Apple Store维修记
+date: '2024-11-03'
+date-modified: last-modified
+categories:
+- tome-of-xp
+
 ---
 
 在有AC+的情况下, 屏幕费用188, 背板费用188.
@@ -50,6 +52,3 @@ Microsoft Authenticator 以前通过微软账户成功同步恢复过, 但是这
 总共花费376, 在这之前还在考虑取消AC+的订阅(每月$9.99), 好在自己比较懒, 省了一大笔钱.
 
 从今天起, 买手机壳, 买屏保, 还是好好保护一下, 不然真的坏掉会好麻烦的...
-
-
-

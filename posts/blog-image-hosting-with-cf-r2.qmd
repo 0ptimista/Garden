@@ -1,7 +1,10 @@
 ---
-title: "Cloudflare R2和博客图床"
-date: "2024-11-23"
-categories: ['tools','tome-of-xp']
+title: Cloudflare R2和博客图床
+date: '2024-11-23'
+categories:
+- tools
+- tome-of-xp
+
 ---
 
 在博客中插入图片对我来说一直是一个很烦人的事情。
@@ -46,4 +49,3 @@ Cloudflare R2对免费用户提供了[每月10GB的存储空间](https://develop
 # Cloudflare R2注意事项
 
 R2上的图片一经删除就无法恢复，所以在删除图片时要谨慎。
-

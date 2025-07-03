@@ -31,8 +31,8 @@ website:
       - text: ToolBox
         href: pages/toolbox.qmd
     right:
-      - text: 'Time Machine'
-        href: time-machine.qmd
+      # - text: 'Time Machine'
+      #   href: time-machine.qmd
       # - text: '{{< iconify mingcute:github-fill size=xl >}}'
       #   href: https://github.com/0ptimista
       - text: '{{< iconify mingcute:twitter-fill size=xl >}}'
@@ -49,11 +49,6 @@ website:
   #     - section: "Introduction"
   #       contents: posts/*
   back-to-top-navigation: true
-  comments:
-    giscus:
-      repo: 0ptimista/Garden
-      loading: lazy
-      category: Announcements
 
 author: "Luozx"
 adsense:
@@ -71,6 +66,8 @@ funding:
 
 format:
   html:
+    # template-partials:
+    #   - title-block.html
     theme: [zephyr,style.scss]
     toc: true
     reference-location: margin
