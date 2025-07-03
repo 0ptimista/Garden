@@ -1,0 +1,65 @@
+---
+title: "你是如何整理你的文件的？"
+date: "2025-07-03"
+description: "分享一些自己保存文件的做法"
+categories: ['tome-of-xp']
+draft: false
+---
+
+虽然听起来有点老套，但是将重要的文件扫描保存，执行下来我觉得是个不错的主意。
+
+::: {.callout-note}
+文章中提到的工具以macOS和iPhone为例，但方法不受这个限制
+:::
+
+我有一个DEVONThink（下文称为DT）的数据库^[简单理解为一个文件夹]，专门用来保存扫描后的文件。我把重要的文件和有需要的文件都通过手机扫描后放进去保存。
+
+![DEVONThink截图](https://image.luozx.org/garden/2025/07/7c96b010fbfecf4d2e60d40e4d4fdcbc.png)
+
+- 医疗：保存医疗记录、病历报告，检查化验单等。
+- 发票收据：产品发票、收据，以备售后服务需要。
+- 合同：劳动合同，租房合同等。
+- 旅行消费：主要用作自己记账时关联小票文件。一些使用beancount记账的过程和方法，记录在了[这里](https://quaily.com/beancount-magazine)
+
+DT不是必须的，使用它是因为💰钱已经花出去了，必须要用回来！😭
+
+> 如果你已经使用了DT或者下决心要使用，DT在OCR搜索的时候会有帮助，尤其在你需要搜索某个文件的内容，或者文件很多的情况下。同时配合Alfred的[DEVONThink Workflow](https://github.com/mpco/AlfredWorkflow-DEVONthink-Search)，检索会更轻松一些。
+
+整个工作流也只有两步：
+
+1. 用手机扫描文件
+2. 上传到电脑，保存在DEVONThink中
+
+
+**扫描文件**
+
+在iPhone 有两种唤起扫描文稿的方法，分别使用备忘录app或者使用文稿app：
+
+- 在备忘录中，新建备忘录，选择📎附件按钮点击扫描文稿
+- 在文稿app中，点击右上角的三个点，选择扫描文稿
+
+:::: {layout="[1,1]"}
+
+![备忘录app](https://image.luozx.org/garden/2025/07/3c929c81543f6b52567ee04f9b49f3b1.png){#备忘录app width=50%}
+
+![文稿app](https://image.luozx.org/garden/2025/07/e4b46f2ad698f8b2dbf96cc1bb7e9dbb.png){#文稿app}
+
+::::
+
+还可以通过快捷指令快速唤起扫描文稿：
+
+![自定义快捷指令](https://image.luozx.org/garden/2025/07/214a482560838b3bf944d6ab86fb11cc.png){width=50%}
+
+我把自己常用的几个功能制作成了上述的快捷指令^[快捷指令可以在这里[下载](https://www.icloud.com/shortcuts/30c576bb210342ada0b23d6a714e0293)]，配合iPhone的[Action Button](https://support.apple.com/zh-cn/guide/iphone/iphe89d61d66/ios)，扫描起来也很方便。
+
+**上传到电脑**
+
+通过文稿app（上述快捷指令也使用文稿app）扫描的文件，扫描后会让你选择保存位置，我通常保存在iCloud云盘里。然后在电脑上直接访问。
+
+![iCloud云盘](https://image.luozx.org/garden/2025/07/4f4c884b30e9cf2c8b0b6edcd2981da3.png){width=50%}
+
+数字化归档一些重要的，常用的物理世界的文件，最大的好处是省去了自己想不起来物理文件放在什么地方的麻烦。还有一些文件，比如病历记录，时间一久，可能物理文件都丢掉了，归档保存起来，对自己的健康管理起到一定作用。
+
+> 关于数据的隐私保护，我在[这篇文章](./royal-tsx.qmd)中有提到Cryptomator工具，推荐使用。
+
+扫描归档，是我目前使用比较满意的重要文件保存和管理方式。你是如何管理这些文件的呢？欢迎在评论区分享你的经验和方法。

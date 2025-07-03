@@ -2,8 +2,6 @@
 title: 他的网站是用什么生成的
 date: '2025-05-31'
 description: ''
-categories:
-- html
 draft: false
 
 ---
