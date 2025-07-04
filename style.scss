@@ -13,3 +13,14 @@ $pagination-active-bg: #9E7140;
 $pagination-active-border-color: #6A4825; // 更深的焦糖色，增强边框层次感
 $mark-bg: #FDEFD9; //高亮颜色
 
+strong, b {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: 1rem;         /* 可选：指定字体大小 */
+  line-height: 1.6;        /* 稍大一点更适合中文阅读 */
+  color: #000000;          /* 或保持你已有的 black */
+}
+
