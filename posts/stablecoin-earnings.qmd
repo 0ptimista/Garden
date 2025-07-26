@@ -1,6 +1,6 @@
 ---
 title: "稳定币理财"
-date: "2025-07-23 19:20"
+date: "2025-07-26 12:28"
 categories: ['money']
 ---
 
@@ -10,7 +10,60 @@ categories: ['money']
 
 如果按照稳定币流通的自由程度来划分，稳定币理财有两个去处:
 
-1. 中心化交易所（CEX）
-2. 去中心化交易所（DEX）
+1. 中心化交易所^[如果你有兴趣注册CEX，欢迎使用我的邀请[链接](https://linktr.ee/luozx)]（CEX）
+2. 区块链上的产品
 
-CEX的理财方式最简单也最省事，并且大多数交易所都提供活期稳定币自动理财的功能，只需要在CEX账户中有稳定币余额即可。
+在[Coinmarket Cap](https://coinmarketcap.com/zh/rankings/exchanges/)上可以找到CEX的列表。
+
+大多数交易所都提供活期稳定币自动理财的功能，以币安为例，今天，USDC和USDT均提供超过年化10%的收益率。
+
+![币安理财截图](https://image.luozx.org/garden/2025/07/40e4f9dcca10ed1d2f01576bc7b474b8.png)
+
+虽然，CEX的理财方式最简单也最省事儿，但大都是阶梯收益率。比如USDC的11%年化中，只有前100USDC享受最高，剩余部分只有1.91%的年化收益率。
+
+![](https://image.luozx.org/garden/2025/07/d45b1d767a3f52743018de76c729dea0.png){width=50% fig-align='center'}
+
+你可以在[Coinsider](https://coinsider.app/)上找到币安和其他CEX稳定币理财的收益率对比列表
+
+![Coinsider简单赚币对比截图](https://image.luozx.org/garden/2025/07/0a7fa0d12dd24a04d238670108a8f0ca.png)
+
+你会注意到年化利收益率的曲线是浮动的，并且幅度不小。这是因为CEX提供的稳定币收益来源是通过借贷市场的利率来决定的。CEX会将你的稳定币借给其他用户，收取利息，然后将一部分利息分给你。
+当加密货币市场上的玩家认为现在处于牛市的时候，借贷需求旺盛，借贷市场的利率自然也会比较高。
+
+和CEX收益来源相同，区块链上也提供相似的产品，用户将稳定币存入保险库，智能合约完成借贷操作，收取利息。
+
+[Morpho](https://app.morpho.org/ethereum/earn)就是其中一款产品
+
+![Morpho收益率截图](https://image.luozx.org/garden/2025/07/79f6f960ecc6007e5540bc1911e9498b.png)
+
+和CEX相同，该收益率也是浮动的，不同的地方是区块链上通过借贷赚取收益的产品，几乎不设有阶梯收益，也就是你投入的所有数额均可享受同样的年化收益率。^[关于Morpho产品是如何运作的，强烈推荐[@阿小小海](https://x.com/OKxiaohai)这篇文章：[Morpho 全解析](https://quaily.com/simpleearn/p/simple-earn-manual-2-morpho-analysis)]
+
+你可以在[DeFi Llama](https://defillama.com/protocols/lending)上找到主要通过借贷赚取收益的产品列表。
+
+区块链上的产品除了有浮动收益率的借贷产品，同时也有一些提供稳定收益率的借贷产品：比如[Spark](https://app.spark.fi/)
+
+![Spark USDC收益率截图](https://image.luozx.org/garden/2025/07/6c3901becd95ba34cd6558a224969784.png)
+
+提供稳定收益率的产品显示的收益率会比浮动收益率低很多，这也很好理解。关于一款产品提供的稳定收益率有多大可信度，我们首先可以从无风险收益率 -- 美国国债收益率有一个大致判断，这部分我在[为什么要在意国债收益率](./risk-free-asset.qmd)中有详细介绍。
+
+除了通过借贷赚取收益的产品外，还有通过对冲手段赚取资金费的方式的产品：比如[Ethena](https://ethena.fi/)^[关于Ethena的更多介绍，可以阅读[@taresky](https://x.com/taresky)的[“公募基金”和“债券市场”](https://taresky.com/crypto-ethena-pendle)]
+
+![Ethena收益率截图](https://image.luozx.org/garden/2025/07/09b81b499b2c1b520e44914a74ba0877.png)
+
+参与Ethena稳定币理财有两种方式：
+
+1. 直接持有Ethena发行的稳定币USDe
+2. 将USDe质押得到sUSDe
+
+第一种方式是Ethena和交易所合作，比如你可以在Bybit账户中持有USDe
+
+![Bybit USDe收益介绍](https://image.luozx.org/garden/2025/07/d3c582722fd1629f453f1ce773f98bb4.png)
+
+第二种方式是将USDe质押在Ethena的智能合约中，得到sUSDe，sUSDe可以在Ethena的保险库中获得更高的收益率。
+
+![Ethena质押USDe](https://image.luozx.org/garden/2025/07/711e1f0a279686e5ae9757d128dc8cf7.png)
+
+总的来说，稳定币的理财收益来源有两类，一类是通过借贷赚取利息的浮动收益率，另一类是通过对冲手段赚取资金费的稳定收益率。
+并且大多数收益率是浮动的。
+
+另外，关于稳定币放贷，还有一篇文章推荐阅读，BayFamily的[稳定币放贷](https://mp.weixin.qq.com/s/5OZKdn6OCPV7RBYhvFuybg)
