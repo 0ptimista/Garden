@@ -1,5 +1,5 @@
 ---
-title: 'Follw: The App'
+title: 'Follow: The App'
 date: '2024-10-14'
 date-modified: last-modified
 categories:
