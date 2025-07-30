@@ -4,7 +4,7 @@ project:
     port: 9999
     browser: false
   resources:
-    - "assets/*"
+    - "assets/**"
     - ads.txt
     - "*.html"
 execute:
@@ -17,9 +17,6 @@ website:
   repo-actions: [source]
   favicon: "tree.png"
   bread-crumbs: true
-  cookie-consent:
-    type: implied
-    style: simple
   open-graph: true
   twitter-card: true
   site-url: "https://luozx.org"
@@ -41,7 +38,9 @@ website:
       - text: '{{< iconify mingcute:telegram-fill size=xl >}}'
         href: https://t.me/backyardofthatman
   page-footer:
-    left: "NOT BY AI"
+    center: |
+      <a href="/privacy">隐私政策</a>
+  #  <a href="#" data-cc="show-preferencesModal">Cookie 设置</a>
   # sidebar:
   #   style: "docked"
   #   contents:
@@ -50,11 +49,8 @@ website:
   back-to-top-navigation: true
 
 author: "Luozx"
-adsense:
-  publisher-id: pub-9560220640659728
 filters:
   - social-share
-  - adsense
 lang: zh
 date-format: "YYYY-MM-DD HH:mm"
 license: "CC BY-NC-SA"
@@ -79,8 +75,12 @@ format:
           <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo4YmZkMGM3Yy1jYTA3LTQ4NTAtOTI1Ni1mYTJmYTM5ZWQ4MTQ=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
-    include-in-body: tagmanager-body.html
-    include-before-body: ko-fi.html
+      # - text: |
+      #     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+    include-before-body:
+      - file: ko-fi.html
+      - tagmanager-body.html
+      # - cookieconsent.html
 share:
   # location: "before-body"
   permalink: "https://luozx.org"
