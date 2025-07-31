@@ -10,7 +10,7 @@ project:
 execute:
   freeze: auto
 website:
-  title: "Luozx's Digtal Garden 🌳"
+  title: "Luozx的数字花园🌳"
   description: "Hihi, welcome.!"
   reader-mode: false
   repo-url: "https://github.com/0ptimista/Garden"
@@ -63,8 +63,14 @@ format:
   html:
     # template-partials:
     #   - title-block.html
-    theme: [zephyr,style.scss]
+    theme: 
+      # light: [solar,style-light.scss]
+      light: [zephyr,style-light.scss]
+      dark: [zephyr,style-dark.scss]
+    highlight-style:
+      dark: codehighlight-dark.json
     toc: true
+    canonical-url: true
     reference-location: margin
     lightbox: true
     default-image-extension: ""

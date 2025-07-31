@@ -1,0 +1,218 @@
+/* =====================================================================
+   theme-dark.scss — Gruvbox Dark (soft) for Quarto
+   背景偏暖灰（#32302f），正文米白（#ebdbb2），标题更亮（#fbf1c7）
+   ===================================================================== */
+
+/*-- scss:defaults --*/
+
+/* 基础背景与正文 */
+$body-bg:    #32302f;  // Gruvbox dark soft（比 282828 更浅）
+$body-color: #ebdbb2;  // 正文暖米白
+
+/* 标题颜色（编译期变量，影响组件内标题） */
+$headings-color: #fbf1c7;  // 比正文更亮一档，便于区分层级
+
+/* 链接（蓝 -> 青；hover 更亮） */
+$link-color:       #83a598;  // blue
+$link-hover-color: #8ec07c;  // aqua
+
+/* Navbar（比 body 略深，层次自然） */
+$navbar-bg:         #282828;
+$navbar-text-color: #ebdbb2;
+
+/* 分页（hover 中灰；active 橙色强调） */
+$pagination-color:               #ebdbb2;
+$pagination-focus-color:         #fbf1c7;
+$pagination-hover-bg:            #3c3836;
+$pagination-active-color:        #1d2021;
+$pagination-active-bg:           #fe8019;   // accent: orange
+$pagination-active-border-color: #a89984;   // neutral border
+
+/* 文本高亮 */
+$mark-bg: rgba(250, 189, 47, 0.28); /* #fabd2f @ 28% */
+
+/* 字体（沿用你的设定） */
+$font-family-sans-serif:  'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+$font-family-serif:       'Noto Serif SC', 'Songti SC', Georgia, 'Times New Roman', Times, serif;
+
+
+/* =====================================================================
+   自定义样式（编译后 CSS 规则）
+   ===================================================================== */
+
+/* 基础排版 */
+strong, b {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+}
+p {
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $body-color;
+}
+
+/* 文档背景与正文 */
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+/* 链接 */
+a { color: $link-color; }
+a:hover, a:focus { color: $link-hover-color; }
+
+/* 标题（确保不会被默认黑色覆盖） */
+:root { --bs-heading-color: #{$headings-color}; }
+h1, h2, h3, h4, h5, h6 {
+  color: var(--bs-heading-color) !important;
+  /* 可选：让标题略微更粗，增强暗色下的“稳固感” */
+  /* font-weight: 700; */
+}
+
+/* Quarto 文首标题区（主标题/副标题） */
+.quarto-title h1.title,
+.quarto-title .title,
+.quarto-title .subtitle {
+  color: var(--bs-heading-color) !important;
+}
+
+/* 标题里的内联代码颜色跟随标题，不要用偏暗底色 */
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* 标题锚点（# 图标） */
+.anchored .anchorjs-link {
+  color: #a89984;
+}
+.anchored .anchorjs-link:hover,
+.anchored .anchorjs-link:focus {
+  color: #d5c4a1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $navbar-bg !important;
+  color: $navbar-text-color;
+}
+.navbar .nav-link {
+  color: $navbar-text-color !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  opacity: 0.92;
+}
+
+/* 分页 */
+.pagination .page-link {
+  color: $navbar-text-color;
+  background-color: transparent;
+  border-color: #504945;  // Gruvbox 暗灰边
+}
+.pagination .page-link:hover {
+  background-color: $pagination-hover-bg;
+  color: #fbf1c7;
+  border-color: #665c54;  // hover 时稍亮
+}
+.page-item.active .page-link {
+  background-color: $pagination-active-bg;
+  border-color: $pagination-active-border-color;
+  color: $pagination-active-color;
+}
+
+/* mark 高亮 */
+mark { background-color: $mark-bg; }
+
+/* 引用块与分隔线 */
+blockquote {
+  border-left: 4px solid #a89984;
+  color: #d5c4a1;
+}
+hr { border-color: #504945; }
+
+/* 代码与预格式文本（基础可读性） */
+pre, code, kbd, samp {
+  background-color: #282828;
+  color: #ebdbb2;
+}
+pre {
+  border: 1px solid #3c3836;
+  padding: 0.75rem 1rem;
+  border-radius: .35rem;
+  overflow: auto;
+}
+
+/* 表格（条纹与边框） */
+table { color: $body-color; }
+thead th {
+  background-color: #3c3836;
+  border-bottom: 2px solid #504945;
+}
+tbody tr:nth-child(odd)  { background-color: rgba(60,56,54,0.45); }
+tbody tr:nth-child(even) { background-color: rgba(60,56,54,0.25); }
+td, th { border-color: #504945; }
+
+/* 选中文本 */
+::selection {
+  background: rgba(254, 128, 25, 0.35); /* 橙色选区 */
+  color: #1d2021;
+}
+
+/* === 行内代码（反引号）在暗色下的底色与文字色 === */
+/* 1) 先设定 Bootstrap 对应变量（编译期生效，影响很多默认选择器） */
+$code-bg:    #3c3836;  // Gruvbox 中灰，适合段落内对比
+$code-color: #ebdbb2;  // 与正文一致的暖米白
+
+/* 2) 同步 CSS 变量，覆盖运行时样式（确保万无一失） */
+:root {
+  --bs-code-bg:    #{$code-bg};
+  --bs-code-color: #{$code-color};
+}
+
+/* 3) 明确指定“行内 code 而非代码块”的样式（带一点内边距与圆角） */
+:not(pre) > code,
+code:not(pre code),
+p code, li code, td code, dd code, figcaption code, small code {
+  background-color: var(--bs-code-bg) !important;
+  color: var(--bs-code-color) !important;
+  border: 1px solid #504945;   /* Gruvbox 暗灰细边 */
+  padding: 0.08em 0.35em;
+  border-radius: .2rem;
+}
+
+/* 4) 但标题里的内联代码仍保持“无底色、随标题色” */
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  color: inherit !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+
+/* ====== Dark mode 图片全局轻度暗化（可撤销） ====== */
+
+/* 强度参数（可按需微调） */
+body.quarto-dark,
+[data-bs-theme="dark"] {
+  --img-brightness: 0.85;    /* <1 变暗；0.85~0.95 之间微调 */
+  --img-contrast:   1.02;    /* 轻提对比，避免灰雾感 */
+  --img-saturate:   0.98;    /* 稍降饱和，贴合 gruvbox 气质 */
+}
+
+/* 默认对常见内容图片生效（排除 SVG / emoji / 标记为 no-shade 的） */
+body.quarto-dark img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji),
+[data-bs-theme="dark"] img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji) {
+  filter: brightness(var(--img-brightness)) contrast(var(--img-contrast)) saturate(var(--img-saturate));
+  transition: filter .2s ease;
+}
+
+/* 链接里的小图标、导航头像等，默认不处理（可避免 UI 要素变灰） */
+.navbar img,
+a > img.icon,
+img.emoji {
+  filter: none !important;
+}
+
+/* 想对单张图片关闭暗化：在 Markdown/Quarto 中添加 { .no-shade } */

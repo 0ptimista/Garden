@@ -1,0 +1,36 @@
+{
+  "text-styles": {
+    "background-color": "#282828",
+    "color": "#ebdbb2",
+    "line-numbers-color": "#a89984",
+    "line-numbers-background-color": "#1d2021",
+    "selection-background-color": "#3c3836"
+  },
+  "token-styles": {
+    "Comment":         { "color": "#928374", "italic": true },
+    "Keyword":         { "color": "#fb4934" },
+    "Operator":        { "color": "#fe8019" },
+    "String":          { "color": "#b8bb26" },
+    "Number":          { "color": "#d79921" },
+    "Constant":        { "color": "#d3869b" },
+    "Function":        { "color": "#83a598" },
+    "Builtin":         { "color": "#8ec07c" },
+    "Type":            { "color": "#fabd2f" },
+    "Variable":        { "color": "#ebdbb2" },
+    "ClassName":       { "color": "#fabd2f" },
+    "Property":        { "color": "#8ec07c" },
+    "Punctuation":     { "color": "#ebdbb2" },
+    "Tag":             { "color": "#fb4934" },
+    "Attribute":       { "color": "#d3869b" },
+    "Reserved":        { "color": "#fb4934" },
+    "Preprocessor":    { "color": "#fe8019" },
+    "Escape":          { "color": "#8ec07c" },
+    "Error":           { "color": "#fb4934", "bold": true, "background-color": "#3c3836" },
+    "Warning":         { "color": "#fabd2f", "bold": true },
+    "Information":     { "color": "#83a598" },
+    "Inserted":        { "color": "#b8bb26" },
+    "Deleted":         { "color": "#fb4934" },
+    "Changed":         { "color": "#d79921" }
+  }
+}
+
