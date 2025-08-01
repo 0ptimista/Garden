@@ -1,0 +1,35 @@
+---
+title: "使用Royal TSX的Key Sequence无痛切换root身份"
+date: "2025-08-01 15:47"
+categories: ['tools']
+---
+
+在生产环境中，禁用root用户登陆到服务器是很常见的安全要求。
+
+严格的安全环境下，使用`su -`\ 切换到root时仍会被要求输入密码来验证身份，并且还是复杂密码，每次都要重复的复制粘贴动作。对我来说一直都是个很痛苦的事情。
+
+今天发现，Royal TSX^[你可以在[这里](/posts/royal-tsx.qmd)找到更多关于Royal TSX的介绍]的Key Sequence功能是消除痛苦的好法子。
+
+[Royal TSX提供两种类型的Task](https://image.luozx.org/garden/2025/08/7fbf5992f9a0bc5387f4897cf9a2ee09.png){width="40%" target="_blank"}
+
+- Command Task：在登陆服务器前执行一些命令
+- Key Sequence Task：登陆服务器后执行一些命令
+
+创建一个Key Sequence Task，录入之前登录后自己人工执行的操作：（Royal TSX提供了许多内置的Key sequence）
+![TSXt提供了许多快捷KeySequence](https://image.luozx.org/garden/2025/08/684d9a56d0d4ef33a8ada2231d387814.png)
+
+::: {.callout-note}
+在添加Key sequence时，注意使用Delay功能，否则可能会因为输入过快而导致命令执行失败。
+:::
+
+我设置在（普通用户）登录后等待1000毫秒，然后再开始进行Key Sequence的输入，输入`su -`命令和{{< kbd mac=Enter win=Enter linux=Enter >}}后等待500毫秒，再让Royal TSX输入root密码，然后再输入{{< kbd mac=Enter win=Enter linux=Enter >}}。
+
+有两种方式触发Key Sequence：
+
+1. 在连接到服务器后，手动选择对应的Key Sequence（未登陆到服务器时，Key Sequence不可选）
+
+![手动触发Key Sequence](https://image.luozx.org/garden/2025/08/206b82c44d5d1f798df08bbaf625195b.png){width="60%"}
+
+2. 如果你只使用一个普通账户登陆，那么就可以考虑让Royal TSX完全自动执行Key Sequence。
+在服务器属性设置，Tasks选项卡中，选择刚才创建的Key Sequence Task
+![TSX完全自动执行](https://image.luozx.org/garden/2025/08/d60e597860433b7eaf7c640275b6b029.png)
