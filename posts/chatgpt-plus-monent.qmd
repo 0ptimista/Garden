@@ -63,3 +63,12 @@ BayFamily的[西太平洋房地产过剩分布图](https://mp.weixin.qq.com/s/ED
 YouTube上这个视频的介绍了ChatGPT Free，Plus之间的不同功能（以及其他更高级版本），可以参考。
 
 {{< video https://www.youtube.com/watch?v=gl0jwZfd5MY >}}
+
+::: {.callout-note}
+2025-08-13 更新
+
+OpenAI的[Codex CLI](https://github.com/openai/codex)也可以使用Pro套餐，并且可以使用[最新推出的GPT-5](https://simonwillison.net/2025/Aug/11/codex-upgrade/#atom-everything)
+
+目前Codex CLI使用起来非常满意😄
+:::
+

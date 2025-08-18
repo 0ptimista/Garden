@@ -1,0 +1,10 @@
+---
+title: "幸运钱和教训"
+date: "2025-08-13"
+categories: ['money']
+draft: true
+---
+
+链上借贷项目Spark，昨晚的Override项目结束并开放申领，获得了10x的SPK代币，一笔幸运钱。
+
+运气从Morpho而来。我在[稳定币理财](/posts/stablecoin-earnings.qmd)中提到过Morpho，Spark给参与过Morpho^[满足Spakr空投条件]的用户空投了SPK初始代币，这才了解到Spark项目，也成了稳定币理财的选项之一。

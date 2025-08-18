@@ -2,9 +2,7 @@
 title: $GRASS空投中的教训
 date: '2024-10-30'
 date-modified: last-modified
-categories:
-- crypto
-- tome-of-xp
+categories: ['tome-of-xp']
 
 ---
 

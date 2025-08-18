@@ -3,9 +3,6 @@ title: 梭哈是一种智慧
 description: 概率角度的梭哈
 date: '2024-11-10'
 date-modified: last-modified
-categories:
-- probability
-
 ---
 
 今天受到了两个事情的启发:

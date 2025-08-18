@@ -2,7 +2,7 @@
 title: "香蕉和香蕉皮"
 date: "2025-07-07 10:11"
 description: "香蕉，还是皮？"
-categories: ['fragments','mental-models']
+# categories: ['fragments','mental-models']
 draft: false
 ---
 收集香蕉皮，有两种方式：
