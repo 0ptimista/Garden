@@ -1,5 +1,5 @@
 ---
-title: "幸运钱和教训"
+title: "幸运钱及其教训"
 date: "2025-08-13"
 categories: ['money']
 draft: true
