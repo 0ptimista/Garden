@@ -1,0 +1,43 @@
+---
+title: "Komari: 个人轻量VPS监控面板"
+date: "2025-09-02 15:38"
+categories: ['tools','mypick']
+---
+
+# 介绍
+
+Komari是我认为比较轻量，简约的服务器监控面板。提供服务器基本信息（配置，型号，虚拟化，流量）监控数据也提供服务器离线通知，远程执行命令/Web SSH功能。
+
+还可以给每台VPS设置账单标签，对于个人拥有多台服务器，想要一览所有服务器的基本情况非常好用。可以在[这里](https://ss.akz.moe/)和[这里](https://komari.cmqos.com/)查看监控面板样式。
+
+# 安装部署
+
+[Komari-monitor](https://github.com/komari-monitor/komari) 分为Dashboard和Agent两部分。
+
+先部署Dashboard后，在控制台生成Agent自动发现密钥，再通过一键部署命令安装Agent，实现本身和其他VPS的监控。
+
+## Dashboard
+Dashboard也提供一键部署命令，安装过程基本没有障碍。需要注意的是有些VPS服务商的防火墙配置。一般来讲会有2层防火墙，一层是服务商在Web端提供的防火墙规则，第二层是VPS本身的防火设置，规则放行（或者关闭）后就可以通过IP地址访问到Dashboard页面。
+
+我给安装了Dashboard的服务器配置了域名，同时想要有（免费）HTTPS支持，并且不想要在域名后面携带端口号的方式进行访问。ChatGPT推荐使用[Caddy](https://caddyserver.com/)进行反向代理。正巧之前在Simon的[帖子](https://simonwillison.net/2025/Aug/24/uv-caddy-and-docker/)中也看到过Caddy。
+
+安装Caddy并修改Caddyfile：
+
+```{.bash filename="/etc/caddy/Caddyfile"}
+h.luozx.org {
+        reverse_proxy localhost:25774 # komari-monitor
+}
+```
+
+将访问`https://h.luozx.org`的请求都转发到komari去。我的域名托管在Cloudflare，设置DNS时需要先关闭[DNS proxied](https://developers.cloudflare.com/dns/proxy-status/)访问成功后在开启。
+
+
+## Agent
+
+登陆Dashboard管理后台，在「设置」-> 「通用」-> 「自动发现」生成自动发现密钥
+
+按照生产推荐命令[说明](https://komari-document.pages.dev/install/agent-ad.html#%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%8E%A8%E8%8D%90%E9%85%8D%E7%BD%AE)将` https://your-komari-server.com`替换为自己的域名，`your-ad-key` 替换为在Dashboard生成的自动发现密钥。
+
+在需要监控的机器（包括本机）上执行一件部署命令，在Dashboard上稍等片刻就能看到监控信息。
+
+![](https://image.luozx.org/garden/2025/09/3ffceecac46abaeee2a0e3da4f4d95fe.png)
