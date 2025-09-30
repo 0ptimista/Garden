@@ -42,10 +42,13 @@ listing:
 
 ---
 
+
 # Featured
 
 :::{#featured}
 :::
+
+你可以在[这里](/pages/categories-and-tags.qmd)找到关于右侧分类的含义。
 
 # Timeline
 
