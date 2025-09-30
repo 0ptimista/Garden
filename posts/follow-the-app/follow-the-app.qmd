@@ -9,6 +9,14 @@ description: Follow, 不是一个纯粹的RSS阅读器
 
 ---
 
+
+::: {.callout-note title="内容有更新"}
+
+[Folo：一年之后](/posts/follow-after-a-year.qmd)
+
+:::
+
+
 # 背景
 [Follow](https://follow.is)，是RSS忠实用户[DIŸgöd](https://x.com/DIYgod)和他的团队打造的一款应用，一款想通过RSS方式，浏览所有平台上的内容。成为你终极内容消费入口的应用，即他们宣称的：下一代内容浏览器。
 ![](./images/follow-slogon.png)
