@@ -49,8 +49,11 @@ website:
   back-to-top-navigation: true
 
 author: "Luozx"
+adsense:
+  publisher-id: ca-pub-9560220640659728
 filters:
   - social-share
+  - adsense
 lang: zh
 date-format: "YYYY-MM-DD HH:mm"
 license: "CC BY-NC-SA"
