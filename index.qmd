@@ -16,7 +16,7 @@ listing:
   - date
   - description
   # - file-modified
-  page-size: 5
+  page-size: 10
   sort: date desc
   type: default
   categories: true
@@ -57,4 +57,4 @@ adsense:
 :::
 
 
-[All posts](time-machine.qmd)
+[All Contents](time-machine.qmd)
