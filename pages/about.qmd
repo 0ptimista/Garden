@@ -1,5 +1,6 @@
 ---
 title: About
+date: 1995-09
 description: 关于这个网站，内容和作者
 categories: []
 date-modified: last-modified
@@ -59,7 +60,12 @@ date-modified: last-modified
 有一些其他人精心构造的花园，我必须要分享给你，真的很好逛！
 
 ## 亚洲园
-- [欧文Owen](https://www.owenyoung.com/) Powerd by [Zola](https://www.getzola.org/)
+- [欧文Owen](https://www.owenyoung.com/) 沉浸式翻译的作者 Garden Powerd by [Zola](https://www.getzola.org/)
+- [極客死亡計劃](https://www.geedea.pro) 有在用心经营和写作的朋友，似乎还是一位学生，很佩服！
 
 ## 美洲园
 - [格温Gwern](https://gwern.net/)
+
+
+
+
