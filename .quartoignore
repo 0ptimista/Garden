@@ -1,0 +1,5 @@
+# 忽略 drafts/ 目录下的所有内容（不参与渲染与发布）
+drafts/**
+chroma_data
+
+.DS_Store
