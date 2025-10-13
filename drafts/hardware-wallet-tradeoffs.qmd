@@ -1,0 +1,6 @@
+---
+title: "安心的代价"
+description: "冷钱包的隐性成本与取舍"
+date: "2025-09-19 17:17"
+categories: ['thinking']
+---

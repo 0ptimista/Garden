@@ -66,7 +66,7 @@ format:
   html:
     # template-partials:
     #   - title-block.html
-    theme: 
+    theme:
       # light: [solar,style-light.scss]
       light: [zephyr,style-light.scss]
       dark: [zephyr,style-dark.scss]
@@ -80,8 +80,8 @@ format:
     include-in-header:
       - file: tagmanager-header.html
       - file: google-fonts.html
-      - text: |
-          <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo4YmZkMGM3Yy1jYTA3LTQ4NTAtOTI1Ni1mYTJmYTM5ZWQ4MTQ=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+      # - text: |
+      #     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo4YmZkMGM3Yy1jYTA3LTQ4NTAtOTI1Ni1mYTJmYTM5ZWQ4MTQ=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
       # - text: |
