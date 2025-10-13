@@ -39,7 +39,7 @@ website:
         href: https://t.me/backyardofthatman
   page-footer:
     center: |
-      <a href="/privacy">隐私政策</a>
+      <a href="/privacy">站内广告</a>
   #  <a href="#" data-cc="show-preferencesModal">Cookie 设置</a>
   # sidebar:
   #   style: "docked"

@@ -37,6 +37,8 @@ date-modified: last-modified
 一些内容的链接，包含我的推荐，如果你介意，可以复制链接地址，在地址栏中修改后打开。
 :::
 
+关于站内出现的广告请参考：[Google AdSense声明](/pages/privacy.qmd)
+
 # About the author
 
 > 个人认为，文章内容远比作者是谁重要。
