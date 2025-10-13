@@ -3,7 +3,7 @@ title: "那一刻来临之前：做好准备"
 description: "让临界点不再突然"
 date: ""
 categories: []
-draft: ture
+draft: true
 ---
 
 最近几年这个感受愈发强烈：从前宽松便利的申请条件在不断收缩甚至消失。
