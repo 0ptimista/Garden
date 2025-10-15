@@ -1,0 +1,105 @@
+---
+title: "没想到我也能买未上市公司的股票啦"
+date: "2025-10-15 17:52"
+categories: ['tome-of-xp']
+draft: false
+---
+
+记忆中是从播客中听到这么一档子真人真事儿：个人投入了很小一笔资金到一家初创企业，初创企业获得了成功，那个嘉宾也因此获得了巨额的回报。
+
+哪一档播客，讲的是谁，投了什么公司全部都模糊了。脑袋里沉淀下来的关键词只有两个：**很小的资金**和**巨大的回报** 。尤其是第一个关键词，因为那笔资金小到连我也能给得起（我相信正在阅读的你也能），小到开始幻想，那个人要是我的话，现在有多少钱会躺在账户里。
+
+幻想之余，在琢磨的另一个问题是「还没上市的公司我要怎么购买他的股票」，因为很喜欢[Stripe](https://stripe.com)这家公司。
+
+对于投资未上市的公司（买入未上市但心仪公司的股票），自己一直有两个认知偏见：一个是投资金额门槛，以为个人没有几个Million，投资未上市的公司压根儿就不是自己该考虑的事儿。另一个是认为只有在专门的投资圈子，才有机会把资金投出去，这也不是我这种普通的打工人随便就能接触到的。
+
+资金门槛的偏见，播客内容已经帮我消除了。剩下圈子的问题现在也由Jarsy解决了。
+
+前两个个月在Telegram群组里有朋友分享[Jarsy](https://www.jarsy.com/)，打开官网，看见有Stripe，兴致马上上来了。不仅有Stripe，还有马斯克的[SpaceX，xAI。Claude的公司Anthropic和OpenAI，甚至还有字节跳动](https://www.jarsy.com/investment-products/pre-ipo)。
+
+注册Jarsy不难，但是KYC过程很曲折，官方上传证件的功能一直出错，邮件效率又低，前两天才终于帮我上传，KYC认证完成。
+
+并且参与了第一笔加密货币交易所Kraken上市前的预售活动。（没有直接买Stripe和Jarsy的运行机制有关，下面会介绍）
+
+![Kraken预售订单](https://image.luozx.org/garden/2025/10/b87fba3a8a3960b6d784e209355842e6.png)
+
+# Jarsy和机制
+
+Jarsy是一个公司上市前（Pre-IPO）的私募股权交易平台。和前文所幻想的「个人投资初创企业」其实很不一样。Pre-IPO的公司一般属于有传闻要上市或者已经成熟到可以上市的公司。不过最终还是能达成「小资金购买未上市公司股票」的目的。
+
+Jarsy通过预售（presale）会收集平台上用户的投资意愿，募集到资金后再去和实际持有股权的一方接洽购买。如果购买达成，Jarsy会将用户的预售凭证自动转换为股票所有权凭证。如果未达成，则会退款。
+
+预售凭证和股票所有权凭证，都是通过区块链链代币形式体现（Base链）。用户得到并不是真实的股票，而是代币化的股票，有享受分红的权利但是没有投票/治理权。
+
+我参与Kraken股权预售得到的就是上图中的`JKRAK-PRE`代币。如果购买达成，`JKRAK-PRE`则会（自动）转换为股票所有权凭证类型的Token，比如叫`JKRAK`。
+
+整个过程实际上是通过集资团购的形式，Jarsy代表一群有购买意向的用户，拿着他们的钱，和实际持有股票/股权的实体协商。来帮用户购买还未上市的公司股票。
+
+USDC的发行商Circle在上市前，Jarsy就提供了购买它的机会。但是购买Pre-IPO的股票，通常都具有[锁定期](https://www.reddit.com/r/jarsy/comments/1m4qkoz/what_happens_to_jarsy_funds_postipo_crcl_price_is/)。当公司真的上市后是没办法立即以市场价格出售的，锁定期和未上市之前的这段时间，只能在Jarsy自己的平台内买卖，流动性非常有限。
+
+# 参与形式
+
+Jarsy首页提供3种购买股权的方式，分别在三个不同的Tab页中：
+
+1. Private Equity Live（现货交易）
+2. Private Equity Presale（预售集资）
+3. After IPO（购买上市后公司的股票）
+
+![Jarsy首页](https://image.luozx.org/garden/2025/10/b3cd8036bf989a5f9fcfafa6cb89faee.png)
+
+1和2才是购买未上市公司股票的入口。前文提到的集资团购，是第二种方式。
+
+同一家未上市的公司可能会同时出现在1和2两个页签下，但价格不同。
+
+Private Equity Live下的交易是Jarsy已经通过团购购买到了对应公司的股票。在此页面下交易由Jarsy进行撮合，适合想要快速购买到股权的用户。Presale则为集资阶段，我参与的是这个阶段。
+
+根据官方的说明，不论是1还是2，交易没有成交都能够退款。
+
+![Jarsy认购邮件中的说明](https://image.luozx.org/garden/2025/10/d8ed144a2c470e29b78b1a0cac279f60.png)
+
+# 认购过程
+
+在Presale页面下，点击Buy按钮，会显示认购明细。默认情况下，Jarsy会收取5%的平台费。这个费用会随着所有人认购总金额的上升而降低，[最低平台费为1%](https://www.jarsy.com/zh/blog/jarsy-launches-group-presell-rewards)，这也是Jarsy的主要受益来源。
+
+以Anthropic为例，当前的平台费是3%
+
+![Anthropic Presale认购详情](https://image.luozx.org/garden/2025/10/149b8fe834276ee0b06c785656640f85.png){width=60%}
+
+另外一种费用是收益分成比例（Carry）
+
+:::{layout-ncol=2}
+
+![Jarsy Discord FAQ](https://image.luozx.org/garden/2025/10/ec5e2a8ad903f49d44ab7ae7eab275cd.png)
+
+![Anthropic Presale费用详情](https://image.luozx.org/garden/2025/10/3333b7d9aa0525132d8a11f4ea2f9f1f.png){width=60%}
+
+:::
+
+在预售阶段投入资金，会提示这笔资金将锁定多久，也就是右上图中的`End Date`。
+
+Kraken的预售资金锁定期到2025-10-15，而且也有传闻临近上市，同时也想看看Jarsy认购预售之后是什么情形，就优先认购了Kraken而没有选择Stripe。
+
+现在订单状态也改变了：
+
+![认购订单确认](https://image.luozx.org/garden/2025/10/252dd714fbf5764ec7d96cb599b1a5f6.png)
+
+后续如果发生有什么有趣的事情，再做更新。
+
+# 重要提醒
+
+Jarsy可以说跟所有高风险的因素都沾边了：私募股权，股权代币化（RWA），链上交易。
+
+关于文章最开头提到的两个关键词，我完全不指望Jarsy能实现第二个，并且使用我可以接受的损失$1000来体验（共入金转帐2笔，每一笔转帐费$1，实际可用$998）
+
+
+如果你也有兴趣体验，请仔细研究并清楚其中的风险，**不要认为**这是一种带来巨大的回报的方式。我把这趟经历且算做一个能购买未上市公司股票的低门槛方式，也算是对「如何买」这个问题的一个答案。
+
+其实关于私募股权平台，Jarsy不是第一个，Reddit上也有关于Pre-IPO其他平台的[讨论](https://www.reddit.com/r/investing/comments/1mn0c9m/has_anyone_used_a_private_broker_to_buy_preipo/)。Jarsy与传统的私募股权平台相比，我认为最大的优势就是降低投入门槛，最低只需要$10，这是通过另一种高风险方式（RWA）实现的，享受更低的门槛承受对应的风险也很合理。
+
+以下资源可能对你有帮助：
+
+- 公众号文章：[对话 Jarsy：人人可买 SpaceX 股票？Pre-IPO 代币化应该怎么做](https://mp.weixin.qq.com/s/0Rbll7XgE2IXfsHPozNNkw)
+
+- [Jarsy透明度披露](https://www.jarsy.com/transparency) 及 官方[Blog](https://www.jarsy.com/blog)
+
+- 有任何问题也可以加入他们的Discord服务器进行咨询
