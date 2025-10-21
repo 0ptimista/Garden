@@ -18,7 +18,7 @@ date-modified: last-modified
 
 > [Show Your Work](https://book.douban.com/subject/26357206/)这本书也给了我不少动力
 
-网站托管在Github，受到yihong一篇文章的启发：[People Die, but Long Live GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456)
+网站托管在Github，因为受到yihong的启发：[People Die, but Long Live GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456)
 
 使用[Quarto](https://quarto.org/)制作。当时由于工作需要，需要撰写一些总结报告，报告需要插入用数据生成的图表，Quarto非常适合这项工作，顺便也就给自己用了。
 
@@ -28,32 +28,31 @@ date-modified: last-modified
 
 正因是在花园中创作，在属于自己的网络空间中，内容素材不会专注于某一主题或话题，同时也不一定会完整/完美。（但是我还是要尽力而为）
 
+
 所有内容都源于我的生活，工作，兴趣，经历和经验，包含过程中涉及到的一切。
 
 有时候内容会被**标签**标记，标签对内容分类是一个很好的工具，但是我会谨慎使用：在想不到关联之前，就不打。
-[这里](/pages/categories-and-tags.qmd)记录了已经使用的标签名称及其含义。
+你可以在[这里](/pages/categories-and-tags.qmd)找到已经存在的标签名称和它的意义。
 
 ::: {.callout-note title="推荐链接披露"}
 一些内容的链接，包含我的推荐，如果你介意，可以复制链接地址，在地址栏中修改后打开。
 :::
 
-关于站内出现的广告请参考：[Google AdSense声明](/pages/privacy.qmd)
+在阅读内容时，可能会看到广告，关于站内出现的广告请参考：[Google AdSense说明](/pages/privacy.qmd)
 
 # About the author
 
-> 个人认为，文章内容远比作者是谁重要。
+内容>作者。
 
-不过鉴于这是个人花园，主观意识会占多数，所以有必要交待一下自己的缺点和偏见（经常补充）：
+如果你觉得我写的内容对你有帮助，那别忘了经常回来看看。如果还帮不到你，我也希望有一天我们还能再见。
 
-**技术和编程**
+不过这是个人花园，主观意识会占多数，所以有必要交待一下自己的缺点和偏见（经常补充）：
 
-- 不擅长深入技术细节，因此非技术强依赖
+**缺点和偏见**
 
-**观点和偏见**
-
-- 由于上一点，视技术为工具，用来解决或*加速解决*生活的实际问题，而非精进
-- 讨厌低质量，缺乏品味(不用心打磨)的内容
-- 喜欢友善，提供有帮助内容的人
+- 视技术为工具，用来解决或*加速解决*生活的实际问题。
+- 不喜欢低质量，缺乏品味(不用心打磨)的内容。
+- 喜欢友善，提供有帮助内容的人。
 
 
 {{< include ../include/telegram_channel.qmd >}}
