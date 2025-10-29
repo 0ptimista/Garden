@@ -1,6 +1,7 @@
 ---
 title: 如果你也在寻找macOS上的远程工具，可以试试它。
 date: '2025-04-17'
+date-modified: last-modified
 categories:
 - tools
 - mypick
@@ -20,6 +21,12 @@ categories:
 
 ::: {.callout-note}
 Royal TSX是付费软件，同时提供Lite免费版
+:::
+
+::: {.callout-tip title="新发现"}
+
+Royal TSX 我经常用来远程Linxu和Windows。
+Mac to Mac的远程，[Screens](https://edovia.com/en/screens)的易用性和macOS的集成度高很多，支持自家的中继和Tailscail，很方便！
 :::
 
 # 优点
@@ -73,3 +80,4 @@ Royal TSX 支持[从1Password中读取远程登录的凭证](https://www.royalap
 ## 价格
 Royal TSX 是一次性付费软件（也许大版本升级需要付费）相比Terminux每月$10的定价，Royal TSX的一次型付费价格大约是€49（价格会随地区不同而变动，所以可以选择价格合适的地区购买），不限制设备数量。
 尽管界面不如Terminus，但价格还算合理。macOS和Windows的License不共享，不过Windows上远程工具众多，Royal TS系列也不是那么必要。
+
