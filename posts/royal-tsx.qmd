@@ -13,8 +13,8 @@ categories:
 
 以前，总要使用两种工具：
 
-1. Microsoft Remote Desktop(现在改名为[Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12))：登陆堡垒机和跳板机
-2. iTerm2等Shell：直接登陆Linux服务器
+1. Microsoft Remote Desktop(现在改名为[Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12))：登录堡垒机和跳板机
+2. iTerm2等Shell：直接登录Linux服务器
 
 想要找到两类同时连接的工具很不容易（RDP和SSH）直到我了解到[Royal TSX](https://www.royalapps.com/ts/mac/features)，使用了一段时间后，基本能覆盖我目前的的需求。
 
@@ -48,8 +48,8 @@ RDP在默认情况下，当Royal TSX窗口大小发生改变，会强制重新�
 ![](https://image.luozx.org/garden/2025/04/4462aff77fe4b21b9edefe4d4f519c94.png)
 
 
-## 1Password管理登陆凭证
-Royal TSX 支持[从1Password中读取远程登陆的凭证](https://www.royalapps.com/blog/dynamic-folder-integration-for-1password)。当你的Mac使用带TouchID的键盘时，用指纹验证登陆非常方便！
+## 1Password管理登录凭证
+Royal TSX 支持[从1Password中读取远程登录的凭证](https://www.royalapps.com/blog/dynamic-folder-integration-for-1password)。当你的Mac使用带TouchID的键盘时，用指纹验证登录非常方便！
 
 ![](https://image.luozx.org/garden/2025/04/9d3445bd9f3a8a0ca957fe66005ae8e0.png)
 
@@ -60,8 +60,8 @@ Royal TSX 支持[从1Password中读取远程登陆的凭证](https://www.royalap
 
 ## 跨设备同步连接信息
 
-其中一个非常实用的功能是多设备同步连接信息。Royal TSX使用基于文档（Document）的结构来保存所有数据（连接信息，登陆凭证等）。
-可以将这个文档放在任何网盘中进行同步，文档本身可以加密后保存，不过使用1Password保存登陆凭证的话，该凭证是不会通过云盘同步的。
+其中一个非常实用的功能是多设备同步连接信息。Royal TSX使用基于文档（Document）的结构来保存所有数据（连接信息，登录凭证等）。
+可以将这个文档放在任何网盘中进行同步，文档本身可以加密后保存，不过使用1Password保存登录凭证的话，该凭证是不会通过云盘同步的。
 
 我的文档本身没有加密保存，但是额外使用[Cryptomator](https://cryptomator.org/)来加密同步所有云盘上的内容。
 
