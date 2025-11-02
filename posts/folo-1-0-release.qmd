@@ -1,0 +1,18 @@
+---
+title: "Folo 1.0版本正式推出"
+date: "2025-11-02 14:02"
+description: "AI 对话，付费计划"
+categories: ['tools']
+---
+
+Folo 1.0版本于11月1日[正式发布](https://github.com/RSSNext/Folo/releases)。
+
+增加了AI Chat功能，并正式启动了付费订阅计划。
+
+免费版不再提供双语翻译功能，并且暂不提供用户输入自己的API Key，经过测试，即使重新安装0.9版本的Folo，仍然无法启用双语翻译功能。
+
+![](https://image.luozx.org/garden/2025/11/09d41b0d3994d078467d8d5300289352.png)
+
+
+
+
