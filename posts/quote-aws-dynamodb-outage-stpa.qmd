@@ -1,0 +1,25 @@
+---
+title: "引用：关于AWS DynamoDB中断分析"
+date: "2025-11-04 16:20"
+date-modified: last-modified
+categories: ['worklog']
+---
+
+> The problem isn’t that the issues aren’t obvious. By the metric of “would I understand this is a problem if someone explained it to me”, almost all issues are obvious. The problem is one of directing our attention: we are not great at paying attention to all things that go on to become problems later.
+>
+问题不在于这些隐患不够明显。如果以“只要有人解释，我就能理解这是个问题”为标准，那么几乎所有隐患其实都很明显。真正的问题在于注意力分配：我们并不擅长关注所有最终会演变成问题的细节。
+
+via [AWS DynamoDB Outage Analysis](https://entropicthoughts.com/aws-dynamodb-outage-stpa)
+
+在我参加的几乎所有的故障复盘会中，讨论的内容往往聚焦在引发事件发生的细节问题上，并且改进提升项也会落在会议中讨论的细节部分。例如，增加某某监控项，调整某某告警精度，延长灰度验证时长，增加某项检测机制...
+
+把注意力放在已经出错的细节，而忽略了导致这些细节失效的更高层次的系统性问题，缺乏自上而下的系统性分析，持续在细节层面修复问题反而会让参与者疲于奔命。
+
+系统理论分析过程（STPA）也许是一种能帮助我们重新分配注意力、从整体视角理解风险的分析方法。
+
+还有一些关于STPA(STAMP)的讨论文章：
+
+- [Google SREs are changing the game again: a breakdown of their new approach](https://rootly.com/blog/google-sres-are-changing-the-game-again-a-breakdown-of-their-new-approach)
+- [Thoughts on STAMP](https://surfingcomplexity.blog/2020/08/07/thoughts-on-stamp/)
+
+系统的复杂性不会因为更多的监控和告警而减少。重新理解‘控制’的边界，才能在混乱中保持信心。
