@@ -1,0 +1,83 @@
+---
+title: "透过卓越申请汇丰美国账户的过程"
+date: "2025-11-10 13:56"
+categories: ['tome-of-xp']
+---
+
+9月29日申请，10月31日账户开通，11月7日收到从美国寄出的借记卡。
+
+整个时间跨度看似很大，多是由于我申请时的疏忽和汇丰美国开户本身的时间限制造成的，申请细节填写无误的话，用时会比我的短很多。
+
+# 前提条件
+
+- 护照，申请信息基本都以护照为主，并且还需要提供照片。
+
+- 满足非美国地区以外的汇丰卓越账户（Premier），即可通过[网上申请](https://internationalservices.hsbc.com/zh-cn/services/ico/ntb/where-to-open/)汇丰美国的卓越账户。大陆地区卓越账户要求有50万资产**证明**，香港地区则需100万。
+
+- 其他地区卓越账户开户必须满30天，才可开设汇丰美国，但不影响申请，申请后会写道：
+
+> If you have a HSBC Premier account outside of the Unites States, opened for more than 30 days, our records indicate your China Premier account was opened on (其他地区卓越账户开户日期).  If you cannot provide any of the above documents we will have to wait until (其他地区卓越地区开户日期+30天) to proceed with the account opening process.
+
+# 申请账户
+
+在线申请时有一个页面让你选择是否开通其他账户（储蓄账户等）和产品（信用卡，抵押贷款等），我选了以下两样：
+
+- Premier Relationship Savings
+- Premier Savings
+
+什么都不勾选的情况下只会开通一个Checking Account，推荐把两个Saving账户开了，空闲资金可以获得比Checking Account高的利息。
+
+![](https://image.luozx.org/garden/2025/11/d8f198a3663e5391597e0aaf0fe32925.png){width="80%" fig-align='center'}
+
+# 申请注意事项
+
+申请过程有一步会要求填写你的居住地址，后续还需要你提供居住地址证明。
+
+![](https://image.luozx.org/garden/2025/11/1694cc87857989bd9f699c32c4c42c70.webp){width='80%' fig-align='center'}
+
+居住地址证明推荐使用汇丰卓越账户的月结单，因此这里填写的地址请**一定**和月结单上记录的地址一样，否则申请会被拒绝。地址输入拼音即可。
+
+所有资料请如实填写，同时过程中可能涉及和开户经理邮件沟通。
+
+# 身份认证
+
+资料没有任何问题后，客户经理会发送一条包含认证连接的短信到你申请时预留的手机号上。认证过程是自助的，给自己和护照拍照，完成认证后你就可以邮件通知客服经理继续开户了。
+
+
+# 借记卡激活
+
+收到如下开户申请通过的邮件后，同样会收到一条包含6位数的一个验证码，这个验证码除了注册HSBC US APP需要外，激活借记卡同样需要，请保管好。
+
+邮件下方会写道借记卡信息：
+
+> Your new HSBC Debit Mastercard® card and PIN will be delivered in two separate letters and will be sent in 5-7 business days.
+
+卡片默认通过DHL从美国发往你之前填写的居住地址。虽然邮件中说卡片和PIN码通过两封不同的快递发出，但实际上只有一封。PIN码（借记卡密码）是通过电话激活并设置的。
+
+账户开通几天后可以通过HSBC US APP联系在线客服，索要DHL快递单号，跟踪快递信息。
+
+![](https://image.luozx.org/garden/2025/11/c7faf968573ee7932daf2dc4548002ec.webp)
+
+收到卡片后，上面会贴一张白色贴纸，给了你一个电话让你拨打激活。不要这么做，拨打汇丰中国的电话：400-820-8828^[或者你当地卓越电话]，要求转接到美国的汇丰（省长途费，多好的事儿啊）。
+
+激活过程按照客服要求的来就行。
+
+::: {.callout-tip}
+想要将卡片添加到 Pay的话，拨打电话前请记得关闭手机定位功能，并且将手机的地区设置成美国^[更改地区手机会重新启动]，方便一通电话同时把借记卡绑定到 Pay上。
+:::
+
+通过转接还有一个好处就是可能会转接到讲中文的汇丰美国客服，如果不是，也可以要求那边提供翻译服务。给我提供激活服务的是中文客服。
+
+另外拨打电话注意时区，挑美国东部那边白天上班时间拨打，推荐北京时间晚上9：00~10:00拨打。
+
+## PIN码
+
+美国借记卡的密码都是4位数的，所以设置的时候输入四位数就好。在国内ATM机使用时，正确的卡片密码输入完后补两个零就行。
+
+# 借记卡绑定Apple Pay
+
+有条件的话可以开启全局美国梯子。
+
+（此时你应该在和客服通话中，表示想要绑定Apple Pay，让ta稍等）手动输入卡号后，点击下一步，点击继续验证，会向一个你不认识的电话号码发送验证短信，这时候让客服协助你，他那边操作一下，就会看到验证成功了，卡片绑定OK。
+
+![](https://image.luozx.org/garden/2025/11/7fc97bfd9db48b627661fbee6626c84e.jpeg){width='33%' fig-align='center'}
