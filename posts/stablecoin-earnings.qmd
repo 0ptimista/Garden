@@ -1,12 +1,14 @@
 ---
 title: "稳定币理财"
 date: "2025-07-26 12:28"
+date-modified: "2025-11-19 14:01"
 categories: ['money']
 ---
 
 ::: {.callout-important title="请务必留意"}
 文章内容并非投资理财建议
 :::
+
 
 如果按照稳定币流通的自由程度来划分，稳定币理财有两个去处:
 
@@ -36,9 +38,14 @@ categories: ['money']
 
 ![Morpho收益率截图](https://image.luozx.org/garden/2025/07/79f6f960ecc6007e5540bc1911e9498b.png)
 
+
 和CEX相同，该收益率也是浮动的，不同的地方是区块链上通过借贷赚取收益的产品，几乎不设有阶梯收益，也就是你投入的所有数额均可享受同样的年化收益率。^[关于Morpho产品是如何运作的，强烈推荐[@阿小小海](https://x.com/OKxiaohai)这篇文章：[Morpho 全解析](https://quaily.com/simpleearn/p/simple-earn-manual-2-morpho-analysis)]
 
 你可以在[DeFi Llama](https://defillama.com/protocols/lending)上找到主要通过借贷赚取收益的产品列表。
+
+AAVE是区块链另一借贷龙头协议，近期（2025-11）推出了IOS版本的[App](https://aave.com/app)（安卓和桌面版本也会陆续更新）提供6%^[浮动利率]左右的收益。目前处于公测阶段，注册过程可使用邀请码9CDEE9。
+
+![AAVE App](https://aave.com/images/app/hero/eu-uk-row/hero-1.png){width="60%"}
 
 区块链上的产品除了有浮动收益率的借贷产品，同时也有一些提供稳定收益率的借贷产品：比如[Spark](https://app.spark.fi/)
 
