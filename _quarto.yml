@@ -64,6 +64,8 @@ funding:
 
 format:
   html:
+    link-external-icon: true
+    link-external-newwindow: true
     # template-partials:
     #   - title-block.html
     theme:
