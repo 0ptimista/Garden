@@ -1,3 +1,6 @@
+format:
+  html:
+    include-after-body: bottom_ads.html
 page-navigation: true
 comments:
   giscus:
