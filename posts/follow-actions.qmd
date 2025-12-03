@@ -8,7 +8,7 @@ categories:
 ---
 
 ::: {.callout-note}
-该服务已于2025-11停止服务
+`https://wewerss.luozx.org`于2025-11起不再保证提供稳定的服务
 :::
 
 
