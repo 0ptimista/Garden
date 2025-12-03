@@ -1,0 +1,45 @@
+---
+title: "ClawCloudRun：免费的K8s资源"
+date: "2025-12-03 11:59"
+description: "使用GitHub帐号注册，每月可免费获得$5的使用额度"
+categories: ['tools']
+---
+
+ClawCloudRun提供Kubernetes（K8s）集群的多租户共享模式，按照实际使用的计算资源和存储资源来付费。使用GitHub帐号注册的话，每个月有[免费5美元的额度](https://docs.run.claw.cloud/clawcloud-run/billing-and-usage#credits)可以使用。
+
+除了把K8s集群实现多组户共享外，ClawCloudRun还简化了[Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)的部署过程，提供默认的访问公开访问链接，相比原生的K8s，ClawCloudRun更容易上手。
+
+免费的帐号最多有4个CPU/8GB RAM的计算资源和10GB的存储资源可以使用，部署一些小型的个人用途服务我觉得足够了。
+
+其他几个有特色的功能是
+
+- 提供对象存储功能
+- 提供App Store，按照预设模板直接可以部署一些开源服务到K8s集群中，比如WordPress，OpenList，n8n等
+- 提供快速部署数据库/中间件功能
+- 提供快速创建开发/测试环境的功能（[DevBox](https://docs.run.claw.cloud/clawcloud-run/guide/devbox)）
+
+![clawcloudrun dashboard](https://image.luozx.org/garden/2025/12/6df867f1ec2e757978d12bdb6c8a11c1.png)
+
+由于原来的计算需求已经不在需要了，目前把手头上2台VPS（由Contabo和Mikyhost提供）和1台专属服务器（由Hetzner提供）都取消掉了。Hetzner的专属服务器虽然性价比很好，但也确实不便宜（每个月€39），唯一常用的服务就是[wewe-rss](/posts/follow-actions.qmd)，用ClawCloudRun的免费套餐来部署，刚刚好。
+
+如果你也想部署自己的wewe-rss，以下配置供你参考：
+
+- Image Name: `cooderl/wewe-rss-sqlite`
+- Container Port: `4000`，勾选Public Access，可配置自定义域名
+
+添加环境变量（无需额外配置`SERVER_ORIGIN_URL`）
+
+- `DATABASE_TYPE=sqlite`
+- `AUTH_CODE=你的密码`
+
+添加存储，设置存储大小，挂载点（Mount Path）为：`/app/data`
+
+![参考配置](https://image.luozx.org/garden/2025/12/fe2475996a055107e8f10efbe2c898e8.png)
+
+ClawCloudRun的使用感受是稳定性还不是很高。所以最好还是只用它来部署一些测试/练习的服务或者组件。每个月免费的5$额度还是非常不错的！
+
+wewe-rss对我来说里面的数据也不是很重要，用它订阅的公众号数量也不超过5个，所以完全可以接受重新完整安装。
+
+但是使用它来部署博客服务，重要的流程编排工具，或者图床用于生产我不是很推荐。
+
+
