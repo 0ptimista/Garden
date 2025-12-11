@@ -31,3 +31,9 @@ p {
   line-height: 1.6;        /* 稍大一点更适合中文阅读 */
   color: #000000;          /* 或保持你已有的 black */
 }
+
+.column-margin.column-container p {
+  margin-bottom: 0;
+  font-size: 0.8rem; /* 脚注字体大小 */
+}
+
