@@ -1,11 +1,10 @@
 ---
 title: 日语自学资源
 date: '2025-06-04'
-date-modified: last-modified
+date-modified: 2025-12-19 13:33
 description: 想自学的朋友们，不知道怎么开始的话，可以试试看我的学习过程
 categories:
 - tome-of-xp
-draft: false
 
 ---
 
@@ -70,3 +69,11 @@ draft: false
 
 - [日语迷](https://riyumi.com/beginner-faq/)
 - [NHK简明日语](https://www3.nhk.or.jp/nhkworld/lesson/zh/about/howtouse/)
+
+# Anki 背单词
+
+起初我以为Anki需要花一定时间学习，所以迟迟没有去了解。实际上只需要安装，导入[eggroll的卡牌](https://github.com/5mdld/anki-jlpt-decks)，按图示设置。就可以开始背单词了，非常方便，Anki学习曲线几乎为0
+
+适合长期使用。
+
+![导入后的Anki界面](https://image.luozx.org/garden/2025/12/7ae7f500c4fbc2c4a87231c6db4872a2.png)
