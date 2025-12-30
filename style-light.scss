@@ -1,35 +1,179 @@
+/* =====================================================================
+   style-light.scss — "Digital Garden" (Cosmo Enhanced)
+   基于 Cosmo 主题，复刻暖色书卷感。
+   已优化：字体黑度、笔画厚度、导航栏间距、圆角质感。
+   ===================================================================== */
+
 /*-- scss:defaults --*/
-$body-bg: #FFFCF9;
-//$body-bg: #F4F4F4; //mozilla配色
-$link-color: #9E7140;
-$link-hover-color: #7A4D20; // 新增：鼠标悬停的链接颜色
-$navbar-bg: #F5E6DA;
-$navbar-text-color: #3F2D20; // 新增：增强 Navbar 文字可读性
-$pagination-color: #3F2D20; // 更深的棕色，确保清晰度
-$pagination-focus-color: #FFFFFF;
-$pagination-hover-bg: #A87D5D; // 让悬停状态和选中状态更有层次感
-$pagination-active-color: #FFFFFF;  
-$pagination-active-bg: #9E7140;    
-$pagination-active-border-color: #6A4825; // 更深的焦糖色，增强边框层次感
-$mark-bg: #FDEFD9; //高亮颜色
 
-// h1, h2, h3, h4, h5, h6 {
-//   color: black !important; // 保持标题颜色为黑色
-// }
-//
-// .listing-title {
-//   color: black
-// }
+/* --- 1. 核心品牌色 (Brand Colors) --- */
+/* 覆盖 Cosmo 默认的蓝色，统一为“焦糖色/大地色” */
+$primary:       #9E7140; /* 按钮、搜索框聚焦色 */
+$body-bg:       #FFFCF9; /* 背景：暖白 */
 
-strong, b {
-  font-family: 'Noto Sans SC', sans-serif;
-  font-weight: 700;
-}
+/* [核心优化] 正文颜色：使用极深的暖炭色 (近乎纯黑) */
+/* 解决“颜色太浅”的问题，比纯黑 #000 稍微护眼，但视觉上足够黑 */
+$body-color:    #151210; 
+
+/* --- 2. 链接与高亮 --- */
+$link-color:       #9E7140;
+$link-hover-color: #7A4D20;
+$mark-bg:          #FDEFD9; /* 柔和的黄色高亮 */
+
+/* --- 3. 导航栏 (Navbar) --- */
+$navbar-bg:         #F5E6DA; /* 浅咖色背景 */
+$navbar-fg:         #201c19; /* 导航文字：深褐色 */
+$navbar-brand-color:#201c19;
+
+/* --- 4. 组件配色 --- */
+/* 分页按钮 */
+$pagination-color:               #3F2D20;
+$pagination-hover-bg:            #A87D5D;
+$pagination-active-bg:           #9E7140;
+$pagination-active-border-color: #9E7140;
+$pagination-border-color:        rgba(158, 113, 64, 0.2);
+
+/* --- 5. 形状与质感 --- */
+/* 让 Cosmo 的直角稍微圆润一点，接近 Zephyr 的风格 */
+$border-radius:      0.4rem; 
+$btn-border-radius:  0.4rem;
+
+/* --- 6. 字体栈 (Font Stack) --- */
+$font-family-sans-serif: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+$font-family-serif:      'Noto Serif SC', 'Songti SC', 'Georgia', serif;
+
+
+/*-- scss:rules --*/
+
+/* =====================================================================
+   A. 字体排版 (Typography) - 解决“细、浅”的核心
+   ===================================================================== */
+
+/* 正文系统 */
 p {
-  font-family: 'Noto Serif SC', 'Songti SC', serif;
-  font-size: 1rem;         /* 可选：指定字体大小 */
-  line-height: 1.6;        /* 稍大一点更适合中文阅读 */
-  color: #000000;          /* 或保持你已有的 black */
+  font-family: $font-family-serif;
+  
+  /* [优化 1] 颜色强制加深 */
+  color: $body-color !important;
+  
+  /* [优化 2] 提升字重 (关键) */
+  /* 使用 Noto Serif SC 的 Medium (500) 字重，彻底解决宋体在屏幕上发虚、太细的问题 */
+  font-weight: 500; 
+  
+  /* [优化 3] 渲染模式 */
+  /* Auto 模式通常比 Antialiased 看起来更饱满 */
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+
+  /* 排版细节 */
+  font-size: 1rem;     /* 字号加大，更易读 */
+  line-height: 1.8;      /* 大行高，增加呼吸感 */
+  margin-bottom: 1.5rem;
+  text-align: justify;   /* 两端对齐，像印刷品一样整齐 */
+}
+
+/* 标题系统 */
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: $font-family-sans-serif;
+  color: #000000 !important; /* 标题保持纯黑，拉开层次 */
+  font-weight: 700; 
+  letter-spacing: -0.02em;   /* 标题紧凑一点更现代 */
+}
+
+/* 强调文字 */
+strong, b {
+  font-family: $font-family-sans-serif; /* 重点内容改用黑体 */
+  font-weight: 700;
+  color: #7A4D20; /* 用深焦糖色标记重点 */
+}
+
+/* 选区颜色 */
+::selection {
+  background: #9E7140;
+  color: #fff;
+}
+
+/* =====================================================================
+   B. 导航栏 (Navbar) - 复刻 Quarto.org 布局
+   ===================================================================== */
+
+.navbar {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0,0,0,0.05); /* 极淡的分割线 */
+}
+
+/* 链接文字 */
+.navbar-nav .nav-link {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  color: $navbar-fg !important;
+  /* 强制收紧左右间距，让图标紧凑 */
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+
+/* 悬停效果 */
+.navbar-nav .nav-link:hover {
+  color: #9E7140 !important;
+  opacity: 1; /* 防止透明度变化导致闪烁 */
+}
+
+/* 图标对齐 */
+.navbar-nav .bi {
+  font-size: 1.2rem;
+  vertical-align: -0.15em;
+}
+
+/* =====================================================================
+   C. UI 组件微调
+   ===================================================================== */
+
+/* 代码块 */
+pre {
+  background-color: #f8f5f2; /* 极淡的暖灰背景 */
+  border: 1px solid #eaddd3; /* 暖色边框 */
+  border-radius: 6px;
+  color: #333;
+}
+
+/* 行内代码 */
+:not(pre) > code {
+  background-color: rgba(158, 113, 64, 0.1); /* 淡焦糖底色 */
+  color: #8c531b; /* 深焦糖字色 */
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+/* 引用块 */
+blockquote {
+  border-left: 4px solid #9E7140;
+  background-color: #FFF8F0; /* 极淡橙背景 */
+  padding: 0.8rem 1.2rem;
+  color: #5c4b37;
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 表格 */
+.table {
+  color: $body-color;
+}
+thead th {
+  border-bottom: 2px solid #9E7140;
+  color: #000;
+}
+
+/* 分页按钮微调 */
+.page-link {
+  border: none; /* 去掉边框，更极简 */
+  margin: 0 2px;
+  border-radius: 4px;
+}
+
+.column-margin.column-container p {
+  margin-bottom: 0;
+  font-size: 0.8rem; /* 脚注字体大小 */
 }
 
 .column-margin.column-container p {

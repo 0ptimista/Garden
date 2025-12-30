@@ -22,7 +22,7 @@ date-modified: last-modified
 
 使用[Quarto](https://quarto.org/)制作。当时由于工作需要，需要撰写一些总结报告，报告需要插入用数据生成的图表，Quarto非常适合这项工作，顺便也就给自己用了。
 
-色彩取自我非常喜欢阅读的博客[Entropic Thoughts](https://entropicthoughts.com/index)，第一次发现时，就觉得阅读体验很舒适。
+色彩取自我非常喜欢阅读的博客[Entropic Thoughts](https://entropicthoughts.com/index)，第一次发现时，就觉得阅读体验很舒适。Dark-mode的配色以[gruvbox](https://github.com/morhetz/gruvbox)为基础，由AI生成。
 
 # About the content 
 

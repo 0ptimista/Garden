@@ -1,223 +1,206 @@
 /* =====================================================================
-   theme-dark.scss — Gruvbox Dark (soft) for Quarto
-   背景偏暖灰（#32302f），正文米白（#ebdbb2），标题更亮（#fbf1c7）
+   style-dark.scss — "Midnight Library" (Cosmo Dark)
+   基于 Gruvbox Dark。
+   优化点：高对比度护眼文字、图片智能暗化、公告栏深底亮字。
    ===================================================================== */
 
 /*-- scss:defaults --*/
 
-/* 基础背景与正文 */
-$body-bg:    #32302f;  // Gruvbox dark soft（比 282828 更浅）
-$body-color: #ebdbb2;  // 正文暖米白
+/* --- 1. 核心配色 (High Contrast Warm) --- */
+$body-bg:       #32302f; /* Soft Dark: 暖深灰，防拖影，护眼 */
+$body-color:    #fdf4c1; /* Bright Cream: 极亮奶油色，确保宋体清晰可见 */
+$primary:       #fe8019; /* Gruvbox Orange: 亮橙色主调 */
 
-/* 标题颜色（编译期变量，影响组件内标题） */
-$headings-color: #fbf1c7;  // 比正文更亮一档，便于区分层级
+/* --- 2. 链接与高亮 --- */
+$link-color:       #83a598; /* 灰蓝 */
+$link-hover-color: #b8bb26; /* 亮绿 */
+$mark-bg:          rgba(214, 93, 14, 0.4); 
 
-/* 链接（蓝 -> 青；hover 更亮） */
-$link-color:       #83a598;  // blue
-$link-hover-color: #8ec07c;  // aqua
+/* --- 3. 导航栏 --- */
+$navbar-bg:         #282828; /* Hard Dark */
+$navbar-fg:         #fdf4c1;
+$navbar-brand-color:#fdf4c1;
 
-/* Navbar（比 body 略深，层次自然） */
-$navbar-bg:         #282828;
-$navbar-text-color: #ebdbb2;
-
-/* 分页（hover 中灰；active 橙色强调） */
-$pagination-color:               #ebdbb2;
-$pagination-focus-color:         #fbf1c7;
-$pagination-hover-bg:            #3c3836;
-$pagination-active-color:        #1d2021;
-$pagination-active-bg:           #fe8019;   // accent: orange
-$pagination-active-border-color: #a89984;   // neutral border
-
-/* 文本高亮 */
-$mark-bg: rgba(250, 189, 47, 0.28); /* #fabd2f @ 28% */
-
-/* 字体（沿用你的设定） */
-$font-family-sans-serif:  'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-$font-family-serif:       'Noto Serif SC', 'Songti SC', Georgia, 'Times New Roman', Times, serif;
-
-
-/* =====================================================================
-   自定义样式（编译后 CSS 规则）
-   ===================================================================== */
-
-/* 基础排版 */
-strong, b {
-  font-family: 'Noto Sans SC', sans-serif;
-  font-weight: 700;
-}
-p {
-  font-family: 'Noto Serif SC', 'Songti SC', serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: $body-color;
-}
-
-/* 文档背景与正文 */
-body {
-  background-color: $body-bg;
-  color: $body-color;
-}
-
-/* 链接 */
-a { color: $link-color; }
-a:hover, a:focus { color: $link-hover-color; }
-
-/* 标题（确保不会被默认黑色覆盖） */
-:root { --bs-heading-color: #{$headings-color}; }
-h1, h2, h3, h4, h5, h6 {
-  color: var(--bs-heading-color) !important;
-  /* 可选：让标题略微更粗，增强暗色下的“稳固感” */
-  /* font-weight: 700; */
-}
-
-/* Quarto 文首标题区（主标题/副标题） */
-.quarto-title h1.title,
-.quarto-title .title,
-.quarto-title .subtitle {
-  color: var(--bs-heading-color) !important;
-}
-
-/* 标题里的内联代码颜色跟随标题，不要用偏暗底色 */
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-  color: inherit;
-  background-color: transparent;
-}
-
-/* 标题锚点（# 图标） */
-.anchored .anchorjs-link {
-  color: #a89984;
-}
-.anchored .anchorjs-link:hover,
-.anchored .anchorjs-link:focus {
-  color: #d5c4a1;
-}
-
-/* Navbar */
-.navbar {
-  background-color: $navbar-bg !important;
-  color: $navbar-text-color;
-}
-.navbar .nav-link {
-  color: $navbar-text-color !important;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-  opacity: 0.92;
-}
+/* --- 4. 组件适配 --- */
+$input-bg:                   #3c3836;
+$input-color:                #fdf4c1;
+$input-border-color:         #504945;
+$input-focus-border-color:   #fe8019;
 
 /* 分页 */
-.pagination .page-link {
-  color: $navbar-text-color;
-  background-color: transparent;
-  border-color: #504945;  // Gruvbox 暗灰边
-}
-.pagination .page-link:hover {
-  background-color: $pagination-hover-bg;
-  color: #fbf1c7;
-  border-color: #665c54;  // hover 时稍亮
-}
-.page-item.active .page-link {
-  background-color: $pagination-active-bg;
-  border-color: $pagination-active-border-color;
-  color: $pagination-active-color;
+$pagination-color:               #fdf4c1;
+$pagination-bg:                  transparent;
+$pagination-border-color:        #504945;
+$pagination-hover-bg:            #3c3836;
+$pagination-active-bg:           #fe8019;
+$pagination-active-border-color: #fe8019;
+$pagination-active-color:        #282828;
+
+/* --- 5. 形状与字体栈 --- */
+$border-radius:      0.4rem;
+$btn-border-radius:  0.4rem;
+
+$font-family-sans-serif: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+$font-family-serif:      'Noto Serif SC', 'Songti SC', 'Georgia', serif;
+
+
+/*-- scss:rules --*/
+
+/* =====================================================================
+   A. 字体排版 (Typography)
+   ===================================================================== */
+
+/* 正文：清晰度优先 */
+p {
+  font-family: $font-family-serif;
+  color: $body-color !important;
+  
+  /* [核心] 继承 Light 版的 500 字重，防止深色背景吞噬字体 */
+  font-weight: 500; 
+  
+  /* 边缘增强 */
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 1rem;     
+  line-height: 1.8;      
+  margin-bottom: 1.5rem;
+  text-align: justify;   
 }
 
-/* mark 高亮 */
-mark { background-color: $mark-bg; }
-
-/* 引用块与分隔线 */
-blockquote {
-  border-left: 4px solid #a89984;
-  color: #d5c4a1;
-}
-hr { border-color: #504945; }
-
-/* 代码与预格式文本（基础可读性） */
-pre, code, kbd, samp {
-  background-color: #282828;
-  color: #ebdbb2;
-}
-pre {
-  border: 1px solid #3c3836;
-  padding: 0.75rem 1rem;
-  border-radius: .35rem;
-  overflow: auto;
+/* 标题：温润的亮米色 */
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: $font-family-sans-serif;
+  color: #fbf1c7 !important; 
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-/* 表格（条纹与边框） */
-table { color: $body-color; }
-thead th {
-  background-color: #3c3836;
-  border-bottom: 2px solid #504945;
+/* 强调文字 */
+strong, b {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  color: #fe8019; 
 }
-tbody tr:nth-child(odd)  { background-color: rgba(60,56,54,0.45); }
-tbody tr:nth-child(even) { background-color: rgba(60,56,54,0.25); }
-td, th { border-color: #504945; }
 
-/* 选中文本 */
+/* 消除灰色文字陷阱 */
+.text-muted, .quarto-title-meta-heading {
+  color: #d5c4a1 !important; 
+}
+
+/* 选区 */
 ::selection {
-  background: rgba(254, 128, 25, 0.35); /* 橙色选区 */
-  color: #1d2021;
+  background: rgba(254, 128, 25, 0.4);
+  color: #fbf1c7;
 }
 
-/* === 行内代码（反引号）在暗色下的底色与文字色 === */
-/* 1) 先设定 Bootstrap 对应变量（编译期生效，影响很多默认选择器） */
-$code-bg:    #3c3836;  // Gruvbox 中灰，适合段落内对比
-$code-color: #ebdbb2;  // 与正文一致的暖米白
+/* =====================================================================
+   B. 公告栏 (Announcement) - 深底亮字
+   ===================================================================== */
 
-/* 2) 同步 CSS 变量，覆盖运行时样式（确保万无一失） */
-:root {
-  --bs-code-bg:    #{$code-bg};
-  --bs-code-color: #{$code-color};
+.quarto-announcement {
+  background-color: #af3a03 !important; /* 深橙实底 */
+  border-bottom: 1px solid #d65d0e !important;
+  color: #fbf1c7 !important;
 }
 
-/* 3) 明确指定“行内 code 而非代码块”的样式（带一点内边距与圆角） */
-:not(pre) > code,
-code:not(pre code),
-p code, li code, td code, dd code, figcaption code, small code {
-  background-color: var(--bs-code-bg) !important;
-  color: var(--bs-code-color) !important;
-  border: 1px solid #504945;   /* Gruvbox 暗灰细边 */
-  padding: 0.08em 0.35em;
-  border-radius: .2rem;
+.quarto-announcement .quarto-announcement-content {
+  color: #fbf1c7 !important;
+  font-weight: 500;
 }
 
-/* 4) 但标题里的内联代码仍保持“无底色、随标题色” */
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-  color: inherit !important;
-  background-color: transparent !important;
-  border: 0 !important;
-  padding: 0 !important;
+.quarto-announcement a {
+  color: #ffffff !important; /* 纯白链接 */
+  text-decoration: underline !important;
+  font-weight: 700;
 }
 
+.quarto-announcement .bi { color: #fbf1c7 !important; }
+.quarto-announcement-close { color: rgba(255,255,255,0.7) !important; }
+.quarto-announcement-close:hover { color: #fff !important; }
 
-/* ====== Dark mode 图片全局轻度暗化（可撤销） ====== */
+/* =====================================================================
+   C. 导航栏 (Navbar)
+   ===================================================================== */
 
-/* 强度参数（可按需微调） */
-body.quarto-dark,
-[data-bs-theme="dark"] {
-  --img-brightness: 0.85;    /* <1 变暗；0.85~0.95 之间微调 */
-  --img-contrast:   1.02;    /* 轻提对比，避免灰雾感 */
-  --img-saturate:   0.98;    /* 稍降饱和，贴合 gruvbox 气质 */
+.navbar {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #3c3836;
 }
 
-/* 默认对常见内容图片生效（排除 SVG / emoji / 标记为 no-shade 的） */
-body.quarto-dark img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji),
-[data-bs-theme="dark"] img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji) {
+.navbar-nav .nav-link {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  color: $navbar-fg !important;
+  padding-left: 0.6rem !important;
+  padding-right: 0.6rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fe8019 !important;
+}
+
+.navbar-nav .bi {
+  font-size: 1.2rem;
+  vertical-align: -0.15em;
+}
+
+/* =====================================================================
+   D. UI 组件 & 代码块
+   ===================================================================== */
+
+/* 代码块：深色背景，加微弱阴影和边框 */
+pre {
+  background-color: #282828; 
+  border: 1px solid #3c3836; 
+  border-radius: 6px;
+  color: #ebdbb2;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2); 
+}
+
+/* 行内代码 */
+:not(pre) > code {
+  background-color: #45403d !important; 
+  color: #fdf4c1 !important; 
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #665c54;
+}
+
+/* 引用 */
+blockquote {
+  border-left: 4px solid #fe8019;
+  background-color: rgba(60, 56, 54, 0.3);
+  padding: 0.8rem 1.2rem;
+  color: #d5c4a1;
+  font-style: italic;
+}
+
+/* 表格 */
+.table { color: $body-color; border-color: #504945; }
+thead th { border-bottom: 2px solid #fe8019; color: #fbf1c7; }
+
+/* =====================================================================
+   E. 智能图片暗化
+   ===================================================================== */
+body.quarto-dark {
+  --img-brightness: 0.85; 
+  --img-contrast: 1.05;
+  --img-saturate: 0.90;
+}
+
+body.quarto-dark img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji) {
   filter: brightness(var(--img-brightness)) contrast(var(--img-contrast)) saturate(var(--img-saturate));
-  transition: filter .2s ease;
+  transition: filter 0.3s ease;
+  border-radius: 4px;
 }
 
-/* 链接里的小图标、导航头像等，默认不处理（可避免 UI 要素变灰） */
-.navbar img,
-a > img.icon,
-img.emoji {
-  filter: none !important;
-}
-
-/* 想对单张图片关闭暗化：在 Markdown/Quarto 中添加 { .no-shade } */
+body.quarto-dark img:hover { filter: none; }
+.navbar img, .bi { filter: none !important; }
 
 .column-margin.column-container p {
   margin-bottom: 0;
   font-size: 0.8rem; /* 脚注字体大小 */
 }
+
