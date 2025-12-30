@@ -7,6 +7,8 @@ project:
     - "assets/**"
     - ads.txt
     - "*.html"
+metadata-files:
+  - _announcement.yml
 execute:
   freeze: auto
 website:
