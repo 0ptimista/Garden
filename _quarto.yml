@@ -29,8 +29,8 @@ website:
       - text: ToolBox
         href: pages/toolbox.qmd
     right:
-      - icon: twitter
-        href: https://twitter.com/luozxdotorg
+      - icon: "bi bi-twitter-x"
+        href: https://x.com/luozxdotorg
         aria-label: Twitterxml
       - icon: "bi bi-telegram"
         href: https://t.me/backyardofthatman
