@@ -29,25 +29,18 @@ website:
       - text: ToolBox
         href: pages/toolbox.qmd
     right:
-      # - text: 'Time Machine'
-      #   href: time-machine.qmd
-      # - text: '{{< iconify mingcute:github-fill size=xl >}}'
-      #   href: https://github.com/0ptimista
-      - text: '{{< iconify mingcute:twitter-fill size=xl >}}'
+      - icon: twitter
         href: https://twitter.com/luozxdotorg
-      # - text: '{{< iconify mingcute:rss-fill size=xl >}}'
-      #   href: index.xml
-      - text: '{{< iconify mingcute:telegram-fill size=xl >}}'
+        aria-label: Twitterxml
+      - icon: "bi bi-telegram"
         href: https://t.me/backyardofthatman
+        aria-label: Telegram channel
+      - icon: github
+        href: https://github.com/0ptimista
+        aria-label: GitHub
   page-footer:
     center: |
       <a href="/privacy">站内广告</a>
-  #  <a href="#" data-cc="show-preferencesModal">Cookie 设置</a>
-  # sidebar:
-  #   style: "docked"
-  #   contents:
-  #     - section: "Introduction"
-  #       contents: posts/*
   back-to-top-navigation: true
 
 author: "Luozx"
@@ -72,8 +65,9 @@ format:
     #   - title-block.html
     theme:
       # light: [solar,style-light.scss]
-      light: [zephyr,style-light.scss]
-      dark: [zephyr,style-dark.scss]
+      # light: [zephyr,style-light.scss]
+      light: [cosmo,style-light.scss]
+      dark: [cosmo,style-dark.scss]
     highlight-style:
       dark: codehighlight-dark.json
     toc: true
@@ -82,20 +76,14 @@ format:
     lightbox: true
     default-image-extension: ""
     include-in-header:
-      - file: tagmanager-header.html
-      - file: google-fonts.html
-      # - text: |
-      #     <script data-grow-initializer="">!(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo4YmZkMGM3Yy1jYTA3LTQ4NTAtOTI1Ni1mYTJmYTM5ZWQ4MTQ=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();</script>
+      - file: include/tagmanager-header.html
+      - file: include/google-fonts.html
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
-      # - text: |
-      #     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
     include-before-body:
-      - file: ko-fi.html
-      - tagmanager-body.html
-      # - cookieconsent.html
+      - file: include/ko-fi.html
+      - include/tagmanager-body.html
 share:
-  # location: "before-body"
   permalink: "https://luozx.org"
   description: "Hihi Welcome!"
   twitter: true
