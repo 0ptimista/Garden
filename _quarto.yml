@@ -38,6 +38,9 @@ website:
       - icon: github
         href: https://github.com/0ptimista
         aria-label: GitHub
+      - icon: rss
+        href: https://luozx.org/index.xml
+        aria-label: Rss Feed
   page-footer:
     center: |
       <a href="/privacy">站内广告</a>
