@@ -7,8 +7,10 @@ project:
     - "assets/**"
     - ads.txt
     - "*.html"
+    - "tree.png"
 metadata-files:
   - _announcement.yml
+site-url: "https://luozx.org"
 execute:
   freeze: auto
 website:
@@ -26,7 +28,6 @@ website:
     creator: "@luozxdotorg"
     card-style: summary
     image: tree.png
-  site-url: "https://luozx.org"
   navbar:
     left:
       - text: About...
@@ -55,7 +56,6 @@ author: "Luozx"
 adsense:
   publisher-id: ca-pub-9560220640659728
 filters:
-  - social-share
   - adsense
 lang: zh
 date-format: "YYYY-MM-DD HH:mm"
@@ -89,9 +89,8 @@ format:
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
     include-before-body:
-      - file: include/ko-fi.html
+      - include/ko-fi.html
       - include/tagmanager-body.html
-share:
-  permalink: "https://luozx.org"
-  description: "Hihi Welcome!"
-  twitter: true
+    include-after-body:
+      - include/share-button.html
+

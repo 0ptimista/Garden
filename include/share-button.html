@@ -1,0 +1,98 @@
+<div class="share-container">
+  <span class="share-label">分享到：</span>
+
+  <a href="javascript:void(0)" class="share-btn x-twitter" aria-label="Share on X"
+     onclick="shareTo('x')">
+    <i class="bi bi-twitter-x"></i>
+  </a>
+
+  <a href="javascript:void(0)" class="share-btn telegram" aria-label="Share on Telegram"
+     onclick="shareTo('telegram')">
+    <i class="bi bi-telegram"></i>
+  </a>
+
+  <a href="javascript:void(0)" class="share-btn facebook" aria-label="Share on Facebook"
+     onclick="shareTo('facebook')">
+    <i class="bi bi-facebook"></i>
+  </a>
+
+  <a href="javascript:void(0)" class="share-btn email" aria-label="Share via Email"
+     onclick="shareTo('email')">
+    <i class="bi bi-envelope-fill"></i>
+  </a>
+  
+</div>
+
+<style>
+  .share-container {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee; /* 顶部分割线 */
+    text-align: right;          /* 靠右对齐 */
+  }
+  .share-label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .share-btn {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #555;
+    text-decoration: none !important; /* 去掉下划线 */
+    transition: all 0.2s ease;
+    font-size: 1.1rem;
+  }
+  
+  /* 鼠标悬停时的品牌色效果 */
+  .share-btn:hover { transform: translateY(-2px); } /* 轻微上浮 */
+  .share-btn.x-twitter:hover { color: #000; background: #f0f0f0; }
+  .share-btn.telegram:hover  { color: #2481cc; background: #e6f2fa; }
+  .share-btn.linkedin:hover  { color: #0a66c2; background: #e6f0fa; }
+  .share-btn.facebook:hover  { color: #1877f2; background: #e7f3ff; }
+  .share-btn.email:hover     { color: #d93025; background: #fce8e6; }
+  .share-btn.weibo:hover     { color: #e6162d; background: #fce8e8; }
+</style>
+
+<script>
+function shareTo(platform) {
+  // 1. 获取当前页面信息
+  const url = encodeURIComponent(window.location.href);
+  const title = encodeURIComponent(document.title);
+  
+  let link = "";
+
+  // 2. 根据平台匹配 URL 模式
+  switch (platform) {
+    case 'x':
+      link = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+      break;
+    case 'telegram':
+      link = `https://t.me/share/url?url=${url}&text=${title}`;
+      break;
+    case 'linkedin':
+      link = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+      break;
+    case 'facebook':
+      link = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+      break;
+    case 'reddit':
+      link = `https://reddit.com/submit?url=${url}&title=${title}`;
+      break;
+    case 'weibo':
+      link = `http://service.weibo.com/share/share.php?url=${url}&title=${title}`;
+      break;
+    case 'email':
+      link = `mailto:?subject=${title}&body=Check this out: ${url}`;
+      break;
+    default:
+      return;
+  }
+
+  // 3. 打开新窗口
+  window.open(link, '_blank', 'width=600,height=400');
+}
+</script>
