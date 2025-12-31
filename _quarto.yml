@@ -19,8 +19,13 @@ website:
   repo-actions: [source]
   favicon: "tree.png"
   bread-crumbs: true
-  open-graph: true
-  twitter-card: true
+  open-graph:
+    image: tree.png
+    locale: zh_CN
+  twitter-card:
+    creator: "@luozxdotorg"
+    card-style: summary
+    image: tree.png
   site-url: "https://luozx.org"
   navbar:
     left:
