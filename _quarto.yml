@@ -10,24 +10,24 @@ project:
     - "tree.png"
 metadata-files:
   - _announcement.yml
-site-url: "https://luozx.org"
 execute:
   freeze: auto
 website:
   title: "Luozx的数字花园🌳"
+  site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
   reader-mode: false
   repo-url: "https://github.com/0ptimista/Garden"
   repo-actions: [source]
-  favicon: "tree.png"
+  favicon: "/tree.png"
   bread-crumbs: true
   open-graph:
-    image: tree.png
+    image: "/tree.png"
     locale: zh_CN
   twitter-card:
     creator: "@luozxdotorg"
     card-style: summary
-    image: tree.png
+    image: "/tree.png"
   navbar:
     left:
       - text: About...
