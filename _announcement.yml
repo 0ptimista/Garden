@@ -1,0 +1,8 @@
+# _announcement.yml
+website:
+  announcement:
+    icon: megaphone
+    dismissable: true
+    content: "Google One家庭还有4个空位，可以使用Gemini Pro。免费加入，先到先得，加入方式在<a href='https://t.me/backyardofthatman'>群组</a>里"
+    type: success
+    position: below-navbar
