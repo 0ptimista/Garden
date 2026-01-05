@@ -1,11 +1,19 @@
 ---
 title: 从美国政府手里拿钱
 date: '2024-11-17'
+date-modified: 2026-01-05 11:42
 categories:
 - money
 - tome-of-xp
-
 ---
+
+::: {.callout-note}
+债券已到期
+:::
+
+{{< tweet luozxdotorg 1995740263533478204 >}}
+
+--- 
 
 2023年下半年，在美国不断加息的环境下，开始研究如何购买美国国债。
 
