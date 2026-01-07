@@ -8,8 +8,8 @@ project:
     - ads.txt
     - "*.html"
     - "tree.png"
-metadata-files:
-  - _announcement.yml
+# metadata-files:
+#   - _announcement.yml
 execute:
   freeze: auto
 website:
