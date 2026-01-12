@@ -1,9 +1,15 @@
 ---
 title: "ClawCloudRun：免费的K8s资源"
 date: "2025-12-03 11:59"
+date-modified: "2026-01-12 09:51"
 description: "使用GitHub帐号注册，每月可免费获得$5的使用额度"
 categories: ['tools']
 ---
+
+::: {.callout-important}
+2025-12-13日起，对于免费用户，会审核账户活跃情况，一个月内未登录过ClawCloudRun控制台的用户，资源会[被回收](https://question.run.claw.cloud/questions/10010000000002545)。
+所以免费用户现在需要每月至少登陆控制台一次，才能保证自己部署的服务持续运行。
+:::
 
 ClawCloudRun提供Kubernetes（K8s）集群的多租户共享模式，按照实际使用的计算资源和存储资源来付费。使用GitHub帐号注册的话，每个月有[免费5美元的额度](https://docs.run.claw.cloud/clawcloud-run/billing-and-usage#credits)可以使用。
 
