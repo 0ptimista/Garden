@@ -1,0 +1,144 @@
+---
+title: "用记账工具回答：我现在有多少钱"
+date: "2026-01-12 22:11"
+description: "Percento优点，不足以及我为何及如何使用它"
+categories: ['tools','money']
+format:
+  html:
+    code-fold: true
+    highlight-style: atom-one
+---
+
+我主张的观点是：记账是为最终生成的那张报表服务的^[[谈记账时，我们真正想要的是什么](/posts/what-we-want-from-bookkeeping.qmd)]，因此想要从报表上获得什么信息就决定使用什么工具以及如何使用这个工具。换句话说，搞明白自己需要解决的问题是第一位的。
+
+
+# 我的情况
+
+考虑自己个性和习惯^[旧文：[个性匹配的投资策略](/posts/investing-and-personality.html)]，加上受到[大卫翁老师](https://www.xiaoyuzhoufm.com/podcast/61dd99a47b29652ff572257b)的熏陶，我成为了资产配置流派的爱好者，同时信奉「某处总有牛市」和「全球资产配置 ^[两个阅读材料：1.[如何配置全球资产](https://book.douban.com/subject/36876426/) 2.[持续买入](https://book.douban.com/subject/37165036/)]」的理念，持有了除CNY之外的其他币种和资产。在统计现在有多少钱时，需要以统一的货币来观察，因此不同货币之间的汇率转换是需要的。
+
+进行资产配置的时候，有些标的是计划长期持有，有些需要经常操作，长期账户和短期账户资产之间的比例关系也是我想要知道的。
+
+另外我还想要知道有多少流动资金可以随时取用，占据总资产的比例是怎样的，同时灵活资金是多币种的，如果能看到不同货币的比例，也很有用。
+
+下表按照前述的两个理念，幻想出来想的资产配置：
+
+::: {.callout-important}
+自己现在只持有表中部分标的，想法也可能随时会发生改变，而且非常不成熟也不专业，请不要抄作业
+:::
+
+| 区域     | 自定义     | 流动性分配 | 货币| 核心                     | 卫星        |
+| :------:  | :-----: | :---------: | :------: | :-----------------: | :-----------: |
+| 港       | 20.00%  | 5+5   | HKD      | 700                    | 268，美团，小米 |
+| 中       | 15.00%  | 5+5   | CNY      | 沪深300，中证500，央企50 |           |
+| 美       | 20.00%  | 8+2   | USD      | BRKB，TSLA，             | PDD，      |
+| crypto | 30.00%  | 5+5   | USDT/C   | BTC，BNB，ETH，           |           |
+| 日       | 10.00%  | 5+5   | JPY/USD  |                        |           |
+| 其他（印）   | 5.00%   |       | USD      |                        |           |
+|        | 100.00% |       |          |                        |           |
+:  {.striped .hover .responsive}
+
+总的来说，我有多少钱这个问题，除了具体的数额之外，我还想观察它分配的比例关系。这样子做其实也是为了回答另外一个问题：何时卖出。
+
+什么时候要把持有的标的卖掉？我找到了两种方法。一种是以资产再平衡的方式，为了能够实现这一点，观察资产之间的比例关系就很有必要。另一种是[《投资第一课》](https://book.douban.com/subject/36295222/)这本书中所讲的：看股市温度计，卖在人声鼎沸时^[自己现在还不太会，没有心得体会，所以讲不出个屁来]。
+
+# 工具
+
+记录现在还有多少钱，适合用余额法来记，这样做最轻松。选择Percento的一个原因是因为早先已经为了它的颜值付了钱，买了终身版本，不想浪费了。(其实Wealthfolio也是购买所得）所以在[上一篇](/posts/what-we-want-from-bookkeeping.qmd)文章，才会列出这几个工具，一些是自己熟悉的，一些是自己本身就拥有的，属于从菜单里选菜了。但是看到有人因为上一篇文章提到了Percento就冲动消费，买了终身版，自己实在是有些汗颜了。另外一个原因是Percento本身的设计也是从余额法出发的。除了这两个最主要的因素外，Percento还有其他特点：
+
+**合理的资产分类**
+
+[作者](https://x.com/haojianzong)是考取过CPA（注册会计师）的，Percento在新增资产的时候只给你五个可选类型^[在会计术语中叫作科目]，用过beancount的朋友对里面的一些术语可能不会陌生。这些分类的意思也很直观，新增一项新的资产时能放入准确的分类中。
+
+![Percento 新增资产界面](https://image.luozx.org/garden/2026/01/ac222c741b1a4b8e25ae09dab9eb7828.png)
+
+**负债率指标**
+
+在使用Percento之前，我几乎对自己负债率没有一点想法，是Percento提醒了我。
+
+
+![负债率指标](https://image.luozx.org/garden/2026/01/a75f27cd4172edea0b89421ff04edb48.png)
+
+之所有负债率重要是因为它还有另一个名字：杠杆倍数。$杠杆倍数=\frac{1}{1-负债率}$
+
+负债率和杠杆倍数之间的关系如 @fig-leverage 所示：
+
+
+```{python}
+#| label: fig-leverage
+#| fig-cap: "负债率（横轴）与杠杆倍数（纵轴）关系图"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1. 准备数据
+# 负债率 d 从 0 到 0.95 (避免分母为0，且 95% 以上绘图效果较挤)
+d = np.linspace(0, 0.95, 500)
+# 杠杆倍数 m = 1 / (1 - d)
+m = 1 / (1 - d)
+
+# 2. 创建绘图
+plt.figure(figsize=(6, 4))
+plt.plot(d, m, label=r'$m = \frac{1}{1-d}$', color='#1f77b4', linewidth=2)
+
+# 3. 标注特定的点：42% 负债率
+d_target = 0.42
+m_target = 1 / (1 - d_target)
+plt.scatter([d_target], [m_target], color='red', zorder=5)
+plt.annotate(f'Point: (42%, {m_target:.2f}x)', 
+             xy=(d_target, m_target), 
+             xytext=(d_target + 0.05, m_target + 2),
+             arrowprops=dict(facecolor='black', shrink=0.05, width=1, headwidth=5))
+
+# 4. 辅助线和参考点 (例如 50%, 80%)
+for ref_d in [0.5, 0.8]:
+    ref_m = 1 / (1 - ref_d)
+    plt.scatter([ref_d], [ref_m], color='gray', alpha=0.5)
+    plt.text(ref_d, ref_m + 0.5, f'{int(ref_d*100)}%, {int(ref_m)}x', fontsize=9)
+
+# 5. 图表修饰
+plt.title('Relationship between Debt Ratio and Leverage Multiplier', fontsize=14)
+plt.xlabel('Debt Ratio (d)', fontsize=12)
+plt.ylabel('Leverage Multiplier (m)', fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.ylim(0, 22)  # 限制 Y 轴范围以便观察
+plt.xlim(0, 1.0)
+plt.legend()
+
+# 6. 显示图表
+plt.show()
+```
+
+杠杆倍数意味着风险系数，可以把上图的纵轴视为风险系数。负债率和风险之间不是线性增长的，对自己来说，负债率控制在50%以下是相对安全的区间，在Percento上可以通过观察负债率来控制自己的风险情况。
+
+
+**漂亮的设计和简洁的首页**
+
+首页上有我关心的大部分内容：比例，金额。如果我想了解每个类型下的比例，也会以同样简洁的方式展现出来。当时花钱购买终身版这是一个很大的原因，还有一个原因是，免得它以后涨价，就还在它比较年幼的时候以低价买入了。
+
+那个时候支持的标的很少，现在大部分主流的资产都可以，而且也可以刷新汇率和标的价格，数据会通过iCloud同步，都很不错。
+
+::: {layout-ncol=2}
+![Percento首页](https://image.luozx.org/garden/2026/01/fa486d8589e01b46ad3bf0377bececc9.png)
+
+![投资账户的比例](https://image.luozx.org/garden/2026/01/f1075dd0cca923b949be16849d015b18.png)
+:::
+
+**不足**
+
+也可能是我自己的习惯问题，Percento在资产下只能建立一级分组，比如我在投资类别下的两个分组长期账户和短期账户，在这两个账户下只能建立资产，不能再建立新的分组，只能通过在资产前加上特定前缀来区分他们放在哪里。
+
+![投资账户](https://image.luozx.org/garden/2026/01/0100e4ad3b63af1ff69c549b13068b91.png)
+
+![通过资产前缀定义二级分组](https://image.luozx.org/garden/2026/01/9ab67f3ea95481770de19f9a1f5f2c4f.png)
+
+缺点就是没办法知道二级分组的总资产之间的比例。
+
+另外也不提供关于不同币种之间的比例关系（流动和非流动）不过有读者朋友开发的一款App：[iRich](https://apps.apple.com/app/id6752807691)就有这样的视图功能，很不错。
+
+# 总结
+
+我希望朋友们把关注的重点放在自己所处的情景中，而不是因为某一款功能丰富的工具反过来推敲自己有哪些场景可以用。
+
+我选择使用Percento是因为它满足了我最开始描述的大部分需要，我尽可能详尽地把自己的情况都写了出来，以便让你理解其中的缘由。如果你只是聚焦在一个市场，自己只持有一种货币，也许某些在线表格就能很容易的解决这个问题。
+
+先找到困扰自己的问题，再想办法寻找工具解决它，永远将[注意力]{.mark}放在自己身上:)
