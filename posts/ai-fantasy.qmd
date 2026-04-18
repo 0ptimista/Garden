@@ -19,4 +19,8 @@ categories: []
 
 尊重现实，接受现实。
 
-{{< tweet user=yihong0618 id=1916649998168777032 >}}
+Quote from [@yihong618](https://x.com/yihong0618):
+
+> dify 招聘有一条挺有意思的：
+  > 懂得 AI 能力边界
+
