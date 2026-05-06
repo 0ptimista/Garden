@@ -6,8 +6,8 @@
   const adId = "timeline-mobile-google-ad";
   const adAfterVisiblePosts = 3;
   const adClient = "ca-pub-9560220640659728";
-  const adSlot = "8557031577";
-  const adLayoutKey = "-hh+a-w-1e+66";
+  const adSlot = "6403238344";
+  const adLayoutKey = "-gu-3+1f-3d+2z";
   const adScriptId = "garden-adsense-script";
   let scheduled = false;
 
@@ -85,7 +85,9 @@
       ad = createAd();
     }
 
-    anchor.after(ad);
+    if (ad.parentElement !== list || ad.previousElementSibling !== anchor) {
+      anchor.after(ad);
+    }
 
     if (!ad.dataset.adsenseRequested) {
       ad.dataset.adsenseRequested = "true";
@@ -114,7 +116,16 @@
     }
 
     list.dataset.mobileAdObserved = "true";
-    const observer = new MutationObserver(schedulePlaceAd);
+    const observer = new MutationObserver((mutations) => {
+      const ad = document.getElementById(adId);
+      const onlyAdMutations = ad && mutations.every((mutation) => {
+        return mutation.target === ad || ad.contains(mutation.target);
+      });
+
+      if (!onlyAdMutations) {
+        schedulePlaceAd();
+      }
+    });
     observer.observe(list, {
       attributes: true,
       attributeFilter: ["class", "style"],
