@@ -41,6 +41,10 @@ listing:
   filter-ui: false
 adsense:
   enable-ads: false
+format:
+  html:
+    include-after-body:
+      - include/_mobile-timeline-ad.html
 ---
 
 

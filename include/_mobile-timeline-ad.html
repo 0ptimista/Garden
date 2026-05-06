@@ -9,10 +9,11 @@
   const adSlot = "6403238344";
   const adLayoutKey = "-gu-3+1f-3d+2z";
   const adScriptId = "garden-adsense-script";
+  const adScriptSelector = 'script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]';
   let scheduled = false;
 
   const loadAdScript = () => {
-    if (document.getElementById(adScriptId)) {
+    if (document.getElementById(adScriptId) || document.querySelector(adScriptSelector)) {
       return Promise.resolve();
     }
 

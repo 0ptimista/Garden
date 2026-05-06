@@ -1,12 +1,12 @@
 ---
-title: $GRASS空投中的教训
+title: \$GRASS空投中的教训
 date: '2024-10-30'
 date-modified: last-modified
 categories: ['tome-of-xp']
 
 ---
 
-在$GRASS开放领取前一天, 专门设置了提醒, 想在第一时间领, 提, 卖.
+在\$GRASS开放领取前一天, 专门设置了提醒, 想在第一时间领, 提, 卖.
 
 ![](https://image.luozx.org/garden/2024/11/ed413a289872b5edcc8bcde6438abb65.png)
 
@@ -41,4 +41,4 @@ categories: ['tome-of-xp']
 人少的网络, 可能的接近合约接口的交互(脚本/直接调用接口)
 能够给最大限度增加领取成功的速度.
 
-PS: 补充了一些具体操作的步骤和细节, 如果你有兴趣的话, 可以参考[$GRASS空投领取优化总结](https://players.luozx.org/p/grass-airdrop-optimization-summary)(Paid)
+PS: 补充了一些具体操作的步骤和细节, 如果你有兴趣的话, 可以参考[\$GRASS空投领取优化总结](https://players.luozx.org/p/grass-airdrop-optimization-summary)(Paid)

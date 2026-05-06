@@ -1,9 +1,44 @@
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
-  kofiWidgetOverlay.draw('luozx', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Like it?',
-    'floating-chat.donateButton.background-color': '#A87D5D',
-    'floating-chat.donateButton.text-color': '#FFFFFF'
-  });
+(() => {
+  const loadKoFi = () => {
+    if (window.kofiWidgetOverlay) {
+      drawKoFi();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js";
+    script.async = true;
+    script.onload = drawKoFi;
+    document.body.append(script);
+  };
+
+  const drawKoFi = () => {
+    if (!window.kofiWidgetOverlay || document.querySelector(".kofi-button")) {
+      return;
+    }
+
+    window.kofiWidgetOverlay.draw("luozx", {
+      "type": "floating-chat",
+      "floating-chat.donateButton.text": "Like it?",
+      "floating-chat.donateButton.background-color": "#A87D5D",
+      "floating-chat.donateButton.text-color": "#FFFFFF"
+    });
+  };
+
+  const scheduleKoFi = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadKoFi, { timeout: 3000 });
+      return;
+    }
+
+    window.setTimeout(loadKoFi, 1500);
+  };
+
+  if (document.readyState === "complete") {
+    scheduleKoFi();
+  } else {
+    window.addEventListener("load", scheduleKoFi, { once: true });
+  }
+})();
 </script>

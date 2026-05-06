@@ -89,6 +89,7 @@ format:
       dark: codehighlight-dark.json
     respect-user-color-scheme: true
     toc: true
+    html-math-method: mathml
     canonical-url: true
     reference-location: document
     lightbox: true
@@ -98,8 +99,7 @@ format:
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
     include-before-body:
-      - include/ko-fi.html
       - include/tagmanager-body.html
     include-after-body:
       - include/share-button.html
-      - include/_mobile-timeline-ad.html
+      - include/ko-fi.html
