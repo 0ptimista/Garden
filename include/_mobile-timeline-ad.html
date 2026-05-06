@@ -6,7 +6,8 @@
   const adId = "timeline-mobile-google-ad";
   const adAfterVisiblePosts = 3;
   const adClient = "ca-pub-9560220640659728";
-  const adSlot = "4120411708";
+  const adSlot = "8557031577";
+  const adLayoutKey = "-hh+a-w-1e+66";
   const adScriptId = "garden-adsense-script";
   let scheduled = false;
 
@@ -36,10 +37,10 @@
       <div class="timeline-mobile-ad-label">广告</div>
       <ins class="adsbygoogle timeline-mobile-ad-slot"
         style="display:block"
+        data-ad-format="fluid"
+        data-ad-layout-key="${adLayoutKey}"
         data-ad-client="${adClient}"
-        data-ad-slot="${adSlot}"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
+        data-ad-slot="${adSlot}"></ins>
     `;
     return ad;
   };
