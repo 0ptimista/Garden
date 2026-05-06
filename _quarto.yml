@@ -1,9 +1,12 @@
 project:
   type: website
+  pre-render:
+    - node scripts/build-content-index.mjs
   render:
     - "*.qmd"
     - "posts/**/*.qmd"
     - "pages/**/*.qmd"
+    - "categories/**/*.qmd"
     - "collections/**/*.qmd"
     - "!drafts/"
     - "!include/"
@@ -13,7 +16,8 @@ project:
   resources:
     - "assets/**"
     - ads.txt
-    - "*.html"
+    - cookieconsent.html
+    - title-block.html
     - "tree.png"
 # metadata-files:
 #   - _announcement.yml
@@ -37,11 +41,6 @@ website:
     card-style: summary
     image: "/tree.png"
   navbar:
-    left:
-      - text: About...
-        href: pages/about.qmd
-      - text: ToolBox
-        href: pages/toolbox.qmd
     right:
       - icon: twitter-x
         href: https://x.com/luozxdotorg

@@ -1,0 +1,24 @@
+---
+title: money
+description: "和钱、个人投资、资产配置、现金流和风险有关的内容。"
+page-layout: full
+toc: false
+body-class: category-page
+listing:
+  id: category-posts
+  contents: [../posts/**/*.qmd, ../pages/**/*.qmd]
+  include:
+    categories: money
+  sort: date desc
+  fields:
+    - date
+    - title
+    - categories
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+:::{#category-posts}
+:::

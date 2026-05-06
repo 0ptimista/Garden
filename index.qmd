@@ -1,7 +1,8 @@
 ---
 title: ''
-# page-layout: custom
 page-layout: full
+toc: false
+body-class: garden-home-page
 author: ''
 date-modified: ''
 date-format: long
@@ -13,30 +14,13 @@ listing:
   fields:
   - title
   # - author
-  - date
-  - description
+  # - date
+  # - description
   # - file-modified
-  page-size: 10
+  max-items: 5
   sort: date desc
   type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  max-description-length: 150
-- id: featured
-  contents:
-  - ./posts/buying-us-bond.qmd
-  - ./posts/steps-of-buying-us-bonds.qmd
-  - ./posts/steps-of-buying-us-bonds-2.qmd
-  - ./posts/risk-free-asset.qmd
-  sort: date asc
-  feed: false
-  type: grid
-  fields:
-  - date
-  - title
-  - author
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
 adsense:
@@ -47,18 +31,305 @@ format:
       - include/_mobile-timeline-ad.html
 ---
 
+:::: {.garden-home}
 
-# Featured
+::: {.home-hero}
+<div class="home-title" role="heading" aria-level="1"><span>Luozx</span><span class="home-title-rest">的数字花园</span></div>
 
-:::{#featured}
+这是一个把生活、工作、工具和钱放在一起整理的个人数字花园。内容会持续生长，不追求完整，但尽量把已经验证过、值得回头看的东西放在容易抵达的地方。
 :::
 
-你可以在[这里](/pages/categories-and-tags.qmd)找到关于右侧分类的含义。
+::: {.home-margin-nav}
+<div class="home-margin-nav-title">导航</div>
+<div class="home-margin-tools" aria-label="页面工具"></div>
 
-# Timeline
+- [时间线](time-machine.qmd)
+- [收藏](/collections/starred-articles/)
+- [RSS](/index.xml)
+- [Telegram](https://t.me/backyardofthatman)
+- [GitHub](https://github.com/0ptimista)
+- [X](https://x.com/luozxdotorg)
+:::
+
+## 关于这个花园
+
+:::: {.home-about-grid}
+::: {.home-about-card}
+### 为什么叫 Garden
+
+这个名字来自对「[数字花园](https://maggieappleton.com/garden-history/)」的理解：它是一个完全由自己控制的网络空间，内容可以随意生长，也需要随时养护。它开放给互联网上的人游览，但不需要按平台算法的节奏更新。
+:::
+
+::: {.home-about-card}
+### 这里会写什么
+
+内容来自我的生活、工作、兴趣、经历和经验。主题不会只围绕某一个领域，也不保证每篇都完整或完美；但只要公开出来，就尽量让它对后来的人有一点用。
+:::
+
+::: {.home-about-card}
+### 这个网站怎么做
+
+网站托管在 GitHub，用 [Quarto](https://quarto.org/) 生成。现在的浅色配色来自我很喜欢的 [Entropic Thoughts](https://entropicthoughts.com/index)，暗色模式是一套暖黑和深棕纸面配色。
+:::
+
+::: {.home-about-card}
+### 一点作者偏见
+
+内容大于作者。我把技术视为工具，用来解决或加速解决生活里的实际问题；也更偏爱友善、具体、经过打磨，并且真的能帮到人的内容。
+:::
+::::
+
+## 工具箱
+
+:::: {.home-toolbox-grid}
+::: {.home-toolbox-group}
+### 资源管理
+
+- [RoyalTSX](posts/royal-tsx.qmd)  
+  管理远程连接，减少频繁登录和切换环境时的摩擦。
+- [PicList / PicGo](posts/blog-image-hosting-with-cf-r2.qmd)  
+  配合图床处理博客图片，让写作时的上传、引用和迁移更可控。
+:::
+
+::: {.home-toolbox-group}
+### 阅读
+
+- [wewe-rss](posts/wewerss.qmd)  
+  把微信订阅源重新放回 RSS 工作流里，减少被动刷信息的时间。
+- [Follow](posts/follow-the-app/follow-the-app.qmd)  
+  更接近现代阅读器的 RSS 客户端，适合把信息源、列表和阅读体验放在一起管理。
+:::
+::::
+
+## 内容形态
+
+:::: {.home-mode-grid}
+::: {.home-mode}
+<div class="home-mode-label">长文</div>
+
+完整观点、问题拆解和公开写作，适合从头读完。
+:::
+
+::: {.home-mode}
+<div class="home-mode-label">经验笔记</div>
+
+做过之后留下的判断、步骤和复盘，适合在遇到相似问题时回来查。
+:::
+
+::: {.home-mode}
+<div class="home-mode-label">工具记录</div>
+
+围绕具体工具、对象和工作流，关注它能解决什么问题。
+:::
+
+::: {.home-mode}
+<div class="home-mode-label">收藏入口</div>
+
+经过筛选后留下的材料、选择和付费内容线索。
+:::
+::::
+
+## 内容地图
+
+::: {.home-section-note}
+不按时间线浏览时，可以从主题、内容形态和推荐入口进入这个花园。每个入口都指向一个独立分类页，也给出一篇适合开始的文章。
+:::
+
+:::: {.home-category-grid}
+::: {.home-category}
+<div class="home-category-kind">指南</div>
+
+### [guide](categories/guide.qmd){.no-external}
+
+花园指南类文章，用来说明站点设计和浏览方式。
+
+<div class="home-category-entry">入口：[分类标签及其含义](pages/categories-and-tags.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">经验</div>
+
+### [tome-of-xp](categories/tome-of-xp.qmd){.no-external}
+
+个人实践后的经验记录，偏向做过之后的复盘和心得。
+
+<div class="home-category-entry">入口：[你是如何整理你的文件的？](posts/how-do-you-manage-your-files.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">工具</div>
+
+### [tools](categories/tools.qmd){.no-external}
+
+把文章中提到的对象视为一种工具，关注它能解决什么问题。
+
+<div class="home-category-entry">入口：[如果你也在寻找macOS上的远程工具，可以试试它。](posts/royal-tsx.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">选择</div>
+
+### [mypick](categories/mypick.qmd){.no-external}
+
+经过自己对比和筛选后留下的选择，通常会和 tools 一起出现。
+
+<div class="home-category-entry">入口：[Follow: The App](posts/follow-the-app/follow-the-app.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">金钱</div>
+
+### [money](categories/money.qmd){.no-external}
+
+和钱、个人投资、资产配置、现金流和风险有关的内容。
+
+<div class="home-category-entry">入口：[请认真对待自己的钱](posts/take-money-seriously/index.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">工作</div>
+
+### [worklog](categories/worklog.qmd){.no-external}
+
+工作中的思考、问题定位、工程实践和解决办法。
+
+<div class="home-category-entry">入口：[故障事件回顾中的几个重要时间节点](posts/key-timestamps-in-incident-review.qmd){.no-external}</div>
+:::
+
+::: {.home-category}
+<div class="home-category-kind">付费</div>
+
+### [paied](categories/paied.qmd){.no-external}
+
+需要付费或带有付费属性的文章。
+
+<div class="home-category-entry">入口：[多元货币转换最佳路径](posts/currency-best-exchange-route.qmd){.no-external}</div>
+:::
+::::
+
+## 从这里开始
+
+:::: {.home-path-grid}
+::: {.home-path}
+### 钱与风险
+
+- [请认真对待自己的钱](posts/take-money-seriously/index.qmd)
+- [用记账工具回答：我现在有多少钱](posts/how-i-use-percento/index.qmd)
+- [为什么要在意国债收益率](posts/risk-free-asset.qmd)
+- [购买美债的思路](posts/steps-of-buying-us-bonds.qmd)
+:::
+
+::: {.home-path}
+### 工具背后的工作流
+
+- [你是如何整理你的文件的？](posts/how-do-you-manage-your-files.qmd)
+- [可以信赖的输入法：RIME](posts/rime.qmd)
+- [Kill the Newsletter!](posts/newsletter-to-rss-feed.qmd)
+- [他的网站是用什么生成的](posts/what-is-his-site-build-with.qmd)
+:::
+
+::: {.home-path}
+### 生活里的第一次
+
+- [深圳失业保险金线上申请过程](posts/shenzhen-unemployment-insurance-application-process/index.qmd)
+- [劳动合同期满的后续计划](posts/labor-contract-expiry-action-plan.qmd)
+- [日版 iPhone 大陆 Apple Store 维修记](posts/iphone-repaire-experience.qmd)
+- [透过卓越申请汇丰美国账户的过程](posts/hsbcus-journey.qmd)
+:::
+
+::: {.home-path}
+### 工作与公开写作
+
+- [SRE 之道](posts/the-sre-way.qmd)
+- [裁员，是一件残忍的事情吗？](posts/is-layoff-a-cruel-thing.qmd)
+- [Everyone wants to automate things they have never done.](posts/ai-fantasy.qmd)
+- [开始尝试 Simon Willison 的 quote from 写作风格](posts/trying-quote-based-blogging.qmd)
+:::
+::::
+
+## 最多人看
+
+::: {.home-section-note}
+过去 180 天访问最多的公开文章。数据每天自动更新。
+:::
+
+<div class="home-popular" data-popular-posts data-popular-limit="8" data-popular-src="/popular.json" data-popular-fallback-src="/assets/data/popular-posts.json">
+  <ol class="home-popular-list" aria-live="polite"></ol>
+  <div class="home-popular-meta" hidden>更新于 <time data-popular-updated></time></div>
+</div>
+
+<script defer src="/assets/js/popular-content.js"></script>
+
+## 最近更新
 
 :::{#recent-posts}
 :::
 
+<script>
+(() => {
+  const ensureRecentPostsPagination = () => {
+    const listing = document.getElementById("listing-recent-posts");
 
-[All Contents](time-machine.qmd)
+    if (!listing || document.getElementById("recent-posts-pagination")) {
+      return;
+    }
+
+    const pagination = document.createElement("nav");
+    pagination.id = "recent-posts-pagination";
+    pagination.className = "listing-pagination";
+    pagination.hidden = true;
+    pagination.setAttribute("aria-label", "Page Navigation");
+    pagination.innerHTML = '<ul class="pagination"></ul>';
+    listing.appendChild(pagination);
+  };
+
+  const moveHomeTools = () => {
+    const target = document.querySelector(".home-margin-tools");
+    const search = document.querySelector("#quarto-search");
+    const themeTools = document.querySelector(".quarto-navbar-tools");
+
+    if (!target || (!search && !themeTools)) {
+      return false;
+    }
+
+    if (search && !target.contains(search)) {
+      search.classList.add("home-margin-search");
+      target.appendChild(search);
+    }
+
+    if (themeTools && !target.contains(themeTools)) {
+      themeTools.classList.add("home-margin-theme");
+      target.appendChild(themeTools);
+    }
+
+    document.body.classList.add("home-tools-in-margin");
+    return true;
+  };
+
+  const startMoving = () => {
+    let attempts = 0;
+    const retry = () => {
+      if (moveHomeTools() || attempts > 24) {
+        return;
+      }
+      attempts += 1;
+      window.setTimeout(retry, 100);
+    };
+    retry();
+  };
+
+  ensureRecentPostsPagination();
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      ensureRecentPostsPagination();
+      startMoving();
+    });
+  } else {
+    ensureRecentPostsPagination();
+    startMoving();
+  }
+})();
+</script>
+
+::::

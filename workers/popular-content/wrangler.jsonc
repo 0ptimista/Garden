@@ -1,0 +1,35 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "garden-popular-content",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-05-06",
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": [
+      "20 18 * * *"
+    ]
+  },
+  "routes": [
+    {
+      "pattern": "luozx.org/popular.json",
+      "zone_name": "luozx.org"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "POPULAR_CONTENT",
+      "id": "cbaec8e62cac4510bc30f096f5651476"
+    }
+  ],
+  "vars": {
+    "SITE_ORIGIN": "https://luozx.org",
+    "CONTENT_INDEX_URL": "/assets/data/content-index.json",
+    "UMAMI_API_BASE": "https://api.umami.is/v1",
+    "UMAMI_WEBSITE_ID": "713c9485-413b-4a68-91d3-3a32d926297f",
+    "POPULAR_RANGE_DAYS": "180",
+    "POPULAR_LIMIT": "8",
+    "UMAMI_METRICS_LIMIT": "200"
+  }
+}

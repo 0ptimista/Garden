@@ -1,0 +1,24 @@
+---
+title: tools
+description: "把文章中提到的对象视为一种工具，关注它能解决什么问题。"
+page-layout: full
+toc: false
+body-class: category-page
+listing:
+  id: category-posts
+  contents: [../posts/**/*.qmd, ../pages/**/*.qmd]
+  include:
+    categories: tools
+  sort: date desc
+  fields:
+    - date
+    - title
+    - categories
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+:::{#category-posts}
+:::

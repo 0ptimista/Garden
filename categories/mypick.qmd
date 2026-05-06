@@ -1,0 +1,24 @@
+---
+title: mypick
+description: "经过自己对比和筛选后留下的选择，通常会和 tools 一起出现。"
+page-layout: full
+toc: false
+body-class: category-page
+listing:
+  id: category-posts
+  contents: [../posts/**/*.qmd, ../pages/**/*.qmd]
+  include:
+    categories: mypick
+  sort: date desc
+  fields:
+    - date
+    - title
+    - categories
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+:::{#category-posts}
+:::

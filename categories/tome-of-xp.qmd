@@ -1,0 +1,24 @@
+---
+title: tome-of-xp
+description: "个人实践后的经验记录，偏向做过之后的复盘和心得。"
+page-layout: full
+toc: false
+body-class: category-page
+listing:
+  id: category-posts
+  contents: [../posts/**/*.qmd, ../pages/**/*.qmd]
+  include:
+    categories: tome-of-xp
+  sort: date desc
+  fields:
+    - date
+    - title
+    - categories
+  type: table
+  categories: false
+  sort-ui: false
+  filter-ui: false
+---
+
+:::{#category-posts}
+:::
