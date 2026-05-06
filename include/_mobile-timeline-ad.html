@@ -1,0 +1,156 @@
+<script>
+(() => {
+  const mobileQuery = window.matchMedia("(max-width: 719.98px)");
+  const listSelector = "#listing-recent-posts .list";
+  const postSelector = ".quarto-post:not(.timeline-mobile-ad)";
+  const adId = "timeline-mobile-google-ad";
+  const adAfterVisiblePosts = 3;
+  const adClient = "ca-pub-9560220640659728";
+  const adSlot = "4120411708";
+  const adScriptId = "garden-adsense-script";
+  let scheduled = false;
+
+  const loadAdScript = () => {
+    if (document.getElementById(adScriptId)) {
+      return Promise.resolve();
+    }
+
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.id = adScriptId;
+      script.async = true;
+      script.crossOrigin = "anonymous";
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`;
+      script.onload = resolve;
+      script.onerror = resolve;
+      document.head.append(script);
+    });
+  };
+
+  const createAd = () => {
+    const ad = document.createElement("div");
+    ad.id = adId;
+    ad.className = "quarto-post image-right timeline-mobile-ad";
+    ad.setAttribute("aria-label", "广告");
+    ad.innerHTML = `
+      <div class="timeline-mobile-ad-label">广告</div>
+      <ins class="adsbygoogle timeline-mobile-ad-slot"
+        style="display:block"
+        data-ad-client="${adClient}"
+        data-ad-slot="${adSlot}"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    `;
+    return ad;
+  };
+
+  const visiblePosts = (list) => {
+    return Array.from(list.querySelectorAll(postSelector)).filter((post) => {
+      return post.offsetParent !== null && window.getComputedStyle(post).display !== "none";
+    });
+  };
+
+  const removeAd = () => {
+    const ad = document.getElementById(adId);
+    if (ad) {
+      ad.remove();
+    }
+  };
+
+  const placeAd = () => {
+    scheduled = false;
+
+    if (!mobileQuery.matches) {
+      removeAd();
+      return;
+    }
+
+    const list = document.querySelector(listSelector);
+    if (!list) {
+      removeAd();
+      return;
+    }
+
+    const posts = visiblePosts(list);
+    if (posts.length === 0) {
+      removeAd();
+      return;
+    }
+
+    const anchorIndex = Math.min(adAfterVisiblePosts, posts.length) - 1;
+    const anchor = posts[anchorIndex];
+    let ad = document.getElementById(adId);
+    if (!ad) {
+      ad = createAd();
+    }
+
+    anchor.after(ad);
+
+    if (!ad.dataset.adsenseRequested) {
+      ad.dataset.adsenseRequested = "true";
+      loadAdScript().then(() => {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (_error) {
+          ad.dataset.adsenseRequested = "failed";
+        }
+      });
+    }
+  };
+
+  const schedulePlaceAd = () => {
+    if (scheduled) {
+      return;
+    }
+    scheduled = true;
+    window.requestAnimationFrame(placeAd);
+  };
+
+  const observeListing = () => {
+    const list = document.querySelector(listSelector);
+    if (!list || list.dataset.mobileAdObserved) {
+      return;
+    }
+
+    list.dataset.mobileAdObserved = "true";
+    const observer = new MutationObserver(schedulePlaceAd);
+    observer.observe(list, {
+      attributes: true,
+      attributeFilter: ["class", "style"],
+      childList: true,
+      subtree: true,
+    });
+
+    const pagination = document.getElementById("recent-posts-pagination");
+    if (pagination) {
+      pagination.addEventListener("click", () => {
+        window.setTimeout(schedulePlaceAd, 0);
+      });
+    }
+  };
+
+  const installListingHook = () => {
+    const previous = window["quarto-listing-loaded"];
+    if (previous && previous.__gardenMobileAdWrapped) {
+      return;
+    }
+
+    const wrapped = () => {
+      if (typeof previous === "function") {
+        previous();
+      }
+      observeListing();
+      schedulePlaceAd();
+    };
+    wrapped.__gardenMobileAdWrapped = true;
+    window["quarto-listing-loaded"] = wrapped;
+  };
+
+  installListingHook();
+  document.addEventListener("DOMContentLoaded", () => {
+    observeListing();
+    schedulePlaceAd();
+  });
+  mobileQuery.addEventListener("change", schedulePlaceAd);
+})();
+</script>

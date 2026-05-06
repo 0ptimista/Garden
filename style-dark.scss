@@ -1,144 +1,196 @@
 /* =====================================================================
-   style-dark.scss — "Midnight Library" (Cosmo Dark)
-   基于 Gruvbox Dark。
-   优化点：高对比度护眼文字、图片智能暗化、公告栏深底亮字。
+   Dark theme component layer.
+   Brand colors and typography are defined in _brand.yml; this file keeps
+   Quarto-specific layout, listing, and reading refinements.
    ===================================================================== */
 
 /*-- scss:defaults --*/
 
-/* --- 1. 核心配色 (High Contrast Warm) --- */
-$body-bg:       #32302f; /* Soft Dark: 暖深灰，防拖影，护眼 */
-$body-color:    #fdf4c1; /* Bright Cream: 极亮奶油色，确保宋体清晰可见 */
-$primary:       #fe8019; /* Gruvbox Orange: 亮橙色主调 */
+$brand-midnight: #32302F;
+$brand-midnight-hard: #282828;
+$brand-graphite: #3C3836;
+$brand-stone: #504945;
+$brand-cream: #FDF4C1;
+$brand-cream-soft: #FBF1C7;
+$brand-sand: #D5C4A1;
+$brand-sage: #83A598;
+$brand-moss: #B8BB26;
+$brand-ember: #FE8019;
 
-/* --- 2. 链接与高亮 --- */
-$link-color:       #83a598; /* 灰蓝 */
-$link-hover-color: #b8bb26; /* 亮绿 */
-$mark-bg:          rgba(214, 93, 14, 0.4); 
+$primary: $brand-ember;
+$body-bg: $brand-midnight;
+$body-color: $brand-cream;
+$link-color: $brand-sage;
+$link-hover-color: $brand-moss;
+$mark-bg: rgba(254, 128, 25, 0.34);
 
-/* --- 3. 导航栏 --- */
-$navbar-bg:         #282828; /* Hard Dark */
-$navbar-fg:         #fdf4c1;
-$navbar-brand-color:#fdf4c1;
+$navbar-bg: $brand-midnight-hard;
+$navbar-fg: $brand-cream;
+$navbar-brand-color: $brand-cream;
 
-/* --- 4. 组件适配 --- */
-$input-bg:                   #3c3836;
-$input-color:                #fdf4c1;
-$input-border-color:         #504945;
-$input-focus-border-color:   #fe8019;
+$input-bg: $brand-graphite;
+$input-color: $brand-cream;
+$input-border-color: $brand-stone;
+$input-focus-border-color: $brand-ember;
 
-/* 分页 */
-$pagination-color:               #fdf4c1;
-$pagination-bg:                  transparent;
-$pagination-border-color:        #504945;
-$pagination-hover-bg:            #3c3836;
-$pagination-active-bg:           #fe8019;
-$pagination-active-border-color: #fe8019;
-$pagination-active-color:        #282828;
+$pagination-color: $brand-cream;
+$pagination-bg: transparent;
+$pagination-border-color: $brand-stone;
+$pagination-hover-bg: $brand-graphite;
+$pagination-active-bg: $brand-ember;
+$pagination-active-border-color: $brand-ember;
+$pagination-active-color: $brand-midnight-hard;
 
-/* --- 5. 形状与字体栈 --- */
-$border-radius:      0.4rem;
-$btn-border-radius:  0.4rem;
+$border-radius: 0.4rem;
+$btn-border-radius: 0.4rem;
+$card-border-radius: 0.4rem;
 
-$font-family-sans-serif: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
-$font-family-serif:      'Noto Serif SC', 'Songti SC', 'Georgia', serif;
-
+$font-family-sans-serif: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+$font-family-serif: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
 
 /*-- scss:rules --*/
 
-/* =====================================================================
-   A. 字体排版 (Typography)
-   ===================================================================== */
+:root {
+  --garden-surface: #{$brand-midnight};
+  --garden-surface-raised: #{$brand-midnight-hard};
+  --garden-border: rgba(253, 244, 193, 0.12);
+  --garden-border-strong: rgba(254, 128, 25, 0.34);
+  --garden-muted: #{$brand-sand};
+  --garden-link: #{$brand-sage};
+  --garden-link-hover: #{$brand-moss};
+}
 
-/* 正文：清晰度优先 */
-p {
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main.content {
+  overflow-wrap: break-word;
+}
+
+main.content p {
+  color: $body-color;
   font-family: $font-family-serif;
-  color: $body-color !important;
-  
-  /* [核心] 继承 Light 版的 500 字重，防止深色背景吞噬字体 */
-  font-weight: 500; 
-  
-  /* 边缘增强 */
-  -webkit-font-smoothing: antialiased; 
-  -moz-osx-font-smoothing: grayscale;
-
-  font-size: 1rem;     
-  line-height: 1.8;      
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
-  text-align: justify;   
+  text-align: justify;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* 标题：温润的亮米色 */
-h1, h2, h3, h4, h5, h6, .title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: $brand-cream-soft;
   font-family: $font-family-sans-serif;
-  color: #fbf1c7 !important; 
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
-/* 强调文字 */
-strong, b {
+strong,
+b {
+  color: $brand-ember;
   font-family: $font-family-sans-serif;
   font-weight: 700;
-  color: #fe8019; 
 }
 
-/* 消除灰色文字陷阱 */
-.text-muted, .quarto-title-meta-heading {
-  color: #d5c4a1 !important; 
+a {
+  text-underline-offset: 0.18em;
 }
 
-/* 选区 */
+a:hover {
+  color: $brand-moss;
+}
+
+.text-muted,
+.quarto-title-meta-heading {
+  color: $brand-sand !important;
+}
+
 ::selection {
-  background: rgba(254, 128, 25, 0.4);
-  color: #fbf1c7;
+  background: rgba(254, 128, 25, 0.42);
+  color: $brand-cream-soft;
 }
-
-/* =====================================================================
-   B. 公告栏 (Announcement) - 深底亮字
-   ===================================================================== */
 
 .quarto-announcement {
-  background-color: #af3a03 !important; /* 深橙实底 */
+  background-color: #af3a03 !important;
   border-bottom: 1px solid #d65d0e !important;
-  color: #fbf1c7 !important;
+  color: $brand-cream-soft !important;
 }
 
-.quarto-announcement .quarto-announcement-content {
-  color: #fbf1c7 !important;
+.quarto-announcement,
+.quarto-announcement .quarto-announcement-content,
+.quarto-announcement .quarto-announcement-content p {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.quarto-announcement .quarto-announcement-content,
+.quarto-announcement p {
+  color: $brand-cream-soft !important;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .quarto-announcement a {
-  color: #ffffff !important; /* 纯白链接 */
-  text-decoration: underline !important;
+  color: #fff !important;
   font-weight: 700;
+  text-decoration: underline !important;
 }
 
-.quarto-announcement .bi { color: #fbf1c7 !important; }
-.quarto-announcement-close { color: rgba(255,255,255,0.7) !important; }
-.quarto-announcement-close:hover { color: #fff !important; }
+.quarto-announcement .bi {
+  color: $brand-cream-soft !important;
+}
 
-/* =====================================================================
-   C. 导航栏 (Navbar)
-   ===================================================================== */
+.quarto-announcement-close {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.quarto-announcement-close:hover {
+  color: #fff !important;
+}
 
 .navbar {
-  padding-top: 0.8rem;
+  border-bottom: 1px solid $brand-graphite;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid #3c3836;
+  padding-top: 0.8rem;
+}
+
+.navbar,
+.navbar-nav .nav-link,
+.navbar-brand,
+#quarto-search,
+#quarto-margin-sidebar,
+.quarto-listing,
+.quarto-title-meta,
+.quarto-category,
+.page-link {
+  font-family: $font-family-sans-serif;
 }
 
 .navbar-nav .nav-link {
-  font-family: $font-family-sans-serif;
-  font-weight: 500;
   color: $navbar-fg !important;
+  font-weight: 500;
   padding-left: 0.6rem !important;
   padding-right: 0.6rem !important;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #fe8019 !important;
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+  color: $brand-ember !important;
 }
 
 .navbar-nav .bi {
@@ -146,64 +198,566 @@ strong, b {
   vertical-align: -0.15em;
 }
 
-/* =====================================================================
-   D. UI 组件 & 代码块
-   ===================================================================== */
+.quarto-listing-container-grid .quarto-grid-link {
+  color: inherit;
+  display: block;
+  text-decoration: none !important;
+}
 
-/* 代码块：深色背景，加微弱阴影和边框 */
-pre {
-  background-color: #282828; 
-  border: 1px solid #3c3836; 
+.quarto-listing-container-grid .quarto-grid-link::after {
+  content: none !important;
+  display: none !important;
+}
+
+.quarto-listing-container-grid .quarto-grid-item {
+  background: rgba(40, 40, 40, 0.55);
+  border: 1px solid var(--garden-border);
   border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.28);
+  min-width: 0;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.quarto-listing-container-grid .quarto-grid-link:hover .quarto-grid-item {
+  border-color: var(--garden-border-strong);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.quarto-listing-container-grid .card-title {
+  color: $brand-cream-soft;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#listing-featured .card-title,
+#listing-featured .card-title a {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quarto-listing-container-grid .card-attribution {
+  color: rgba(213, 196, 161, 0.82);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $font-family-sans-serif;
+  gap: 0.35rem 0.75rem;
+  justify-content: space-between;
+}
+
+.quarto-listing-container-grid .listing-date {
+  margin-left: auto;
+  text-align: right;
+  white-space: normal;
+}
+
+div.quarto-post {
+  border-bottom-color: rgba(253, 244, 193, 0.20);
+}
+
+div.quarto-post a {
+  color: $brand-cream;
+}
+
+div.quarto-post a:hover {
+  color: $brand-ember;
+}
+
+#listing-recent-posts .quarto-post .listing-description,
+#listing-recent-posts .quarto-post .listing-description a,
+#listing-recent-posts .quarto-post .listing-description p {
+  font-family: $font-family-serif;
+  font-weight: 500;
+}
+
+pre {
+  background-color: $brand-midnight-hard;
+  border: 1px solid $brand-graphite;
+  border-radius: 6px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.20);
   color: #ebdbb2;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.2); 
 }
 
-/* 行内代码 */
 :not(pre) > code {
-  background-color: #45403d !important; 
-  color: #fdf4c1 !important; 
-  padding: 0.1rem 0.3rem;
-  border-radius: 4px;
+  background-color: #45403d !important;
   border: 1px solid #665c54;
+  border-radius: 4px;
+  color: $brand-cream !important;
+  padding: 0.1rem 0.3rem;
 }
 
-/* 引用 */
 blockquote {
-  border-left: 4px solid #fe8019;
-  background-color: rgba(60, 56, 54, 0.3);
-  padding: 0.8rem 1.2rem;
-  color: #d5c4a1;
+  background-color: rgba(60, 56, 54, 0.30);
+  border-left: 4px solid $brand-ember;
+  color: $brand-sand;
   font-style: italic;
+  padding: 0.8rem 1.2rem;
 }
 
-/* 表格 */
-.table { color: $body-color; border-color: #504945; }
-thead th { border-bottom: 2px solid #fe8019; color: #fbf1c7; }
+.table {
+  border-color: $brand-stone;
+  color: $body-color;
+}
 
-/* =====================================================================
-   E. 智能图片暗化
-   ===================================================================== */
+thead th {
+  border-bottom: 2px solid $brand-ember;
+  color: $brand-cream-soft;
+}
+
+.post-subscribe {
+  background: rgba(40, 40, 40, 0.55);
+  border: 1px solid var(--garden-border);
+  border-radius: 6px;
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1rem;
+}
+
+.post-subscribe p {
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0.65rem;
+  text-align: start;
+}
+
+.post-subscribe-title {
+  color: $brand-cream-soft;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.post-subscribe-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.post-subscribe-links a {
+  border-bottom: 1px solid rgba(131, 165, 152, 0.35);
+  color: var(--garden-link);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-subscribe-links a:hover {
+  border-bottom-color: var(--garden-link-hover);
+  color: var(--garden-link-hover);
+}
+
+.post-sponsor {
+  background: rgba(40, 40, 40, 0.48);
+  border: 1px solid rgba(253, 244, 193, 0.12);
+  border-radius: 6px;
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin-top: 1rem;
+  padding: 0.85rem 0.95rem;
+}
+
+.post-sponsor-label {
+  color: rgba(213, 196, 161, 0.78);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.55rem;
+}
+
+.post-sponsor-card {
+  color: inherit;
+  display: grid;
+  gap: 0.35rem;
+  text-decoration: none !important;
+}
+
+.post-sponsor-card:hover .post-sponsor-name,
+.post-sponsor-card:hover .post-sponsor-cta {
+  color: var(--garden-link-hover);
+}
+
+.post-sponsor-name {
+  color: $brand-cream-soft;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.post-sponsor-copy {
+  color: var(--garden-muted);
+}
+
+.post-sponsor-cta {
+  color: var(--garden-link);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.timeline-mobile-ad {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  #quarto-content.page-columns,
+  #quarto-content.page-columns.page-layout-article,
+  #quarto-content.page-columns.page-layout-full {
+    display: grid !important;
+    grid-template-columns:
+      [screen-start] minmax(1rem, 1fr)
+      [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start]
+      minmax(0, 42rem)
+      [body-content-end] 1.25rem
+      [body-end body-end-outset] minmax(8rem, 12rem)
+      [page-end-inset page-end] minmax(1rem, 1fr)
+      [screen-end-inset screen-end] !important;
+  }
+
+  #quarto-margin-sidebar {
+    align-content: start;
+    display: grid !important;
+    grid-column: body-end / page-end !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    min-width: 0;
+    row-gap: 1.5rem;
+  }
+
+  #quarto-margin-sidebar > * {
+    opacity: 1 !important;
+    overflow: visible !important;
+    pointer-events: auto !important;
+  }
+
+  #quarto-margin-sidebar > nav#TOC {
+    grid-column: 1 / -1 !important;
+    display: block !important;
+    min-width: 0;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer {
+    display: grid !important;
+    grid-column: 1 / -1 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer > .margin-footer-item {
+    display: grid !important;
+    grid-column: 1 / -1 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer aside {
+    grid-column: 1 / -1 !important;
+    width: 100%;
+  }
+
+  #quarto-toc-toggle {
+    display: none !important;
+  }
+
+  #listing-recent-posts {
+    --garden-desktop-list-item-height: 9.5rem;
+  }
+
+  #listing-recent-posts .quarto-post {
+    box-sizing: border-box;
+    column-gap: 1.25rem;
+    display: grid;
+    grid-template-columns: minmax(7rem, 7.5rem) minmax(0, 1fr);
+    height: var(--garden-desktop-list-item-height);
+    margin: 0;
+    min-height: var(--garden-desktop-list-item-height);
+    overflow: hidden;
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .quarto-post .thumbnail,
+  #listing-recent-posts .quarto-post .listing-image {
+    display: none !important;
+  }
+
+  #listing-recent-posts .quarto-post .metadata {
+    align-self: start;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata .listing-date {
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  #listing-recent-posts .quarto-post .body {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #listing-recent-posts .quarto-post .listing-title {
+    display: -webkit-box;
+    font-size: 1.45rem;
+    line-height: 1.28;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description {
+    display: -webkit-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description a,
+  #listing-recent-posts .quarto-post .listing-description p {
+    display: inline;
+    margin: 0;
+  }
+}
+
+.column-margin.column-container p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-align: start;
+}
+
 body.quarto-dark {
-  --img-brightness: 0.85; 
+  --img-brightness: 0.85;
   --img-contrast: 1.05;
   --img-saturate: 0.90;
 }
 
 body.quarto-dark img:not([src$=".svg"]):not(.no-shade):not([data-no-shade]):not(.emoji) {
+  border-radius: 4px;
   filter: brightness(var(--img-brightness)) contrast(var(--img-contrast)) saturate(var(--img-saturate));
   transition: filter 0.3s ease;
-  border-radius: 4px;
 }
 
-body.quarto-dark img:hover { filter: none; }
-.navbar img, .bi { filter: none !important; }
-
-.column-margin.column-container p {
-  margin-bottom: 0;
-  font-size: 0.8rem; /* 脚注字体大小 */
+body.quarto-dark img:hover {
+  filter: none;
 }
 
-#quarto-announcement p{
-  color: black !important;
+.navbar img,
+.bi {
+  filter: none !important;
+}
+
+@media (max-width: 719.98px) {
+  #quarto-content.page-columns,
+  #quarto-content.page-columns.page-layout-full {
+    display: grid !important;
+    grid-template-columns:
+      [screen-start page-start body-start body-content-start]
+      minmax(0, calc(100% - 3rem))
+      [body-content-end body-end page-end screen-end] !important;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #quarto-content.page-columns > main.content,
+  #quarto-content.page-columns.page-layout-full > main.content,
+  main.content.column-page-left {
+    grid-column: body-content-start / body-content-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  main.content {
+    overflow-wrap: anywhere;
+  }
+
+  main.content p {
+    line-height: 1.75;
+    text-align: start;
+  }
+
+  .quarto-title-meta {
+    column-gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) !important;
+    row-gap: 0.85rem;
+  }
+
+  .quarto-title-meta-contents,
+  .quarto-title-meta-contents p {
+    overflow-wrap: anywhere;
+    text-align: start;
+  }
+
+  .navbar {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+  }
+
+  .quarto-listing-container-grid .list.grid {
+    --bs-columns: 1;
+    --bs-gap: 1rem;
+    display: grid;
+    gap: 1rem !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    justify-self: start;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .quarto-listing-container-grid .list.grid > * {
+    grid-column: 1 / -1 !important;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .quarto-listing-container-grid .quarto-grid-link {
+    max-width: 20rem;
+    width: 100% !important;
+  }
+
+  .quarto-listing-container-grid .quarto-grid-item {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .quarto-listing-container-grid .card-body {
+    padding: 1rem;
+  }
+
+  .quarto-listing-container-grid .card-attribution {
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .quarto-listing-container-grid .listing-date {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .quarto-announcement {
+    font-size: 0.95rem;
+  }
+
+  .post-subscribe,
+  .post-sponsor {
+    display: none;
+  }
+
+  #listing-recent-posts {
+    --garden-mobile-list-item-height: 9.5rem;
+  }
+
+  #listing-recent-posts .quarto-post {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    height: var(--garden-mobile-list-item-height);
+    margin: 0;
+    min-height: var(--garden-mobile-list-item-height);
+    overflow: hidden;
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .quarto-post .body {
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #listing-recent-posts .quarto-post .listing-title {
+    display: -webkit-box;
+    font-size: 1.35rem;
+    line-height: 1.32;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description {
+    display: -webkit-box;
+    font-size: 1rem;
+    line-height: 1.55;
+    max-height: 3.1rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description a,
+  #listing-recent-posts .quarto-post .listing-description p {
+    display: inline;
+    font-family: $font-family-serif;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata {
+    align-self: end;
+    min-width: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata .listing-date {
+    font-size: 0.92rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad {
+    background: rgba(40, 40, 40, 0.46);
+    border-bottom: 1px solid var(--garden-border);
+    border-top: 1px solid var(--garden-border);
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: var(--garden-mobile-list-item-height);
+    margin: 0;
+    min-height: var(--garden-mobile-list-item-height);
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad-label {
+    color: var(--garden-muted);
+    font-family: $font-family-sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 0.45rem;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad-slot {
+    min-height: 0;
+  }
+
+  .floatingchat-container-wrap,
+  .floatingchat-container-wrap-mobi {
+    display: none !important;
+  }
 }

@@ -1,5 +1,12 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "pages/**/*.qmd"
+    - "collections/**/*.qmd"
+    - "!drafts/"
+    - "!include/"
   preview:
     port: 9999
     browser: false
@@ -16,6 +23,7 @@ website:
   title: "Luozx的数字花园🌳"
   site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
+  llms-txt: true
   reader-mode: false
   repo-url: "https://github.com/0ptimista/Garden"
   repo-actions: [source]
@@ -35,10 +43,10 @@ website:
       - text: ToolBox
         href: pages/toolbox.qmd
     right:
-      - icon: "bi bi-twitter-x"
+      - icon: twitter-x
         href: https://x.com/luozxdotorg
-        aria-label: Twitterxml
-      - icon: "bi bi-telegram"
+        aria-label: X / Twitter
+      - icon: telegram
         href: https://t.me/backyardofthatman
         aria-label: Telegram channel
       - icon: github
@@ -74,18 +82,19 @@ format:
     theme:
       # light: [solar,style-light.scss]
       # light: [zephyr,style-light.scss]
-      light: [cosmo,style-light.scss]
-      dark: [cosmo,style-dark.scss]
-    highlight-style:
+      light: [cosmo,brand,style-light.scss]
+      dark: [cosmo,brand,style-dark.scss]
+    syntax-highlighting:
+      light: arrow
       dark: codehighlight-dark.json
+    respect-user-color-scheme: true
     toc: true
     canonical-url: true
-    reference-location: margin
+    reference-location: document
     lightbox: true
     default-image-extension: ""
     include-in-header:
       - file: include/tagmanager-header.html
-      - file: include/google-fonts.html
       - text: |
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
     include-before-body:
@@ -93,4 +102,4 @@ format:
       - include/tagmanager-body.html
     include-after-body:
       - include/share-button.html
-
+      - include/_mobile-timeline-ad.html

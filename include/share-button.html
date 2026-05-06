@@ -27,12 +27,12 @@
   .share-container {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #eee; /* 顶部分割线 */
-    text-align: right;          /* 靠右对齐 */
+    border-top: 1px solid var(--garden-border, #eee);
+    text-align: right;
   }
   .share-label {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--garden-muted, #666);
     margin-right: 8px;
     vertical-align: middle;
   }
@@ -41,20 +41,26 @@
     margin: 0 4px;
     padding: 6px 10px;
     border-radius: 4px;
-    color: #555;
-    text-decoration: none !important; /* 去掉下划线 */
-    transition: all 0.2s ease;
+    color: var(--garden-muted, #555);
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     font-size: 1.1rem;
   }
   
-  /* 鼠标悬停时的品牌色效果 */
-  .share-btn:hover { transform: translateY(-2px); } /* 轻微上浮 */
+  .share-btn:hover { transform: translateY(-2px); }
   .share-btn.x-twitter:hover { color: #000; background: #f0f0f0; }
   .share-btn.telegram:hover  { color: #2481cc; background: #e6f2fa; }
   .share-btn.linkedin:hover  { color: #0a66c2; background: #e6f0fa; }
   .share-btn.facebook:hover  { color: #1877f2; background: #e7f3ff; }
   .share-btn.email:hover     { color: #d93025; background: #fce8e6; }
   .share-btn.weibo:hover     { color: #e6162d; background: #fce8e8; }
+
+  body.quarto-dark .share-btn.x-twitter:hover { color: #fdf4c1; background: #45403d; }
+  body.quarto-dark .share-btn.telegram:hover  { color: #8ec7ea; background: #293943; }
+  body.quarto-dark .share-btn.linkedin:hover  { color: #8cbff0; background: #263746; }
+  body.quarto-dark .share-btn.facebook:hover  { color: #9cc7ff; background: #25364a; }
+  body.quarto-dark .share-btn.email:hover     { color: #ffb4a8; background: #4a2e2b; }
+  body.quarto-dark .share-btn.weibo:hover     { color: #ffb4bf; background: #4a2b31; }
 </style>
 
 <script>

@@ -1,0 +1,100 @@
+meta:
+  name: "Luozx's Digital Garden"
+  link: "https://luozx.org"
+
+color:
+  palette:
+    paper: "#FFFCF9"
+    ink: "#151210"
+    linen: "#F5E6DA"
+    nav-ink: "#201C19"
+    caramel: "#7A4D20"
+    caramel-soft: "#9E7140"
+    caramel-muted: "#A87D5D"
+    caramel-hairline: "#EADDD3"
+    highlight: "#FDEFD9"
+    code-paper: "#F8F5F2"
+    quote-paper: "#FFF8F0"
+    midnight: "#32302F"
+    midnight-hard: "#282828"
+    graphite: "#3C3836"
+    stone: "#504945"
+    cream: "#FDF4C1"
+    cream-soft: "#FBF1C7"
+    sand: "#D5C4A1"
+    sage: "#83A598"
+    moss: "#B8BB26"
+    ember: "#FE8019"
+  background:
+    light: "#FFFCF9"
+    dark: "#32302F"
+  foreground:
+    light: "#151210"
+    dark: "#FDF4C1"
+  primary:
+    light: "#7A4D20"
+    dark: "#FE8019"
+  secondary:
+    light: "#5F5A55"
+    dark: "#D5C4A1"
+  tertiary:
+    light: "#F5E6DA"
+    dark: "#3C3836"
+  link:
+    light: "#7A4D20"
+    dark: "#83A598"
+  warning:
+    light: "#C95E17"
+    dark: "#FE8019"
+  success:
+    light: "#3F7D32"
+    dark: "#B8BB26"
+  light:
+    light: "#FFFCF9"
+    dark: "#FDF4C1"
+  dark:
+    light: "#151210"
+    dark: "#282828"
+
+typography:
+  fonts:
+    - family: Noto Sans SC
+      source: google
+      weight: [400, 500, 700]
+      display: swap
+    - family: Noto Serif SC
+      source: google
+      weight: [400, 500, 700]
+      display: swap
+  base:
+    family: Noto Serif SC
+    size: 1rem
+    weight: 500
+    line-height: 1.8
+  headings:
+    family: Noto Sans SC
+    weight: 700
+    line-height: 1.2
+    color:
+      light: "#000000"
+      dark: "#FBF1C7"
+  link:
+    color:
+      light: "#7A4D20"
+      dark: "#83A598"
+    decoration: underline
+  monospace-inline:
+    background-color:
+      light: "rgba(122, 77, 32, 0.10)"
+      dark: "#45403D"
+    color:
+      light: "#7A4D20"
+      dark: "#FDF4C1"
+  monospace-block:
+    background-color:
+      light: "#F8F5F2"
+      dark: "#282828"
+    color:
+      light: "#333333"
+      dark: "#EBDBB2"
+    line-height: 1.55

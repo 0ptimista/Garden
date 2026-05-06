@@ -1,6 +1,7 @@
 format:
   html:
     include-after-body: bottom_ads.html
+margin-footer: ../include/_post-margin.html
 page-navigation: true
 comments:
   giscus:

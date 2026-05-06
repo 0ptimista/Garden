@@ -1,11 +1,10 @@
 ---
 author: ""
 listing:
-  contents: ./collections/starred-articles.yaml
+  contents: ./starred-articles.yaml
   template: ./starred-articles.ejs
 draft: true
 ---
 
 # 星标文章列表
-
 

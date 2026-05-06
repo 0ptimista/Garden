@@ -56,5 +56,3 @@ draft: false
 
 就像前面提到的，世界游戏的基本规则，学校不教，也不会教。我们都是被动的参与到这个游戏中来，熟悉游戏规则也成为了不得不做的事情。
 
-
-{{< include ../include/telegram_channel.qmd >}}

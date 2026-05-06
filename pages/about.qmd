@@ -55,7 +55,7 @@ date-modified: last-modified
 - 喜欢友善，提供有帮助内容的人。
 
 
-{{< include ../include/telegram_channel.qmd >}}
+{{< include /include/_telegram_channel.qmd >}}
 
 # Gardens to hang around
 有一些其他人精心构造的花园，我必须要分享给你，真的很好逛！
@@ -90,7 +90,6 @@ date-modified: last-modified
   <small>
   一些可能有用的URI：`/blog/` `hacks` `/doc/` `/webcollage/` `/xscreensaver/`
   </small>
-
 
 
 

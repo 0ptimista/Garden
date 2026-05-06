@@ -1,2 +1,6 @@
 website:
   draft-mode: visible
+
+format:
+  html:
+    axe: true

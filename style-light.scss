@@ -1,182 +1,709 @@
 /* =====================================================================
-   style-light.scss — "Digital Garden" (Cosmo Enhanced)
-   基于 Cosmo 主题，复刻暖色书卷感。
-   已优化：字体黑度、笔画厚度、导航栏间距、圆角质感。
+   Light theme component layer.
+   Brand colors and typography are defined in _brand.yml; this file keeps
+   Quarto-specific layout, listing, and reading refinements.
    ===================================================================== */
 
 /*-- scss:defaults --*/
 
-/* --- 1. 核心品牌色 (Brand Colors) --- */
-/* 覆盖 Cosmo 默认的蓝色，统一为“焦糖色/大地色” */
-$primary:       #9E7140; /* 按钮、搜索框聚焦色 */
-$body-bg:       #FFFCF9; /* 背景：暖白 */
+$brand-paper: #FFFCF9;
+$brand-ink: #151210;
+$brand-linen: #F5E6DA;
+$brand-nav-ink: #201C19;
+$brand-caramel: #7A4D20;
+$brand-caramel-soft: #9E7140;
+$brand-caramel-muted: #A87D5D;
+$brand-caramel-hairline: #EADDD3;
+$brand-highlight: #FDEFD9;
+$brand-code-paper: #F8F5F2;
+$brand-quote-paper: #FFF8F0;
 
-/* [核心优化] 正文颜色：使用极深的暖炭色 (近乎纯黑) */
-/* 解决“颜色太浅”的问题，比纯黑 #000 稍微护眼，但视觉上足够黑 */
-$body-color:    #151210; 
+$primary: $brand-caramel;
+$body-bg: $brand-paper;
+$body-color: $brand-ink;
+$link-color: $brand-caramel;
+$link-hover-color: $brand-caramel-soft;
+$mark-bg: $brand-highlight;
 
-/* --- 2. 链接与高亮 --- */
-$link-color:       #9E7140;
-$link-hover-color: #7A4D20;
-$mark-bg:          #FDEFD9; /* 柔和的黄色高亮 */
+$navbar-bg: $brand-linen;
+$navbar-fg: $brand-nav-ink;
+$navbar-brand-color: $brand-nav-ink;
 
-/* --- 3. 导航栏 (Navbar) --- */
-$navbar-bg:         #F5E6DA; /* 浅咖色背景 */
-$navbar-fg:         #201c19; /* 导航文字：深褐色 */
-$navbar-brand-color:#201c19;
+$pagination-color: $brand-nav-ink;
+$pagination-hover-bg: $brand-caramel-muted;
+$pagination-active-bg: $brand-caramel;
+$pagination-active-border-color: $brand-caramel;
+$pagination-border-color: rgba(122, 77, 32, 0.18);
 
-/* --- 4. 组件配色 --- */
-/* 分页按钮 */
-$pagination-color:               #3F2D20;
-$pagination-hover-bg:            #A87D5D;
-$pagination-active-bg:           #9E7140;
-$pagination-active-border-color: #9E7140;
-$pagination-border-color:        rgba(158, 113, 64, 0.2);
+$border-radius: 0.4rem;
+$btn-border-radius: 0.4rem;
+$card-border-radius: 0.4rem;
 
-/* --- 5. 形状与质感 --- */
-/* 让 Cosmo 的直角稍微圆润一点，接近 Zephyr 的风格 */
-$border-radius:      0.4rem; 
-$btn-border-radius:  0.4rem;
-
-/* --- 6. 字体栈 (Font Stack) --- */
-$font-family-sans-serif: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
-$font-family-serif:      'Noto Serif SC', 'Songti SC', 'Georgia', serif;
-
+$font-family-sans-serif: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+$font-family-serif: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
 
 /*-- scss:rules --*/
 
-/* =====================================================================
-   A. 字体排版 (Typography) - 解决“细、浅”的核心
-   ===================================================================== */
+:root {
+  --garden-surface: #{$brand-paper};
+  --garden-surface-raised: #fffefd;
+  --garden-border: rgba(122, 77, 32, 0.18);
+  --garden-border-strong: rgba(122, 77, 32, 0.28);
+  --garden-muted: #5f5a55;
+  --garden-link: #{$brand-caramel};
+  --garden-link-hover: #{$brand-caramel-soft};
+}
 
-/* 正文系统 */
-p {
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main.content {
+  overflow-wrap: break-word;
+}
+
+main.content p {
+  color: $body-color;
   font-family: $font-family-serif;
-  
-  /* [优化 1] 颜色强制加深 */
-  color: $body-color !important;
-  
-  /* [优化 2] 提升字重 (关键) */
-  /* 使用 Noto Serif SC 的 Medium (500) 字重，彻底解决宋体在屏幕上发虚、太细的问题 */
-  font-weight: 500; 
-  
-  /* [优化 3] 渲染模式 */
-  /* Auto 模式通常比 Antialiased 看起来更饱满 */
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-
-  /* 排版细节 */
-  font-size: 1rem;     /* 字号加大，更易读 */
-  line-height: 1.8;      /* 大行高，增加呼吸感 */
-  margin-bottom: 1.5rem;
-  text-align: justify;   /* 两端对齐，像印刷品一样整齐 */
 }
 
-/* 标题系统 */
-h1, h2, h3, h4, h5, h6, .title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  color: #000;
   font-family: $font-family-sans-serif;
-  color: #000000 !important; /* 标题保持纯黑，拉开层次 */
-  font-weight: 700; 
-  letter-spacing: -0.02em;   /* 标题紧凑一点更现代 */
-}
-
-/* 强调文字 */
-strong, b {
-  font-family: $font-family-sans-serif; /* 重点内容改用黑体 */
   font-weight: 700;
-  color: #7A4D20; /* 用深焦糖色标记重点 */
+  letter-spacing: 0;
 }
 
-/* 选区颜色 */
+strong,
+b {
+  color: $brand-caramel;
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: $brand-caramel-soft;
+}
+
 ::selection {
-  background: #9E7140;
+  background: $brand-caramel;
   color: #fff;
 }
 
-/* =====================================================================
-   B. 导航栏 (Navbar) - 复刻 Quarto.org 布局
-   ===================================================================== */
-
 .navbar {
-  padding-top: 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05); /* 极淡的分割线 */
+  padding-top: 0.8rem;
 }
 
-/* 链接文字 */
-.navbar-nav .nav-link {
+.navbar,
+.navbar-nav .nav-link,
+.navbar-brand,
+#quarto-search,
+#quarto-margin-sidebar,
+.quarto-listing,
+.quarto-title-meta,
+.quarto-category,
+.page-link {
   font-family: $font-family-sans-serif;
-  font-weight: 500;
+}
+
+.navbar-nav .nav-link {
   color: $navbar-fg !important;
-  /* 强制收紧左右间距，让图标紧凑 */
+  font-weight: 500;
   padding-left: 0.6rem !important;
   padding-right: 0.6rem !important;
 }
 
-/* 悬停效果 */
-.navbar-nav .nav-link:hover {
-  color: #9E7140 !important;
-  opacity: 1; /* 防止透明度变化导致闪烁 */
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+  color: $brand-caramel !important;
+  opacity: 1;
 }
 
-/* 图标对齐 */
 .navbar-nav .bi {
   font-size: 1.2rem;
   vertical-align: -0.15em;
 }
 
-/* =====================================================================
-   C. UI 组件微调
-   ===================================================================== */
+.quarto-listing-container-grid .quarto-grid-link {
+  color: inherit;
+  display: block;
+  text-decoration: none !important;
+}
 
-/* 代码块 */
+.quarto-listing-container-grid .quarto-grid-link::after {
+  content: none !important;
+  display: none !important;
+}
+
+.quarto-listing-container-grid .quarto-grid-item {
+  background: rgba(255, 252, 249, 0.78);
+  border: 1px solid var(--garden-border);
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(122, 77, 32, 0.05);
+  min-width: 0;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.quarto-listing-container-grid .quarto-grid-link:hover .quarto-grid-item {
+  border-color: var(--garden-border-strong);
+  box-shadow: 0 8px 24px rgba(122, 77, 32, 0.08);
+  transform: translateY(-1px);
+}
+
+.quarto-listing-container-grid .card-title {
+  color: $body-color;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#listing-featured .card-title,
+#listing-featured .card-title a {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quarto-listing-container-grid .card-attribution {
+  color: var(--garden-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $font-family-sans-serif;
+  gap: 0.35rem 0.75rem;
+  justify-content: space-between;
+}
+
+.quarto-listing-container-grid .listing-date {
+  margin-left: auto;
+  text-align: right;
+  white-space: normal;
+}
+
+div.quarto-post {
+  border-bottom-color: rgba(122, 77, 32, 0.16);
+}
+
+div.quarto-post a {
+  color: $body-color;
+}
+
+div.quarto-post a:hover {
+  color: $brand-caramel;
+}
+
+#listing-recent-posts .quarto-post .listing-description,
+#listing-recent-posts .quarto-post .listing-description a,
+#listing-recent-posts .quarto-post .listing-description p {
+  font-family: $font-family-serif;
+  font-weight: 500;
+}
+
 pre {
-  background-color: #f8f5f2; /* 极淡的暖灰背景 */
-  border: 1px solid #eaddd3; /* 暖色边框 */
+  background-color: $brand-code-paper;
+  border: 1px solid $brand-caramel-hairline;
   border-radius: 6px;
   color: #333;
 }
 
-/* 行内代码 */
 :not(pre) > code {
-  background-color: rgba(158, 113, 64, 0.1); /* 淡焦糖底色 */
-  color: #8c531b; /* 深焦糖字色 */
-  padding: 0.1rem 0.3rem;
+  background-color: rgba(122, 77, 32, 0.10);
   border-radius: 4px;
+  color: $brand-caramel;
+  padding: 0.1rem 0.3rem;
 }
 
-/* 引用块 */
 blockquote {
-  border-left: 4px solid #9E7140;
-  background-color: #FFF8F0; /* 极淡橙背景 */
-  padding: 0.8rem 1.2rem;
+  background-color: $brand-quote-paper;
+  border-left: 4px solid $brand-caramel;
+  border-radius: 0 4px 4px 0;
   color: #5c4b37;
   font-style: italic;
-  border-radius: 0 4px 4px 0;
+  padding: 0.8rem 1.2rem;
 }
 
-/* 表格 */
 .table {
   color: $body-color;
 }
+
 thead th {
-  border-bottom: 2px solid #9E7140;
+  border-bottom: 2px solid $brand-caramel;
   color: #000;
 }
 
-/* 分页按钮微调 */
 .page-link {
-  border: none; /* 去掉边框，更极简 */
-  margin: 0 2px;
+  border: none;
   border-radius: 4px;
+  margin: 0 2px;
+}
+
+.post-subscribe {
+  background: rgba(255, 252, 249, 0.78);
+  border: 1px solid var(--garden-border);
+  border-radius: 6px;
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1rem;
+}
+
+.post-subscribe p {
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0.65rem;
+  text-align: start;
+}
+
+.post-subscribe-title {
+  color: $body-color;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.post-subscribe-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.post-subscribe-links a {
+  border-bottom: 1px solid rgba(122, 77, 32, 0.25);
+  color: var(--garden-link);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-subscribe-links a:hover {
+  border-bottom-color: var(--garden-link-hover);
+  color: var(--garden-link-hover);
+}
+
+.post-sponsor {
+  background: rgba(255, 252, 249, 0.70);
+  border: 1px solid rgba(122, 77, 32, 0.16);
+  border-radius: 6px;
+  color: var(--garden-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin-top: 1rem;
+  padding: 0.85rem 0.95rem;
+}
+
+.post-sponsor-label {
+  color: var(--garden-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.55rem;
+}
+
+.post-sponsor-card {
+  color: inherit;
+  display: grid;
+  gap: 0.35rem;
+  text-decoration: none !important;
+}
+
+.post-sponsor-card:hover .post-sponsor-name,
+.post-sponsor-card:hover .post-sponsor-cta {
+  color: var(--garden-link-hover);
+}
+
+.post-sponsor-name {
+  color: $body-color;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.post-sponsor-copy {
+  color: var(--garden-muted);
+}
+
+.post-sponsor-cta {
+  color: var(--garden-link);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-top: 0.1rem;
+}
+
+.timeline-mobile-ad {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  #quarto-content.page-columns,
+  #quarto-content.page-columns.page-layout-article,
+  #quarto-content.page-columns.page-layout-full {
+    display: grid !important;
+    grid-template-columns:
+      [screen-start] minmax(1rem, 1fr)
+      [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start]
+      minmax(0, 42rem)
+      [body-content-end] 1.25rem
+      [body-end body-end-outset] minmax(8rem, 12rem)
+      [page-end-inset page-end] minmax(1rem, 1fr)
+      [screen-end-inset screen-end] !important;
+  }
+
+  #quarto-margin-sidebar {
+    align-content: start;
+    display: grid !important;
+    grid-column: body-end / page-end !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    min-width: 0;
+    row-gap: 1.5rem;
+  }
+
+  #quarto-margin-sidebar > * {
+    opacity: 1 !important;
+    overflow: visible !important;
+    pointer-events: auto !important;
+  }
+
+  #quarto-margin-sidebar > nav#TOC {
+    grid-column: 1 / -1 !important;
+    display: block !important;
+    min-width: 0;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer {
+    display: grid !important;
+    grid-column: 1 / -1 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer > .margin-footer-item {
+    display: grid !important;
+    grid-column: 1 / -1 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+  }
+
+  #quarto-margin-sidebar > .quarto-margin-footer aside {
+    grid-column: 1 / -1 !important;
+    width: 100%;
+  }
+
+  #quarto-toc-toggle {
+    display: none !important;
+  }
+
+  #listing-recent-posts {
+    --garden-desktop-list-item-height: 9.5rem;
+  }
+
+  #listing-recent-posts .quarto-post {
+    box-sizing: border-box;
+    column-gap: 1.25rem;
+    display: grid;
+    grid-template-columns: minmax(7rem, 7.5rem) minmax(0, 1fr);
+    height: var(--garden-desktop-list-item-height);
+    margin: 0;
+    min-height: var(--garden-desktop-list-item-height);
+    overflow: hidden;
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .quarto-post .thumbnail,
+  #listing-recent-posts .quarto-post .listing-image {
+    display: none !important;
+  }
+
+  #listing-recent-posts .quarto-post .metadata {
+    align-self: start;
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata .listing-date {
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  #listing-recent-posts .quarto-post .body {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #listing-recent-posts .quarto-post .listing-title {
+    display: -webkit-box;
+    font-size: 1.45rem;
+    line-height: 1.28;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description {
+    display: -webkit-box;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description a,
+  #listing-recent-posts .quarto-post .listing-description p {
+    display: inline;
+    margin: 0;
+  }
+}
+
+.quarto-announcement,
+.quarto-announcement .quarto-announcement-content,
+.quarto-announcement .quarto-announcement-content p {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.quarto-announcement p {
+  margin-bottom: 0;
 }
 
 .column-margin.column-container p {
+  font-size: 0.8rem;
   margin-bottom: 0;
-  font-size: 0.8rem; /* 脚注字体大小 */
+  text-align: start;
 }
 
-.column-margin.column-container p {
-  margin-bottom: 0;
-  font-size: 0.8rem; /* 脚注字体大小 */
+@media (max-width: 719.98px) {
+  #quarto-content.page-columns,
+  #quarto-content.page-columns.page-layout-full {
+    display: grid !important;
+    grid-template-columns:
+      [screen-start page-start body-start body-content-start]
+      minmax(0, calc(100% - 3rem))
+      [body-content-end body-end page-end screen-end] !important;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #quarto-content.page-columns > main.content,
+  #quarto-content.page-columns.page-layout-full > main.content,
+  main.content.column-page-left {
+    grid-column: body-content-start / body-content-end !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+  }
+
+  main.content {
+    overflow-wrap: anywhere;
+  }
+
+  main.content p {
+    line-height: 1.75;
+    text-align: start;
+  }
+
+  .quarto-title-meta {
+    column-gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) !important;
+    row-gap: 0.85rem;
+  }
+
+  .quarto-title-meta-contents,
+  .quarto-title-meta-contents p {
+    overflow-wrap: anywhere;
+    text-align: start;
+  }
+
+  .navbar {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+  }
+
+  .quarto-listing-container-grid .list.grid {
+    --bs-columns: 1;
+    --bs-gap: 1rem;
+    display: grid;
+    gap: 1rem !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    justify-self: start;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .quarto-listing-container-grid .list.grid > * {
+    grid-column: 1 / -1 !important;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .quarto-listing-container-grid .quarto-grid-link {
+    max-width: 20rem;
+    width: 100% !important;
+  }
+
+  .quarto-listing-container-grid .quarto-grid-item {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .quarto-listing-container-grid .card-body {
+    padding: 1rem;
+  }
+
+  .quarto-listing-container-grid .card-attribution {
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .quarto-listing-container-grid .listing-date {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .quarto-announcement {
+    font-size: 0.95rem;
+  }
+
+  .post-subscribe,
+  .post-sponsor {
+    display: none;
+  }
+
+  #listing-recent-posts {
+    --garden-mobile-list-item-height: 9.5rem;
+  }
+
+  #listing-recent-posts .quarto-post {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    height: var(--garden-mobile-list-item-height);
+    margin: 0;
+    min-height: var(--garden-mobile-list-item-height);
+    overflow: hidden;
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .quarto-post .body {
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  #listing-recent-posts .quarto-post .listing-title {
+    display: -webkit-box;
+    font-size: 1.35rem;
+    line-height: 1.32;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description {
+    display: -webkit-box;
+    font-size: 1rem;
+    line-height: 1.55;
+    max-height: 3.1rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  #listing-recent-posts .quarto-post .listing-description a,
+  #listing-recent-posts .quarto-post .listing-description p {
+    display: inline;
+    font-family: $font-family-serif;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata {
+    align-self: end;
+    min-width: 0;
+  }
+
+  #listing-recent-posts .quarto-post .metadata .listing-date {
+    font-size: 0.92rem;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad {
+    background: rgba(255, 252, 249, 0.74);
+    border-bottom: 1px solid var(--garden-border);
+    border-top: 1px solid var(--garden-border);
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: var(--garden-mobile-list-item-height);
+    margin: 0;
+    min-height: var(--garden-mobile-list-item-height);
+    padding: 0.85rem 0;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad-label {
+    color: var(--garden-muted);
+    font-family: $font-family-sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 0.45rem;
+  }
+
+  #listing-recent-posts .timeline-mobile-ad-slot {
+    min-height: 0;
+  }
+
+  .floatingchat-container-wrap,
+  .floatingchat-container-wrap-mobi {
+    display: none !important;
+  }
 }
