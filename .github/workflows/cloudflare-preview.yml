@@ -51,6 +51,10 @@ jobs:
           cp cloudflare/pages/preview-headers _site/_headers
           cp cloudflare/pages/preview-robots.txt _site/robots.txt
 
+      - name: Seed preview popular content
+        run: |
+          curl --fail --location --silent --show-error https://luozx.org/popular.json --output _site/popular.json || cp assets/data/popular-posts.json _site/popular.json
+
       - name: Ensure Cloudflare Pages project
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
