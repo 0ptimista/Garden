@@ -4,6 +4,7 @@ const {
   CF_PAGES_PROJECT = "luozx-garden-preview",
   CF_PAGES_DOMAIN = "preview.luozx.org",
   CF_PAGES_PRODUCTION_BRANCH = "preview",
+  CF_PAGES_ATTACH_DOMAIN = "true",
 } = process.env;
 
 const apiBase = "https://api.cloudflare.com/client/v4";
@@ -38,12 +39,37 @@ async function cloudflare(path, options = {}) {
 
 const projectPath = `/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects/${CF_PAGES_PROJECT}`;
 
+try {
+  await cloudflare(projectPath, {
+    method: "GET",
+  });
+  console.log(`${CF_PAGES_PROJECT} already exists.`);
+} catch (error) {
+  if (error.status !== 404) {
+    throw error;
+  }
+
+  await cloudflare(`/accounts/${CLOUDFLARE_ACCOUNT_ID}/pages/projects`, {
+    method: "POST",
+    body: JSON.stringify({
+      name: CF_PAGES_PROJECT,
+      production_branch: CF_PAGES_PRODUCTION_BRANCH,
+    }),
+  });
+  console.log(`Created ${CF_PAGES_PROJECT}.`);
+}
+
 await cloudflare(projectPath, {
   method: "PATCH",
   body: JSON.stringify({
     production_branch: CF_PAGES_PRODUCTION_BRANCH,
   }),
 });
+console.log(`${CF_PAGES_PROJECT} production branch is ${CF_PAGES_PRODUCTION_BRANCH}.`);
+
+if (CF_PAGES_ATTACH_DOMAIN !== "true") {
+  process.exit(0);
+}
 
 try {
   await cloudflare(`${projectPath}/domains/${CF_PAGES_DOMAIN}`, {

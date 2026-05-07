@@ -51,12 +51,19 @@ jobs:
           cp cloudflare/pages/preview-headers _site/_headers
           cp cloudflare/pages/preview-robots.txt _site/robots.txt
 
+      - name: Ensure Cloudflare Pages project
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PAGES_ATTACH_DOMAIN: "false"
+        run: node cloudflare/pages/ensure-preview-domain.mjs
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy _site --project-name=${{ env.CF_PAGES_PROJECT }} --branch=${{ env.CF_PAGES_PRODUCTION_BRANCH }}
+          command: pages deploy _site --project-name=${{ env.CF_PAGES_PROJECT }} --branch=${{ env.CF_PAGES_PRODUCTION_BRANCH }} --commit-dirty=true
 
       - name: Ensure preview custom domain
         env:
