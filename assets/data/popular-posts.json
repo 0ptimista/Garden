@@ -1,6 +1,55 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-05-06T18:20:36.763Z",
   "rangeDays": 180,
-  "source": "placeholder",
-  "items": []
+  "source": "umami",
+  "items": [
+    {
+      "rank": 1,
+      "title": "透过卓越申请汇丰美国账户的过程",
+      "url": "/posts/hsbcus-journey.html",
+      "views": 300
+    },
+    {
+      "rank": 2,
+      "title": "谈记账时，我们真正想要的是什么",
+      "url": "/posts/what-we-want-from-bookkeeping.html",
+      "views": 269
+    },
+    {
+      "rank": 3,
+      "title": "比特币定投计划",
+      "url": "/posts/bitcoin-dca-plan.html",
+      "views": 165
+    },
+    {
+      "rank": 4,
+      "title": "请认真对待自己的钱",
+      "url": "/posts/take-money-seriously/index.html",
+      "views": 152
+    },
+    {
+      "rank": 5,
+      "title": "Follow：一年之后",
+      "url": "/posts/follow-after-a-year.html",
+      "views": 139
+    },
+    {
+      "rank": 6,
+      "title": "劳动合同期满的后续计划",
+      "url": "/posts/labor-contract-expiry-action-plan.html",
+      "views": 120
+    },
+    {
+      "rank": 7,
+      "title": "Folo 1.0版本正式推出",
+      "url": "/posts/folo-1-0-release.html",
+      "views": 98
+    },
+    {
+      "rank": 8,
+      "title": "终于拿到了Pulse",
+      "url": "/posts/pulse-credit-card.html",
+      "views": 96
+    }
+  ]
 }
