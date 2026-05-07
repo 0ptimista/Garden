@@ -1,0 +1,9 @@
+website:
+  site-url: "https://preview.luozx.org"
+
+adsense:
+  enable-ads: false
+
+format:
+  html:
+    canonical-url: false

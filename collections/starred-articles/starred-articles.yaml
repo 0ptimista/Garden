@@ -1,12 +1,546 @@
-- category: 投资和资产配置
-  posts:
-    - title: What’s Better Than U.S. Bonds for Downside Protection?
-      href: https://ofdollarsanddata.com/whats-better-than-u-s-bonds-for-downside-protection/
-      comment: ""
-- category: 团队管理
-  posts:
-    - title: In Praise of “Normal” Engineers
-      href: https://charity.wtf/2025/06/19/in-praise-of-normal-engineers/
-      comment: 
+# 外部读物收藏。
+# 后续添加内容时，优先补全 title / href / site / comment。
+# category 用来分组；slug 会成为页面锚点；description 会显示在分类说明里。
+#
+# 新增文章模板：
+# - title: 文章标题
+#   href: https://example.com/post
+#   site: 来源网站
+#   author: 作者
+#   added: YYYY-MM-DD
+#   comment: 为什么这篇值得留下，或它和自己哪类文章互相参照。
+#   tags: [标签一, 标签二]
+#   related: [站内分类 slug]
 
+- category: "投资和资产配置"
+  slug: investing
+  description: "关于风险、现金流、资产保护、市场、加密资产和长期配置的外部文章。"
+  posts:
+    - title: "不看未来自由现金流的投资，都是投机"
+      href: "https://mp.weixin.qq.com/s/2DIQodObRgeQpmML5Bx5aA"
+      site: "微信公众号"
+      added: 2025-10-31
+      tags: ["投资"]
+      related: ["money"]
+    - title: "深入理解拼多多：中华传奇电商的现状、护城河、估值和发展潜力"
+      href: "https://research.mintventures.fund/2025/09/22/zh-deep-dive-into-pinduoduo-the-current-landscape-moat-valuation-and-growth-potential-of-a-chinese-ecommerce-legend/"
+      site: "Mint Ventures Research"
+      author: "Alex Xu"
+      added: 2025-09-28
+      comment: "如无特殊说明，报告数据截至：2025.9.19 1.研究摘要 PDD作为中国增长最快的电商平台，从竞争激烈的电商红海中杀出一条血路，在短短十年内崛起成为行业巨头，其年度活跃买家数已超过10亿人（行业估算值），GMV规模（行业估算值）超过5万亿元人民币，打破了此前阿里和JD双寡头垄断的局面。PDD的管理层年轻、低调、稳定，强调对用户痴迷的企业文化，并在过..."
+      tags: ["项目研报", "投资"]
+      related: ["money"]
+    - title: "DeFi 基础: 理解 AMM 定价机制"
+      href: "https://smallyu.net/2025/08/20/DeFi%E5%9F%BA%E7%A1%801/"
+      site: "smallyu"
+      added: 2025-08-21
+      comment: "这是一个 DeFi 系列教程，在动手实践的过程中，学习和理解 DeFi 相关的概念与原理： DeFi 基础: 理解 AMM 定价机制 DeFi 基础: 预言机与报价 DeFi 基础: 借贷与清算 DeFi 进阶: 闪电贷与套利 AMM 的全称是 Automated Market Maker…"
+      tags: ["crypto"]
+      related: ["money"]
+    - title: "What’s Better Than U.S. Bonds for Downside Protection?"
+      href: "https://ofdollarsanddata.com/whats-better-than-u-s-bonds-for-downside-protection/"
+      site: "Of Dollars And Data"
+      author: "Nick Maggiulli"
+      added: 2025-06-25
+      comment: "讨论债券之外的下行保护选择，适合和自己的资产配置、风险控制类文章互相参照。"
+      tags: ["资产配置", "下行保护"]
+      related: ["money"]
+    - title: "Ondo: Product Line, Competitive Landscape, and Token Valuation of a Leading RWA Project"
+      href: "https://research.mintventures.fund/2025/05/16/ondo-product-line-competitive-landscape-and-token-valuation-of-a-leading-rwa-project/"
+      site: "Mint Ventures Research"
+      author: "Alex Xu"
+      added: 2025-06-12
+      comment: "In this crypto cycle, where innovation has largely stalled, we haven’t seen the emergence of new narratives as transformative as DeFi, NFTs, or GameFi in the previous cycle. Spe..."
+      tags: ["Projects", "投资"]
+      related: ["money"]
+    - title: "沙里淘金：寻找穿越牛熊的长线投资标的（2025版 上篇）"
+      href: "https://research.mintventures.fund/2025/03/03/zh-finding-long-term-investment-opportunities-through-bulls-and-bears-2025-edition-part-1/"
+      site: "Mint Ventures Research"
+      author: "Alex Xu"
+      added: 2025-06-12
+      tags: ["项目研报", "投资"]
+      related: ["money"]
+    - title: "沙里淘金：寻找穿越牛熊的长线投资标的（2025版 下篇）"
+      href: "https://research.mintventures.fund/2025/04/03/zh-sifting-for-gold-identifying-long-term-investment-targets-through-market-cycles-2025-edition-part-iii/"
+      site: "Mint Ventures Research"
+      author: "Alex Xu"
+      added: 2025-06-12
+      comment: "在此前发表的《沙里淘金：寻找穿越牛熊的长线投资标的（2025版 ）》的上篇和中篇中，我们梳理和介绍了借贷赛道的Aave、Morpho、Kamino，MakerDao，以及质押赛道的Lido、Jito，还有交易赛道的Cow Protocol、Uniswap以及Jupiter。本文作为系列文章的最后一篇，将继续介绍拥有优质基本面，具有长线关注潜力的项目。 ..."
+      tags: ["项目研报", "投资"]
+      related: ["money"]
+    - title: "沙里淘金：寻找穿越牛熊的长线投资标的（2025版 中篇）"
+      href: "https://research.mintventures.fund/2025/03/25/zh-sifting-for-gold-identifying-long-term-investment-targets-through-market-cycles-2025-edition-part-ii/"
+      site: "Mint Ventures Research"
+      author: "Alex Xu"
+      added: 2025-06-12
+      tags: ["项目研报", "投资"]
+      related: ["money"]
+    - title: "Do Stonks Go Up?"
+      href: "https://entropicthoughts.com/do-stonks-go-up"
+      site: "Entropic Thoughts"
+      author: "a@xkqr.org (kqr)"
+      added: 2025-06-11
+      tags: ["life", "economics", "statistics"]
+      related: ["money"]
+    - title: "When Is Insurance Worth It?"
+      href: "https://entropicthoughts.com/when-is-insurance-worth-it"
+      site: "Entropic Thoughts"
+      author: "a@xkqr.org (kqr)"
+      added: 2025-06-04
+      tags: ["learning", "life", "maths", "economy", "保险"]
+      related: ["money"]
+    - title: "巴菲特真的是价值投资吗？"
+      href: "https://mp.weixin.qq.com/s/UhoSMQkRqWdnVGcZfX8Fog"
+      site: "微信公众号"
+      added: 2025-05-15
+      tags: ["投资"]
+      related: ["money"]
+    - title: "提高关税美国会进入黄金时代吗？"
+      href: "https://mp.weixin.qq.com/s/QRizggbOqD8v185QKQ50kA"
+      site: "微信公众号"
+      added: 2025-04-03
+      related: ["money"]
+    - title: "沙里淘金：寻找穿越牛熊的长线投资标的（2025版 中篇）"
+      href: "https://mp.weixin.qq.com/s/cpLeWwgH7aWEGFNbX0H0mg"
+      site: "微信公众号"
+      added: 2025-03-25
+      tags: ["投资"]
+      related: ["money"]
+    - title: "稳定币放贷"
+      href: "https://mp.weixin.qq.com/s/5OZKdn6OCPV7RBYhvFuybg"
+      site: "微信公众号"
+      added: 2025-03-19
+      tags: ["crypto"]
+      related: ["money"]
+    - title: "大饼价格模型"
+      href: "https://mp.weixin.qq.com/s/xEd0e-Pd1bh7WIfYVQ0jXw"
+      site: "微信公众号"
+      added: 2025-03-05
+      tags: ["crypto"]
+      related: ["money"]
+    - title: "沙里淘金：寻找穿越牛熊的长线投资标的（2025版 上篇）"
+      href: "https://mp.weixin.qq.com/s/SObFZGxkFHUEIgzyPOuQAw"
+      site: "微信公众号"
+      added: 2025-03-05
+      tags: ["投资"]
+      related: ["money"]
+    - title: "怎样通过微策略（Microstrategy）赚钱？"
+      href: "https://mp.weixin.qq.com/s/QbOpMv7-AnnI5mfgGmXSRg"
+      site: "微信公众号"
+      added: 2025-03-04
+      tags: ["crypto"]
+      related: ["money"]
+    - title: "渡边太太与翠花"
+      href: "https://mp.weixin.qq.com/s/-aIOJn7L4U2YR22AJeprbw"
+      site: "微信公众号"
+      added: 2025-03-01
+      related: ["money"]
+    - title: "一千万美元一枚"
+      href: "https://mp.weixin.qq.com/s/qsSgFskDmJEoI0kHLvjZfg"
+      site: "微信公众号"
+      added: 2024-12-09
+      comment: "一千万美元一枚大饼。是不是看见这个数字有些晕？感觉我吃了毒蘑菇。 这样的文章只有在牛市的时候敢发表出来。而且我敢保证，等到熊市降临，大饼价格跌去一半以上的时候，有人会拿出这样的文章来嘲笑我。 这个预测其实不是我做的，而是微策略（MSTR）的总裁Michael saylor做出，他认为大饼，在21年后，在2045年，最终的稳定价格在一千三百万美元左右。为..."
+      related: ["money"]
+    - title: "币圈散户将如何亏钱"
+      href: "https://mp.weixin.qq.com/s/hLpqzoy01-b1Y8nfSncLpA"
+      site: "微信公众号"
+      added: 2024-12-05
+      comment: "大饼和山寨币涨势如火如荼。市场总是经历高峰，然后崩溃。但是每次散户都是按照统一的标准动作亏掉了他们的钱。我最近看得这样一篇期刊论文，描述了散户是如何在繁荣和崩溃过程中损失掉自己的钱的。 标题叫做泡沫和崩溃过程中的财富再分配。 这篇论文基于的历史事件是2014年A股泡沫。 2014 年 7 月至 2015 年 12 月的 18 个月期间，中国股市经历了过..."
+      tags: ["crypto"]
+      related: ["money"]
+    - title: "小白也能懂的 Crypto 套利 —— 第二集“公募基金”和“债券市场”"
+      href: "https://taresky.com/crypto-ethena-pendle"
+      site: "Taresky"
+      author: "taresky"
+      added: 2024-11-12
+      comment: "💰 币圈的利润到底从何而来？年初的这篇文章 《无风险年化 360%？小白也能懂的 Crypto 套利》，向圈外人解释了这个大家最好奇的问题。 如果当时的你看到这篇文章，还没有学会资金费套利，那么相信现在的你，依然还是不会的。 不过关系并不大，因为现在又到了，适合圈外人进场…"
+      tags: ["crypto", "投资"]
+      related: ["money"]
+    - title: "经济刺激后果预测"
+      href: "https://mp.weixin.qq.com/s/So1U9c0WyidWUP80C1Ofgg"
+      site: "微信公众号"
+      added: 2024-11-04
+      comment: "印度显然在憋大招, 在等大选的结果。如果是特朗普当选，那么就会出台规模庞大的刺激计划。网传规模在10万亿印度币左右。如果民主党当选可能刺激计划会相对温和。 这些刺激政策究竟会起到什么样的作用呢？我们不妨来看看日本的例子。 这是一份我在几周前给贝版投资俱乐部准备的一个分析PPT。我把内容简单梳理一下。 即将到来的经济刺激应该和十几年前日本的安倍经济刺激一..."
+      related: ["money"]
+
+- category: "工程和团队"
+  slug: engineering-teams
+  description: "关于工程实践、事故复盘、韧性系统、团队协作、职业判断和组织运行的外部文章。"
+  posts:
+    - title: "Fun with incident data and statistical process control"
+      href: "https://surfingcomplexity.blog/2025/11/27/fun-with-incident-data-and-statistical-process-control/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-11-28
+      comment: "Last year, I wrote a post called TTR: the out-of-control metric. In that post, I argued that the incident response process(in particular, the time-to-resolution metric for incid..."
+      tags: ["incidents", "incident"]
+      related: ["worklog"]
+    - title: "Quick thoughts on the recent AWS outage"
+      href: "https://surfingcomplexity.blog/2025/10/25/quick-thoughts-on-the-recent-aws-outage/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-10-27
+      comment: "AWS recently posted a public write-up of the us-east-1 incident that hit them this past Monday. Here are a couple of quick thoughts on it. Reliability → Automation → Complexity ..."
+      tags: ["incidents", "resilience", "systems", "incident"]
+      related: ["worklog"]
+    - title: "You Want Technology With Warts"
+      href: "https://entropicthoughts.com/you-want-technology-with-warts"
+      site: "Entropic Thoughts"
+      author: "a@xkqr.org (kqr)"
+      added: 2025-09-17
+      tags: ["programming", "unix", "web"]
+      related: ["worklog"]
+    - title: "The hidden trade-offs of fine-grained progressive rollouts"
+      href: "https://surfingcomplexity.blog/2025/09/13/the-hidden-trade-offs-of-fine-grained-progressive-rollouts/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-09-15
+      comment: "A progressive rollout refers to the act of rolling out some new functionality gradually rather than all at once. This means that, when you initially deploy it, the change only i..."
+      tags: ["incidents", "systems", "engineering"]
+      related: ["worklog"]
+    - title: "AWS VPC 和 IP Address 的秘密：2025 年DevOps工程师必知"
+      href: "https://martinliu.cn/blog/aws-vpc-ip-address-secrets-what-every-engineer/"
+      site: "Martin Liu"
+      added: 2025-08-29
+      comment: "像专家一样学习 AWS VPC IP 地址分配。探索隐藏规则、专家技巧和 2025 年最佳实践，以设计安全、可扩展的 AWS 网络。DevOps 和云工程师的完美指南。 当大多数工程师启动一个新的 AWS 虚拟私有云 (Virtual Private Cloud - VPC) 时，他们会直接选择经典的 /16 CIDR 块。 为什么？因为它“感觉很安全..."
+      tags: ["engineering"]
+      related: ["worklog"]
+    - title: "The problems that accountability can’t fix"
+      href: "https://surfingcomplexity.blog/2025/08/23/the-problems-that-accountability-cant-fix/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-08-25
+      comment: "Accountability is a mechanism that achieves better outcomes by aligning incentives, in particular, negative ones. Specifically: if you do a bad thing, or fail to do a good thing..."
+      tags: ["resilience"]
+      related: ["worklog"]
+    - title: "6 Reasons You Don't Need an SRE Team"
+      href: "https://log.andvari.net/6reasons.html"
+      site: "Andvari Log"
+      added: 2025-08-18
+      comment: "The last several years have seen a huge upsurge in the popularity of the DevOps/SRE/Production Engineering model, with companies large and…"
+      tags: ["engineering"]
+      related: ["worklog"]
+    - title: "On Software Design... and Good Writing"
+      href: "https://iximiuz.com/en/posts/on-software-design-and-good-writing/"
+      site: "iximiuz"
+      author: "iximiuz@gmail.com (Ivan Velichko)"
+      added: 2025-07-28
+      comment: "Today, I came across a true gem: Akin's Laws of Spacecraft Design. Originally written for the aerospace engineering domain. I find many…"
+      related: ["worklog"]
+    - title: "In Praise of “Normal” Engineers"
+      href: "https://charity.wtf/2025/06/19/in-praise-of-normal-engineers/"
+      site: "charity.wtf"
+      author: "mipsytipsy"
+      added: 2025-06-20
+      comment: "提醒自己重视稳定、可靠、会把事情做完的普通工程师，而不是只崇拜高光时刻。"
+      tags: ["工程文化", "团队"]
+      related: ["worklog"]
+    - title: "Another observability 3.0 appears on the horizon"
+      href: "https://charity.wtf/2025/03/24/another-observability-3-0-appears-on-the-horizon/"
+      site: "charity.wtf"
+      author: "mipsytipsy"
+      added: 2025-06-15
+      comment: "Groan. Well, it’s not like I wasn’t warned. When I first started teasing out the differences between the pillars model and the single unified storage model and applying “2.0” to..."
+      tags: ["AI", "observability", "vendor", "observability 2.0", "engineering"]
+      related: ["worklog"]
+    - title: "Dijkstra never took a biology course"
+      href: "https://surfingcomplexity.blog/2025/05/31/dijkstra-never-took-a-biology-course/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-06-03
+      comment: "Simplicity is prerequisite for reliability. — Edsger W. Dijkstra Think about a system whose reliability had significantly improved over some period of time. The first example th..."
+      tags: ["resilience", "software", "systems"]
+      related: ["worklog"]
+    - title: "Pattern machines that we don’t understand"
+      href: "https://surfingcomplexity.blog/2025/06/01/pattern-machines-that-we-dont-understand/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-06-03
+      comment: "How do experts make decisions? One theory is that they generate a set of options, estimate the cost and benefits of each option, and then choose the optimal one. The psychology ..."
+      tags: ["systems"]
+      related: ["worklog"]
+    - title: "Energy and systems complexity"
+      href: "https://seths.blog/2025/05/systems-complexity-and-energy/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-05-14
+      comment: "Wild animals forage. They spend calories and take risks to acquire food. If the required work and risk expended are more than the food they acquire, they go extinct. The goal is..."
+      tags: ["Uncategorized"]
+      related: ["worklog"]
+
+- category: "AI 和软件工具"
+  slug: ai-tools
+  description: "关于 AI 应用、软件工具、编程环境、自动化和产品工作流的外部文章。"
+  posts:
+    - title: "Enterprise AI Looks Bleak, But Employee AI Looks Bright"
+      href: "https://www.dbreunig.com/2025/09/15/ai-adoption-at-work-play.html"
+      site: "Drew Breunig"
+      added: 2025-09-16
+      comment: "About that MIT report… Last month, the internet was abuzz about an MIT report with a dramatic headline: “95% of generative AI pilots at…"
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "Recreating the Apollo AI adoption rate chart with GPT-5, Python and Pyodide"
+      href: "https://simonwillison.net/2025/Sep/9/apollo-ai-adoption/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-09-09
+      comment: "Apollo Global Management's \"Chief Economist\" Dr. Torsten Sløk released this interesting chart which appears to show a slowdown in AI adoption rates among large (>250 employees) ..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "Possibility vs. certainty"
+      href: "https://seths.blog/2025/08/possibility-vs-certainty/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-09-01
+      comment: "It is impossible to make a perpetual motion machine, you’ll waste your time if you try. It is possible to write a book of poetry that will sell 10 million copies. It is unlikely..."
+      tags: ["Uncategorized", "AI"]
+      related: ["tools", "worklog"]
+    - title: "Making Sense of AI Job Titles"
+      href: "https://www.dbreunig.com/2025/08/21/a-guide-to-ai-titles.html"
+      site: "Drew Breunig"
+      added: 2025-08-23
+      comment: "A Cheat Sheet for Job Titles in the AI Ecosystem Even when you live and breathe AI, the job titles can feel like a moving target. I can only imagine how mystifying they must be ..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "Bottleneck or Bisect: AI-Assisted Coding Will Change Product Management"
+      href: "https://www.dbreunig.com/2025/08/08/how-ai-coding-changes-product.html"
+      site: "Drew Breunig"
+      added: 2025-08-12
+      comment: "Product Management Will Be Split Between ‘Slow Platform’ and ‘Fast App’ Modes When OpenAI announced they were building a consulting service staffed with “forward deployed engine..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "Movies, books and paintings"
+      href: "https://seths.blog/2025/08/movies-books-and-paintings/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-08-04
+      comment: "No important movie has ever been a solo project. While we can see a director’s point of view from movie to movie, the collaborative nature of the work is evident. Actors, cinema..."
+      tags: ["Uncategorized", "AI"]
+      related: ["tools", "worklog"]
+    - title: "Generating Hundreds of Consistent Illustrations with Gemini Image Generation"
+      href: "https://tinystruggles.com/posts/illustrations_with_gemini/"
+      site: "Tiny Struggles"
+      added: 2025-07-21
+      comment: "A deep dive into building an automated illustration pipeline for storytelling applications Introduction AI image generation has revolutionized creative workflows, but there’s a ..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "How to Fix Your Context"
+      href: "https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html"
+      site: "Drew Breunig"
+      added: 2025-06-27
+      comment: "Mitigating & Avoiding Context Failures Following up on our earlier post, “How Long Contexts Fail”, let’s run through the ways we can mitigate or avoid these failures entirely. B..."
+      related: ["tools", "worklog"]
+    - title: "The Failure of Knowledge Management"
+      href: "http://markburgess.org/blog.html#knowledgemgt"
+      site: "Mark Burgess"
+      added: 2025-06-24
+      comment: "Knowing things, as an individual, is the most important part of being alive. Where do we get food and find kin? How do we navigate the terrain? How can we repeat procedures that..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+    - title: "How OpenElections Uses LLMs"
+      href: "https://simonwillison.net/2025/Jun/19/how-openelections-uses-llms/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-06-20
+      comment: "How OpenElections Uses LLMs The OpenElections project collects detailed election data for the USA, all the way down to the precinct level. This is a surprisingly hard problem: w..."
+      tags: ["AI"]
+      related: ["tools", "worklog"]
+
+- category: "写作和数字花园"
+  slug: writing-gardens
+  description: "关于个人网站、链接博客、数字花园、公开写作、阅读和知识整理的外部文章。"
+  posts:
+    - title: "Quoting AWS"
+      href: "https://simonwillison.net/2025/Oct/23/aws-postmortem/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-10-24
+      comment: "For resiliency, the DNS Enactor operates redundantly and fully independently in three different Availability Zones (AZs). [...] When the second Enactor (applying the newest plan..."
+      tags: ["写作"]
+      related: ["guide"]
+    - title: "Drowning in News"
+      href: "https://duarteocarmo.com/blog/drowning-in-news.html"
+      site: "Duarte O.Carmo"
+      added: 2025-10-09
+      comment: "The world moves fast, faster every day. For those who work with technology - and even those who don't - it's hard to keep up with the news…"
+      tags: ["写作"]
+      related: ["guide"]
+    - title: "Lossy encyclopedia"
+      href: "https://simonwillison.net/2025/Aug/29/lossy-encyclopedia/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-09-01
+      comment: "Since I love collecting questionable analogies for LLMs, here's a new one I just came up with: an LLM is a lossy encyclopedia. They have a huge array of facts compressed into th..."
+      related: ["guide"]
+    - title: "Re-reading Technopoly"
+      href: "https://surfingcomplexity.blog/2025/07/19/re-reading-technopoly/"
+      site: "Surfing Complexity"
+      author: "Lorin Hochstein"
+      added: 2025-07-20
+      comment: "Technopoly by Neil Postman, published in 1993 “Can language models be too big? asked the researchers Emily Bender, Timnit Gebru, Angelina McMillan-Major, and Margaret Mitchell i..."
+      tags: ["books"]
+      related: ["guide"]
+    - title: "The poetry machine"
+      href: "https://seths.blog/2025/07/the-poetry-machine/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-07-12
+      comment: "[written by claude.] Here’s the thing about ChatGPT that nobody wants to admit: It’s not intelligent. It’s something far more interesting. Back in the 1950s, a Russian linguist ..."
+      tags: ["Uncategorized", "写作"]
+      related: ["guide"]
+    - title: "Quoting Nineteen Eighty-Four"
+      href: "https://simonwillison.net/2025/Jul/6/nineteen-eighty-four/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-07-07
+      comment: "There was a whole chain of separate departments dealing with proletarian literature, music, drama, and entertainment generally. Here were produced rubbishy newspapers containing..."
+      tags: ["写作"]
+      related: ["guide"]
+    - title: "Why and how to write things on the Internet"
+      href: "https://www.benkuhn.net/writing/"
+      site: "Ben Kuhn"
+      added: 2025-07-02
+      comment: "Recently I noticed that most existing “why you should write a blog” articles (e.g.) have at least one of two shortcomings, according to me:…"
+      tags: ["写作"]
+      related: ["guide"]
+
+- category: "工具和工作流"
+  slug: tools-workflows
+  description: "关于具体工具、开发环境、网络服务、注册流程和个人工作流的外部文章。"
+  posts:
+    - title: "uv cheatsheet"
+      href: "https://mathspp.com/blog/uv-cheatsheet"
+      site: "mathspp"
+      added: 2025-09-08
+      comment: "Cheatsheet with the most common and useful uv commands to manage projects and dependencies, publish projects, manage tools, and more. This cheatsheet lists the most commonly use..."
+      tags: ["programming", "python", "uv"]
+      related: ["tools"]
+    - title: "Happy 20th birthday Django! Here's my talk on Django Origins from Django's 10th"
+      href: "https://simonwillison.net/2025/Jul/13/django-birthday/#atom-everything"
+      site: "Simon Willison's Weblog"
+      added: 2025-07-14
+      comment: "Today is the 20th anniversary of the first commit to the public Django repository! Ten years ago we threw a multi-day 10th birthday party for Django back in its birthtown of Law..."
+      related: ["tools"]
+    - title: "2025 年历史最低 29 美元注册美国公司"
+      href: "https://blog.einverne.info/post/2025/06/northwest-registered-agent-29-usd-form-llc.html"
+      site: "Ein Verne"
+      added: 2025-06-18
+      comment: "前几个月很多人分享通过 [[Stripe Atlas]] 注册美国公司（LLC），但是 Atlas 及时通过微软的创业者链接也需要 250 美元，今天就教一下大家如何只需要 133 美元就可以注册一家美国 LLC。 现在全球化的商业环境中，不论是初创的 SaaS 公司，还是实际经营跨境电商，进出口业务，都需要有一个正式的商业实体，一方面可以为个人提供责..."
+      related: ["tools"]
+    - title: "利用 PirateShip 打单节省美国转运费用"
+      href: "https://blog.einverne.info/post/2024/12/pirateship.html"
+      site: "Ein Verne"
+      added: 2024-12-22
+      comment: "之前因为申请 [[ITIN]] 已经申请了一个 Anytime Mailbox 美国的私人地址，但是如果直接让 Anytime Mailbox 房东转寄邮件，价格非常昂贵，以我自己的经验只邮寄 0.1 磅不到的信件，房东报价就高达 70 美元。所以这篇文章我就总结一下如何与 Anytime Mailbox 的房东进行沟通并让房东使用我们自己提供的邮寄单..."
+      related: ["tools"]
+
+- category: "生活、学习和判断"
+  slug: life-learning
+  description: "关于生活选择、学习方式、运气、健康、社会观察和日常判断的外部文章。"
+  posts:
+    - title: "不测不知道有多胖? DEXA测试"
+      href: "https://mp.weixin.qq.com/s/aEKYX1CmfaJbwZSwc5LXng"
+      site: "微信公众号"
+      added: 2025-12-30
+      related: ["tome-of-xp"]
+    - title: "我该吃几碗饭？"
+      href: "https://mp.weixin.qq.com/s/YdUqHzTzvRwMSkOETNYglA"
+      site: "微信公众号"
+      added: 2025-12-30
+      related: ["tome-of-xp"]
+    - title: "Two kinds of confrontations"
+      href: "https://seths.blog/2025/10/two-kinds-of-confrontations/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-10-09
+      comment: "When we win by having someone else lose, we set up a conflict. It’s clear, direct but not generative. But when we win by confronting our fear, everyone benefits. Often, people w..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "Confusing good luck with skill"
+      href: "https://seths.blog/2025/08/confusing-good-luck-with-skill/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-08-28
+      comment: "If 1,000 people toss a fair coin three times, 125 of them will get three heads in a row. Perfect score. And 125 will lose every time. We probably shouldn’t give the winners too ..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "After the chores"
+      href: "https://seths.blog/2025/08/after-the-chores/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-08-11
+      comment: "Each day, I have about 8 hours of tasks to do. Empty the dishwasher, bring in the paper, answer emails, queue up a blog post… it’s a very long list. I’m sure you have one as wel..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "Compounding luck"
+      href: "https://seths.blog/2025/08/compounding-luck/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-08-08
+      comment: "Human luck doesn’t even out. Regression to the mean explains that in statistics, outlying events tend to be overcome by average ones. But in society, the opposite is often true...."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "In theory…"
+      href: "https://seths.blog/2025/07/in-theory/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-08-01
+      comment: "Anything that works in practice can work in theory. When a theory tells us something that is working is impossible, we’ve either measured wrong or the theory needs updating. The..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "How to Create Luck"
+      href: "https://www.swyx.io/create-luck"
+      site: "swyx"
+      added: 2025-07-30
+      comment: "Your entire worldview changes when you realize you can create luck."
+      related: ["tome-of-xp"]
+    - title: "Learning Gears"
+      href: "https://www.swyx.io/learning-gears"
+      site: "swyx"
+      added: 2025-07-30
+      comment: "Translations welcome! (Português)"
+      related: ["tome-of-xp"]
+    - title: "Searching for outliers"
+      href: "https://www.benkuhn.net/outliers/"
+      site: "Ben Kuhn"
+      added: 2025-07-02
+      comment: "Shortly after I started blogging, because I was a college student and had nothing better to do, I set a goal to write every week. I started in September 2013 and wrote around 15..."
+      related: ["tome-of-xp"]
+    - title: "大部分人不会离开 萨拉热窝之二"
+      href: "https://mp.weixin.qq.com/s/T6LMif-CHUNcC2gDKiRpMA"
+      site: "微信公众号"
+      added: 2025-06-27
+      related: ["tome-of-xp"]
+    - title: "他们为什么不离开? 萨拉热窝之一"
+      href: "https://mp.weixin.qq.com/s/-7tqYsB37KzoG_vM4ncqPQ"
+      site: "微信公众号"
+      added: 2025-06-26
+      related: ["tome-of-xp"]
+    - title: "Scripts and casting"
+      href: "https://seths.blog/2025/06/scripts-and-casting/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-06-03
+      comment: "In the theatre, the play is written before casting begins. This gives the playwright freedom and responsibility, and it puts the text first. Writing for a sitcom is different. T..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "The 1:1 method"
+      href: "https://seths.blog/2025/05/the-11-method/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-05-26
+      comment: "The reason that most memos, speeches and edicts fall flat is simple: we get stuck on the idea that we’re talking to a crowd. When we’re speaking or writing, the crowd is just an..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "“They’re not paying me enough to care”"
+      href: "https://seths.blog/2025/05/theyre-not-paying-me-enough-to-care/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-05-19
+      comment: "This is an understandable sentiment. As jobs push people to be automatons and often offer little in the way of respect, it’s easy to quietly quit. But perhaps, they’re not payin..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
+    - title: "The Impact Matrix: Moving to the golden quadrant"
+      href: "https://seths.blog/2025/05/moving-to-the-golden-quadrant/"
+      site: "Seth's Blog"
+      author: "Seth Godin"
+      added: 2025-05-19
+      comment: "Tactics are tempting. We can lean into them, invest, build our skills and count on results. Strategies are more elusive. And a mismatch between strategy and tactics leads to was..."
+      tags: ["Uncategorized"]
+      related: ["tome-of-xp"]
 

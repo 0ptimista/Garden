@@ -1,0 +1,65 @@
+name: Garden Preview
+
+on:
+  push:
+    branches:
+      - "codex/homepage-design-architecture-performance"
+      - "preview"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "cloudflare-preview"
+  cancel-in-progress: true
+
+env:
+  TZ: Asia/Shanghai
+  CF_PAGES_PROJECT: luozx-garden-preview
+  CF_PAGES_DOMAIN: preview.luozx.org
+  CF_PAGES_PRODUCTION_BRANCH: preview
+
+jobs:
+  deploy:
+    name: Deploy preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install render dependencies
+        run: pip install jupyter matplotlib
+
+      - name: Render Quarto preview
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+        env:
+          QUARTO_PROFILE: preview
+
+      - name: Apply preview-only robots headers
+        run: |
+          cp cloudflare/pages/preview-headers _site/_headers
+          cp cloudflare/pages/preview-robots.txt _site/robots.txt
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _site --project-name=${{ env.CF_PAGES_PROJECT }} --branch=${{ env.CF_PAGES_PRODUCTION_BRANCH }}
+
+      - name: Ensure preview custom domain
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: node cloudflare/pages/ensure-preview-domain.mjs

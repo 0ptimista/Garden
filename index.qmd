@@ -23,6 +23,12 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
+- id: reading-picks
+  contents: collections/starred-articles/starred-articles.yaml
+  template: collections/starred-articles/starred-home.ejs
+  feed: false
+  sort-ui: false
+  filter-ui: false
 adsense:
   enable-ads: false
 format:
@@ -206,6 +212,19 @@ format:
 <div class="home-category-entry">入口：[多元货币转换最佳路径](posts/currency-best-exchange-route.qmd){.no-external}</div>
 :::
 ::::
+
+## 读到的好文章
+
+::: {.home-section-note}
+这里放我在其他博客、个人网站和文章里读到的好内容。它们按主题分组，是这个花园的外部养分，也方便以后从自己的文章反向找到参考来源。
+:::
+
+:::{#reading-picks}
+:::
+
+::: {.home-continue}
+[查看全部外部读物](collections/starred-articles/index.qmd){.no-external}
+:::
 
 ## 从这里开始
 

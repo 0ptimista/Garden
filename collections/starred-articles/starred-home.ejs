@@ -1,0 +1,26 @@
+```{=html}
+<div class="home-reading-grid">
+  <% for (const item of items.slice(0, 4)) { %>
+    <% const posts = Array.isArray(item.posts) ? item.posts.slice(0, 2) : []; %>
+    <section class="home-reading-category">
+      <div class="home-category-kind">外部读物</div>
+      <h3><a href="/collections/starred-articles/#<%= item.slug || item.category %>"><%= item.category %></a></h3>
+      <% if (item.description) { %>
+        <p><%= item.description %></p>
+      <% } %>
+      <% if (posts.length) { %>
+        <ul class="home-reading-list">
+          <% for (const p of posts) { %>
+            <li>
+              <a href="<%= p.href %>"><%= p.title %></a>
+              <% if (p.site) { %><span><%= p.site %></span><% } %>
+            </li>
+          <% } %>
+        </ul>
+      <% } else { %>
+        <p class="home-reading-empty">待添加</p>
+      <% } %>
+    </section>
+  <% } %>
+</div>
+```

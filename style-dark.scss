@@ -950,6 +950,70 @@ body:has(.garden-home) #title-block-header:empty {
   margin-bottom: 0.1rem;
 }
 
+.home-reading-grid {
+  display: grid;
+  gap: 1.35rem 1.6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-reading-category {
+  border-top: 1px solid var(--home-rule-strong);
+  min-width: 0;
+  padding-top: 0.95rem;
+}
+
+.home-reading-category h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 0.55rem;
+}
+
+.home-reading-category p {
+  color: var(--home-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.62;
+  margin: 0;
+}
+
+.home-reading-list {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0;
+}
+
+.home-reading-list li {
+  align-items: baseline;
+  column-gap: 0.65rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.home-reading-list a {
+  color: var(--garden-inline-link);
+  font-family: $font-family-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.45;
+  min-width: 0;
+  text-decoration-color: rgba(254, 128, 25, 0.46);
+  text-decoration-thickness: 1px;
+}
+
+.home-reading-list span,
+.home-reading-empty {
+  color: var(--home-muted);
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+}
+
+.home-reading-empty {
+  margin-top: 0.75rem !important;
+}
+
 .home-popular {
   margin-top: 0.25rem;
 }
@@ -1100,7 +1164,185 @@ body:has(.garden-home) #title-block-header:empty {
   margin: 0;
 }
 
+.reading-intro {
+  border-bottom: 1px solid var(--garden-border);
+  color: var(--garden-muted);
+  font-family: $font-family-serif;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.reading-intro p {
+  margin: 0;
+}
+
+.reading-toc {
+  border-bottom: 1px solid var(--garden-border);
+  border-top: 1px solid var(--garden-border);
+  font-family: $font-family-sans-serif;
+  margin-bottom: 1.8rem;
+  padding: 0.75rem 0;
+}
+
+.reading-toc-title {
+  color: var(--garden-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.reading-toc ul {
+  display: grid;
+  gap: 0.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reading-toc a {
+  align-items: baseline;
+  color: $brand-cream-soft;
+  display: flex;
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 0.65rem;
+  justify-content: space-between;
+  line-height: 1.35;
+  margin-left: -0.28rem;
+  padding: 0.18rem 0.28rem;
+  text-decoration: none;
+}
+
+.reading-toc a:hover {
+  background: var(--garden-inline-link-hover-bg);
+  color: var(--garden-inline-link-hover);
+}
+
+.reading-toc a.active,
+.reading-toc a[aria-current="true"] {
+  background: var(--garden-inline-link-hover-bg);
+  color: var(--garden-inline-link);
+}
+
+.reading-toc-count {
+  color: var(--garden-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.reading-collection {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.reading-category {
+  border-top: 1px solid var(--garden-border-strong);
+  padding-top: 1rem;
+}
+
+.reading-category-header {
+  margin-bottom: 1rem;
+}
+
+.reading-category-kicker {
+  color: var(--garden-inline-link);
+  font-family: $font-family-sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.reading-category h2 {
+  border: 0;
+  color: $brand-cream-soft;
+  font-family: $font-family-sans-serif;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  line-height: 1.2;
+  margin: 0 0 0.55rem;
+  padding: 0;
+}
+
+.reading-category-header p {
+  color: var(--garden-muted);
+  font-family: $font-family-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+  text-align: start;
+}
+
+.reading-link-list {
+  display: grid;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reading-link-card {
+  border-top: 1px solid var(--garden-border);
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.95rem 0;
+}
+
+.reading-link-title {
+  color: var(--garden-inline-link);
+  font-family: $font-family-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration-color: rgba(254, 128, 25, 0.46);
+  text-decoration-thickness: 1px;
+}
+
+.reading-link-meta,
+.reading-link-tags {
+  color: var(--garden-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: $font-family-sans-serif;
+  font-size: 0.82rem;
+  gap: 0.35rem 0.75rem;
+}
+
+.reading-link-comment,
+.reading-empty {
+  color: $body-color;
+  font-family: $font-family-serif;
+  font-size: 0.98rem;
+  line-height: 1.72;
+  margin: 0;
+  text-align: start;
+}
+
+.reading-link-tags span,
+.reading-link-tags a {
+  border: 1px solid var(--garden-border);
+  border-radius: 999px;
+  color: inherit;
+  padding: 0.08rem 0.42rem;
+  text-decoration: none;
+}
+
+.reading-link-tags a:hover {
+  background: var(--garden-inline-link-hover-bg);
+  color: var(--garden-inline-link-hover);
+}
+
+.reading-empty {
+  color: var(--garden-muted);
+}
+
 @media (min-width: 720px) {
+  main.content:has(#listing-reading-links) {
+    justify-self: start;
+    max-width: 42rem;
+    width: 100%;
+  }
+
   body.garden-home-page #quarto-content.page-columns.page-layout-full,
   body:has(.garden-home) #quarto-content.page-columns.page-layout-full {
     grid-template-columns:
@@ -1183,13 +1425,28 @@ body:has(.garden-home) #title-block-header:empty {
     grid-column: body-end / page-end !important;
     grid-template-columns: minmax(0, 1fr) !important;
     min-width: 0;
+    position: relative !important;
     row-gap: 1.5rem;
+    z-index: 20 !important;
   }
 
   #quarto-margin-sidebar > * {
     opacity: 1 !important;
     overflow: visible !important;
     pointer-events: auto !important;
+  }
+
+  #quarto-margin-sidebar > .reading-toc {
+    align-self: start;
+    grid-column: 1 / -1 !important;
+    left: var(--reading-toc-left);
+    margin-bottom: 0;
+    max-height: calc(100vh - 7rem);
+    overflow: auto !important;
+    position: fixed;
+    top: 5.5rem;
+    width: var(--reading-toc-width);
+    z-index: 21 !important;
   }
 
   #quarto-margin-sidebar > nav#TOC {
@@ -1538,6 +1795,7 @@ body.quarto-dark img:hover {
   .home-category-grid,
   .home-mode-grid,
   .home-path-grid,
+  .home-reading-grid,
   .home-toolbox-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1545,6 +1803,7 @@ body.quarto-dark img:hover {
   .home-about-grid,
   .home-category-grid,
   .home-mode-grid,
+  .home-reading-grid,
   .home-toolbox-grid {
     gap: 1.1rem;
   }

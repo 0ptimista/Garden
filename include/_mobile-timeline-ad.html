@@ -1,5 +1,9 @@
 <script>
 (() => {
+  if (window.location.hostname === "preview.luozx.org") {
+    return;
+  }
+
   const mobileQuery = window.matchMedia("(max-width: 719.98px)");
   const listSelector = "#listing-recent-posts .list";
   const postSelector = ".quarto-post:not(.timeline-mobile-ad)";

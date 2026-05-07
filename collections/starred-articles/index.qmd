@@ -1,10 +1,116 @@
 ---
+title: 读到的好文章
+description: "我在其他博客、个人网站和文章里读到的好内容。它们不是时间线，也不是站内文章，而是这个花园的外部养分。"
+page-layout: full
+toc: true
+body-class: reading-collection-page
 author: ""
 listing:
+  id: reading-links
   contents: ./starred-articles.yaml
-  template: ./starred-articles.ejs
-draft: true
+  template: ./starred-articles.ejs.md
+  sort-ui: false
+  filter-ui: false
+draft: false
 ---
 
-# 星标文章列表
+::: {.reading-intro}
+这里收集我读到、筛过、愿意推荐给后来自己的外部文章。添加新内容时，只需要维护同目录下的 `starred-articles.yaml`：选择一个分类，把文章标题、链接、来源和一句话说明补进去。
+:::
 
+:::{#reading-links}
+:::
+
+<script>
+(() => {
+  const desktopQuery = window.matchMedia("(min-width: 992px)");
+  const readingTocs = () => [...document.querySelectorAll(".reading-toc")];
+
+  const updateReadingTocMetrics = () => {
+    const sidebar = document.getElementById("quarto-margin-sidebar");
+    const toc = sidebar?.querySelector(".reading-toc");
+
+    if (!toc || !sidebar || !desktopQuery.matches || toc.parentElement !== sidebar) {
+      document.documentElement.style.removeProperty("--reading-toc-left");
+      document.documentElement.style.removeProperty("--reading-toc-width");
+      return;
+    }
+
+    const rect = sidebar.getBoundingClientRect();
+    document.documentElement.style.setProperty("--reading-toc-left", `${rect.left}px`);
+    document.documentElement.style.setProperty("--reading-toc-width", `${rect.width}px`);
+  };
+
+  const moveReadingToc = () => {
+    const listing = document.getElementById("listing-reading-links");
+    const sidebar = document.getElementById("quarto-margin-sidebar");
+    const toc = sidebar?.querySelector(".reading-toc") ||
+      listing?.querySelector(".reading-toc") ||
+      readingTocs()[0];
+
+    if (!toc || !listing || !sidebar) {
+      return;
+    }
+
+    if (desktopQuery.matches) {
+      if (toc.parentElement !== sidebar) {
+        sidebar.prepend(toc);
+      }
+      updateReadingTocMetrics();
+      return;
+    }
+
+    if (toc.parentElement !== listing) {
+      listing.prepend(toc);
+    }
+    updateReadingTocMetrics();
+  };
+
+  const updateReadingTocActiveLink = () => {
+    const tocs = readingTocs();
+
+    if (!tocs.length) {
+      return;
+    }
+
+    const sections = [...document.querySelectorAll("#listing-reading-links section.level2[id]")];
+    const links = tocs.flatMap((toc) => [...toc.querySelectorAll("a.no-external")]);
+    const current = sections.reduce((active, section) => {
+      const top = section.getBoundingClientRect().top;
+      return top <= 130 ? section : active;
+    }, sections[0]);
+
+    links.forEach((link) => {
+      const isActive = current && link.hash === `#${current.id}`;
+      link.classList.toggle("active", Boolean(isActive));
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  const refreshReadingToc = () => {
+    moveReadingToc();
+    updateReadingTocActiveLink();
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", refreshReadingToc);
+  } else {
+    refreshReadingToc();
+  }
+
+  window.addEventListener("resize", () => {
+    window.requestAnimationFrame(refreshReadingToc);
+  }, { passive: true });
+
+  window.addEventListener("scroll", () => {
+    window.requestAnimationFrame(updateReadingTocActiveLink);
+  }, { passive: true });
+
+  window.addEventListener("hashchange", updateReadingTocActiveLink);
+})();
+</script>
