@@ -11,5 +11,9 @@ _freeze/
 
 
 **/*.quarto_ipynb
+<<<<<<< HEAD
 /assets/data/content-index.json
 **/.wrangler/
+=======
+.env
+>>>>>>> main
