@@ -1,6 +1,12 @@
 <script>
 (() => {
+  const shouldSkipKoFi = () => Boolean(document.querySelector(".garden-home"));
+
   const loadKoFi = () => {
+    if (shouldSkipKoFi()) {
+      return;
+    }
+
     if (window.kofiWidgetOverlay) {
       drawKoFi();
       return;
@@ -14,7 +20,7 @@
   };
 
   const drawKoFi = () => {
-    if (!window.kofiWidgetOverlay || document.querySelector(".kofi-button")) {
+    if (shouldSkipKoFi() || !window.kofiWidgetOverlay || document.querySelector(".kofi-button")) {
       return;
     }
 

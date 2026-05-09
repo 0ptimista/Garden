@@ -8,19 +8,6 @@
     callback();
   };
 
-  const formatViews = (value) => {
-    const number = Number(value);
-
-    if (!Number.isFinite(number) || number <= 0) {
-      return "";
-    }
-
-    return new Intl.NumberFormat("zh-Hans", {
-      notation: number >= 10000 ? "compact" : "standard",
-      maximumFractionDigits: 1,
-    }).format(number);
-  };
-
   const createItem = (item, index) => {
     const li = document.createElement("li");
     li.className = "home-popular-item";
@@ -34,12 +21,7 @@
     link.href = new URL(item.url, window.location.origin).toString();
     link.textContent = item.title;
 
-    const views = formatViews(item.views);
-    const count = document.createElement("span");
-    count.className = "home-popular-count";
-    count.textContent = views ? `${views} 次` : "";
-
-    li.append(rank, link, count);
+    li.append(rank, link);
     return li;
   };
 

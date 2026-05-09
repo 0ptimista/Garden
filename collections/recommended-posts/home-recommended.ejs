@@ -1,0 +1,9 @@
+```{=html}
+<div class="home-recommended-grid">
+  <% for (const item of items) { %>
+    <article class="home-recommended-item">
+      <h3><a class="no-external" href="<%= item.href %>"><%= item.title %></a></h3>
+    </article>
+  <% } %>
+</div>
+```

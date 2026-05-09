@@ -21,8 +21,6 @@
 
 ::: {.reading-category}
 ::: {.reading-category-header}
-<div class="reading-category-kicker">外部读物</div>
-
 ## <%= item.category %> {#<%= slug %>}
 
 <% if (item.description) { %>
@@ -34,7 +32,6 @@
 ```{=html}
 <ol class="reading-link-list">
   <% for (const p of posts) { %>
-    <% const tags = Array.isArray(p.tags) ? p.tags : []; %>
     <% const related = Array.isArray(p.related) ? p.related : []; %>
     <li class="reading-link-card">
       <a class="reading-link-title" href="<%= p.href %>"><%= p.title %></a>
@@ -46,9 +43,8 @@
       <% if (p.comment) { %>
         <p class="reading-link-comment"><%= p.comment %></p>
       <% } %>
-      <% if (tags.length || related.length) { %>
+      <% if (related.length) { %>
         <div class="reading-link-tags">
-          <% for (const tag of tags) { %><span><%= tag %></span><% } %>
           <% for (const rel of related) { %><a class="no-external" href="/categories/<%= rel %>.html">关联：<%= rel %></a><% } %>
         </div>
       <% } %>

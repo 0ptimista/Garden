@@ -1,0 +1,29 @@
+# 首页「推荐内容」陈列。
+# 按文件顺序显示；新增时复制下面字段即可。
+# href 建议使用站内 HTML 路径，这样 EJS 模板可以直接输出链接。
+#
+# 新增文章模板：
+# - title: 文章标题
+#   href: /posts/example.html
+#   reason: 为什么这篇值得作为入口。
+#   tags: [只填写文章 frontmatter 里已经存在的 categories]
+
+- title: "从美国政府手里拿钱"
+  href: "/posts/buying-us-bond.html"
+  reason: "第一次购买美国国债后的记录，包含债券种类、派息、价格波动和固定收益的基本概念。"
+  tags: ["money", "tome-of-xp"]
+
+- title: "购买美债的思路"
+  href: "/posts/steps-of-buying-us-bonds.html"
+  reason: "从 TreasuryDirect、拍卖日期和 CUSIP 出发，整理直接购买新发行美债的准备和判断。"
+  tags: ["money", "tome-of-xp"]
+
+- title: "购买美债的思路（二）"
+  href: "/posts/steps-of-buying-us-bonds-2.html"
+  reason: "补充间接购买美债的方式，也解释收益率、价格和 ETF/QDII 这类替代入口。"
+  tags: ["money"]
+
+- title: "为什么要在意国债收益率"
+  href: "/posts/risk-free-asset.html"
+  reason: "把国债收益率放到世界货币、资产定价和普通人现金管理的语境里理解。"
+  tags: []
