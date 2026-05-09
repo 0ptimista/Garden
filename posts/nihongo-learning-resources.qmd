@@ -1,8 +1,7 @@
 ---
 title: 日语自学资源
 date: '2025-06-04'
-date-modified: 2025-12-19 13:33
-description: 想自学的朋友们，不知道怎么开始的话，可以试试看我的学习过程
+date-modified: 2026-05-09 18:28
 categories:
 - tome-of-xp
 
@@ -36,7 +35,16 @@ categories:
 - [大家的日语](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BATAJK1olXwIEVFxdAE8SBV8IGFgRXwABVG4ZVxNJXF9RXh5UHw0cSgYYXBcIWDoXSQVJQwYBV1pfDkgXHDZNRwYlHHkHIVwCATB0Zx19ZjJSWQVKH1hdaEcbM244GFoVXQAFUVxVAXsnA2g4STXN67Da8e9B3OGY1uefK1olXQAHXF9YDUgUAW4NGWsSXQ8yDwszDB9EBTsPTlpHCgFVAW5tOEgnBG8BD11nHFQWUixtOEsnAF9KdQkdWVJVUV8KWkMWUWoLTwkcClQFBFsNXEsQV25dGFJCbQQDVVpUOHvJjft9Gh5tJwBSAF9Vbg1VChV1xdWBTG17VFZVDlonfQtMfQIdHVpqIjkvbipFaydPEgRRKURhOlw-bS1IYzUAaDNRGXhmJzUZeHsSM28OG1kl)
 ![](https://image.luozx.org/garden/2025/06/8e3a2dc610c554ca2314a15c1735f5d8.png)
 
-现在好像涨价了还😅
+
+## 免费网课
+
+**强烈推荐**：[周业繁大家的日本语全集](https://www.bilibili.com/video/BV1j741167og/?share_source=copy_web&vd_source=ab528b0ebec5aeefede635d7fd1113bb)
+
+（也可以按照视频中的建议购买配套教材）
+
+
+<details>
+  <summary>旧资源（不再推荐）</summary>
 
 教材的每一课，我是按照以下顺序学习，
 下面的链接均为B站的视频学习资源
@@ -52,15 +60,15 @@ categories:
 
      这个视频也有课文，但是同时会把中文翻译也播放出来，上面另外的课文视频，只显示翻译，只播放日语音频。个人比较喜欢第二种方式学习课文。
 
-
+</details>
 
 # 其他疑问
 
 - 认识假名后，有些单词是汉字，那假名和汉字的映射关系怎么学习？
 
-      我没有找到专门关于这个问题的学习资源，
-      大致意思都是说日本人在使用假名还是使用汉字也没有特别的说明，
-      所以记忆单词和学习课文的时候顺便记忆以下好了。
+我没有找到专门关于这个问题的学习资源，大致意思都是说日本人在使用假名还是使用汉字也没有特别的说明，所以记忆单词和学习课文的时候顺便记忆以下好了。
+
+2026-05-09：在[日本语言学校](/posts/one-month-in-japan/)学习，也是一样。会有专门练习kanji（漢字）的内容，重复练习，没有其他技巧。
 
 
 # 额外资源
@@ -70,10 +78,18 @@ categories:
 - [日语迷](https://riyumi.com/beginner-faq/)
 - [NHK简明日语](https://www3.nhk.or.jp/nhkworld/lesson/zh/about/howtouse/)
 
-# Anki 背单词
+
+## [识日App](https://www.shiri.app/)（推荐）
+
+查单词，背单词。比Anki上手更容易，也很好用。
+
+
+## Anki 背单词
 
 起初我以为Anki需要花一定时间学习，所以迟迟没有去了解。实际上只需要安装，导入[eggroll的卡牌](https://github.com/5mdld/anki-jlpt-decks)，按图示设置。就可以开始背单词了，非常方便，Anki学习曲线几乎为0
 
 适合长期使用。
 
 ![导入后的Anki界面](https://image.luozx.org/garden/2025/12/7ae7f500c4fbc2c4a87231c6db4872a2.png)
+
+
