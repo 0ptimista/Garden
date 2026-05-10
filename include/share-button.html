@@ -1,25 +1,25 @@
 <div class="share-container">
   <span class="share-label">分享到：</span>
 
-  <a href="javascript:void(0)" class="share-btn x-twitter" aria-label="Share on X"
+  <button type="button" class="share-btn x-twitter" aria-label="Share on X"
      onclick="shareTo('x')">
     <i class="bi bi-twitter-x"></i>
-  </a>
+  </button>
 
-  <a href="javascript:void(0)" class="share-btn telegram" aria-label="Share on Telegram"
+  <button type="button" class="share-btn telegram" aria-label="Share on Telegram"
      onclick="shareTo('telegram')">
     <i class="bi bi-telegram"></i>
-  </a>
+  </button>
 
-  <a href="javascript:void(0)" class="share-btn facebook" aria-label="Share on Facebook"
+  <button type="button" class="share-btn facebook" aria-label="Share on Facebook"
      onclick="shareTo('facebook')">
     <i class="bi bi-facebook"></i>
-  </a>
+  </button>
 
-  <a href="javascript:void(0)" class="share-btn email" aria-label="Share via Email"
+  <button type="button" class="share-btn email" aria-label="Share via Email"
      onclick="shareTo('email')">
     <i class="bi bi-envelope-fill"></i>
-  </a>
+  </button>
   
 </div>
 
@@ -40,8 +40,11 @@
     display: inline-block;
     margin: 0 4px;
     padding: 6px 10px;
+    border: 0;
     border-radius: 4px;
+    background: transparent;
     color: var(--garden-muted, #555);
+    cursor: pointer;
     text-decoration: none !important;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     font-size: 1.1rem;

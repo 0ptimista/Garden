@@ -2,6 +2,8 @@ project:
   type: website
   pre-render:
     - node scripts/build-content-index.mjs
+  post-render:
+    - node scripts/subset-bootstrap-icons.mjs
   render:
     - "*.qmd"
     - "posts/**/*.qmd"
@@ -98,9 +100,9 @@ format:
     default-image-extension: ""
     include-in-header:
       - file: include/tagmanager-header.html
+      - file: include/umami-analytics.html
       - text: |
           <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-          <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
     include-before-body:
       - include/tagmanager-body.html
     include-after-body:

@@ -15,7 +15,7 @@ $brand-caramel-soft: #9E7140;
 $brand-caramel-muted: #A87D5D;
 $brand-caramel-hairline: #EADDD3;
 $brand-highlight: #FDEFD9;
-$brand-link-orange: #B84A00;
+$brand-link-orange: #9D3F00;
 $brand-link-orange-bg: #FDE6D6;
 $brand-code-paper: #F8F5F2;
 $brand-quote-paper: #FFF8F0;
@@ -754,6 +754,7 @@ body:has(.garden-home) #title-block-header:empty {
   margin: 0;
 }
 
+.home-about-card h2,
 .home-about-card h3,
 .home-category h3,
 .home-path h3,
@@ -882,6 +883,7 @@ body:has(.garden-home) #title-block-header:empty {
   padding-top: 0;
 }
 
+.home-about-card h2,
 .home-about-card h3,
 .home-path h3 {
   font-size: 1.05rem;

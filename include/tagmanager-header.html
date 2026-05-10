@@ -1,6 +1,11 @@
 <!-- Google Tag Manager -->
 <script>
 (() => {
+  const disabledHosts = new Set(["preview.luozx.org", "127.0.0.1", "localhost"]);
+  if (disabledHosts.has(window.location.hostname)) {
+    return;
+  }
+
   const containerId = "GTM-NVV5S5NQ";
   const dataLayerName = "dataLayer";
   window[dataLayerName] = window[dataLayerName] || [];

@@ -1,5 +1,6 @@
 ---
 title: ''
+description: "Luozx 的数字花园，记录生活、工作、兴趣、经历和个人实践经验。"
 page-layout: full
 toc: false
 body-class: garden-home-page
@@ -68,14 +69,14 @@ format:
 :::: {.home-about-grid}
 
 ::: {.home-about-card}
-### 这里会写什么
+## 这里会写什么
 
 内容来自我的生活、工作、兴趣、经历和经验。主题不会只围绕某一个领域。有时候内容会被标签标记，标签对内容分类是一个很好的工具，但是我会谨慎使用：在想不到关联之前，就不打。 你可以在[这里](/pages/categories-and-tags.qmd)找到已经存在的标签名称和它的意义。
 
 :::
 
 ::: {.home-about-card}
-### 这个网站怎么做
+## 这个网站怎么做
 
 网站托管在 [GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456)，由 [Quarto](https://quarto.org/) 生成。浅色配色来自于 [Entropic Thoughts](https://entropicthoughts.com/index)。
 :::

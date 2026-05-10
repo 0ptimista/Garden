@@ -1,0 +1,14 @@
+<script>
+(() => {
+  const disabledHosts = new Set(["preview.luozx.org", "127.0.0.1", "localhost"]);
+  if (disabledHosts.has(window.location.hostname)) {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "https://cloud.umami.is/script.js";
+  script.dataset.websiteId = "713c9485-413b-4a68-91d3-3a32d926297f";
+  document.head.append(script);
+})();
+</script>
