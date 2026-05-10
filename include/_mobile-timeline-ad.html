@@ -1,3 +1,15 @@
+<style>
+@media (max-width: 719.98px) {
+  .timeline-mobile-ad {
+    min-height: 300px;
+  }
+
+  .timeline-mobile-ad-slot {
+    min-height: 250px;
+  }
+}
+</style>
+
 <script>
 (() => {
   if (window.location.hostname === "preview.luozx.org") {
@@ -114,6 +126,14 @@
     window.requestAnimationFrame(placeAd);
   };
 
+  const scheduleIdlePlacement = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(schedulePlaceAd, { timeout: 2500 });
+      return;
+    }
+    window.setTimeout(schedulePlaceAd, 1200);
+  };
+
   const observeListing = () => {
     const list = document.querySelector(listSelector);
     if (!list || list.dataset.mobileAdObserved) {
@@ -157,7 +177,7 @@
         previous();
       }
       observeListing();
-      schedulePlaceAd();
+      scheduleIdlePlacement();
     };
     wrapped.__gardenMobileAdWrapped = true;
     window["quarto-listing-loaded"] = wrapped;
@@ -166,7 +186,7 @@
   installListingHook();
   document.addEventListener("DOMContentLoaded", () => {
     observeListing();
-    schedulePlaceAd();
+    scheduleIdlePlacement();
   });
   mobileQuery.addEventListener("change", schedulePlaceAd);
 })();

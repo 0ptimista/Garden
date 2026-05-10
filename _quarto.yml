@@ -14,11 +14,14 @@ project:
     port: 9999
     browser: false
   resources:
-    - "assets/**"
+    - "assets/data/**"
+    - "assets/favicons/apple-touch-icon.png"
+    - "assets/favicons/favicon-32.png"
+    - "assets/js/**"
+    - "assets/social/**"
     - ads.txt
     - cookieconsent.html
     - title-block.html
-    - "tree.png"
 # metadata-files:
 #   - _announcement.yml
 execute:
@@ -31,15 +34,15 @@ website:
   reader-mode: false
   repo-url: "https://github.com/0ptimista/Garden"
   repo-actions: [source]
-  favicon: "/tree.png"
+  favicon: "/assets/favicons/favicon-32.png"
   bread-crumbs: true
   open-graph:
-    image: "/tree.png"
+    image: "/assets/social/tree-og.jpg"
     locale: zh_CN
   twitter-card:
     creator: "@luozxdotorg"
     card-style: summary
-    image: "/tree.png"
+    image: "/assets/social/tree-og.jpg"
   navbar:
     right:
       - icon: twitter-x
@@ -96,6 +99,7 @@ format:
     include-in-header:
       - file: include/tagmanager-header.html
       - text: |
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
           <script defer src="https://cloud.umami.is/script.js" data-website-id="713c9485-413b-4a68-91d3-3a32d926297f"></script>
     include-before-body:
       - include/tagmanager-body.html

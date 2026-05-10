@@ -1,7 +1,36 @@
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NVV5S5NQ');</script>
+<script>
+(() => {
+  const containerId = "GTM-NVV5S5NQ";
+  const dataLayerName = "dataLayer";
+  window[dataLayerName] = window[dataLayerName] || [];
+
+  const loadTagManager = () => {
+    if (window.__gardenGtmLoaded) {
+      return;
+    }
+    window.__gardenGtmLoaded = true;
+    window[dataLayerName].push({ "gtm.start": Date.now(), event: "gtm.js" });
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${containerId}`;
+    document.head.append(script);
+  };
+
+  const scheduleTagManager = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(loadTagManager, { timeout: 3000 });
+      return;
+    }
+    window.setTimeout(loadTagManager, 1500);
+  };
+
+  if (document.readyState === "complete") {
+    scheduleTagManager();
+  } else {
+    window.addEventListener("load", scheduleTagManager, { once: true });
+  }
+})();
+</script>
 <!-- End Google Tag Manager -->
