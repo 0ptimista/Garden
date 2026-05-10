@@ -106,3 +106,4 @@ format:
     include-after-body:
       - include/share-button.html
       - include/ko-fi.html
+      - include/quarto-a11y-fixes.html

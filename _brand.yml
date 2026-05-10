@@ -57,22 +57,13 @@ color:
     dark: "#282828"
 
 typography:
-  fonts:
-    - family: Noto Sans SC
-      source: google
-      weight: [400, 500, 700]
-      display: swap
-    - family: Noto Serif SC
-      source: google
-      weight: [400, 500, 700]
-      display: swap
   base:
-    family: Noto Serif SC
+    family: system-ui
     size: 1rem
     weight: 500
     line-height: 1.8
   headings:
-    family: Noto Sans SC
+    family: system-ui
     weight: 700
     line-height: 1.2
     color:

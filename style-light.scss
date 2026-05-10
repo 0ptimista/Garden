@@ -20,6 +20,8 @@ $brand-link-orange-bg: #FDE6D6;
 $brand-code-paper: #F8F5F2;
 $brand-quote-paper: #FFF8F0;
 
+$web-font-path: "";
+
 $primary: $brand-caramel;
 $body-bg: $brand-paper;
 $body-color: $brand-ink;
@@ -41,8 +43,8 @@ $border-radius: 0.4rem;
 $btn-border-radius: 0.4rem;
 $card-border-radius: 0.4rem;
 
-$font-family-sans-serif: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
-$font-family-serif: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+$font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$font-family-serif: "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-sans-serif;
 

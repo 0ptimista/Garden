@@ -1,0 +1,15 @@
+<script>
+(() => {
+  const fixNavbarToggleRole = () => {
+    document.querySelectorAll(".navbar-toggler[role='menu']").forEach((button) => {
+      button.removeAttribute("role");
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fixNavbarToggleRole, { once: true });
+  } else {
+    fixNavbarToggleRole();
+  }
+})();
+</script>
