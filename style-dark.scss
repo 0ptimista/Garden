@@ -602,6 +602,100 @@ body:has(.garden-home) #title-block-header:empty {
   display: flex !important;
 }
 
+.home-data-toggle {
+  align-items: center;
+  display: inline-flex;
+  line-height: 1;
+  margin: 0;
+  position: relative;
+}
+
+.home-data-toggle summary {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--home-rule);
+  border-radius: 4px;
+  color: $brand-cream;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: $font-family-sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.35rem;
+  height: 2rem;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  min-width: 4rem;
+  padding: 0 0.55rem;
+  user-select: none;
+}
+
+.home-data-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.home-data-toggle summary:hover,
+.home-data-toggle summary:focus-visible,
+.home-data-toggle[open] summary {
+  background-color: var(--garden-inline-link-hover-bg);
+  border-color: var(--home-rule-strong);
+  color: var(--garden-inline-link-hover);
+}
+
+.home-data-toggle summary:focus-visible {
+  outline: 2px solid rgba(254, 128, 25, 0.28);
+  outline-offset: 2px;
+}
+
+.home-data-toggle .bi {
+  font-size: 0.82rem;
+  line-height: 1;
+  transition: transform 140ms ease;
+}
+
+.home-data-toggle[open] .bi {
+  transform: rotate(180deg);
+}
+
+.home-data-links {
+  background: var(--garden-surface-raised);
+  border: 1px solid var(--home-rule-strong);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
+  display: grid;
+  gap: 0.22rem;
+  left: 0;
+  min-width: min(13rem, calc(100vw - 2rem));
+  padding: 0.45rem;
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  z-index: 30;
+}
+
+.home-data-links a {
+  border-radius: 4px;
+  color: $brand-cream;
+  display: block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0.42rem 0.5rem;
+  text-decoration: none;
+}
+
+.home-data-links a:hover,
+.home-data-links a:focus-visible {
+  background-color: var(--garden-inline-link-hover-bg);
+  color: var(--garden-inline-link-hover);
+}
+
+.home-data-links a:focus-visible {
+  outline: 2px solid rgba(254, 128, 25, 0.28);
+  outline-offset: 2px;
+}
+
 .home-margin-tools .aa-DetachedSearchButton,
 .home-margin-tools .quarto-color-scheme-toggle {
   align-items: center;
@@ -1426,7 +1520,7 @@ body:has(.garden-home) #title-block-header:empty {
     grid-template-columns:
       [screen-start] minmax(1.25rem, 1fr)
       [page-start page-start-inset body-start body-content-start]
-      minmax(0, 74.75rem)
+      minmax(0, 76.25rem)
       [body-content-end body-end page-end page-end-inset]
       minmax(1.25rem, 1fr)
       [screen-end] !important;
@@ -1435,8 +1529,8 @@ body:has(.garden-home) #title-block-header:empty {
   .garden-home {
     column-gap: 2.25rem;
     display: grid;
-    grid-template-columns: minmax(0, 64rem) minmax(7rem, 8.5rem);
-    max-width: 74.75rem;
+    grid-template-columns: minmax(0, 64rem) minmax(9rem, 10rem);
+    max-width: 76.25rem;
   }
 
   .garden-home > :not(.home-margin-nav) {
@@ -1456,6 +1550,15 @@ body:has(.garden-home) #title-block-header:empty {
   .home-margin-nav ul {
     display: grid;
     gap: 0.5rem;
+  }
+
+  .home-margin-tools {
+    flex-wrap: nowrap;
+  }
+
+  .home-data-links {
+    left: auto;
+    right: 0;
   }
 }
 
