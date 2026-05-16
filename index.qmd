@@ -53,7 +53,21 @@ format:
 :::
 
 ::: {.home-margin-nav}
-<div class="home-margin-tools" aria-label="页面工具"></div>
+```{=html}
+<div class="home-margin-tools" aria-label="页面工具">
+<details class="home-data-toggle">
+<summary>
+<span>数据</span>
+<i class="bi bi-sort-down" aria-hidden="true"></i>
+</summary>
+<div class="home-data-links" aria-label="数据链接">
+<a href="https://dollarliquidity.com/zh" target="_blank" rel="noopener noreferrer">美元流动性</a>
+<a href="https://historyofmarket.com/" target="_blank" rel="noopener noreferrer">市场历史数据</a>
+<a href="https://www.kylc.com/" target="_blank" rel="noopener noreferrer">汇率</a>
+</div>
+</details>
+</div>
+```
 
 - [关于我](/pages/about.qmd)
 - [我收藏的文章](/collections/starred-articles/)
