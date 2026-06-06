@@ -10,10 +10,12 @@ listing:
   include:
     categories: tools
   sort: date desc
+  feed: true
   fields:
     - date
     - title
     - categories
+    - reading-time
   type: table
   categories: false
   sort-ui: false

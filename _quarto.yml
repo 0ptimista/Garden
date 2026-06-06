@@ -24,8 +24,7 @@ project:
     - ads.txt
     - cookieconsent.html
     - title-block.html
-# metadata-files:
-#   - _announcement.yml
+    - robots.txt
 execute:
   freeze: auto
 website:
@@ -33,7 +32,7 @@ website:
   site-url: "https://luozx.org"
   description: "Hihi, welcome.!"
   llms-txt: true
-  reader-mode: false
+  reader-mode: true
   repo-url: "https://github.com/0ptimista/Garden"
   repo-actions: [source]
   favicon: "/assets/favicons/favicon-32.png"
