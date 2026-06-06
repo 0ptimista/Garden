@@ -546,7 +546,6 @@ body:has(.garden-home) #title-block-header:empty {
 }
 
 .home-hero {
-  border-bottom: 1px solid var(--home-rule);
   padding-bottom: clamp(2rem, 5vw, 3.5rem);
 }
 
@@ -611,6 +610,7 @@ body:has(.garden-home) #title-block-header:empty {
 .home-data-toggle {
   align-items: center;
   display: inline-flex;
+  flex-shrink: 0;
   line-height: 1;
   margin: 0;
   position: relative;
@@ -635,6 +635,7 @@ body:has(.garden-home) #title-block-header:empty {
   min-width: 4rem;
   padding: 0 0.55rem;
   user-select: none;
+  white-space: nowrap;
 }
 
 .home-data-toggle summary::-webkit-details-marker {
@@ -1012,12 +1013,10 @@ body:has(.garden-home) #title-block-header:empty {
 }
 
 .garden-home h2 {
-  border-top: 1px solid var(--home-rule);
   color: $brand-cream-soft;
   font-size: clamp(1.55rem, 3vw, 2rem);
   line-height: 1.2;
   margin: clamp(3rem, 7vw, 5rem) 0 1.4rem;
-  padding-top: 1.1rem;
 }
 
 .garden-home > section:first-of-type > h2 {
@@ -1294,7 +1293,6 @@ body:has(.garden-home) #title-block-header:empty {
 }
 
 .home-continue {
-  border-top: 1px solid var(--home-rule-strong);
   display: flex;
   flex-wrap: wrap;
   font-family: $font-family-sans-serif;

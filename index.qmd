@@ -47,9 +47,9 @@ format:
 :::: {.garden-home}
 
 ::: {.home-hero}
-<div class="home-title" role="heading" aria-level="1"><span>Luozx</span><span class="home-title-rest">的数字花园</span></div>
+<h1 class="home-title"><span>Luozx</span><span class="home-title-rest">的数字花园</span></h1>
 
-这个名字来自对「[数字花园](https://maggieappleton.com/garden-history/)」的理解：它是一个完全由自己控制的网络空间，内容可以随意生长，也需要随时养护。它开放给互联网上的人游览，但不需要按平台算法的节奏更新。
+这个名字来自我对「[数字花园](https://maggieappleton.com/garden-history/)」的理解：一个完全由自己掌控的网络空间，像花园一样随意生长，也用心养护。它对互联网上的任何人开放，但不必跟着平台算法的节奏更新。
 :::
 
 ::: {.home-margin-nav}
@@ -64,6 +64,7 @@ format:
 <a href="https://dollarliquidity.com/zh" target="_blank" rel="noopener noreferrer">美元流动性</a>
 <a href="https://historyofmarket.com/" target="_blank" rel="noopener noreferrer">市场历史数据</a>
 <a href="https://www.kylc.com/" target="_blank" rel="noopener noreferrer">汇率</a>
+<a href="https://fuckbtc.com/" target="_blank" rel="noopener noreferrer">BTC</a>
 </div>
 </details>
 </div>
@@ -80,27 +81,10 @@ format:
 
 
 
-:::: {.home-about-grid}
-
-::: {.home-about-card}
-## 这里会写什么
-
-内容来自我的生活、工作、兴趣、经历和经验。主题不会只围绕某一个领域。有时候内容会被标签标记，标签对内容分类是一个很好的工具，但是我会谨慎使用：在想不到关联之前，就不打。 你可以在[这里](/pages/categories-and-tags.qmd)找到已经存在的标签名称和它的意义。
-
-:::
-
-::: {.home-about-card}
-## 这个网站怎么做
-
-网站托管在 [GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456)，由 [Quarto](https://quarto.org/) 生成。浅色配色来自于 [Entropic Thoughts](https://entropicthoughts.com/index)。
-:::
-
-::::
-
 ## 最多人看
 
 ::: {.home-section-note}
-<small>过去 180 天访问最多的公开文章。数据每天自动更新。</small>
+<small>过去 180 天里，大家点开最多的几篇，每天更新一次。</small>
 :::
 
 <div class="home-popular" data-popular-posts data-popular-limit="8" data-popular-src="/popular.json" data-popular-fallback-src="/assets/data/popular-posts.json">
@@ -113,6 +97,9 @@ format:
 :::: {.home-feed-grid}
 ::: {.home-feed-pane}
 ## 推荐内容
+
+<div class="home-section-note"><small>我自己写的内容里，挑几篇想请你先读。</small></div>
+
 :::{#recommended-posts}
 :::
 :::
@@ -123,6 +110,23 @@ format:
 :::{#recent-posts}
 :::
 :::
+::::
+
+:::: {.home-about-grid}
+
+::: {.home-about-card}
+## 这里会写什么
+
+内容都源于我的生活、工作、兴趣、经历和经验，不会只盯着某一个主题，也不一定完整或完美（不过我还是会尽力）。有时候内容会被**标签**标记——标签是分类的好工具，但我用得谨慎：想不到关联之前，就不打。已有的标签和它们的意思，你可以在[这里](/pages/categories-and-tags.qmd)找到。
+
+:::
+
+::: {.home-about-card}
+## 这个网站怎么做
+
+用 [Quarto](https://quarto.org/) 做的——当时工作上要写带数据图表的报告，它正好合适，就顺手给自己也用了。浅色配色取自我很喜欢的博客 [Entropic Thoughts](https://entropicthoughts.com/index)，第一次看到就觉得读着很舒服；网站托管在 [GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456) 上。
+:::
+
 ::::
 
 <script>
@@ -260,7 +264,7 @@ format:
 ## 喜欢的内容
 
 ::: {.home-section-note}
-这里放我在其他博客、个人网站和文章里读到的内容。它们按主题分组^[暂时由Codex处理]，是这个花园的外部养分，也方便以后从自己的文章反向找到参考来源。
+这里放我在别人的博客、网站和文章里读到、觉得好的东西，按主题分了组。它们是这个花园的外部养分，也方便我以后顺着自己的文章找回来。
 :::
 
 :::{#reading-picks}
