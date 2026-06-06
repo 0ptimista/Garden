@@ -3,8 +3,8 @@ name: Garden Preview
 on:
   push:
     branches:
-      - "codex/homepage-design-architecture-performance"
-      - "preview"
+      - "gardening"
+      - "seeding"
   workflow_dispatch:
 
 permissions:

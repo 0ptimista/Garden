@@ -35,6 +35,19 @@ jobs:
           python-version: '3.11'
       - run: pip install jupyter matplotlib
 
+      - name: Refresh popular-posts fallback
+        continue-on-error: true
+        run: |
+          tmp="$(mktemp)"
+          if curl -fsS --max-time 20 https://luozx.org/popular.json -o "$tmp" \
+            && python3 -c "import json,sys; d=json.load(open('$tmp')); sys.exit(0 if isinstance(d.get('items'), list) and len(d['items']) > 0 else 1)"; then
+            mv "$tmp" assets/data/popular-posts.json
+            echo "Refreshed fallback from production worker ($(python3 -c "import json;print(json.load(open('assets/data/popular-posts.json'))['updatedAt'])"))."
+          else
+            echo "Worker unavailable or returned empty; keeping committed fallback."
+            rm -f "$tmp"
+          fi
+
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         
