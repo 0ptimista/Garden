@@ -23,7 +23,7 @@ categories:
 
 经过调整，还款日基本上都设定在了月中（15，16）号左右
 
-![统一还款日](./images/credit-cards-table.png)
+![统一还款日](./images/credit-cards-table.webp)
 
 招商银行是一张只会在生日当天使用的「抽屉卡」，使用频率很低，就没有调整它的还款日。
 
@@ -41,7 +41,7 @@ categories:
 
 所以最终只能使用三个还款通道：
 
-![还款通道视图](./images/credit-cards-board.png)
+![还款通道视图](./images/credit-cards-board.webp)
 
 ## 尾部
 对于（多）信用卡用户来说，需要这样一种应用/解决方式：

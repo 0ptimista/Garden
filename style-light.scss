@@ -44,7 +44,7 @@ $btn-border-radius: 0.4rem;
 $card-border-radius: 0.4rem;
 
 $font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-$font-family-serif: "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif;
+$font-family-serif: "Songti SC", "STSong", "SimSun", "FangSong", "STFangsong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
 $font-family-base: $font-family-sans-serif;
 $headings-font-family: $font-family-sans-serif;
 
@@ -86,6 +86,12 @@ main.content p {
   text-align: justify;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+/* 正文阅读区（列表/引用/定义/表格）与段落一致，统一使用衬线宋体。
+   标题、强调、行内代码各自的 sans/mono 规则更具体，会覆盖此处。 */
+main.content :where(li, blockquote, dd, td) {
+  font-family: $font-family-serif;
 }
 
 h1,
