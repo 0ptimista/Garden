@@ -8,6 +8,7 @@ _freeze/
 
 /.quarto/
 *.quarto_ipynb
+*.quarto_ipynb_1
 
 
 **/*.quarto_ipynb
