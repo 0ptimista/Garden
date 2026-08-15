@@ -2,7 +2,7 @@
 title: 购买美债的思路（二）
 date: '2025-05-04'
 description: 间接购买美债的方式
-date-modified: last-modified
+date-modified: 2026-08-15 12:32
 categories:
 - money
 
@@ -16,10 +16,6 @@ categories:
 2. 需要开设境外券商账户
 
 除了直接购买即将发行的美债之外，还有两种方式可以间接购买美债。
-
-::: {.callout-warning title="以下内容非投资建议"}
-目前，我并未间接购买过美债。仅对想要间接购买的朋友做一个参考。
-:::
 
 在间接购买美债前，有几个概念需要理解清楚。
 
@@ -60,7 +56,15 @@ $$
 
 通过购买ETF的方式持有美债，会被收取一定的管理费，例如贝莱的发行的0-3个月的ETF，SGOV，费用为0.09%。（好处应该就是可以不用频繁操作，例如短期美债到期后，你需要再次购买）
 
-![](https://image.luozx.org/garden/2025/05/6adabd78f44232f38eca7287a0f86f39.png)
+利息按月发放，ETF的价格在区间内波动，闲置资金在月初价格低的时候进入是比较好的时机。
+
+![SGOV交易](https://image.luozx.org/garden/{year}/{month}/{md5}.{extName}/20260815122812735.webp)
+
+![SGOV价格走势](https://image.luozx.org/garden/{year}/{month}/{md5}.{extName}/20260815121559773.webp)
+
+![SGOV费率](https://image.luozx.org/garden/2025/05/6adabd78f44232f38eca7287a0f86f39.png)
+
+
 
 境外ETF的种类非常多种，下列表格可以参考
 

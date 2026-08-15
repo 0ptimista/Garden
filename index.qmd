@@ -98,7 +98,7 @@ format:
 ::: {.home-feed-pane}
 ## 推荐内容
 
-<div class="home-section-note"><small>我自己写的内容里，挑几篇想请你先读。</small></div>
+<div class="home-section-note"><small>不知道从哪里开始的话，可以先看看这里。</small></div>
 
 :::{#recommended-posts}
 :::
@@ -115,16 +115,16 @@ format:
 :::: {.home-about-grid}
 
 ::: {.home-about-card}
-## 这里会写什么
+## 花园内
 
-内容都源于我的生活、工作、兴趣、经历和经验，不会只盯着某一个主题，也不一定完整或完美（不过我还是会尽力）。有时候内容会被**标签**标记——标签是分类的好工具，但我用得谨慎：想不到关联之前，就不打。已有的标签和它们的意思，你可以在[这里](/pages/categories-and-tags.qmd)找到。
+有时候内容会被**标签**标记——标签是分类的好工具，但会谨慎使用：想不到关联之前，就不打。已有的标签和它们的意思，你可以在[这里](/pages/categories-and-tags.qmd)找到。
 
 :::
 
 ::: {.home-about-card}
-## 这个网站怎么做
+## 花园的一些技术细节
 
-用 [Quarto](https://quarto.org/) 做的——当时工作上要写带数据图表的报告，它正好合适，就顺手给自己也用了。浅色配色取自我很喜欢的博客 [Entropic Thoughts](https://entropicthoughts.com/index)，第一次看到就觉得读着很舒服；网站托管在 [GitHub](https://github.com/yihong0618/gitblog/issues/177#issue-682267456) 上。
+用 [Quarto](https://quarto.org/) 做的——当时工作上要写带数据图表的报告，它正好合适，就顺手给自己也用了。浅色配色取自我很喜欢的博客 [Entropic Thoughts](https://entropicthoughts.com/index)，第一次看到就觉得读着很舒服；因为也认同yihong的 [观点](https://github.com/yihong0618/gitblog/issues/177#issue-682267456) ，也托管在Github上。
 :::
 
 ::::
