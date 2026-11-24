@@ -50,12 +50,20 @@ jobs:
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Verify Pages output
+        run: |
+          test -s _site/index.html
+          echo "Generated $(find _site -type f | wc -l) files"
+          du -sh _site
         
       - name: Upload artifact
+        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '_site'
-          
+          path: _site
+          retention-days: 1 
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
