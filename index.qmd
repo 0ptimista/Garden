@@ -77,6 +77,7 @@ format:
 - [GitHub](https://github.com/0ptimista)
 - [X](https://x.com/luozxdotorg)
 - [按时间顺序浏览](/time-machine.qmd)
+- [Gemini Pro 半价订阅](/pages/myservice.qmd)
 :::
 
 
